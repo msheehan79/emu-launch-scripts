@@ -4,6 +4,7 @@ roms/
 emulators/
 metadata/
 /xpadder/
+launch/WIP/
 
 # Ignore Pegasus frontend shortcut/exe and readme
 pegasus/pegasus.lnk
@@ -23,3 +24,4 @@ configs/atari5200/backups/
 configs/psp/PSP/PPSSPP_STATE/
 configs/psp/PSP/SAVEDATA/
 configs/psp/PSP/SYSTEM/CACHE/
+
