@@ -1,0 +1,25 @@
+# Ignore these directories
+bios/
+roms/
+emulators/
+metadata/
+/xpadder/
+
+# Ignore Pegasus frontend shortcut/exe and readme
+pegasus/pegasus.lnk
+pegasus/pegasus-fe.exe
+pegasus/README.md
+pegasus/LICENSE.md
+pegasus/config/lastrun.log
+pegasus/config/stats.db
+
+# Ignore retroarch content history files
+*.lpl
+
+# Ignore backup config directory for a5200
+configs/atari5200/backups/
+
+# Ignore PSP state files and other non-config data
+configs/psp/PSP/PPSSPP_STATE/
+configs/psp/PSP/SAVEDATA/
+configs/psp/PSP/SYSTEM/CACHE/
