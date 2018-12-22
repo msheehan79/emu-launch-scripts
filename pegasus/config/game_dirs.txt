@@ -1,0 +1,4 @@
+../roms/atari5200
+../roms/fds
+../roms/psp
+../roms/atari7800
