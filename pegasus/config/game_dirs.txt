@@ -2,3 +2,4 @@
 ../roms/fds
 ../roms/psp
 ../roms/atari7800
+../roms/virtualboy
