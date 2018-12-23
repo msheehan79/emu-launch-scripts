@@ -4,3 +4,4 @@
 ../roms/atari7800
 ../roms/virtualboy
 ../roms/gamegear
+../roms/mastersystem
