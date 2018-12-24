@@ -20,7 +20,7 @@ set xpadder_p2=%~5
 :: set xpadder_p2=
 
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\ppsspp\PPSSPPWindows64.exe" --pause-menu-exit "..\roms\psp\%rom%"
+set emulator_launch="..\emulators\ppsspp\PPSSPPWindows64.exe" --pause-menu-exit "%rom%"
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (

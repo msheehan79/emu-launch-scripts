@@ -24,7 +24,7 @@ set xpadder_p2=%~5
 :: @echo Current dir: "%CD%" >>C:\Emulation\launch\output.txt
 
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\altirra\Altirra64.exe" /portablealt:..\configs\atari5200\%config% "..\roms\atari5200\%rom%"
+set emulator_launch="..\emulators\altirra\Altirra64.exe" /portablealt:..\configs\%config% "%rom%"
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 start "" %xpadder_launch% && start "" /WAIT %emulator_launch%
