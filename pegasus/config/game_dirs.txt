@@ -9,3 +9,8 @@
 ../roms/gb
 ../roms/gba
 ../roms/gbc
+../roms/nes
+../roms/snes
+../roms/genesis
+../roms/tg16
+../roms/sgfx
