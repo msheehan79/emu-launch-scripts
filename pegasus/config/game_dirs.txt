@@ -14,3 +14,7 @@
 ../roms/genesis
 ../roms/tg16
 ../roms/sgfx
+../roms/segacd
+../roms/sega32x
+../roms/tgcd
+../roms/pcfx
