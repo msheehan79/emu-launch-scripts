@@ -5,3 +5,4 @@
 ../roms/virtualboy
 ../roms/gamegear
 ../roms/mastersystem
+../roms/sg1000
