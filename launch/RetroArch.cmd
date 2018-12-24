@@ -15,15 +15,15 @@ set xpadder_p1=%~4
 set xpadder_p2=%~5
 
 :: Set parameters
-:: set rom=Super Mario Brothers 2 (Japan) (Alt 1).zip
+:: set rom=Centipede (USA).zip
 :: set config=retroarch.cfg
-:: set core=mesen_libretro
+:: set core=prosystem_libretro
 
 :: set xpadder_p1=Atari 5200 P1 Default
 :: set xpadder_p2=Atari 5200 P2 Default
 
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\retroarch\retroarch.exe" -L "..\emulators\retroarch\cores\%core%.dll" "..\roms\fds\%rom%" -c "..\configs\fds\%config%"
+set emulator_launch="..\emulators\retroarch\retroarch.exe" -L "..\emulators\retroarch\cores\%core%.dll" "%rom%" -c "..\configs\%config%"
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (
