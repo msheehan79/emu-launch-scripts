@@ -6,3 +6,6 @@
 ../roms/gamegear
 ../roms/mastersystem
 ../roms/sg1000
+../roms/gb
+../roms/gba
+../roms/gbc
