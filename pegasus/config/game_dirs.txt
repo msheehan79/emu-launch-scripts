@@ -18,3 +18,17 @@
 ../roms/sega32x
 ../roms/tgcd
 ../roms/pcfx
+../roms/x68000
+../roms/msx
+../roms/msx2
+../roms/psx
+../roms/dreamcast
+../roms/atari2600
+../roms/saturn
+../roms/arcade/mame
+../roms/arcade/sega-naomi
+../roms/gamecube
+../roms/ps2
+../roms/colecovision
+../roms/nds
+../roms/arcade/sega-stv
