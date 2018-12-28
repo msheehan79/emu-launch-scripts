@@ -8,7 +8,7 @@
 :: Set the current directory
 pushd "%~dp0"
 
-set rom=%~1
+set "rom=%~1"
 set core=%~2
 set config=%~3
 set xpadder_p1=%~4
