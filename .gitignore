@@ -26,3 +26,5 @@ configs/psp/PSP/SAVEDATA/
 configs/psp/PSP/SYSTEM/CACHE/
 
 util/gamelists.laccdb
+util/gamelists.accdb
+util/TypeXtra/
