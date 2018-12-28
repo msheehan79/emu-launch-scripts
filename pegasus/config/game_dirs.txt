@@ -32,3 +32,5 @@
 ../roms/colecovision
 ../roms/nds
 ../roms/arcade/sega-stv
+../roms/wii
+../roms/intellivision

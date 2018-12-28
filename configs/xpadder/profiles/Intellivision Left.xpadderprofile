@@ -1,0 +1,47 @@
+;--- Xpadder Profile File ---
+DataType=Profile
+Version=2018.05.01
+
+[Profile Settings]
+
+[Set Settings]
+Set1DPadMode=EightWay
+Set1Stick1Mode=EightWay
+Set1Stick2Mode=EightWay
+
+[Assignments]
+Set1Button1Slots=Forward-Slash
+Set1Button2Slots=Right Control
+Set1Button3Slots=Alt Gr
+Set1Button4Slots=NumPad Enter
+Set1Button7SetSelect=1
+Set1Button10Slots=NumPad 5
+Set1DPadUpSlots=I
+Set1DPadRightSlots=K
+Set1DPadDownSlots=M
+Set1DPadLeftSlots=J
+Set1DPadUpRightSlots=O
+Set1DPadDownRightSlots=Comma
+Set1DPadDownLeftSlots=N
+Set1DPadUpLeftSlots=U
+Set1Stick1UpSlots=I
+Set1Stick1RightSlots=K
+Set1Stick1DownSlots=M
+Set1Stick1LeftSlots=J
+Set1Stick1UpRightSlots=O
+Set1Stick1DownRightSlots=Comma
+Set1Stick1DownLeftSlots=N
+Set1Stick1UpLeftSlots=U
+Set1Stick2UpSlots=NumPad 2
+Set1Stick2RightSlots=NumPad 6
+Set1Stick2DownSlots=NumPad 8
+Set1Stick2LeftSlots=NumPad 4
+Set1Stick2UpRightSlots=NumPad 3
+Set1Stick2DownRightSlots=NumPad 9
+Set1Stick2DownLeftSlots=NumPad 7
+Set1Stick2UpLeftSlots=NumPad 1
+Set1TriggerLeftSlots=NumPad Dot
+Set1TriggerRightSlots=NumPad 0
+Set2Button1Slots=F12
+Set2Button7SetSelect=0
+Set2Button8Slots=F1
