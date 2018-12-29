@@ -6,6 +6,7 @@ Version=2018.05.01
 
 [Set Settings]
 Set1DPadMode=EightWay
+Set1Stick1Mode=EightWay
 Set1Stick2Mode=EightWay
 
 [Assignments]
@@ -23,6 +24,10 @@ Set1DPadUpRightSlots=R
 Set1DPadDownRightSlots=C
 Set1DPadDownLeftSlots=Z
 Set1DPadUpLeftSlots=W
+Set1Stick1UpSlots=E
+Set1Stick1RightSlots=D
+Set1Stick1DownSlots=X
+Set1Stick1LeftSlots=S
 Set1Stick1UpRightSlots=R
 Set1Stick1DownRightSlots=C
 Set1Stick1DownLeftSlots=Z

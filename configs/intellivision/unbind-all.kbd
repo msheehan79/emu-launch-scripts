@@ -1,0 +1,172 @@
+; Xpadder has an issue mapping to RSHIFT the default keymap for L controller top, so remap to a different key
+SLASH             PD0L_A_T
+
+; first joystick defaults to left controller
+; Reset all js inputs to null so we can use Xpadder to define keymaps
+JS0_BTN_00        POP
+JS0_BTN_01        POP
+JS0_BTN_02        POP
+JS0_BTN_03        POP
+JS0_BTN_04        POP
+JS0_BTN_05        POP
+JS0_BTN_06        POP
+JS0_BTN_07        POP
+JS0_BTN_08        POP
+JS0_BTN_09        POP
+JS0_BTN_10        POP
+JS0_BTN_11        POP
+JS0_BTN_12        POP
+JS0_BTN_13        POP
+JS0_BTN_14        POP
+JS0_BTN_15        POP
+JS0_BTN_16        POP
+JS0_BTN_17        POP
+JS0_BTN_18        POP
+JS0_BTN_19        POP
+
+JS0B_E            POP
+JS0B_W            POP
+JS0B_N            POP
+JS0B_S            POP
+
+JS0C_W            POP
+JS0C_E            POP
+JS0C_N            POP
+JS0C_S            POP
+
+JS0A_E            POP
+JS0A_ENE          POP
+JS0A_NE           POP
+JS0A_NNE          POP
+JS0A_N            POP
+JS0A_NNW          POP
+JS0A_NW           POP
+JS0A_WNW          POP
+JS0A_W            POP
+JS0A_WSW          POP
+JS0A_SW           POP
+JS0A_SSW          POP
+JS0A_S            POP
+JS0A_SSE          POP
+JS0A_SE           POP
+JS0A_ESE          POP
+
+JS0_HAT0_E        POP
+JS0_HAT0_NE       POP
+JS0_HAT0_N        POP
+JS0_HAT0_NW       POP
+JS0_HAT0_W        POP
+JS0_HAT0_SW       POP
+JS0_HAT0_S        POP
+JS0_HAT0_SE       POP
+
+JS0_HAT1_E        POP
+JS0_HAT1_NE       POP
+JS0_HAT1_N        POP
+JS0_HAT1_NW       POP
+JS0_HAT1_W        POP
+JS0_HAT1_SW       POP
+JS0_HAT1_S        POP
+JS0_HAT1_SE       POP
+
+JS0_HAT2_E        POP
+JS0_HAT2_NE       POP
+JS0_HAT2_N        POP
+JS0_HAT2_NW       POP
+JS0_HAT2_W        POP
+JS0_HAT2_SW       POP
+JS0_HAT2_S        POP
+JS0_HAT2_SE       POP
+
+JS0_HAT3_E        POP
+JS0_HAT3_NE       POP
+JS0_HAT3_N        POP
+JS0_HAT3_NW       POP
+JS0_HAT3_W        POP
+JS0_HAT3_SW       POP
+JS0_HAT3_S        POP
+JS0_HAT3_SE       POP
+
+JS1_BTN_00        POP
+JS1_BTN_01        POP
+JS1_BTN_02        POP
+JS1_BTN_03        POP
+JS1_BTN_04        POP
+JS1_BTN_05        POP
+JS1_BTN_06        POP
+JS1_BTN_07        POP
+JS1_BTN_08        POP
+JS1_BTN_09        POP
+JS1_BTN_10        POP
+JS1_BTN_11        POP
+JS1_BTN_12        POP
+JS1_BTN_13        POP
+JS1_BTN_14        POP
+JS1_BTN_15        POP
+JS1_BTN_16        POP
+JS1_BTN_17        POP
+JS1_BTN_18        POP
+JS1_BTN_19        POP
+
+JS1B_E            POP
+JS1B_W            POP
+JS1B_N            POP
+JS1B_S            POP
+
+JS1C_W            POP
+JS1C_E            POP
+JS1C_N            POP
+JS1C_S            POP
+
+JS1A_E            POP
+JS1A_ENE          POP
+JS1A_NE           POP
+JS1A_NNE          POP
+JS1A_N            POP
+JS1A_NNW          POP
+JS1A_NW           POP
+JS1A_WNW          POP
+JS1A_W            POP
+JS1A_WSW          POP
+JS1A_SW           POP
+JS1A_SSW          POP
+JS1A_S            POP
+JS1A_SSE          POP
+JS1A_SE           POP
+JS1A_ESE          POP
+
+JS1_HAT0_E        POP
+JS1_HAT0_NE       POP
+JS1_HAT0_N        POP
+JS1_HAT0_NW       POP
+JS1_HAT0_W        POP
+JS1_HAT0_SW       POP
+JS1_HAT0_S        POP
+JS1_HAT0_SE       POP
+
+JS1_HAT1_E        POP
+JS1_HAT1_NE       POP
+JS1_HAT1_N        POP
+JS1_HAT1_NW       POP
+JS1_HAT1_W        POP
+JS1_HAT1_SW       POP
+JS1_HAT1_S        POP
+JS1_HAT1_SE       POP
+
+JS1_HAT2_E        POP
+JS1_HAT2_NE       POP
+JS1_HAT2_N        POP
+JS1_HAT2_NW       POP
+JS1_HAT2_W        POP
+JS1_HAT2_SW       POP
+JS1_HAT2_S        POP
+JS1_HAT2_SE       POP
+
+JS1_HAT3_E        POP
+JS1_HAT3_NE       POP
+JS1_HAT3_N        POP
+JS1_HAT3_NW       POP
+JS1_HAT3_W        POP
+JS1_HAT3_SW       POP
+JS1_HAT3_S        POP
+JS1_HAT3_SE       POP

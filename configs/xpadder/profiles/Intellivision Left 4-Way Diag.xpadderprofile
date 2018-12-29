@@ -7,6 +7,7 @@ Version=2018.05.01
 [Set Settings]
 Set1StickDiagonalSizes=89,45
 Set1DPadMode=EightWay
+Set1Stick1Mode=Diagonal
 Set1Stick2Mode=Horizontal
 
 [Assignments]
@@ -24,10 +25,14 @@ Set1DPadUpRightSlots=O
 Set1DPadDownRightSlots=Comma
 Set1DPadDownLeftSlots=N
 Set1DPadUpLeftSlots=U
+Set1Stick1UpSlots=I
+Set1Stick1RightSlots=K
+Set1Stick1DownSlots=M
+Set1Stick1LeftSlots=J
 Set1Stick1UpRightSlots=O
 Set1Stick1DownRightSlots=Comma
 Set1Stick1DownLeftSlots=N
-Set1Stick1UpLeftSlots=Escape
+Set1Stick1UpLeftSlots=U
 Set1Stick2UpSlots=NumPad 2
 Set1Stick2RightSlots=NumPad 6
 Set1Stick2DownSlots=NumPad 8
