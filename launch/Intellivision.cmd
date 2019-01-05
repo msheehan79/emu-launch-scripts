@@ -22,7 +22,7 @@ set xpadder_p2=%~5
 :: set xpadder_p2=Intellivision Right
 
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\jzintv\bin\jzintv.exe" -p "..\bios" -q -z1440x1080,32 -v1 -f1 --kbdhackfile=..\configs\%config% "%rom%"
+set emulator_launch="..\emulators\jzintv\bin\jzintv.exe" -p "..\bios" -q -z1440x1080,32 -v1 -f1 "%rom%"
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (
