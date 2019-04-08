@@ -1,0 +1,26 @@
+;--- Xpadder Profile File ---
+DataType=Profile
+Version=2018.05.01
+
+[Profile Settings]
+
+[Set Settings]
+
+[Assignments]
+Set1Button1Slots=W
+Set1Button2Slots=A
+Set1Button3Slots=J
+Set1Button4Slots=L
+Set1Button7SetSelect=1
+Set1Button8Slots=2
+Set1DPadUpSlots=R
+Set1DPadRightSlots=G
+Set1DPadDownSlots=F
+Set1DPadLeftSlots=D
+Set1Stick1UpSlots=R
+Set1Stick1RightSlots=G
+Set1Stick1DownSlots=F
+Set1Stick1LeftSlots=D
+Set2Button7Slots=6
+Set2Button7SetSelect=0
+Set2Button8Slots=Escape
