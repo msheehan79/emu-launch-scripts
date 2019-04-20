@@ -1,0 +1,3839 @@
+<?xml version="1.0" standalone="yes"?>
+<UserDbs xmlns="http://tempuri.org/UserDb.xsd">
+  <Updates>
+    <Date>01/01/2001 00:00:00</Date>
+    <Author>stigzler</Author>
+    <Comments>Default Update date</Comments>
+  </Updates>
+  <Updates>
+    <Date>10/30/2018 1:41:53 AM</Date>
+    <Author>stigzler</Author>
+    <Comments>Added Mobile Suit Gundam - Sprits of Zeon</Comments>
+  </Updates>
+  <UserGamesSetup>
+    <ShortName>AH2</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>xb_config.exe</UserControlsFile>
+    <UserLaunchFile>xb_loader.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Arcana Heart 2</LongName>
+    <GameInfID>9378E6664BAB70B23A499005EE5234C5</GameInfID>
+    <Collection>EXB</Collection>
+    <ControlsFile>xb_config.exe</ControlsFile>
+    <LaunchFile>xb_loader.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Not always detected via autoscan - you may have to add it manually. Exe must be named "game.exe"
+      Game.exe akas: AH2.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>xb_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>xb_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SAH2</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>xb_config.exe</UserControlsFile>
+    <UserLaunchFile>xb_loader.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Suggoi! Arcana Heart 2</LongName>
+    <GameInfID>D36D568B298C2BFAD1393E40C1E73631</GameInfID>
+    <Collection>EXB</Collection>
+    <ControlsFile>xb_config.exe</ControlsFile>
+    <LaunchFile>xb_loader.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Not always detected via autoscan - you may have to add it manually. Exe must be named "game.exe"
+      Game.exe AKAs: AH25.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>xb_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>xb_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>AH3</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>xb_config.exe</UserControlsFile>
+    <UserLaunchFile>xb_loader.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Arcana Heart 3</LongName>
+    <GameInfID>D2887C2702C4A82B67444FA11BCD279D</GameInfID>
+    <Collection>EXB</Collection>
+    <ControlsFile>xb_config.exe</ControlsFile>
+    <LaunchFile>xb_loader.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Not always detected via autoscan - you may have to add it manually. Exe must be named "game.exe"
+      Game.exe AKAs: AH30.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>xb_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>xb_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BG4</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>ttx_config2.0.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Battle Gear 4 Tuned</LongName>
+    <GameInfID>4C1BCACA5EB94D59167566A0F2E79C90</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>ttx_config2.0.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Needs an E: drive to run (used Windows Mapped network drives). If you have problems on launch, try setting the final exe properties to: Compatibility&gt;Run this Program in compatibility mode for: Windows XP Service pack 2. Also, the rom version is crucial. One that works well is a set with "game4.exe _MTS_FULL_SCREEN_.bat.
+      Game.exe AKAs: game4.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>NoGlobalInstall</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>NoGlobalInstall</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BF</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-typex\Battle Fantasia</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.7813606-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Battle Fantasia</LongName>
+    <GameInfID>496490398CDF614752E17CEDA6B6051E</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Exe must be named "game.exe"</Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>8/3/2013 8:53:07 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>A782C6C4665821787A4061BE4A7D36D41D419BB29ECBC586F8B5AA0A78CD7F76E842CD922C16AB3BA07E52698583505531C07B6BECA54125D1A34057E9FEE7FF</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BMIIDX17</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>config.bat</UserControlsFile>
+    <UserLaunchFile>BMIIDX17_Launcher.exe</UserLaunchFile>
+    <UserExeMonitorFile>bm2dx.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Beatmania IIDX 17 - Sirius</LongName>
+    <GameInfID>{null}</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>config.bat</ControlsFile>
+    <LaunchFile>BMIIDX17_Launcher.exe</LaunchFile>
+    <MonitorExe>bm2dx.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <UseForceQuit>false</UseForceQuit>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BBCS</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>BlazBlue Continuum Shift</LongName>
+    <GameInfID>F50D184BD9B65D4B23901AA7940D5692</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Exe must be named "game.exe"</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BBCT</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>BlazBlue Calamity Trigger</LongName>
+    <GameInfID>067DB45566151D23E7CFE35F02AE205A</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Exe must be named "game.exe" Game runs but with graphical glitches. May depend on set or graphics card.
+      Game.exe AKAs: launcher.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV xml:space="preserve"> </SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>CB</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-typex\Chaos Breaker</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.7973098-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Chaos Breaker</LongName>
+    <GameInfID>0230B32F4870DAA71D5FA7CCF771BAB2</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>This requires the file d3d8.dll in the root of the game folder to run.</Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>12/25/1996 4:32:00 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>C021B6CF564149DFC3E943ED75E84631D1BE148729BDD3AB7531FCB97B7B62EB67299B5CA70983BAD041595630C7CBFEAAD16EA787489DD2847BCC5B65731BCF</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>DB</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>xb_config.exe</UserControlsFile>
+    <UserLaunchFile>xb_loader.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Daemon Bride</LongName>
+    <GameInfID>ED5A85F5B7888F82C59587E3DD3ECEE2</GameInfID>
+    <Collection>EXB</Collection>
+    <ControlsFile>xb_config.exe</ControlsFile>
+    <LaunchFile>xb_loader.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Ensure exe is named "game.exe"  Also, xb_loader must be run as admin.
+      Exe often shows as virus in some scanners. Your choice - do some reading - people say because of the way the exe works, this is a false positive.
+      Run in compatibility mode for XP SP3
+
+      Game.exe AKAs: DB1.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>xb_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>xb_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>GWG</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-typex\Giga Wing Generations</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.8112841-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>GigaWing Generations.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Giga Wing Generations</LongName>
+    <GameInfID>F99DA93525A264F0308C7A661766A37E</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>GigaWing Generations.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Some sets use DXWnd and sometimes this can float over the game. Use the DXWnd hack in settings to solve.</Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>12/24/1996 11:32:00 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>9BACB92B7026D510D6BBEC21EEA9C0E2191ADB786B8EAAF63EEBFF173573C690134F910F69A27DD13154797CCC5B34F065360AF3B883AC8AB7C4171EFF50B40A</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>HMR</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Users\Mike\Downloads\New folder\Homura\Homura</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.8242499-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>Homura.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Homura</LongName>
+    <GameInfID>40D582B8A484DD48CBB86FB1DBD6047B</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>Homura.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Some sets use DXWnd and sometimes this can float over the game. Use the DXWnd hack in settings to solve.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled>Unchecked</HDExeInstalled>
+    <GameExeDate>2/24/2012 4:15:06 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>26895287F8C9565431ECF86584A9C7B6ACCF99CEC56EAF21A728F577ECE54797869F0BE1690E82A16BAB0986C9888C02FE53F9305A4CE2159A85388615C8E5FC</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>KOFMIA</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>King of Fighters Maximum Impact Regulation A</LongName>
+    <GameInfID>317DBAFCE582AD1C1EE037437C6BD736</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Can't locate working Exe.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>KOF98UM</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>King of Fighters 98 Ultimate Match</LongName>
+    <GameInfID>B5623B0B5F79C766F6049749CE9CF036</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      You may have to enable the music via the service menu.
+      Game.exe AKAs: KOF98UM_Launcher.exe; launcher.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>KOFXII</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>King of Fighters XII</LongName>
+    <GameInfID>1DA0CB35A578F512D6C4460B509ABFAE</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Exe must be named "game.exe"</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>KOFXIII</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>King of Fighters XIII</LongName>
+    <GameInfID>CCD8935C40A545E31B061BC7824D088D</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Exe must be named "game.exe"</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>OTMD</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>otomedius.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Otomedius</LongName>
+    <GameInfID>E0DE7D07C0D310DB3A12C80F8A7B502F</GameInfID>
+    <Collection>EAM</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>otomedius.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Not picked up by autoscan. You must set the Game Folder manually.
+
+      Requires a Virtual F: Drive to run. Create one via Windows "Map Network Drive." Also, cannot configure keys at present. F6 and F7 enter and select Services menu. You may need to change to freeplay and disable netowrking. Lastly, edit "setting.arc" and set "ProxyLibrary=fullscreen.dll" to enable fullscreen
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>PI5</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Power Instinct 5</LongName>
+    <GameInfID>67C531455906BD225C4369D2DD714E10</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Exe must be named "game.exe"</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>RIII</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-typex\Raiden III</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.8372122-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>Raiden III.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Raiden III</LongName>
+    <GameInfID>DB1515BAECCABDAB3B222DEBAD0C1BC8</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>Raiden III.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Some sets use DXWnd and sometimes this can float over the game. Use the DXWnd hack in settings to solve.</Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>12/24/1996 11:32:00 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>EC093F9CE37620D9A07889C7A53834AFCA4F34F81A15FD726428E1638445163E2FF9C9A58F1BAEADEE847478E623561376AF77B9545734D668BC129B44466A7E</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>RIV</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Users\Mike\Downloads\New folder\Raiden IV</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.8501531-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>Raiden IV.exe </UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Raiden IV</LongName>
+    <GameInfID>7820BAB12E35F6ECF7212F87CD307952</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>Raiden IV.exe </LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Some sets use DXWnd and sometimes this can float over the game. Use the DXWnd hack in settings to solve.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>2/19/2017 4:34:24 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>2DDB04D9DC03A51A83D9A3DB827E177E4FCB362642D59F80044F4B259AE7C9B9DBEC982A14E881BFA4238A9D01A5F7372EC60D769ED6A6060181C80C0949C5CD</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SSED</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>game.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Samurai Shodown - Edge of Destiny</LongName>
+    <GameInfID>9AF0297743F582CE7A1D4E6C808C8A79</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>game.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>If any additional displays running from your primary graphics card, disable them. Not sure how to reconfigure controls.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SFIV</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Street Fighter IV</LongName>
+    <GameInfID>E47D7C83E526DBB1986173F197801B99</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Game.exe AKAs: launcher.exe</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SNSIII</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <GameFolder>C:\Users\Mike\Downloads\New folder\Shikigami\Shikigami no Shiro III\bin</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2018-11-03T01:57:31.6099324-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>Shikigami no Shiro III.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Shikigami no Shiro III</LongName>
+    <GameInfID>76ACF977447F75A1E79E9B7B11374B9E</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>Shikigami no Shiro III.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Some sets use DXWnd and sometimes this can float over the game. Use the DXWnd hack in settings to solve.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>6/27/2011 3:28:48 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>543BF41FFF4981C14F26FA272E9D3CA1CA090A8B8E3CE2841121A1E87991D5E17B08108A103ED7F8902708E116D74C873F4E0B648A7122814C009A296965FBE5</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SA</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Spica Adventure</LongName>
+    <GameInfID>9E8ECD50AA94C1E79AC84D19612273DE</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>If getting a DirectX 8.1 error, try: StartMenu&gt;Search for "Windows Features." Ensure "Legacy Components&gt;DirectPlay" is ticked. </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SSFIVAE</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Super Street Fighter IV Arcade Edition</LongName>
+    <GameInfID>B88051AF70802AA0BA941CE782D7B9C8</GameInfID>
+    <Collection>TTX2</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      There are two versions of this. One enables two player mode. Requires you to overwrite some files form the first version.
+      Game.exe AKAs: launcher.exe
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>THG5</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Taisen Hot Gimmick 5</LongName>
+    <GameInfID>40C2B2E4C01580F881A8DC90629581E5</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>TTGM3</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Tetris The Grand Master 3 - Terror Instinct</LongName>
+    <GameInfID>8D2FE2C0280D831979C26B41AE06C714</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>TW</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Users\Mike\Downloads\New folder\Trouble Witches\Trouble Witches\Bin</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.8651294-04:00</LastSetupDone>
+    <UserControlsFile>pad_config.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Trouble Witches AC</LongName>
+    <GameInfID>65F2D2B9CD285891B02B44BB203E8E13</GameInfID>
+    <Collection>TTX</Collection>
+    <ControlsFile>pad_config.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>6/27/2011 4:59:40 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>24C939190EA62A510E03830B86F38E4277C5C374C27D1E3937E4825D4CF95D6F9F4C9B394E3107835470B2EDE71CA10A4DF47A59A7B88E09C223297345FC720D</MonitorExeMD5>
+    <SetupType>typex_loader</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>typex_loader</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>DSII</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-typex\Deathsmiles II</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.8661108-04:00</LastSetupDone>
+    <UserControlsFile>ds2_config.exe</UserControlsFile>
+    <UserLaunchFile>ds2_loader.exe</UserLaunchFile>
+    <UserExeMonitorFile>cvgame.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Deathsmiles II</LongName>
+    <GameInfID>370FFEB26114CCC937E9E72114DCBCE1</GameInfID>
+    <Collection>CAVE</Collection>
+    <ControlsFile>ds2_config.exe</ControlsFile>
+    <LaunchFile>ds2_loader.exe</LaunchFile>
+    <MonitorExe>cvgame.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>7/29/2014 9:57:32 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>370FFEB26114CCC937E9E72114DCBCE1B3D2AC886391F4715ED5245F0684E7107BA9EE298925216799445E4F2BBEF32843B699C8789FFC384286C192C196905E</MonitorExeMD5>
+    <SetupType>NoGlobalInstall</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>NoGlobalInstall</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>CER</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\konami\CEHD\Contra</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:40.8661108-04:00</LastSetupDone>
+    <UserControlsFile>ControlsReadme</UserControlsFile>
+    <UserLaunchFile>Game Loader All RH.exe</UserLaunchFile>
+    <UserExeMonitorFile>AMContra.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Contra - Evolution Revolution</LongName>
+    <GameInfID>15EBBDB654F063DE8A97A59F608A3194</GameInfID>
+    <Collection>KNMI</Collection>
+    <ControlsFile>ControlsReadme</ControlsFile>
+    <LaunchFile>contra.bat</LaunchFile>
+    <MonitorExe>AMContra.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Controls:
+      F1		Test/Service
+
+      Player 1
+      W		Up
+      A		Left
+      S		Down
+      D 		Right
+      U		Select
+      J		Shot
+      K		Jump
+      Ent		Start
+
+
+      Player 2
+      Direction Keys	Up,down,left,right
+      Num3	Select
+      Num2	Jump
+      Num1	Shot
+      NumEnt	Start
+    </Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>3/16/2013 7:26:24 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>15EBBDB654F063DE8A97A59F608A31949C473A85A96189F3289D1F491199F48BC1ECE8166734CA8E66172740F20E0742D1CC1F516DBD3CEA6F584FB2692B2F79</MonitorExeMD5>
+    <SetupType>NoGlobalInstall</SetupType>
+    <UseForceQuit>true</UseForceQuit>
+    <UserSetupType>NoGlobalInstall</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>3DCM</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>3D Cosplay Mahjong</LongName>
+    <GameInfID>CC76142CF3A5AB8134DBBB918D38E208</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Boots OK. HD capable. Boots onto two displays, but can boot onto one by disabling the other screens. Keymaps unknown. JConfig + typeex_config appear to make no difference. Enable Force Quit in Game Options</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>AKS</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Users\Mike\Downloads\New folder\Akai Katana Shin\Akai Katana Shin</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:49.2905897-04:00</LastSetupDone>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Akai Katana Shin</LongName>
+    <GameInfID>2C01C38CA47200BA50A5010F652F80D8</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      JSConfig:
+      Direct3D9 Wrapper - Checked.
+      DirectSoundWrapper: Checked
+      High Resolution - Checked
+      DX Resolution: Depends on your display.
+    </Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>7/11/2012 9:20:32 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>3E41B6DFD4D1F5F9D225448547D340D184AEBF962B82795560C6CA00C02D8A1CA18718D1944AA50FB4FBF4FA631E601CBB6A69B8E2B98EA4279284A8B15BFFD1</MonitorExeMD5>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>AADM</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Aquapazza Aqua plus Dream Match</LongName>
+    <GameInfID>FFD0F9B8657812A2C9EB95C4ADF1D99E</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV>d3d9.dll,NeSys\iphlpapi.dll</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>AH2NX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Arcana Heart 2 - NesicaXLive</LongName>
+    <GameInfID>485A0149D85EA4549B9D8982D9815548</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>AH3NX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Arcana Heart 3 LOVE MAX!!!!</LongName>
+    <GameInfID>46DE28A80B8E0F73B89EFBF6DA16585E</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Ensure there is no d3d9.dll file in the game root folder.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV>d3d9.dll</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BFNX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Battle Fantasia - NesicaXLive</LongName>
+    <GameInfID>21DDA9BBE27A6EF9817F5221CC93164A</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Will boot and run via RFIDGod_inject, but controls won't work. There is an GameLoaderAllRH version that works.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BBCF</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>BlazBlue Central Fiction</LongName>
+    <GameInfID>91D144AC62E0AFD08820E65AB707EDD9</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>If you get an "I/O Error" just boot the game again.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>BBCP</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>BlazBlue ChronoPhantasma</LongName>
+    <GameInfID>793BFEAA67A518F1A3BBCD422B50B2BC</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>launch.bat assumes you have NeSysService running as a service. Also assumes you have your exit key mapped to 'Escape' You can change the contents of this file to set a different exit key or delays. Also, if you get I/O error, just relaunching sometimes works.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>CCNSC</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Chaos Code - New Sign of Catastrophe</LongName>
+    <GameInfID>7DCD9503852049B5A24D03A838FCF547</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Requires D: drive to run. Display does not stretch. Use 1280x720 if using JConfig and a 16:9 1920x1080 monitor</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>CC</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Crimzon Clover</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:49.3175577-04:00</LastSetupDone>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Crimzon Clover</LongName>
+    <GameInfID>0CAE020B4B55EE44B87FE6C19A9AB4FC</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Ensure game.exe and RFIDGod_inject.exe set to run as admin.Coin and Service may be reversed using JConfig. Also, disable DirectSound and Direct3D9 wrappers.</Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>11/2/2018 1:41:57 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>F2C8484C8D39015EB49432CB1E7004CDE9B1B4E3C67054ADC551138F820CDD770D0E6802C1D8A4C7B3D6B42E81CAFDFA0516FB9F74F55CC88482E364872EF5EC</MonitorExeMD5>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>DBNX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Daemon Bride - Additional Gain</LongName>
+    <GameInfID>31F33BD969A0D912690B4EFD1EC798BB</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>DNF</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Do Not Fall</LongName>
+    <GameInfID>97B00D62C0F8765BE96E5C13D6CED3FC</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>The game doesn't quit cleanly with the Quit key. Enable "Force Quit Key Enabled" in the game's settings. Choose your key in general settings (default of Esc)</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>true</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>DD</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Dragon Dance</LongName>
+    <GameInfID>8C1FCD48FD7786B537948E70EFB7D89D</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>EA</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Elevator Action</LongName>
+    <GameInfID>BA5B238507A507D7397727F2027E0D2B</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>EP</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>En-Eins Perfektewelt</LongName>
+    <GameInfID>FF070037FF373ABD82BBBA29704CBC24</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>EX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Exception</LongName>
+    <GameInfID>5C222C2926DF7BBE1BED8CB2E9CE2002</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>On AMD cards, edit target_config, line 5 to read shader=0</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV>glu32.dll,opengl32.dll</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>GI</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Goketsuji Ichizoku - Matsuri Senzo Kuyo</LongName>
+    <GameInfID>1A96A93A6383B7DBF6D84318C7FCF684</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>HMRNX</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Homura</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:49.3404619-04:00</LastSetupDone>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Homura - NesicaXLive</LongName>
+    <GameInfID>B58A03E554089BB81DF842CB673443D9</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV>NxLCountDownRenderer_HD_V.dds,NxLCountDownRenderer_HD.dds</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>2/24/2012 4:15:06 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>26895287F8C9565431ECF86584A9C7B6ACCF99CEC56EAF21A728F577ECE54797869F0BE1690E82A16BAB0986C9888C02FE53F9305A4CE2159A85388615C8E5FC</MonitorExeMD5>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>HSF2</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Hyper Street Fighter II - The Anniversary Edition</LongName>
+    <GameInfID>C25A5D71A0FCABC6278FCFC45320D4F4</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>IK</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Ikaruga</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:49.3613999-04:00</LastSetupDone>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Ikaruga</LongName>
+    <GameInfID>5C607931B6FCACFB51555128C3F4828D</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>1280x720 rez will stretch to a 16:9 display.</Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>5/1/2014 7:48:32 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>929D265A82BE0B6E6192766ACF324DE8849BA33D05BBFA721A4F524103871BBCEF27A0E27C18CEDCCAA0AB4A8A1F4C40203C9B06F16C5ABE4240B6097C718191</MonitorExeMD5>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>KOF98UMNX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>King of Fighters '98 Ultimate Match Final Edition</LongName>
+    <GameInfID>C7735E86EC86EB17A0960A39903F3084</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Disable DirectSound Wrapper via JConfig</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV>d3d9.dll</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>KOF02</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>King of Fighters 2002 Unlimited Match</LongName>
+    <GameInfID>6F21E7BB74B88A23BE81C35492525D23</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Disable DirectSound Wrapper via JConfig</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV>d3d9.dll</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>KOFXIIIC</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>King of Fighters XIII Climax</LongName>
+    <GameInfID>8166A0084B1217BB53169455EEC5DB4A</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Boots, but keys don't work with certain exes. Does work with GameLoaderAllRH exes.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>MB</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Magical Beat</LongName>
+    <GameInfID>D5F90B568B99FCA413009D87D2871C72</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>
+      Needs iDmacDrv32.dll dated 12/11/2016 to run.
+      Cannot remap keys if booted via RFIDGod_inject. Also, diable DirectSound and Direct3D9 wrappers. Keys:
+      Coin: 2
+      Start: 1
+      B1: A
+      B2: S
+      B3: D
+      Directions: Direction keys
+      Service: T
+    </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>NB</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Nitroplus Blasterz</LongName>
+    <GameInfID>73ADE8C2E60C743FFBA737BF5C8944D1</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Ensure Game.exe and RFIDGod_inject are both set to Run as Admin. Enure d3d9.dll not in game folder.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV>d3d9.dll</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>P4UMA</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Persona 4 - The Ultimate in Mayonaka Arena</LongName>
+    <GameInfID>B2BFC2E2DE6A91E44E0E2D3556CB50C0</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Ignore the error codes at startup. Just wait them out.. Game.exe and RFIDGod_inject.exe must be set to run as admin.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>P4UUSH</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Persona 4 - The Ultimax Ultra Suplex Hold</LongName>
+    <GameInfID>F82F349903B97D3A795B883D292FAB6C</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>launch.bat</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Ignore the error codes at startup. Just wait them out..Game.exe and RFIDGod_inject.exe must be set to run as admin.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>PF12</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Psychic Force 2012</LongName>
+    <GameInfID>43F520F59AA0159E78A086800756F244</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>The resolution can cause the game not to display properly. A working resolution on 16:9 is 1360x768.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>PB</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Puzzle Bobble</LongName>
+    <GameInfID>0564B247D83E0EE3B24178054ECB9D61</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Run game.exe and RFGod_Inject as administrator. Also, disable DirectSound and Direct3D9 wrappers in JConfig. You may get an I/O error at start-up. Just reboot.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>RIIINX</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Raiden III</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:49.3623974-04:00</LastSetupDone>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>Game Loader All RH.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Raiden III - NesicaXLive</LongName>
+    <GameInfID>366E2DC144428E5B837A09D783D8396A</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Prone to slowdown if run via RFIDGod_inject.exe. Better if ran from GameLoaderAllRH. </Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>1/10/2013 1:30:58 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>8FEDDD7E8478C6BD857944BBE0F6D5E6125008CADBB152C31370DF135EB763B54451608270301462B2A6CAFC725D204E400528AF28B4C5D4217478F777E794C6</MonitorExeMD5>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>RIVNX</ShortName>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Raiden IV</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:49.3633959-04:00</LastSetupDone>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>Game Loader All RH.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>true</GameInfPresent>
+    <LongName>Raiden IV - NesicaXLive</LongName>
+    <GameInfID>06B9A6CF3F2037710C8EEF45AC12A040</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Prone to slowdown if run via RFIDGod_inject.exe. Better if ran from GameLoaderAllRH. </Notes>
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>12/26/2012 11:59:05 PM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>25F23B0E07F76A9C1FABB27C0CC5A1B41DA811F16D33CC9D3EC4A6CD763E1F1C762AEACAEE371874A045007DFB4A575FE10A52AC1857C7E37C17DB28AD9BAEFA</MonitorExeMD5>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>RS</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Rastan Saga</LongName>
+    <GameInfID>0ABFCB6FA2067E7E8EDDB0DAE6B09C66</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SNRD</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Senko no Ronde Duo</LongName>
+    <GameInfID>FEA10C82D85E44C6487351BEAE785ADD</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Set game.exe compatibility to XP Service pack 2. Also, disable DirectSound and Direct3D9 wrappers</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SG</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>SkullGirls 2nd Encore</LongName>
+    <GameInfID>196BBA14CA630F4793C81F9A046BB654</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Run game.exe and RFGod_Inject as administrator.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SI</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Space Invaders</LongName>
+    <GameInfID>06B6BC40B188E1C7AA50E40C0C61A4C0</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Delete monitor_misc.bin before play or if you change controls.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV>monitor_misc.bin</SetupDeleteFilesCSV>
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SANX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Spica Adventure - NesicaXLive</LongName>
+    <GameInfID>56E791E600A9B4C13DCC3AD0B4FC4CA2</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Boots and plays, but cannot set controls when using RFIDGod_inject. Have to use preset controls. GameLoaderAllRH version works better. </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SSM</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Strania - The Stella Machina</LongName>
+    <GameInfID>1D35727767F406BE0604521E0856AA25</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Run game.exe in compatibility mode for Windows XP SP 2. Also, disable DirectSound and Direct3D9 wrappers in JConfig. </Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SFIII</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Street Fighter III 3rd Strike - Fight for the Future</LongName>
+    <GameInfID>96FCA0D08C271B571F33271471FDF8B4</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SFZ3</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Street Fighter Zero 3</LongName>
+    <GameInfID>8D7563E9B5843990E199F9E84C576C50</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>SAH2NX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Suggoi! Arcana Heart 2 - NesicaXLive</LongName>
+    <GameInfID>58D5FAE909FA0067B09FD2434B7DA5C3</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>TEM</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Tottemo E Mahjong</LongName>
+    <GameInfID>939E874795778AD243E4B335C68375E1</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>TWNX</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Trouble Witches AC - NesicaXLive</LongName>
+    <GameInfID>56DF1B022604954CBA6D6CB29C9809EB</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>If launched via RFIDGod_inject, controls don't work. Consider using a GameLoaderAllRH version.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>true</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>VS</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Vampire Savior - The Lord Of Vampire</GameFolder>
+    <TimesPlayed>0</TimesPlayed>
+    <LastSetupDone>2019-04-06T12:32:49.3833411-04:00</LastSetupDone>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Vampire Savior</LongName>
+    <GameInfID>5B8257AD23738FCC7860ED77D2CEC67B</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes />
+    <ConfirmedGood>true</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <GameExeDate>10/17/2014 4:35:34 AM</GameExeDate>
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <MonitorExeMD5>20DCD85218B7941251EFCACA0B9C20FAE6AE8F8084F99AE2E9D425100465FAE1E637E4CBBF028093C3AE554035E91CE0B0EB06EE41E9B5E7F70069C2FF0BF1E7</MonitorExeMD5>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>YAT</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile>JConfig.exe</UserControlsFile>
+    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Yatagarasu</LongName>
+    <GameInfID>B6D987C92E38B2054C9D3D97995F60EE</GameInfID>
+    <Collection>NXL</Collection>
+    <ControlsFile>JConfig.exe</ControlsFile>
+    <LaunchFile>RFIDGod_inject.exe</LaunchFile>
+    <MonitorExe>game.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Disable the DirectSound and Direct3D9 wrappers. Game boots, but can't start.</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>RFIDGod_inject</SetupType>
+    <UseForceQuit>false</UseForceQuit>
+    <UserSetupType>RFIDGod_inject</UserSetupType>
+  </UserGamesSetup>
+  <UserGamesSetup>
+    <ShortName>MSGSOZ</ShortName>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
+    <TimesPlayed>0</TimesPlayed>
+    <UserControlsFile />
+    <UserLaunchFile>gamefullscreen.exe</UserLaunchFile>
+    <UserExeMonitorFile>gamefullscreen.exe</UserExeMonitorFile>
+    <GameInfPresent>false</GameInfPresent>
+    <LongName>Mobile Suit Gundam - Spirits of Zeon</LongName>
+    <GameInfID>70AF03A21A42D9042065FC65B7EB56F9</GameInfID>
+    <Collection>TTX+</Collection>
+    <ControlsFile />
+    <LaunchFile>gamefullscreen.exe</LaunchFile>
+    <MonitorExe>gamefullscreen.exe</MonitorExe>
+    <HideConsole>true</HideConsole>
+    <Notes>Controls:
+f7 - coin
+f2 - test
+1 - start
+mouse - aim
+left click - shoot
+right click - rocket launcher</Notes>
+    <ConfirmedGood>false</ConfirmedGood>
+    <SetupDeleteFilesCSV />
+    <OldiDmac>false</OldiDmac>
+    <HDPatch>false</HDPatch>
+    <HDExeZipExists>false</HDExeZipExists>
+    <HDExeInstalled />
+    <DisplayRotation>0</DisplayRotation>
+    <PrimaryDisplay>0</PrimaryDisplay>
+    <Display1Shown>true</Display1Shown>
+    <Display2Shown>true</Display2Shown>
+    <Display3Shown>true</Display3Shown>
+    <Display4Shown>true</Display4Shown>
+    <SetupType>NoGlobalInstall</SetupType>
+    <UseForceQuit>true</UseForceQuit>
+    <UserSetupType>NoGlobalInstall</UserSetupType>
+  </UserGamesSetup>
+  <ROMFolders>
+    <Folder>C:\Emulation\roms\arcade\taito-typex</Folder>
+  </ROMFolders>
+  <ROMFolders>
+    <Folder>C:\Emulation\roms\arcade\taito-nesicaxlive</Folder>
+  </ROMFolders>
+  <ROMFolders>
+    <Folder>C:\Emulation\roms\arcade\cave</Folder>
+  </ROMFolders>
+  <ROMFolders>
+    <Folder>C:\Emulation\roms\arcade\konami</Folder>
+  </ROMFolders>
+  <OnConflict>
+    <File>typex_bindings.bin</File>
+    <Action>Do not Overwrite if Older</Action>
+  </OnConflict>
+  <OnConflict>
+    <File>monitor_input.bin</File>
+    <Action>Do not Overwrite if Older</Action>
+  </OnConflict>
+  <OnConflict>
+    <File>monitor_opt.bin</File>
+    <Action>Do not Overwrite if Older</Action>
+  </OnConflict>
+  <OnConflict>
+    <File>game.exe</File>
+    <Action>Ask if Older</Action>
+  </OnConflict>
+  <Displays>
+    <ScreenNumber>0</ScreenNumber>
+    <DisplayName>\\.\DISPLAY1</DisplayName>
+    <IsPrimary>true</IsPrimary>
+  </Displays>
+  <KnownExes>
+    <ShortName>AH2</ShortName>
+    <ExeDate>2008-04-03T20:25:26-04:00</ExeDate>
+    <AKAs>AH2.exe</AKAs>
+    <Notes>Reccommended</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>9378E6664BAB70B23A499005EE5234C52E4DA873F6CC8A509C299A51EBA3F7B4FD78B990B9DE16A83FFCFD58786458C9F3FB4C2C084BD560B4CD8AC904570EC8</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-2</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH2</ShortName>
+    <ExeDate>2009-02-09T18:16:26-05:00</ExeDate>
+    <Notes>Doesn't boot</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>D36D568B298C2BFAD1393E40C1E73631AF5A072251C9AF6038F578A7F3E23995B0ACB19948E44C4A5AF41AD8ECA5E4A8CCC87644B0D821889BDBD9F27CEBC0E5</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-4</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2010-04-09T08:29:14-04:00</ExeDate>
+    <AKAs>AH3.exe</AKAs>
+    <Notes>Reccommended. Execute via xb_loader.</Notes>
+    <KnownWorking>true</KnownWorking>
+    <Features />
+    <MD5>D2887C2702C4A82B67444FA11BCD279D577CF745D112B685126CBFE0E0891A82EC22CFE621FF85AB94DB3FA205430452D1BFBCA0BC5767B6967CF89F23758AE5</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-6</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2017-08-12T04:05:32.0324372-04:00</ExeDate>
+    <Notes>Not reccommended. Boots if executed directly. However, controls dont' seem to work. Also xb_loader does execute this, but has some wierd behaviours (no sound etc.)</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>23F3EEC6DEBA22685EE847DDD9A18D0A2CAF7CE431900254189D9BF890CCA582017B338B7C662264BE44DBF39D140E2D4CB12D6173BE0BDBA040F0AD37EE1A2D</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>ah3-fullscreen.exe</CommonName>
+    <ID>-7</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2011-01-18T15:37:44-05:00</ExeDate>
+    <Notes>Not reccomended. Boots OK, but doesn't use controls set in xb_config.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>78465EBF921FA628F4AF389A482B4E0866DBDC2FAD7345CE5B3CEDC73618E92847AB4A05D284F18B48E32E671DB2B5BE3791802433C9B37CA2D086F7FDEE2ECC</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>ah3-windowed.exe</CommonName>
+    <ID>-8</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BG4</ShortName>
+    <ExeDate>2014-08-07T00:27:18-04:00</ExeDate>
+    <Notes>
+      Works well, although can't set controls? Execute directly, with cmdline parameter if wanting fullscreen.
+
+      Also, you may need to edit compatibility settings to "XP, Serive Pack 2"
+      To execute in fullscreen, pass the cmd line parameter "_MTS_FULL_SCREEN_" I.e. execute:
+
+      game.exe _MTS_FULL_SCREEN_
+
+      You can use a batch file to launch continaing the above line of text.
+    </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>69C87049C0C4C0643BD3A3641937E014D99857CE4E92D15ED246243E79F96F083B170E88533FA9B563ED0E32AB0B0E696436EF7705BD24E5F978C1395F318994</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game4.exe</CommonName>
+    <ID>-9</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BG4</ShortName>
+    <ExeDate>2007-07-02T14:07:57.25-04:00</ExeDate>
+    <Notes>
+      Methods tired:
+      Compatibility to XP SP2
+      Run as admin
+      Boot with typex_loader
+    </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>29DD1B38D8E66B5846533DB21CD393366CC0E6929981601DFCE53A1607C2A452BBAB4C5C930EA6FAD7B3229BC2130A53F0D243F41B25B7C9B1D908BB8413B2CC</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-10</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BF</ShortName>
+    <ExeDate>1996-12-24T18:32:00-05:00</ExeDate>
+    <Notes>
+      In sets:
+      EmulasyonTurkiye
+    </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>44B49C6435F19FD8F4346E942C10CF6017ED75600E95B509276F91966175502FCC654D93FC08E3872FEEBA017290A05084441DAD767213FA886B16886A4350B2</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-11</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCS</ShortName>
+    <ExeDate>2013-08-03T15:53:18-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>966E885F44D65CDE99419160CC0E3BE1A6A46D9A76AAC690B738BA1810FB988FE9C07A6FC46EC507BDEE117BE53F6F2A4AFF2FF0100021FC0E4FE75DC2A526A6</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-12</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCT</ShortName>
+    <ExeDate>2013-08-03T15:53:14-04:00</ExeDate>
+    <Notes>Boots and maintains, but bad graphical glitches. Could be linked with AMD cards? Haven't tried on NVidia.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>60984191DF9D572ED573A01F1725C8E456FD3F747FF020550ECFBC6390D02E1BE393C3C9004108695DB3742EFF2374255169B76CE93042C02DF93E050FD8CA84</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-13</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>GWG</ShortName>
+    <ExeDate>2013-08-02T15:12:03-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>8BFF4FC0A097475633D9AAAE14B6FC9EA36B335107090CF030C7C0EA60DD81F3FDE4BB55CC73D5CB6FEA2007B59C72E98D12481FCEB8906592194A8ACF82CB2F</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-14</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>OTMD</ShortName>
+    <ExeDate>2011-01-18T15:37:00-05:00</ExeDate>
+    <Notes>
+      Default keys:
+      A:  Start
+      Z: A
+      X: B
+      C: C
+      Directions: Arrow Keys
+    </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>E0DE7D07C0D310DB3A12C80F8A7B502F33814A35453E5837CCF0C15C33E6800E76B2C6411A3F0FA000FE6E1D119F46343F71C7E5B643B7481E356225519CB80A</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>otomedius.exe</CommonName>
+    <ID>-15</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BF</ShortName>
+    <ExeDate>2013-08-03T07:53:07-04:00</ExeDate>
+    <Notes>
+      In sets:
+      RedRom
+    </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>A782C6C4665821787A4061BE4A7D36D41D419BB29ECBC586F8B5AA0A78CD7F76E842CD922C16AB3BA07E52698583505531C07B6BECA54125D1A34057E9FEE7FF</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-17</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2012-12-02T14:46:10.84555-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>5C042D214FBA4CBE6A2263C1AE2AA398EBC5B1EA74988F6EB0EE26DE00A203CC1B986399DFA5BDCCC63AEF55B1D81B96247F73A9A8522D31F05D23040F17D923</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>AH30.exe</CommonName>
+    <ID>-19</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2012-12-02T14:40:25.87715-05:00</ExeDate>
+    <Notes>Boots but keys don't seem to work and no sound. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>A1471429396B4279B864A5607C15DF781088A572877016CCFCBEEE67B3E7850FACBCBC6EAFB708417A0E4D6418041F005FBF389B7CC90552526825CFD87F09FB</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>AH30-PC3-fullscreen-nopress.exe</CommonName>
+    <ID>-20</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2012-12-03T08:38:04.3644-05:00</ExeDate>
+    <Notes>Boots but keys don't seem to work and no sound. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>D9A960A7E35F3779530837B92BA91B7A2BAAB33E7695F2AB18157867666667858C22DB9C837639FDA7E7A405F8D3D3FAAB1C97FCBA43CA231EF5A6227EFBA3EC</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>AH30-PC3-fullscreen-press.exe</CommonName>
+    <ID>-21</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2012-12-02T14:40:59.16755-05:00</ExeDate>
+    <Notes>Boots but keys don't seem to work and no sound. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>A7F6D780BC8E798CC622D7509271557FE8BEB31851D36D88CE2C3666AA076EDB4B5FCA093761F51BF782BBD8B2015DADC7FFD19934473F7BC5F85173524DBAFB</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>AH30-PC3-nopress.exe</CommonName>
+    <ID>-22</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2012-12-02T14:43:51.91455-05:00</ExeDate>
+    <Notes>Boots but keys don't seem to work and no sound. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>AD36D85013D84808BE699A16F600AB0E8D0A46BF097B6ABF3CA13C98D4EA4446EA8939C45635E64012984AA788AFA644F26C42680FF877C39EE3ECB9F319A8F9</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>AH30-PC3-press.exe</CommonName>
+    <ID>-23</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3</ShortName>
+    <ExeDate>2012-12-02T14:41:35.76515-05:00</ExeDate>
+    <Notes>Boots but keys don't seem to work and no sound. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>8E1BF29956A396F4C73DE297B830FEAEFB17BC25B86ECDBD40430DA562E4C32DDA55187BF551E0488A888E0AE5654CB1FC06B7AD22CE02DF4EA5572F3BD4EB39</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>AH30-PC4-2pfixed.exe</CommonName>
+    <ID>-24</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCT</ShortName>
+    <ExeDate>2011-07-01T02:15:58.1366723-04:00</ExeDate>
+    <Notes>Boots then crashes. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>DF9AB10766BD2C1F7BAA8B44BAABD9F524CE23F4B442EC719386A3E54F207986ED9A072F4F242D93E0C8E0687C5A9A6C41BAFC13C0CEB4C4D04AC3DE63C68CD3</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>launcher.exe</CommonName>
+    <ID>-25</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCT</ShortName>
+    <ExeDate>2009-10-23T01:12:00-04:00</ExeDate>
+    <KnownWorking>false</KnownWorking>
+    <MD5>BEDE683E9AA34D5607FCEE9940DBAA0550646357C573772482550AB3AB322B6EA20A90E09BEA47EBFFAFE18B9EB3DC6E717165E14D0240B8AF092EC049E8E85F</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-26</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCT</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <AKAs>game.exe</AKAs>
+    <Notes>Significant graphical glitches on AMD card.</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>AA117C64353FF1C9FE2AD620079264F46DFB4375194E99E1CF85D23E6CE3617E781D0DC04091967147DDFF62B1F530B8279830F11931655CFB0EFADF64109B05</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>launcher.exe</CommonName>
+    <ID>-28</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>CB</ShortName>
+    <ExeDate>2013-08-03T15:53:21-04:00</ExeDate>
+    <Notes>Needs d3d8.dll in game root directory to run at correct speed. </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>77113E6F80F49119482F949782E300D26E006A87EAC4ED7C031D4C34002F730C9BC5977AF6368F8F586343D2D6431E5B4336F87BF69169F186DDA3B341A35834</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-30</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>HMR</ShortName>
+    <ExeDate>2013-08-03T15:53:30-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>87333A6DBE3A9FE479CFE13C8D3EF34611B8EAA1F420ADF2B99180B78E433AF66BE7780B037C9AE0E1E5162BD09C8C135E9DE3060F538EC500145850BBCFFB0A</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-31</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOFMIA</ShortName>
+    <ExeDate>2013-08-03T15:53:44-04:00</ExeDate>
+    <KnownWorking>false</KnownWorking>
+    <MD5>C7FADD5EED2DB35BFDD702B9DFFE439DA2F946AC3483B46EB1F9436D4504281449F4992D9C4B40BE70539EA4E8C0913DB6E391CC4001A051784DF77EB2213BF3</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-33</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOF98UM</ShortName>
+    <ExeDate>2011-07-12T13:07:25-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>F898375BC3A2005142E3D0E782EC6A679F459DCC7D149EDE6369CAA64CE01E6FC1BEBD30DE68CD40CF2D20F1EE324266359B420957A1067D4573805C18501C70</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>KOF98UM_Launcher.exe</CommonName>
+    <ID>-35</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOFXII</ShortName>
+    <ExeDate>2013-08-03T15:53:48-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>2854F6725954D27BEB63FC2183116A0DF8AD254AF10A60FF07D2D0BD92D08951090086F59464B3B4539396922C4FEE1D103BA68C06106BD9D28A37B0E7563288</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-36</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOFXIII</ShortName>
+    <ExeDate>2013-08-03T15:53:54-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>30D8832D1B60615B8C774E42BA181A334A028584EA46338D6E25DF4292A5ECF3F3B691AD1ACAF60B1D7C8292A3E9B3B1FCF5455833EDB374CB31307AE43D2AB7</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-37</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>PI5</ShortName>
+    <ExeDate>2013-08-03T15:54:01-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>240EEA79F7FBA3FB7CFF1B38C1D30B23ACEE2963653B16BFB63EF849928A542DD8E7E4E7BA23E7546D0A051724C2AC750C1F833C3310BB4F13C1D7956CC0CDDF</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-38</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>RIII</ShortName>
+    <ExeDate>2014-01-31T19:09:33-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>CEDF0E6EAE565C313F0F8DB548ED60939695EAF94B3C1E9FFB8E3E118CC2319990B36A2B80420450BA7F4698DEF7B793D0D90FFF382813A3683C560483C3BB06</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-39</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>RIV</ShortName>
+    <ExeDate>2013-12-19T14:22:42-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>18686D93559D77E80D250005916CE193CFA5E974EA7D5EDB2C470696BC063930E198602524E81502B2EF9A654AE678E8E272366550CC796F2B3C6354314DAE80</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-40</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SSED</ShortName>
+    <ExeDate>2013-08-03T15:54:36-04:00</ExeDate>
+    <Notes>Boots, but imperfect graphics. No other displays must be running. Some graphical glitches.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>BB5920A3B5BE200C2DCDDFC5A827F227389417A5F675B3EE8AED3EDB86A515627F7F4A084F5CDD7604B791BF50868D65B157BBBBCBB074F2E21D8EB6D9251593</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-41</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SFIV</ShortName>
+    <ExeDate>2013-08-03T15:54:56-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>A0DD8D3E9D9055333CB29CF6F3F82FD837CD099E9D3A2AEE2860C9BE4416B460157330D8D3120B77DB1784F8BBE597B5CF426C671128344962B83339EDF671C4</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-42</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SNSIII</ShortName>
+    <ExeDate>2014-02-02T17:33:45-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>9AFA67CFA70E3BC6B2DEABDFE0132796A82E8DE8A105DE680B3E265BE2817D316BA2F452E9A8AD296C6531D902547264F7BA1DED8A281F71FD0EEC2479CFA0BA</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-43</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SA</ShortName>
+    <ExeDate>2013-08-03T15:54:49-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>C69D6042DF5D6C055279E062C49DF71767EDE6B7BAF7996E79B40DCB7E2B814560E7FB357A7F836936F3E9C2365E4350D391397CA189621EDF2303E3630A2BD0</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-44</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SSFIVAE</ShortName>
+    <ExeDate>2013-08-03T15:55:20-04:00</ExeDate>
+    <Notes>Spanish subtitles?</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>2AC5AF63B26B5322DCEC29EE7E43F33171A817E809AF4BEDD29FF39F1AD3AEBBBF8C1FADC65827D5B2D809D57797AD4BF6608831E99BF0EAE54D2AAC4F833B52</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-45</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>THG5</ShortName>
+    <ExeDate>2013-08-03T15:55:25-04:00</ExeDate>
+    <KnownWorking>false</KnownWorking>
+    <MD5>EE05E51DF7CB8B67FCE56B1C1672F3213CB3A4F35154004301F1E1F087CFAC4BC1547FF7F25F4A81D22E6A27B4292438AA474D721BEB5DF042DDBEF7755AA577</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-46</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>TTGM3</ShortName>
+    <ExeDate>2013-08-03T15:55:27-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>D8950235B6A11C38A00EF542D250F413C751DEDE984DBF1FEA364DA12DAB61F6F4A9253C8C141EDA7A5891587D7F99E22FA01102D010896E014F9D2B5CDE4908</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-47</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>TW</ShortName>
+    <ExeDate>2013-08-03T15:55:31-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>2B720E053C6DA3918E5FE3031B8926D558C61E2AAA4C9828B1662D5F41969DDA7F53C56C6C838903B2D8A93453DAB378234A698CED960908BF13BA87524441BF</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-48</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SAH2</ShortName>
+    <ExeDate>2009-02-10T06:16:26-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>D36D568B298C2BFAD1393E40C1E73631AF5A072251C9AF6038F578A7F3E23995B0ACB19948E44C4A5AF41AD8ECA5E4A8CCC87644B0D821889BDBD9F27CEBC0E5</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-49</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>DB</ShortName>
+    <ExeDate>2009-06-24T16:37:12-04:00</ExeDate>
+    <AKAs>DB1.exe</AKAs>
+    <KnownWorking>true</KnownWorking>
+    <MD5>ED5A85F5B7888F82C59587E3DD3ECEE265E7F27D0ACEEC62D072F8009DFE6BC52F23DAAC10A4DEDD6B45866665F91B40D44C89DC0199B48E74DFE7E5C1E60CD5</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-50</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>3DCM</ShortName>
+    <ExeDate>1600-12-31T19:00:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>CC76142CF3A5AB8134DBBB918D38E208052D6063FE0F389F42FF2C05AEBDC432E98EFA4E3487DC571AB250D778977DCCC0A608D0A3D21E034392A87BA1D3A01B</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-52</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AKS</ShortName>
+    <ExeDate>2012-07-10T23:20:32-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>3E41B6DFD4D1F5F9D225448547D340D184AEBF962B82795560C6CA00C02D8A1CA18718D1944AA50FB4FBF4FA631E601CBB6A69B8E2B98EA4279284A8B15BFFD1</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-53</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AADM</ShortName>
+    <ExeDate>2013-06-17T22:42:19-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>9AFE5313AAD60CA27F1FA88D94A9D15A8C2CC25AA31FF88B7A224873D2996B1BE29B90835C2A463BA7B0EEDA74402306DA76C0FA32EE280EB3BF6C356886CD03</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-54</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH2NX</ShortName>
+    <ExeDate>2011-12-06T18:18:53-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>628DA5248A4232B3AEBEC7E9FC907FD87DE5F50B5634726AAAD6EF1B53E5721F1EF99E5130B10B240EE7030B474B1EDD696F1E9DEEF7B5615511D9442DB6195E</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-55</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>AH3NX</ShortName>
+    <ExeDate>2014-12-09T17:18:41-05:00</ExeDate>
+    <Notes>Ensure there is no d3d9.dll file in the game root folder.</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>DC4014FAEB4F129B53E2880EB2CC34B3FA9143EDB4900979DE54E9632FC5E066D04C23A333E5DC6F615E3B691C2DF433AF5294E3E873FDA3014FF4D3410D7854</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-57</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BFNX</ShortName>
+    <ExeDate>2011-11-01T19:35:46-04:00</ExeDate>
+    <Notes>Some exes will boot but controls will not work. However, there are some GameLoaderAllRH exes that work.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>216AEB8233657B8937ABE4161A20BA6D33168EF8964176DFC63A578D028E325FBD94B79F8E437BE711ADD6C0C5A3C96E99C3509D133484DFFD814884A8BE8C4B</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-58</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCP</ShortName>
+    <ExeDate>2014-11-06T19:11:28-05:00</ExeDate>
+    <Notes>CryptServer.exe must be run before RFIDGod_inject with the correct key in the game folder. </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>7B5FE2DFE1FC258770D340BDDCABED32F3D1A776D196AA1EFC930C38C406204F41430315BC587B44A29CB66FA89840E2E07BB6D9BCE30C1325EB048EAB30CAC4</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-59</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>CC</ShortName>
+    <ExeDate>2013-10-15T21:51:40-04:00</ExeDate>
+    <Notes>Ensure set to run as admin. May swap P1 Coin and Service when using JConfig</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>521148E8AF0D0C5F35718408800CBCAB0870E4D391AEE56D122F0DEDECF79F76D0254793CF07AAA0FCE91ED8FFA7F72D92F39A03E4E62A17F54F946D59BAB53A</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-61</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>CCNSC</ShortName>
+    <ExeDate>2013-09-12T02:25:24-04:00</ExeDate>
+    <Notes>Requires D: drive to run (use Windows Map Network Drive)</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>74E8A3CC64260F920B2E409D98D0FCB25B925B9349D757304ACBCDE0C5CA10340F0FE27C136D0F33A918D14CF93273FFB42669B82402CB668A3CFF20BAD2F364</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-62</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>DBNX</ShortName>
+    <ExeDate>2011-12-06T19:02:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>12738722D6E11AB9C18F7F727AC4A88B07FB201387F754212C384300410059F920B08D0D2E0DCF90AF4C7D4FCEFACF3FA882650361BF3D047BE45158734D458D</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-63</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>DNF</ShortName>
+    <ExeDate>2013-08-08T21:45:19-04:00</ExeDate>
+    <Notes>game.exe doesn't quit cleanly with Esc</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>39407E6BBEAE221B5B67A1DD4D7CC8D446B8B20AFFEE44F4A4EAC45D191F0B6E0BBF70A46FD22D72268FE0CB6776EBB578C585E0C6FBE12EAEE9985CE7D7D456</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-64</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>DD</ShortName>
+    <ExeDate>2011-11-01T00:09:18-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>546F4D13E4C4C947DE2121434F4C35D185ACEBF26331E8E5258AFA83BF4B2D82C7518B3280E80739AAAEF064E23976923791FBE36A71D3653CC38FCE9A0BD7EF</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-65</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>EA</ShortName>
+    <ExeDate>2014-08-25T12:26:48-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>86E3181A61070DAD28A4FA44B2ADDDFEA3CCFAB947239C9658AB5AD92549787F538D1AC585330F2D3AFA19D08E3AC87AA28EC7505F5FA9B771B2F587BC9FF825</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-66</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>HMRNX</ShortName>
+    <ExeDate>2012-02-23T18:15:06-05:00</ExeDate>
+    <Notes>Needs d3d8.dll in same directory to run at normal speed. If this file is in directory, then NxLCountDownRenderer_HD_V.dds and NxLCountDownRenderer_HD.dds will break execution. Remove or rename.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>26895287F8C9565431ECF86584A9C7B6ACCF99CEC56EAF21A728F577ECE54797869F0BE1690E82A16BAB0986C9888C02FE53F9305A4CE2159A85388615C8E5FC</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-67</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>EX</ShortName>
+    <ExeDate>2011-12-04T16:35:48-05:00</ExeDate>
+    <Notes>On AMD cards, edit target_config, line 5 to read shader=0</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>5B35B46F3919852082EF9F527673FB3B350D6774D0C889520D6C9575EB983BC652B846D2B0EF4CF04AE84ABD810625E241B62C7E3B0658729AC0152CD3E917D6</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-68</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>GI</ShortName>
+    <ExeDate>2011-11-30T18:04:26-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>A05E95E1344E4DAD44D76435A41BA7FB4C90DEC1FD48BAF529EAB81ECA69717681C279FE1E15202C2D3BAA8D966D10892B32177E228A2F6E0D50B2B64211F6AF</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-69</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>HSF2</ShortName>
+    <ExeDate>2014-10-16T18:38:00-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>50713CFCE959751D88CB996BB9D9C42938CB76C1F370289E14C032B8BA10ED1AFA8133F115595380CCD4F9535581AA5F2F9FDA826B4D3C9BF23AB6DD5CBD58D2</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-70</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>IK</ShortName>
+    <ExeDate>2014-05-01T09:48:32-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>929D265A82BE0B6E6192766ACF324DE8849BA33D05BBFA721A4F524103871BBCEF27A0E27C18CEDCCAA0AB4A8A1F4C40203C9B06F16C5ABE4240B6097C718191</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-71</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOF98UMNX</ShortName>
+    <ExeDate>2011-11-24T20:40:26-05:00</ExeDate>
+    <Notes>DirectSound Wrapper must be disabled via JConfig. Also, will not run if d3d9.dll present in directory.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>F904E654CEFABB178DC1B70D5BDACC519E3CA540608975FE32BAB59019BB5EF5ED9FEBAD787971816A504D54EDC48C6EBB6088E2FA2B11853CA40CAFECD698AC</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-72</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOF02</ShortName>
+    <ExeDate>2011-11-23T21:03:52-05:00</ExeDate>
+    <Notes>DirectSound Wrapper must be disabled via JConfig. Also, will not run if d3d9.dll present in directory.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>2D9766E7B2F5D49EAE6FD1A886A4931ECACD757B9381F3D2854CC5627AD623478CD5747BDDC0DE7A8CAFD133E866D32B61C18BE92F45DC0CCACF3AA1C261BF55</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-73</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>MB</ShortName>
+    <ExeDate>2013-06-26T16:28:46-04:00</ExeDate>
+    <Notes>
+      Needs iDmacDrv32.dll dated 12/11/2016 to run.
+      Keys:
+      Coin: 2
+      Start: 1
+      B1: A
+      B2: S
+      B3: D
+      Directions: Direction keys
+      Service: T
+    </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>ED265CC88EEDE810259AC10F6D146DDF24BAAB4180521652E0BF94D7E57019659D269D2F5157F133B741BA63E9D66FA9B00A9DAE0B1FCC9F7C0ACDAC61414BF3</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-74</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>NB</ShortName>
+    <ExeDate>2016-07-22T08:32:28-04:00</ExeDate>
+    <Notes>
+      Ensure Game.exe and RFIDGod_inject ar eboth set to Run as Admin. Will not run if d3d9.dll is in same directory
+    </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>75F423B89DC8B013A1F259386A410F74ED09B043E6AD8B013A1FCF23E16DBD34F3B406032568CFF68ED77E3FF37826D979C9D66B92B05CF6DBD018809A388B9E</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-75</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>P4UMA</ShortName>
+    <ExeDate>2012-09-19T19:34:28-04:00</ExeDate>
+    <Notes>Game.exe and RFIDGod_inject.exe must be set to run as admin.</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>746657EBB7ED1911E9EFE5D141088917576EA365F96F588F117E4693D743C7AABD9EFBF567BEAFC5CFB37642BA3042441928CF2C04FA595F8C29241C293C3759</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-76</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>P4UUSH</ShortName>
+    <ExeDate>2015-01-17T19:27:38-05:00</ExeDate>
+    <Notes>Game.exe and RFIDGod_inject.exe must be set to run as admin.</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>5BF185837FE154401B814C4BD4D25F06A7A04C486A247B730B5C3FEFAD1EBC26A9BAA279814FFF5FC862E5E10445C7CDAFD3A0B4148110646ECB7D44F9BC751A</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-77</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOFXIIIC</ShortName>
+    <ExeDate>2012-02-08T23:14:20-05:00</ExeDate>
+    <Notes>
+      Boots, but keys don't work if via RFIDGod_inject. Does work with GameLoaderAllRH
+    </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>9F824EA0701E4A4AFB3F74FCF9EAE8823F0ADFF334DD8F06A45D636AC64BAD52DFCB2732DAEF6ACBE7EDF26034B4AA3916C9BD043D341783133A2335AD2F6942</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-78</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>PF12</ShortName>
+    <ExeDate>2012-10-11T12:37:21-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>6A4A05DD6FFDB81349E12AA973C71D5DC7E416402487E9948FD17B0420EB1A08FA5DC5DE7D34556ADFBC0FEAA525B3D381E81A0DFEFF6A3A73FDB0F1DDF1BD7F</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-79</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>RIIINX</ShortName>
+    <ExeDate>2013-01-09T15:30:58-05:00</ExeDate>
+    <Notes>
+      Runs via RFIDGod_inject.exe, but with slowdown. No slowdown with GameLoaderAllRH
+    </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>8FEDDD7E8478C6BD857944BBE0F6D5E6125008CADBB152C31370DF135EB763B54451608270301462B2A6CAFC725D204E400528AF28B4C5D4217478F777E794C6</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-81</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>RIVNX</ShortName>
+    <ExeDate>1600-12-31T19:00:00-05:00</ExeDate>
+    <Notes>Runs via RFIDGod_inject.exe, but with slowdown. No slowdown with GameLoaderAllRH</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>25F23B0E07F76A9C1FABB27C0CC5A1B41DA811F16D33CC9D3EC4A6CD763E1F1C762AEACAEE371874A045007DFB4A575FE10A52AC1857C7E37C17DB28AD9BAEFA</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-82</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>PB</ShortName>
+    <ExeDate>2012-02-07T20:49:34-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>8592AEEA6E0E359BC0AC2E23661434596AD21C212DEB2AAF9FDDA28CACA692ADEC572FAEFCD8F35957D8CC855E37DC802FA419F01C83470C3530B86D1C7BC3BA</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-84</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>RS</ShortName>
+    <ExeDate>2014-08-21T12:07:38-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>3EA4C74BE33ABDF556AA418E5A43D550B8B19C7C1A84C6C653EA81A8486EE39C9DB8255033BE22FA2B13C4A495C9EC7CC84B574FCF7924220F345B5DE2A48FDB</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-85</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>EP</ShortName>
+    <ExeDate>2011-11-01T06:25:50-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>20ECF5695566A5401FD36548817FFA5A8B60EABD1A3761D709D0A3B1C872C5E03ADCA2150595E08223AC75F47E3C77F86457AD76B3F2B92F9D5CD07BE5F23633</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-86</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SNRD</ShortName>
+    <ExeDate>2011-12-11T19:22:38-05:00</ExeDate>
+    <Notes>Has to be run in XP Service Pack 2 Compatibility. </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>D67EDA906F9D024761653D355C2AE2927C0CD61A2DE8CB0D710C59F957B25BB89A5A726AF3AA4DCA585C422C26A87FEC99E41B485A82E696370BD197E3947F18</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-88</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SI</ShortName>
+    <ExeDate>2012-02-08T19:10:41-05:00</ExeDate>
+    <Notes>Boots without monitor_input.bin being in directory, but then controls don't work. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>4004E5C64A5D391DC43E7A9F6B43B218A65E017119F47F58CD3C6665C07F4DDB169AD3B200236CBA912E1110B075F65A307BCA9019C58839B5B9D82AD7CA6DB4</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-89</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SANX</ShortName>
+    <ExeDate>2011-11-27T18:58:08-05:00</ExeDate>
+    <Notes>Some exes will boot, but controls won't work. There are working GameLoaderAllRH exes where controls work.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>8C77F3B2679A77816DE1C8866E55DD2F8267638F99EB6B7614B76BB46FFDD3B082555F360E96AF7723308B7EA19EA2F1147CF94D8FD366DAED4600CBA4F09C94</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-90</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SSM</ShortName>
+    <ExeDate>2011-12-06T21:00:46-05:00</ExeDate>
+    <Notes>Run in compatibility mode for Windows XP SP 2</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>078107F64EADE5FB2BA18AAD80BDBF60463091903537FDBD5E3D6EFDFC16C183C6259459918E5DF783BB8CB7CAEDE4BEFCE1590F61E933414CB2AC7479F659B2</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-91</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SFIII</ShortName>
+    <ExeDate>2014-10-16T17:46:44-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>6836CD4F1F48D19E06BFC373FA81BC7D76CA41161A68E9AFEB31EB19107DA83F403D8728E3B4EFBB0A3D2D7B805BF6650864FA74CCF43555C19B3216EAB22CFC</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-92</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SFZ3</ShortName>
+    <ExeDate>2014-10-16T18:33:22-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>7777B176CDD9CCF6433FDCF7656C09BD69F89F928A640689C1BE5D8AC1E56E77ADDF8775032E32B449A1ECAAFB95BFC10F4D2C1894F98134C6E42F6B761B3BD3</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-93</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SAH2NX</ShortName>
+    <ExeDate>2011-12-06T18:38:56-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>DD62A2755F0013AD90CD3BB9A02E639554754B92DBC77237B47FAA64A796A72379C5D0B050957F0B00594A980399C84DBF8A2C24DFA1FF314260A3AD0934E0F9</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-94</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>TEM</ShortName>
+    <ExeDate>2013-02-24T16:15:42-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>3F930564C0FE4258CFFB75C27A90600F67F1D81DAB60D4251239773652B3FFD10CD4DB86B02DB6ABBB77A271B863AA693A66B9058AC5A5030C2D85277DBF4775</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-95</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>TWNX</ShortName>
+    <ExeDate>2012-01-15T21:22:08-05:00</ExeDate>
+    <Notes>Lunches but no controls work if booting via RFIDGod_inject. </Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>BBA42FD990F3C9FA7C178E9CF5A3250F0DC68D737BD92D970E578E0B39CC64DAE6629287B035A5F3317B962096C87544F398F64B9C09634AD951713032ABFCD0</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-96</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>VS</ShortName>
+    <ExeDate>2014-10-16T18:35:34-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>20DCD85218B7941251EFCACA0B9C20FAE6AE8F8084F99AE2E9D425100465FAE1E637E4CBBF028093C3AE554035E91CE0B0EB06EE41E9B5E7F70069C2FF0BF1E7</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-97</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SG</ShortName>
+    <ExeDate>2015-10-21T00:37:31-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>69EEFCD73BEFAE71D3537DE4CD8ED1D5D69C3173EE463EED904A65CE549D7A345836644292A7D4DB628055A960EA66C93ACDCF0B1B0C9EB44C150A502E5DFEA2</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-98</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCF</ShortName>
+    <ExeDate>2016-04-11T07:59:02-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>91D144AC62E0AFD08820E65AB707EDD90E7A5C5D80E2C7F21829CB1E0F61BB760D0D2807CFE71DA18FD1CB140CCEFA5F0B95BE0EE8013C8CF7E0A57E0DD32E17</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-99</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>YAT</ShortName>
+    <ExeDate>2015-04-29T23:37:06-04:00</ExeDate>
+    <Notes>Boots but can't start game...</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>455433221A2312D3F13B258D790AE7F2B1E35C2F146B228098BE9F3A8A3E32B671820A99A7DB226CF678BBDAC044B5D004C53A7FC4CC94D6FF039776292F59E6</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-100</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>BBCS</ShortName>
+    <ExeDate>2010-01-24T09:55:48-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>FB5309601842A0B58D3AD701EC60E1D1EC3FCEDA0B3B5FF656B597D306D838035CCD6F80AA2C0AC45C01D7F8EE4803E4009CC58A22AD510A2224CC307588353A</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-105</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>CB</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <Notes>Needs d3d8.dll in game root directory to run at correct speed. </Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>C021B6CF564149DFC3E943ED75E84631D1BE148729BDD3AB7531FCB97B7B62EB67299B5CA70983BAD041595630C7CBFEAAD16EA787489DD2847BCC5B65731BCF</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-107</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>GWG</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>9BACB92B7026D510D6BBEC21EEA9C0E2191ADB786B8EAAF63EEBFF173573C690134F910F69A27DD13154797CCC5B34F065360AF3B883AC8AB7C4171EFF50B40A</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-109</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>HMR</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>0AFC802557AD89AF2356ECCF067D81F4DB2F679B8D71813FE168F81522EB6AE333F4AD0B2A7681452C2536E6886DE61462B277A2FC93E6DD6BF7A1E18A2F8BCF</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-110</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOFMIA</ShortName>
+    <ExeDate>2007-06-06T06:19:44-04:00</ExeDate>
+    <Notes>Shows boot screen then freezes on AMD card.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>262AD25B7D7D6F408A11D0EC41EE24AFDCC0350EB4551A72DFCB3F636674ACBC93437BE72770E20C570011EEFBAAFD6D4D364B66FFDC7BEF34F9BA214CDD01B0</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-111</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOF98UM</ShortName>
+    <ExeDate>1996-12-23T19:00:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>F25692A4E52254E20FD798A5EAC77F76057E33B3DAA74D3005144283D6E2B1C8245B26C2E95798F166FA01F21E0F44804A752E2F2971A3851C45875C139DFF4F</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-114</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOFXII</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>83ED7D26BCDA1D87C043A039DFE8B621A428410487A879807EB3E14F485BF4015D50D90F5AC8CC53CCBCE9B32E7E7381252BEAF709016CF74A7C3B2A9DE49AE9</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-115</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>PI5</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>63AD039C15C510A197B5FBA6809A2E4106765ADE439A1AA5BCCA32FD975BD6CD4C4CB051AA28A6A40913588288B2563A34C81ACE921257C6B0D2E54BBCF14BFE</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-117</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>RIII</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>EC093F9CE37620D9A07889C7A53834AFCA4F34F81A15FD726428E1638445163E2FF9C9A58F1BAEADEE847478E623561376AF77B9545734D668BC129B44466A7E</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-118</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>RIV</ShortName>
+    <ExeDate>2011-06-22T03:52:24-04:00</ExeDate>
+    <KnownWorking>false</KnownWorking>
+    <MD5>CAE22BBE3DFABE3A0977C69C271C96933D99DFD2740E9862F52D8875FD4DE632D94BDAAFD827BAA4C723C0B537FA8CF3DFCEC15544E36B6253B611C725D124B2</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-119</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SFIV</ShortName>
+    <ExeDate>1996-12-23T19:00:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>9FDA571D180D35391E6B9D3ED70FB3A3D506B2713E202BEEC009C4E56678C3C8D2603463824ABCC46BED388224C7A50E1E3AFDBA8B803E9425E522B05F20EAA5</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-124</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SNSIII</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>580FC4B71801EEEDB55FB3CEE88BF48FD753AAB96A6B02870C22F315BFB6A907B6CD3B4ABD1924E9B13FAD81AED071FE6AA54CC7AFD429B4A72F0209738BBDDA</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-125</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SA</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>71EB8D53707ADC568266E4929AB973A0F520793D38127315FDDBFFB5444297DECD39AD0794AEACAB0CB9F00687828A2F2BDA6E1239A9C24C66597DC97C1F1546</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-126</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SSFIVAE</ShortName>
+    <ExeDate>2011-08-09T19:00:00-04:00</ExeDate>
+    <AKAs>launcher.exe</AKAs>
+    <Notes />
+    <KnownWorking>true</KnownWorking>
+    <MD5>1794EA07CD2A9E6B94EA02472ED8748D42118D53AAADF34DE15409CEA70CAFEBFD741BA8302E4CEED9BE3896768A08C66C532E32D95A27329194C3E55AF8AA72</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-127</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>SSFIVAE</ShortName>
+    <ExeDate>2012-05-13T19:00:00-04:00</ExeDate>
+    <AKAs>launcher.exe</AKAs>
+    <Notes>V2012</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>406B88C80267EC67FF14864CDF50582409A45FBC415B3936D47AB53A9F7913E2649D50F8845762415EA0137BFA0FFE8134C7C96FC98D2358EB26AAF7FFA5AF33</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-128</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>THG5</ShortName>
+    <ExeDate>2005-12-07T11:34:34-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>B2004F6C1798AC3F72D60E7067931E96B9D4B3F5C24E12868E714C88AD70A11A7F157712BAFEFF281ADB4B5AEE7C9C193DE72C808D1B32EEE8600F7F5E1E9DD5</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-129</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>TTGM3</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>89EAFB2030EC36ECD9D14572A010C3746300E0D7ECEA379FEFC3C78CABA9DC76BAF46C4CB1339E710D952EFE5167A0E20FD5DE27B58E27F6B1BFFF44BF6CFCAA</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-130</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>TW</ShortName>
+    <ExeDate>1996-12-24T17:32:00-05:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>EB84B467E992EB61F6357360443CFC82FE104CEA45EE50259A32EAC7030593BCDEA2F8AE8045010E63E35AA1AA5BF0231BBF564933ABCF32FFB384E5EED233D3</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-132</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>DSII</ShortName>
+    <ExeDate>2014-07-28T23:57:32-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>370FFEB26114CCC937E9E72114DCBCE1B3D2AC886391F4715ED5245F0684E7107BA9EE298925216799445E4F2BBEF32843B699C8789FFC384286C192C196905E</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>cvgame.exe</CommonName>
+    <ID>-133</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>CER</ShortName>
+    <ExeDate>2013-03-17T01:26:24-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>15EBBDB654F063DE8A97A59F608A31949C473A85A96189F3289D1F491199F48BC1ECE8166734CA8E66172740F20E0742D1CC1F516DBD3CEA6F584FB2692B2F79</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>AMContra.exe</CommonName>
+    <ID>-134</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>KOFXIII</ShortName>
+    <ExeDate>2011-06-15T13:15:02-04:00</ExeDate>
+    <KnownWorking>true</KnownWorking>
+    <MD5>D366D76FD1E9BE25E9DB3D67E5533FC3616F33062F4CF3E65403134849F88E430E76F3884BF1AD017D073D65ADDF556D7AC134E7D7E6F2ABD8D579D23C4B69C1</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <CommonName>game.exe</CommonName>
+    <ID>-135</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>YAT</ShortName>
+    <KnownWorking>false</KnownWorking>
+    <KnownNotWorking>false</KnownNotWorking>
+    <ID>-136</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>MSGSOZ</ShortName>
+    <ExeDate>2018-02-28T19:00:00-05:00</ExeDate>
+    <Notes>Fullscreen Cracked Exe</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>2512F6CB5040990030059E856B52C921E72B4E09FDA096576C246FAF7173A7F8D83EA80D6E84F22EF10FA70967E6344850625C8622607F711E80A4B25856DE99</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <ID>-137</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>MSGSOZ</ShortName>
+    <ExeDate>2018-02-28T19:00:00-05:00</ExeDate>
+    <Notes>Windowed Cracked</Notes>
+    <KnownWorking>true</KnownWorking>
+    <MD5>8EB32422FC05F4D4004D7ADAA743BA4C35D3044C6F52069862E530C331F35F57B976F336FDBA4A0ADE366D528342B811595F484802A9F7260D450389A7FE39E3</MD5>
+    <KnownNotWorking>false</KnownNotWorking>
+    <ID>-138</ID>
+  </KnownExes>
+  <KnownExes>
+    <ShortName>MSGSOZ</ShortName>
+    <ExeDate>2007-09-20T19:00:00-04:00</ExeDate>
+    <Notes>Original exe. Doesn't work - need cracked version.</Notes>
+    <KnownWorking>false</KnownWorking>
+    <MD5>F5C67073F96426D16641485C55B5D93EF4FF6196313929F9035E519E458213A0AF41AA6D3DB2E5141A1BB273011F189124417EB06F8C983AAD7FC279F7293531</MD5>
+    <KnownNotWorking>true</KnownNotWorking>
+    <ID>-139</ID>
+  </KnownExes>
+  <SetupTypes>
+    <SetupType>xb_loader</SetupType>
+  </SetupTypes>
+  <SetupTypes>
+    <SetupType>typex_loader</SetupType>
+  </SetupTypes>
+  <SetupTypes>
+    <SetupType>RFIDGod_inject</SetupType>
+  </SetupTypes>
+  <SetupTypes>
+    <SetupType>Misc</SetupType>
+  </SetupTypes>
+  <SetupTypes>
+    <SetupType>GameLoaderAllRH</SetupType>
+  </SetupTypes>
+  <SetupTypes>
+    <SetupType>NoGlobalInstall</SetupType>
+  </SetupTypes>
+</UserDbs>
