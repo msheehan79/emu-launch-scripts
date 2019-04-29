@@ -1,10 +1,11 @@
 # Ignore these directories
 bios/
 roms/
-emulators/
 metadata/
 /xpadder/
 launch/WIP/
+!emulators/
+emulators/*
 
 # Ignore Pegasus frontend shortcut/exe and readme
 pegasus/pegasus.lnk
@@ -25,6 +26,15 @@ configs/psp/PSP/PPSSPP_STATE/
 configs/psp/PSP/SAVEDATA/
 configs/psp/PSP/SYSTEM/CACHE/
 
+# Dolphin config settings can't be moved, so track these also
+!emulators/dolphin/
+emulators/dolphin/*
+!emulators/dolphin/User
+emulators/dolphin/User/*
+!emulators/dolphin/User/Config/
+!emulators/dolphin/User/GameSettings/
+
 util/gamelists.laccdb
 util/gamelists.accdb
 util/TypeXtra/
+
