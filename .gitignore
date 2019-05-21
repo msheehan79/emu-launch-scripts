@@ -26,6 +26,13 @@ configs/psp/PSP/PPSSPP_STATE/
 configs/psp/PSP/SAVEDATA/
 configs/psp/PSP/SYSTEM/CACHE/
 
+# Ignore Dolphin Wii System Menu Installs
+configs/wii/shared1/*
+configs/wii/shared2/*
+configs/wii/sys/*
+configs/wii/title/*
+configs/wii/ticket/*
+
 # Dolphin config settings can't be moved, so track these also
 !emulators/dolphin/
 emulators/dolphin/*
