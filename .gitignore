@@ -26,20 +26,16 @@ configs/psp/PSP/PPSSPP_STATE/
 configs/psp/PSP/SAVEDATA/
 configs/psp/PSP/SYSTEM/CACHE/
 
-# Ignore Dolphin Wii System Menu Installs
-configs/wii/shared1/*
-configs/wii/shared2/*
-configs/wii/sys/*
-configs/wii/title/*
-configs/wii/ticket/*
-
-# Dolphin config settings can't be moved, so track these also
-!emulators/dolphin/
-emulators/dolphin/*
-!emulators/dolphin/User
-emulators/dolphin/User/*
-!emulators/dolphin/User/Config/
-!emulators/dolphin/User/GameSettings/
+# Ignore Dolphin Wii System Menu Installs and other temp/binary files
+configs/wii/Cache/*
+configs/wii/Logs/*
+configs/wii/Wii/sd.raw
+configs/wii/Wii/shared1/*
+configs/wii/Wii/shared2/*
+configs/wii/Wii/sys/*
+configs/wii/StateSaves/*
+configs/wii/Wii/title/*
+configs/wii/Wii/ticket/*
 
 util/gamelists.laccdb
 util/gamelists.accdb
