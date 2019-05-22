@@ -22,7 +22,7 @@ set xpadder_p2=%~5
 :: set xpadder_p2=Atari 5200 P2 Default
 
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\dolphin\dolphin.exe" -b -C Dolphin.General.NANDRootPath=..\configs\wii -e "%rom%"
+set emulator_launch="..\emulators\dolphin\dolphin.exe" -b -u ..\configs\wii -e "%rom%"
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (
