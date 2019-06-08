@@ -37,6 +37,10 @@ configs/wii/StateSaves/*
 configs/wii/Wii/title/*
 configs/wii/Wii/ticket/*
 
+# Ignore Model 2 Screenshot and Save dirs
+configs/arcade-model2/SHOTS/*
+configs/arcade-model2/STATES/*
+
 util/gamelists.laccdb
 util/gamelists.accdb
 util/TypeXtra/
