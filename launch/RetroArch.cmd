@@ -23,7 +23,7 @@ set xpadder_p2=%~5
 :: set xpadder_p2=Atari 5200 P2 Default
 
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\retroarch\retroarch.exe" -L "..\emulators\retroarch\cores\%core%.dll" "%rom%" -c "..\configs\%config%"
+set emulator_launch="..\emulators\retroarch\retroarch.exe" -L "..\emulators\retroarch-cores\%core%.dll" "%rom%" -c "..\configs\%config%"
 :: set emulator_launch="..\emulators\retroarch\retroarch.exe" -L "..\emulators\retroarch\cores\%core%.dll" "%rom%" -c "..\configs\%config%" -v --log-file "..\emulators\retroarch\retroarch-log.txt"
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
