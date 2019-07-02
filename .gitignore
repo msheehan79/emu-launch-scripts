@@ -6,6 +6,8 @@ metadata/
 launch/WIP/
 !emulators/
 emulators/*
+states/
+saves/
 
 # Ignore Pegasus frontend shortcut/exe and readme
 pegasus/pegasus.lnk
@@ -29,6 +31,7 @@ configs/psp/PSP/SYSTEM/CACHE/
 # Ignore Dolphin Wii System Menu Installs and other temp/binary files
 configs/wii/Cache/*
 configs/wii/Logs/*
+configs/wii/GC/SRAM.raw
 configs/wii/Wii/sd.raw
 configs/wii/Wii/shared1/*
 configs/wii/Wii/shared2/*
@@ -36,6 +39,7 @@ configs/wii/Wii/sys/*
 configs/wii/StateSaves/*
 configs/wii/Wii/title/*
 configs/wii/Wii/ticket/*
+configs/wii/shared2/sys/SYSCONF
 
 # Ignore Model 2 Screenshot and Save dirs
 configs/arcade-model2/SHOTS/*
@@ -45,7 +49,3 @@ util/gamelists.laccdb
 util/gamelists.accdb
 util/TypeXtra/
 
-states/
-saves/
-configs/wii/GC/SRAM.raw
-configs/wii/shared2/sys/SYSCONF
