@@ -47,3 +47,5 @@ util/TypeXtra/
 
 states/
 saves/
+configs/wii/GC/SRAM.raw
+configs/wii/shared2/sys/SYSCONF
