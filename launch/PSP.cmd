@@ -24,7 +24,7 @@ set emulator_launch="..\emulators\ppsspp\PPSSPPWindows64.exe" --pause-menu-exit 
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (
-    start "" %xpadder_launch% && start "" /WAIT %emulator_launch%
+    start "" %xpadder_launch% && timeout 1 && start "" /WAIT %emulator_launch%
 ) ELSE (
     start "" /WAIT %emulator_launch%
 )

@@ -23,4 +23,4 @@ set xpadder_launch="..\..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpa
 set emulator_launch="..\..\emulators\model2\emulator.exe" %rom%
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
-start "" %xpadder_launch% && start "" /WAIT %emulator_launch%
+start "" %xpadder_launch% && timeout 1 && start "" /WAIT %emulator_launch%
