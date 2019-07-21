@@ -1,5 +1,4 @@
 # Ignore these directories
-bios/
 roms/
 metadata/
 /xpadder/
@@ -7,6 +6,28 @@ launch/WIP/
 !emulators/
 emulators/*
 states/
+
+# Ignore most BIOS folders, but the MAME BIOS directory also holds config data
+!bios
+bios/*
+
+!bios/arcade-mame/
+bios/arcade-mame/*
+!bios/arcade-mame/mame/
+bios/arcade-mame/mame/*
+!bios/arcade-mame/mame/ini
+
+!bios/arcade-neogeo/
+bios/arcade-neogeo/*
+!bios/arcade-neogeo/mame/
+bios/arcade-neogeo/mame/*
+!bios/arcade-neogeo/mame/ini
+
+!bios/neogeo/
+bios/neogeo/*
+!bios/neogeo/mame/
+bios/neogeo/mame/*
+!bios/neogeo/mame/ini
 
 # Ignore most saves, but we do want the MAME save dir as it contains config
 !saves/
