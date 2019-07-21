@@ -11,13 +11,16 @@ states/
 # Ignore most saves, but we do want the MAME save dir as it contains config
 !saves/
 
-saves/arcade-mame/mame/*
+saves/arcade-mame/mame/nvram/*
+saves/arcade-mame/mame/diff/*
+saves/arcade-mame/mame/snaps/*
+saves/arcade-mame/mame/cfg/*
 !saves/arcade-mame/mame/cfg/default.cfg
 
-saves/arcade-neogeo/mame/*
+saves/arcade-neogeo/mame/cfg/*
 !saves/arcade-neogeo/mame/cfg/default.cfg
 
-saves/neogeo/mame/*
+saves/neogeo/mame/cfg/*
 !saves/neogeo/mame/cfg/default.cfg
 
 # Ignore Pegasus frontend shortcut/exe and readme
