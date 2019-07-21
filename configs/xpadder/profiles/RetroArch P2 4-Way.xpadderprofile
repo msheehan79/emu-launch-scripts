@@ -1,0 +1,27 @@
+;--- Xpadder Profile File ---
+DataType=Profile
+Version=2018.05.01
+
+[Profile Settings]
+
+[Set Settings]
+Set1DPadMode=FourWay
+Set1Stick1Mode=FourWay
+
+[Assignments]
+Set1Button7SetSelect=1
+Set1DPadUpSlots=NumPad 8
+Set1DPadRightSlots=NumPad 6
+Set1DPadDownSlots=NumPad 2
+Set1DPadLeftSlots=NumPad 4
+Set1Stick1UpSlots=NumPad 8
+Set1Stick1RightSlots=NumPad 6
+Set1Stick1DownSlots=NumPad 2
+Set1Stick1LeftSlots=NumPad 4
+Set2Button3Slots=F1
+Set2Button5Slots=F4
+Set2Button6Slots=F2
+Set2Button7SetSelect=0
+Set2Button8Slots=Escape
+Set2DPadRightSlots=F7
+Set2DPadLeftSlots=F6
