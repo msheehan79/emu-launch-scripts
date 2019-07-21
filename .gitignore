@@ -7,7 +7,18 @@ launch/WIP/
 !emulators/
 emulators/*
 states/
-saves/
+
+# Ignore most saves, but we do want the MAME save dir as it contains config
+!saves/
+
+saves/arcade-mame/mame/*
+!saves/arcade-mame/mame/cfg/default.cfg
+
+saves/arcade-neogeo/mame/*
+!saves/arcade-neogeo/mame/cfg/default.cfg
+
+saves/neogeo/mame/*
+!saves/neogeo/mame/cfg/default.cfg
 
 # Ignore Pegasus frontend shortcut/exe and readme
 pegasus/pegasus.lnk
