@@ -8,6 +8,15 @@ Version=2018.05.01
 
 [Assignments]
 Set1Button7SetSelect=1
+Set1Button10Slots=Left Mouse Button (1)
+Set1Stick2UpSlots=Mouse Move Up
+Set1Stick2UpMouseSpeed=32
+Set1Stick2RightSlots=Mouse Move Right
+Set1Stick2RightMouseSpeed=32
+Set1Stick2DownSlots=Mouse Move Down
+Set1Stick2DownMouseSpeed=32
+Set1Stick2LeftSlots=Mouse Move Left
+Set1Stick2LeftMouseSpeed=32
 Set2Button3Slots=F12
 Set2Button7SetSelect=0
 Set2Button8Slots=Alt,F4
