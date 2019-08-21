@@ -31,6 +31,7 @@ bios/neogeo/mame/*
 
 # Ignore most saves, but we do want the MAME save dir as it contains config
 !saves/
+saves/doom/
 
 saves/arcade-mame/*
 saves/arcade-mame/mame/nvram/*
