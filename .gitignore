@@ -98,3 +98,6 @@ util/gamelists.accdb
 util/TypeXtra/
 
 util/nircmd.exe
+configs/ports/blakestone/bstone_aog_full_high_scores
+configs/ports/blakestone/bstone_ps_high_scores
+configs/ports/blakestone/bstone_log.txt
