@@ -93,11 +93,21 @@ configs/wii/shared2/sys/SYSCONF
 configs/arcade-model2/SHOTS/*
 configs/arcade-model2/STATES/*
 
+# Ignore Blake Stone log and hi score files
+configs/ports/blakestone/bstone_aog_full_high_scores
+configs/ports/blakestone/bstone_ps_high_scores
+configs/ports/blakestone/bstone_log.txt
+
+# Ignore Duke 3D log and cache files
+configs/ports/duke3d/eduke32.log
+configs/ports/duke3d/grpfiles.cache
+configs/ports/duke3d/textures.cache
+configs/ports/duke3d/textures
+configs/ports/duke3d/autoload/duke3d_music-sc55.zip
+configs/ports/duke3d/autoload/duke3d_hrp.zip
+
 util/gamelists.laccdb
 util/gamelists.accdb
 util/TypeXtra/
 
 util/nircmd.exe
-configs/ports/blakestone/bstone_aog_full_high_scores
-configs/ports/blakestone/bstone_ps_high_scores
-configs/ports/blakestone/bstone_log.txt
