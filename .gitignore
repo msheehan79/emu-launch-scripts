@@ -111,3 +111,5 @@ util/gamelists.accdb
 util/TypeXtra/
 
 util/nircmd.exe
+configs/ports/openttd/hs.dat
+configs/ports/openttd/content_download/
