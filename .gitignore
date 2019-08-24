@@ -113,3 +113,5 @@ util/TypeXtra/
 util/nircmd.exe
 configs/ports/openttd/hs.dat
 configs/ports/openttd/content_download/
+configs/ports/duke3d/texturecache.index
+configs/ports/duke3d/texturecache
