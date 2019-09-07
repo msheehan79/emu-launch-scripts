@@ -20,7 +20,7 @@ set xpadder_p2=%~5
 :: set xpadder_p2=
 
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\pcsx2\pcsx2.exe" "%rom%"
+set emulator_launch="..\emulators\pcsx2\pcsx2.exe" "%rom%" --portable --cfgpath="..\configs\ps2" --fullscreen --nogui
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (
