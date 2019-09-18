@@ -1,1 +1,1 @@
-start "" "..\xpadder\Xpadder.exe" /C
+start "" /WAIT "..\xpadder\Xpadder.exe" /C
