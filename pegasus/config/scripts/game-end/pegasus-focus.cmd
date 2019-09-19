@@ -1,1 +1,2 @@
-start "" "..\util\pegasus-focus.exe"
+pushd "%~dp0"
+start "" "..\..\..\..\util\pegasus-focus.exe"
