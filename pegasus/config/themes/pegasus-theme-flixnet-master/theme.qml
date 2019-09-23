@@ -35,6 +35,11 @@ FocusScope {
     // layout
     readonly property int leftGuideline: vpx(100)
 
+    property var collectionIndex: collectionAxis.currentIndex
+    property var currentCollection: api.collections.get(collectionIndex)
+
+    property var gameIndex: collectionAxis.currentItem.axis.currentIndex
+    property var currentGame: currentCollection.games.get(gameIndex)
 
     Screenshot {
         anchors {
@@ -79,7 +84,7 @@ FocusScope {
         height: 2 * (labelHeight + cellHeight) + vpx(5)
         anchors.bottom: parent.bottom
 
-        model: api.collections.model
+        model: api.collections
         delegate: collectionAxisDelegate
 
         // FIXME: this was increased to 4 to avoid seeing the scrolling
@@ -108,7 +113,7 @@ FocusScope {
         Keys.onDownPressed: incrementCurrentIndex()
         Keys.onLeftPressed: currentItem.prev()
         Keys.onRightPressed: currentItem.next()
-        Keys.onReturnPressed: api.currentGame.launch();
+        Keys.onReturnPressed: currentItem.launchGame()
 
         onCurrentIndexChanged: api.collections.index = currentIndex
         Component.onCompleted: currentIndex = api.collections.index
@@ -131,6 +136,9 @@ FocusScope {
             function prev() {
                 gameAxis.decrementCurrentIndex();
                 games.index = gameAxis.currentIndex;
+            }
+            function launchGame() {
+                games.get(gameAxis.currentIndex).launch();
             }
 
             width: PathView.view.width
@@ -165,7 +173,7 @@ FocusScope {
                 height: cellHeight
                 anchors.bottom: parent.bottom
 
-                model: games.model
+                model: modelData.games
                 delegate: GameAxisCell {
                     game: modelData
                     width: cellWidth

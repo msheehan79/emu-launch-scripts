@@ -66,7 +66,32 @@ Item {
         asynchronous: true
         fillMode: Image.PreserveAspectCrop
 
-        source: game.assets.gridicon || game.assets.boxFront
+        source: assets.banner || (assets.screenshots && assets.screenshots[0]) || assets.boxFront || assets.steam
         sourceSize { width: 256; height: 256 }
+
+        Image {
+            anchors.fill: parent
+            anchors.margins: parent.width * 0.1
+            fillMode: Image.PreserveAspectFit
+            source: assets.logo
+            sourceSize { width: 256; height: 256 }
+            asynchronous: true
+        }
+
+        Text {
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+
+            font.pixelSize: vpx(18)
+            font.family: globalFonts.sans
+            font.bold: true
+
+            text: modelData.title
+            color: "white"
+            wrapMode: Text.Wrap
+
+            visible: !assets.logo
+        }        
     }
 }

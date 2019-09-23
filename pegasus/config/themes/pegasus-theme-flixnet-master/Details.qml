@@ -21,7 +21,7 @@ import "qrc:/qmlutils" as PegasusUtils
 
 
 Item {
-    property var game: api.currentGame
+    property var game: currentGame
 
     visible: game
 

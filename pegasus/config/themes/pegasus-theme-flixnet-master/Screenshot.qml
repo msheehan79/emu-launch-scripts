@@ -20,7 +20,7 @@ import QtGraphicalEffects 1.0
 
 
 Image {
-    property var game: api.currentGame
+    property var game: currentGame
 
     visible: game
 
@@ -29,7 +29,6 @@ Image {
 
     source: (game && game.assets.screenshots[0]) || ""
     sourceSize { width: 512; height: 512 }
-
 
     LinearGradient {
         width: parent.width
