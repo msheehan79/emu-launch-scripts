@@ -274,7 +274,7 @@ FocusScope {
                 snapMode: PathView.SnapOneItem
                 highlightRangeMode: PathView.StrictlyEnforceRange
 
-                pathItemCount: 2 + Math.ceil(width / vpx(250)) * 2
+                pathItemCount: 2 + Math.ceil(width / vpx(250))
                 path: Path {
                     startX: vpx(220) - vpx(250) * 2
                     startY: vpx(135) * 0.5
