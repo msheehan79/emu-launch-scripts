@@ -380,6 +380,11 @@ Item {
                 gameData.players + " player"
             }
 
+            // Genre
+            GameGridMetaBox {
+              metatext: (gameData.genreList[0] != undefined) ? gameData.genreList[0] : "Unknown"
+            }
+
             // Spacer
             Item {
               Layout.preferredWidth: vpx(5)
