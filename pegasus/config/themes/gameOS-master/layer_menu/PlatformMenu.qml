@@ -134,7 +134,7 @@ Item {
         height: vpx(75)
 
         fillMode: Image.PreserveAspectFit
-        source: "../assets/images/logos/" + collection.shortName + ".svg"
+        source: "../assets/images/logos/" + collection.shortName + ".png"
         asynchronous: true
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top

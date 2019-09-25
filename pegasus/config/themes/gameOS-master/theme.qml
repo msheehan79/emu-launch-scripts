@@ -161,6 +161,14 @@ FocusScope {
         visible: gamegrid.focus
       }
 
+      Image {
+        id: platformlogo
+        source: "assets/images/logos/" + currentCollection.shortName
+        fillMode: Image.PreserveAspectFit
+        height: vpx(65)
+        anchors { top: parent.top; topMargin: vpx(16); horizontalCenter: parent.horizontalCenter; }
+      }
+
       Text {
         id: collectiontitle
 
