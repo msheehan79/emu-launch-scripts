@@ -1,14 +1,76 @@
 import QtQuick 2.6
+import SortFilterProxyModel 0.2
 import QtGraphicalEffects 1.0
 
 FocusScope {
 
     // Mental note - the ListView and the Collection are DIFFERENT
     property var collectionIndex: collectionAxis.currentIndex
-    property var currentCollection: api.collections.get(collectionIndex)
+    //property var currentCollection: api.collections.get(collectionIndex)
+    property var currentCollection: allCollections[collectionIndex]
 
     property var gameIndex: collectionAxis.currentItem.axis.currentIndex
     property var currentGame: currentCollection.games.get(gameIndex)
+
+    property var sourceIndex: null
+    
+    property var test: testing()
+
+    function testing() {
+        for(let i = 0; i < api.collections.count; i++) {
+            console.log(api.collections.get(i));
+        }
+        console.log("Does this work?");
+        return "test";
+    }
+
+    function getModel() {
+        return api.collections.get(6).games;
+    }
+
+    // Create filter models for ALL collections then combine into an array for the model
+    // Repeater? Instantiator?
+
+    Repeater {
+        model: api.collections
+        Item {
+            id: testingRpt
+            SortFilterProxyModel {
+                sourceModel: modelData.games
+            }
+        }
+    }
+
+    SortFilterProxyModel {
+        id: filteredGames
+        sourceModel: api.allGames
+        filters: ValueFilter {
+            roleName: "favorite"
+            value: true
+        }
+    }
+
+    SortFilterProxyModel {
+        id: filteredGames1
+        sourceModel: getModel()
+    }
+
+    property var newCollection: {
+        return {
+            name: "My Example Favorites",
+            games: filteredGames
+        }
+    }
+
+    property var newCollection1: {
+        return {
+            name: "My Example Favorites 1",
+            games: filteredGames1
+        }
+    }
+
+    property var allCollections: [newCollection, ...api.collections.toVarArray()]
+    //property var allCollections: [newCollection, newCollection1]
 
     Image {
         id: screenshot
@@ -41,7 +103,7 @@ FocusScope {
 
         LinearGradient {
             width: parent.width
-            height: vpx(50)
+            height: vpx(90)
 
             anchors.bottom: parent.bottom
 
@@ -190,7 +252,7 @@ FocusScope {
         anchors.top: parent.verticalCenter
         anchors.bottom: parent.bottom
 
-        model: api.collections
+        model: allCollections
         delegate: collectionAxisDelegate
 
         snapMode: PathView.SnapOneItem
@@ -232,7 +294,33 @@ FocusScope {
             }
 
             function launchGame() {
-                modelData.games.get(gameAxis.currentIndex).launch();
+                //modelData.games.get(gameAxis.currentIndex).launch();
+                //api.allGames.get(sourceIndex).launch();
+
+                // Get the index of the game in the original source collection, then call that to launch it
+                if(collectionAxis.currentIndex == 0) {
+                    console.log('RECENT');
+                    console.log(collectionAxis.currentIndex);
+                    sourceIndex = modelData.games.mapToSource(gameAxis.currentIndex);
+                    modelData.games.sourceModel.get(sourceIndex).launch();
+                } else {
+                    console.log('SYSTEMS');
+                    sourceIndex = filteredGames.mapToSource(gameAxis.currentIndex);
+                    modelData.games.get(sourceIndex).launch();
+                }
+
+                // For recent items
+                //sourceIndex = modelData.games.mapToSource(gameAxis.currentIndex);
+                //modelData.games.sourceModel.get(sourceIndex).launch();
+
+                // For the rest
+                //sourceIndex = filteredGames.mapToSource(gameAxis.currentIndex);
+                //modelData.games.get(sourceIndex).launch();
+            }
+
+            SortFilterProxyModel {
+                id: filteredGames
+                sourceModel: modelData.games
             }
 
             width: PathView.view.width
@@ -268,7 +356,7 @@ FocusScope {
                 anchors.top: label.bottom
                 anchors.bottom: parent.bottom
 
-                model: modelData.games
+                model: filteredGames
                 delegate: GridImage {}
 
                 snapMode: PathView.SnapOneItem
