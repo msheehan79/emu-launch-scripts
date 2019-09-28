@@ -16,7 +16,7 @@
 
 
 import QtQuick 2.7
-
+import SortFilterProxyModel 0.2
 
 FocusScope {
     focus: true
@@ -36,10 +36,49 @@ FocusScope {
     readonly property int leftGuideline: vpx(100)
 
     property var collectionIndex: collectionAxis.currentIndex
-    property var currentCollection: api.collections.get(collectionIndex)
+    property var currentCollection: allCollections[collectionIndex]
 
     property var gameIndex: collectionAxis.currentItem.axis.currentIndex
     property var currentGame: currentCollection.games.get(gameIndex)
+
+    property var sourceIndex: null
+    property var temp: 0
+
+    // Favorites custom collection
+    SortFilterProxyModel {
+        id: favoriteGames
+        sourceModel: api.allGames
+        filters: ValueFilter {
+            roleName: "favorite"
+            value: true
+        }
+    }
+
+    property var favCollection: {
+        return {
+            name: "Favorites",
+            games: favoriteGames
+        }
+    }
+
+    // Recently Played custom collection
+    SortFilterProxyModel {
+        id: recentGames
+        sourceModel: api.allGames
+        sorters: RoleSorter {
+            roleName: "lastPlayed"
+            sortOrder: Qt.DescendingOrder
+        }
+    }
+
+    property var recentCollection: {
+        return {
+            name: "Recently Played",
+            games: recentGames
+        }
+    }
+
+    property var allCollections: [favCollection, recentCollection, ...api.collections.toVarArray()]
 
     Screenshot {
         anchors {
@@ -84,7 +123,7 @@ FocusScope {
         height: 2 * (labelHeight + cellHeight) + vpx(5)
         anchors.bottom: parent.bottom
 
-        model: api.collections
+        model: allCollections
         delegate: collectionAxisDelegate
 
         // FIXME: this was increased to 4 to avoid seeing the scrolling
@@ -115,8 +154,8 @@ FocusScope {
         Keys.onRightPressed: currentItem.next()
         Keys.onReturnPressed: currentItem.launchGame()
 
-        onCurrentIndexChanged: api.collections.index = currentIndex
-        Component.onCompleted: currentIndex = api.collections.index
+        onCurrentIndexChanged: api.memory.set('collectionIndex', currentIndex)
+        Component.onCompleted: currentIndex = api.memory.get('collectionIndex') || 0
     }
 
     Component {
@@ -126,19 +165,29 @@ FocusScope {
             property alias axis: gameAxis
 
             Component.onCompleted: {
-                if (games.index >= 0)
-                    gameAxis.currentIndex = games.index;
+                if (modelData.games.index >= 0)
+                    gameAxis.currentIndex = modelData.games.index;
             }
             function next() {
                 gameAxis.incrementCurrentIndex();
-                games.index = gameAxis.currentIndex;
+                modelData.games.index = gameAxis.currentIndex;
             }
             function prev() {
                 gameAxis.decrementCurrentIndex();
-                games.index = gameAxis.currentIndex;
+                modelData.games.index = gameAxis.currentIndex;
             }
             function launchGame() {
-                games.get(gameAxis.currentIndex).launch();
+                api.memory.set('gameIndex', gameAxis.currentIndex);
+
+                // Get the index of the game in the original source collection, then call that to launch it
+                // collections 0 and 1 are the Favorites and Recently played "virtual" collections, so their launch command is a little different
+                if(collectionAxis.currentIndex == (0 || 1)) {
+                    sourceIndex = modelData.games.mapToSource(gameAxis.currentIndex);
+                    modelData.games.sourceModel.get(sourceIndex).launch();
+                } else {
+                    sourceIndex = filteredGames.mapToSource(gameAxis.currentIndex);
+                    modelData.games.get(sourceIndex).launch();
+                }
             }
 
             width: PathView.view.width
@@ -147,6 +196,11 @@ FocusScope {
             visible: PathView.onPath
             opacity: PathView.isCurrentItem ? 1.0 : 0.6
             Behavior on opacity { NumberAnimation { duration: 150 } }
+
+            SortFilterProxyModel {
+                id: filteredGames
+                sourceModel: modelData.games
+            }
 
             Text {
                 text: modelData.name || modelData.shortName
@@ -173,7 +227,7 @@ FocusScope {
                 height: cellHeight
                 anchors.bottom: parent.bottom
 
-                model: modelData.games
+                model: filteredGames
                 delegate: GameAxisCell {
                     game: modelData
                     width: cellWidth
@@ -197,6 +251,8 @@ FocusScope {
 
                 preferredHighlightBegin: (2 * cellPaddedWidth - cellSpacing / 2) / fullPathWidth
                 preferredHighlightEnd: preferredHighlightBegin
+
+                Component.onCompleted: currentIndex = api.memory.get('gameIndex') || 0
             }
         }
     }
