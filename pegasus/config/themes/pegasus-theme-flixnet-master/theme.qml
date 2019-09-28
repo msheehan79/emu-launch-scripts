@@ -42,7 +42,6 @@ FocusScope {
     property var currentGame: currentCollection.games.get(gameIndex)
 
     property var sourceIndex: null
-    property var temp: 0
 
     // Favorites custom collection
     SortFilterProxyModel {
@@ -70,11 +69,20 @@ FocusScope {
             sortOrder: Qt.DescendingOrder
         }
     }
+    
+    // Apply a second proxy to only show the most recent 20 games - not sure if this can be consolidated into 1 proxy?
+    SortFilterProxyModel {
+        id: filteredRecentGames
+        sourceModel: recentGames
+        filters: IndexFilter {
+            maximumIndex: 20
+        }
+    }
 
     property var recentCollection: {
         return {
             name: "Recently Played",
-            games: recentGames
+            games: filteredRecentGames
         }
     }
 
@@ -170,21 +178,28 @@ FocusScope {
             }
             function next() {
                 gameAxis.incrementCurrentIndex();
-                modelData.games.index = gameAxis.currentIndex;
             }
             function prev() {
                 gameAxis.decrementCurrentIndex();
-                modelData.games.index = gameAxis.currentIndex;
             }
             function launchGame() {
                 api.memory.set('gameIndex', gameAxis.currentIndex);
 
                 // Get the index of the game in the original source collection, then call that to launch it
                 // collections 0 and 1 are the Favorites and Recently played "virtual" collections, so their launch command is a little different
-                if(collectionAxis.currentIndex == (0 || 1)) {
+                // Favorites
+                if(collectionAxis.currentIndex == 0) {
+                    //console.log('FAVORITES');
                     sourceIndex = modelData.games.mapToSource(gameAxis.currentIndex);
                     modelData.games.sourceModel.get(sourceIndex).launch();
+                // Recently Played
+                } else if(collectionAxis.currentIndex == 1) {
+                    //console.log('RECENT');
+                    var proxyIndex = modelData.games.mapToSource(gameAxis.currentIndex);
+                    sourceIndex = modelData.games.sourceModel.mapToSource(proxyIndex);
+                    modelData.games.sourceModel.sourceModel.get(sourceIndex).launch();
                 } else {
+                    //console.log('SYSTEM');
                     sourceIndex = filteredGames.mapToSource(gameAxis.currentIndex);
                     modelData.games.get(sourceIndex).launch();
                 }
