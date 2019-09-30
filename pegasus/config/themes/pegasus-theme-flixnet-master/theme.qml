@@ -43,6 +43,8 @@ FocusScope {
 
     property var sourceIndex: null
 
+    readonly property int maxRecentGames: 20
+
     // Favorites custom collection
     SortFilterProxyModel {
         id: favoriteGames
@@ -69,13 +71,13 @@ FocusScope {
             sortOrder: Qt.DescendingOrder
         }
     }
-    
+
     // Apply a second proxy to only show the most recent 20 games - not sure if this can be consolidated into 1 proxy?
     SortFilterProxyModel {
         id: filteredRecentGames
         sourceModel: recentGames
         filters: IndexFilter {
-            maximumIndex: 20
+            maximumIndex: maxRecentGames
         }
     }
 
