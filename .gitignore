@@ -79,6 +79,7 @@ configs/psp/PSP/SYSTEM/CACHE/
 
 # Ignore Dolphin Wii System Menu Installs and other temp/binary files
 configs/wii/Cache/*
+configs/wii/Config/Qt.ini
 configs/wii/Config/btdinf.bak
 configs/wii/Logs/*
 configs/wii/StateSaves/*
@@ -101,7 +102,6 @@ configs/wii/sys/*
 configs/wii/rootca.pem
 configs/wii/clientca.pem
 configs/wii/clientcakey.pem
-
 
 # Ignore Model 2 Screenshot and Save dirs
 configs/arcade-model2/SHOTS/*
