@@ -3,8 +3,7 @@ roms/
 metadata/
 /xpadder/
 launch/WIP/
-!emulators/
-emulators/*
+emulators/
 states/
 
 # Ignore most BIOS folders, but the MAME BIOS directory also holds config data
