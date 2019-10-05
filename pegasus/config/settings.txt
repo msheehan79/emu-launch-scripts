@@ -1,7 +1,7 @@
 general.theme: themes/pegasus-theme-grid-master/
 general.locale: en
 general.input-mouse-support: true
-general.fullscreen: false
+general.fullscreen: true
 providers.steam.enabled: true
 providers.gog.enabled: false
 providers.es2.enabled: true
