@@ -79,6 +79,7 @@ configs/psp/PSP/SYSTEM/CACHE/
 
 # Ignore Dolphin Wii System Menu Installs and other temp/binary files
 configs/wii/Cache/*
+configs/wii/Config/btdinf.bak
 configs/wii/Logs/*
 configs/wii/StateSaves/*
 configs/wii/GC/SRAM.raw
