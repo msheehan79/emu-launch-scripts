@@ -1,23 +1,29 @@
 import QtQuick 2.8
 import QtMultimedia 5.9
+import QtGraphicalEffects 1.12
 
 FocusScope {
   id: root
 
-  // Options
-  property int numColumns: 4
+  // SETTINGS
+  property int numColumns : api.memory.get('settingGridNumColumns') || 4
 
   property alias gridWidth: grid.width
-  property int gridItemSpacing: (numColumns == 4) ? vpx(7) : vpx(5) // it will double this
+  property int gridItemSpacing: (numColumns == 4) ? vpx(10) : vpx(15) // it will double this
+  property int gridItemHeight: (numColumns == 4) ? vpx(180) : vpx(230)
   property var collectionData
   property var gameData
+  property bool mainScreenDetails
   property int currentGameIdx
   property string jumpToPattern: ''
+  property real cornerradius: vpx(4)
+  property real borderWidth: vpx(5)
+  property real itemBottomMargin: vpx(40)
 
   signal launchRequested
   signal menuRequested
   signal detailsRequested
-  //signal filtersRequested
+  signal filtersRequested
   signal collectionNext
   signal collectionPrev
   signal gameChanged(int currentIdx)
@@ -39,13 +45,10 @@ FocusScope {
       if (api.keys.isFilters(event)) {
           event.accepted = true;
           toggleFilters()
-
           //filtersRequested();
           return;
       }
   }
-
-
 
   //property bool isFavorite: (gameData && gameData.favorite) || false
   function toggleFav() {
@@ -67,14 +70,87 @@ FocusScope {
       api.filters.current.enabled = true
     }
 
-    //api.filters.index = 0
-
   }
 
   onCurrentGameIdxChanged: {
     grid.currentIndex = currentGameIdx
   }
 
+  // Highlight
+  // NOTE: Used to show the video player
+  Component {
+    id: highlight
+    Rectangle {
+      id: highlightBorder
+      width: GridView.view.cellWidth + (borderWidth*2)
+      height: grid.currentItem.height - vpx(30)
+
+      x: grid.currentItem.x - borderWidth
+      y: grid.currentItem.y - borderWidth
+      Behavior on x { SmoothedAnimation { duration: 100 } }
+      Behavior on y { SmoothedAnimation { duration: 100 } }
+      color: themeColour
+      radius: cornerradius + vpx(3)
+
+      //scale: grid.currentItem.scale
+      Behavior on scale { NumberAnimation { duration: 100} }
+
+      // Highlight animation (ColorOverlay causes graphical glitches on W10)
+      Rectangle {
+        anchors.fill: parent
+        color: "#fff"
+        radius: cornerradius + vpx(3)
+        SequentialAnimation on opacity {
+          id: colorAnim
+          running: true
+          loops: Animation.Infinite
+          NumberAnimation { to: 1; duration: 200; }
+          NumberAnimation { to: 0; duration: 500; }
+          PauseAnimation { duration: 200 }
+        }
+      }
+
+
+      // DropShadow
+      layer.enabled: true
+      layer.effect: DropShadow {
+          horizontalOffset: 0
+          verticalOffset: 0
+          radius: 10.0
+          samples: 17
+          color: "#80000000"
+          transparentBorder: true
+      }
+
+      Video {
+        id: videoThumb
+        source: gameData.assets.videos.length ? gameData.assets.videos[0] : ""
+        anchors.fill: parent
+        anchors.margins: borderWidth
+        fillMode: VideoOutput.PreserveAspectCrop
+        muted: true
+        loops: MediaPlayer.Infinite
+        autoPlay: true
+
+        layer.enabled: true
+        layer.effect: OpacityMask {
+            maskSource: Item {
+                width: videoThumb.width
+                height: videoThumb.height
+                Rectangle {
+                    anchors.centerIn: parent
+                    width: videoThumb.width
+                    height: videoThumb.height
+                    radius: cornerradius
+                }
+            }
+        }//OpacityMask
+
+      }//Video
+
+    }
+
+  }
 
 
   GridView {
@@ -90,20 +166,21 @@ FocusScope {
     anchors.horizontalCenter: parent.horizontalCenter
 
     cellWidth: grid.width/numColumns
-    cellHeight: (numColumns == 4) ? vpx(157) : vpx(210)
-
-    //highlightFollowsCurrentItem: false
-    preferredHighlightBegin: vpx(0); preferredHighlightEnd: vpx(314)
-    highlightRangeMode: GridView.StrictlyEnforceRange
-    displayMarginBeginning: 300
-    //snapMode: GridView.SnapOneItem
+    cellHeight: gridItemHeight
+    header: headerSpace
+    preferredHighlightBegin: vpx(0)
+    preferredHighlightEnd: mainScreenDetails ? gridItemHeight * 2 : gridItemHeight * 3
+    highlightRangeMode: GridView.ApplyRange
+    //displayMarginBeginning: vpx(300)
+    highlight: highlight
+    snapMode: GridView.SnapOneItem
+    highlightFollowsCurrentItem: false
 
     model: collectionData ? collectionData.games : []
     onCurrentIndexChanged: {
       //if (api.currentCollection) api.currentCollection.games.index = currentIndex;
       navSound.play()
       gameChanged(currentIndex)
-
     }
 
     Component.onCompleted: {
@@ -170,6 +247,8 @@ FocusScope {
       height: GridView.view.cellHeight
       selected: GridView.isCurrentItem
       //collection: api.currentCollection
+      videoBorderWidth: borderWidth
+      titleBottomMargin: itemBottomMargin
 
       game: modelData
       collection: collectionData
@@ -179,7 +258,13 @@ FocusScope {
       onClicked: GridView.view.currentIndex = index
 
     }
-
+    Component {
+      id: headerSpace
+      Item {
+        width: vpx(1)
+        height: vpx(5)
+      }
+    }
     // Removal animation
     remove: Transition {
       NumberAnimation { property: "opacity"; to: 0; duration: 100 }

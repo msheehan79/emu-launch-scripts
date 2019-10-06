@@ -43,7 +43,7 @@ Item {
       }
       if (api.keys.isFilters(event)) {
           event.accepted = true;
-          filtersRequested();
+          toggleSettings();
           return;
       }
       if (api.keys.isNextPage(event)) {
@@ -61,6 +61,22 @@ Item {
   function closeMenu() {
     menuCloseRequested();
     showSystemMenu = true;
+  }
+
+  function toggleSettings() {
+    if (!settings.visible) {
+      // Open settings menu
+      gameList.visible = false;
+      settings.visible = true;
+      settings.focus = true;
+      menubar.focus = false;
+    } else {
+      // Close settings menu
+      gameList.visible = true;
+      settings.visible = false;
+      settings.focus = false;
+      menubar.focus = true;
+    }
   }
 
   property var backgroundcontainer
@@ -134,7 +150,7 @@ Item {
         height: vpx(75)
 
         fillMode: Image.PreserveAspectFit
-        source: "../assets/images/logos/" + collection.shortName
+        source: "../assets/images/logos/" + platformShortname + ".svg"
         asynchronous: true
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
@@ -147,7 +163,7 @@ Item {
         id: highlight
         Rectangle {
           width: gameList.cellWidth; height: gameList.cellHeight
-          color: "#FF9E12"
+          color: themeColour
           x: gameList.currentItem.x
           y: gameList.currentItem.y
           Behavior on y { NumberAnimation {
@@ -183,6 +199,10 @@ Item {
         highlight: highlight
         highlightFollowsCurrentItem: true
         focus: true
+
+        Component.onCompleted: {
+          positionViewAtIndex(currentIndex, ListView.Contain);
+        }
       }
 
       // Menu item
@@ -201,6 +221,8 @@ Item {
                 "Super NES"
               else if (modelData.name == "Nintendo Entertainment System")
                 "NES"
+              else if (modelData.name == "Nintendo Game Boy Advance")
+                "Nintendo GBA"
               else
                 modelData.name
             }
@@ -215,25 +237,15 @@ Item {
                 easing.period: 1.5
               }
             }
-            font.pixelSize: vpx(25)
-            font.family: globalFonts.sans
+            font.pixelSize: vpx(22)
+            font.family: bodyFont.name
             //font.capitalization: Font.AllUppercase
-            font.bold: selected
+            //font.bold: true//selected
             //width: ListView.view.width
             height: vpx(40)
             verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
 
-            // DropShadow
-            /*layer.enabled: selected
-            layer.effect: DropShadow {
-                horizontalOffset: 0
-                verticalOffset: 2
-                radius: 0
-                samples: 17
-                color: "#32000000"
-                transparentBorder: true
-            }*/
           }
 
           MouseArea {
@@ -249,6 +261,22 @@ Item {
           }
         }
     }
+
+    // Settings screen
+    Settings {
+      id: settings
+      visible: false
+      focus: false
+      property bool active : false
+      anchors {
+        left: parent.left; right: parent.right
+        top: parent.top; bottom: parent.bottom
+      }
+      width: parent.width
+      height: parent.height
+      onCloseRequested: toggleSettings()
+    }
+
     LinearGradient {
           width: vpx(2)
           height: parent.height
