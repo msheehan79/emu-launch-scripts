@@ -3,12 +3,59 @@
 import QtQuick 2.8
 import QtGraphicalEffects 1.0
 import QtMultimedia 5.9
+import SortFilterProxyModel 0.2
 import "qrc:/qmlutils" as PegasusUtils
 import "layer_grid"
 import "layer_menu"
 import "layer_details"
 
 FocusScope {
+
+  SortFilterProxyModel {
+    id: lastPlayedFilter
+    sourceModel: api.allGames
+    sorters: RoleSorter {
+      roleName: "lastPlayed"
+      sortOrder: Qt.DescendingOrder
+    }
+  }
+
+  SortFilterProxyModel {
+    id: lastPlayedGames
+    sourceModel: lastPlayedFilter
+    filters: IndexFilter {
+      maximumIndex: 49
+    }
+  }
+
+  SortFilterProxyModel {
+    id: favoriteGames
+    sourceModel: api.allGames
+    filters: ValueFilter {
+      roleName: "favorite"
+      value: true
+    }
+  }
+
+  property var favoritesCollection: {
+    return {
+      name: "Favorites",
+      shortName: "favorites",
+      games: favoriteGames,
+    }
+  }
+
+  property var lastPlayedCollection: {
+    return {
+      name: "Last Played",
+      shortName: "lastplayed",
+      games: lastPlayedGames,
+    }
+  }
+  //form a collection which contains our favorites, last played, and all real collections.
+  property var dynamicCollections: [favoritesCollection, lastPlayedCollection, ...api.collections.toVarArray()]
+  
+  
   // Loading the fonts here makes them usable in the rest of the theme
   // and can be referred to using their name and weight.
   FontLoader { id: titleFont; source: "fonts/AkzidenzGrotesk-BoldCond.otf" }
@@ -24,7 +71,7 @@ FocusScope {
   }
 
   property int collectionIndex: 0
-  property var currentCollection: api.collections.get(collectionIndex)
+  property var currentCollection: (collectionIndex >= 2) ? api.collections.get((collectionIndex - 2)) : (collectionIndex == 0) ? favoritesCollection : lastPlayedCollection
 
   function nextCollection () {
     jumpToCollection(collectionIndex + 1);
@@ -36,8 +83,9 @@ FocusScope {
 
   function jumpToCollection(idx) {
     api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex); // save game index of current collection
-    collectionIndex = modulo(idx, api.collections.count); // new collection index
+    collectionIndex = modulo(idx, (api.collections.count + 2)); // new collection index
     currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0; // restore game index for newly selected collection
+    api.memory.set('collectionIndex', collectionIndex); //save the new collection index.
   }
 
   // End collection switching //
@@ -47,7 +95,17 @@ FocusScope {
   // Game switching //
 
   property int currentGameIndex: 0
-  readonly property var currentGame: currentCollection.games.get(currentGameIndex)
+  readonly property var currentGame: (collectionIndex >= 2) ? currentCollection.games.get(currentGameIndex) : api.allGames.get(findCurrentGameFromProxy(currentGameIndex, collectionIndex))
+
+  function findCurrentGameFromProxy (idx, collidx) {
+    if (collidx == 0) {
+      return favoriteGames.mapToSource(idx);
+    }
+    if (collidx == 1) {
+      return lastPlayedFilter.mapToSource((lastPlayedGames.mapToSource(idx)));
+    }
+    return;
+  }
 
   function changeGameIndex (idx) {
     currentGameIndex = idx

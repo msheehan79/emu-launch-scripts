@@ -162,7 +162,7 @@ Item {
       // Menu
       ListView {
         id: gameList
-        property var collectionList: api.collections
+        property var collectionList: dynamicCollections
         width: parent.width
 
         preferredHighlightBegin: vpx(160); preferredHighlightEnd: vpx(160)
