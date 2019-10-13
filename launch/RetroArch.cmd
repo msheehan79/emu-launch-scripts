@@ -24,6 +24,9 @@ set emulator_launch="..\emulators\retroarch\retroarch.exe" -L "..\emulators\retr
 ::set emulator_launch="..\emulators\retroarch\retroarch_debug.exe" -L "..\emulators\retroarch-cores\%core%.dll" "%rom%" -c "..\configs\%config%" -v --log-file "..\emulators\retroarch\retroarch-log.txt"
 ::set emulator_launch="..\emulators\retroarch\retroarch.exe" -L "..\emulators\retroarch-cores\%core%.dll" "%rom%" -c "..\configs\%config%"
 
+:: Make sure the emulator remains in focus during startup
+start "" ..\util\emulator-focus RetroArch
+
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (
     start "" %xpadder_launch% && timeout 2 && start "" /WAIT %emulator_launch%

@@ -16,6 +16,9 @@ set xpadder_p2=%~5
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
 set emulator_launch="..\emulators\dolphin\dolphin.exe" -b -u ..\configs\wii -e "%rom%"
 
+:: Make sure the emulator remains in focus during startup
+start "" ..\util\emulator-focus Dolphin
+
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (
     start "" %xpadder_launch% && timeout 1 && start "" /WAIT %emulator_launch%

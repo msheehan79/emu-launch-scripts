@@ -23,6 +23,9 @@ pushd "..\configs\ports\duke3d\"
 set xpadder_launch="..\..\..\xpadder\Xpadder.exe" "..\..\xpadder\profiles\%xpadder_p1%" "..\..\xpadder\profiles\%xpadder_p2%"
 set emulator_launch="..\..\..\emulators\eduke32\eduke32.exe" -cfg %config% -j %rompath% -gamegrp %rom%
 
+:: Make sure the emulator remains in focus during startup
+start "" ..\util\emulator-focus EDuke32
+
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (
     start "" %xpadder_launch% && timeout 1 && start "" /WAIT %emulator_launch%

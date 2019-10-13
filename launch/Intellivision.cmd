@@ -18,6 +18,9 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 ::set emulator_launch="..\emulators\jzintv\bin\jzintv.exe" -p "..\bios\intellivision" -q -z3 -v1 -f1 %config% "%rom%"
 set emulator_launch="..\emulators\jzintv\bin\jzintv.exe" -p "..\bios\intellivision" -q -z1024x768,32 -v1 -f1 %config% "%rom%"
 
+:: Make sure the emulator remains in focus during startup
+start "" ..\util\emulator-focus jzintv
+
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (
     start "" %xpadder_launch% && timeout 1 && start "" /WAIT %emulator_launch%
