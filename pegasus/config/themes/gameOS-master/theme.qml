@@ -3,13 +3,18 @@
 import QtQuick 2.8
 import QtGraphicalEffects 1.0
 import QtMultimedia 5.9
+import SortFilterProxyModel 0.2
 import "qrc:/qmlutils" as PegasusUtils
 import "utils.js" as Utils
 import "layer_grid"
 import "layer_menu"
 import "layer_details"
+import "layer_help"
 
 FocusScope {
+  property int collectionIndex: 0
+  property var allGamesInCollection: api.collections.get(collectionIndex)
+
   //SETTINGS
   property bool mainShowDetails: api.memory.get('settingsMainShowDetails') | false
 
@@ -27,15 +32,62 @@ FocusScope {
   property string themeYellow: "#E9D758"
   property string themeColour: themeOrange
 
+  // States
+  property bool stateHome: gamegrid.focus
+  property bool stateDetails: gamedetails.active
+  property bool stateMenu: platformmenu.focus
+  property bool showFavs: false
+  property bool showLastPlayed: false
+
+  ////////////////////////
+  // Custom Collections //
+
+  // Favourites
+  SortFilterProxyModel {
+    id: favGames
+    sourceModel: api.collections.get(collectionIndex).games
+    filters: ValueFilter {
+      roleName: "favorite"
+      value: true
+    }
+  }
+
+  property var favCollection: {
+    return {
+      name: "Favourites",
+      shortName: "favourites",
+      games: favGames
+    }
+  }
+
+  SortFilterProxyModel {
+    id: lastPlayedGames
+    sourceModel: api.collections.get(collectionIndex).games
+    sorters: RoleSorter {
+      roleName: "lastPlayed"
+      sortOrder: Qt.DescendingOrder
+    }
+  }
+
+  property var lastPlayedCollection: {
+    return {
+      name: "Last Played",
+      shortName: "lastplayed",
+      games: lastPlayedGames
+    }
+  }
+
+  property var customCollection: [favCollection]
+  // End custom collections //
+  ////////////////////////////
+
   //////////////////////////
   // Collection switching //
 
   function modulo(a,n) {
     return (a % n + n) % n;
   }
-
-  property int collectionIndex: 0
-  property var currentCollection: api.collections.get(collectionIndex)
+  property var currentCollection: showFavs ? favCollection : showLastPlayed ? lastPlayedCollection : allGamesInCollection
   property string platformShortname: Utils.processPlatformName(currentCollection.shortName)
 
   function nextCollection () {
@@ -81,7 +133,7 @@ FocusScope {
 
   function launchGame() {
     api.memory.set('collectionIndex', collectionIndex);
-    api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex);
+    api.memory.set('gameCollIndewx' + collectionIndex, currentGameIndex);
     currentGame.launch();
   }
 
@@ -130,6 +182,19 @@ FocusScope {
       backgroundimage.toggleVideo();
       backgroundimage.dimopacity = 0
       gamedetails.intro()
+    }
+  }
+
+  function toggleFilters() {
+    if (showFavs) {
+      showFavs = false;
+      showLastPlayed = true;
+    } else if (showLastPlayed) {
+      showFavs = false;
+      showLastPlayed = false;
+    } else {
+      showFavs = true;
+      showLastPlayed = false;
     }
   }
 
@@ -279,6 +344,7 @@ FocusScope {
           onMenuRequested: toggleMenu()
           onDetailsRequested: toggleDetails()
           onGameChanged: changeGameIndex(currentIdx)
+          onToggleFilter: toggleFilters()
         }
       }
 
@@ -341,6 +407,15 @@ FocusScope {
         onSwipeRight: toggleMenu()
         //onSwipeLeft: closeRequested()
         onClicked: toggleMenu()
+    }
+  }
+
+  ControllerHelp {
+    id: controllerHelp
+    width: parent.width
+    height: vpx(75)
+    anchors {
+      bottom: parent.bottom
     }
   }
 
