@@ -1,5 +1,5 @@
 mame_alternate_renderer = "enabled"
-mame_altres = "1920x1080"
+mame_altres = "1440x1080"
 mame_auto_save = "disabled"
 mame_boot_from_cli = "enabled"
 mame_boot_to_bios = "disabled"
