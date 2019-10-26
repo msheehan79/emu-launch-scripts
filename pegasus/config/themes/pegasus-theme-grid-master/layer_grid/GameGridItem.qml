@@ -24,8 +24,8 @@ Item {
     property bool selected: false
     property var game
 
-    property alias imageWidth: gridImage.paintedWidth
-    property alias imageHeight: gridImage.paintedHeight
+    property alias imageWidth: boxFront.paintedWidth
+    property alias imageHeight: boxFront.paintedHeight
     property real imageHeightRatio: 0.5
 
 
@@ -42,21 +42,19 @@ Item {
     Behavior on scale { PropertyAnimation { duration: 150 } }
 
     Image {
-        id: gridImage
+        id: boxFront
         anchors { fill: parent; margins: vpx(5) }
 
         asynchronous: true
-        visible: if(platform.name.includes("Custom - ")) {
-                     game.assets.steam
-                 } else {
-                     game.assets.boxFront
-                 }
+        visible: source != ""
 
-        source: if(platform.name.includes("Custom - ")) {
-                    game.assets.steam || ""
-                } else {
-                    game.assets.boxFront || ""
-                }
+        source: game.assets.boxFront
+            || game.assets.poster
+            || game.assets.banner
+            || game.assets.steam
+            || game.assets.tile
+            || game.assets.cartridge
+            || ""
         sourceSize { width: 256; height: 256 }
         fillMode: Image.PreserveAspectFit
 
@@ -69,7 +67,7 @@ Item {
     Image {
         anchors.centerIn: parent
 
-        visible: gridImage.status === Image.Loading
+        visible: boxFront.status === Image.Loading
         source: "../assets/loading-spinner.png"
 
         RotationAnimator on rotation {
@@ -84,11 +82,7 @@ Item {
         width: parent.width - vpx(64)
         anchors.centerIn: parent
 
-        visible: if(platform.name.includes("Custom - ")) {
-                     !game.assets.steam
-                 } else {
-                     !game.assets.boxFront
-                 }
+        visible: !boxFront.visible
 
         text: game.title
         wrapMode: Text.Wrap
