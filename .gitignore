@@ -1,5 +1,6 @@
 # Ignore these directories
 roms/
+artwork/
 metadata/
 /xpadder/
 launch/WIP/
