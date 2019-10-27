@@ -36,6 +36,7 @@ FocusScope {
   property bool stateHome: gamegrid.focus
   property bool stateDetails: gamedetails.active
   property bool stateMenu: platformmenu.focus
+  property bool stateVideoPreview
   property bool showFavs: false
   property bool showLastPlayed: false
 
@@ -101,7 +102,8 @@ FocusScope {
   function jumpToCollection(idx) {
     api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex); // save game index of current collection
     collectionIndex = modulo(idx, api.collections.count); // new collection index
-    currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0; // restore game index for newly selected collection
+    //currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0; // restore game index for newly selected collection
+    currentGameIndex = 0; // Jump to the top of the list each time collection is changed
   }
 
   // End collection switching //
@@ -133,7 +135,7 @@ FocusScope {
 
   function launchGame() {
     api.memory.set('collectionIndex', collectionIndex);
-    api.memory.set('gameCollIndewx' + collectionIndex, currentGameIndex);
+    api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex);
     currentGame.launch();
   }
 
@@ -186,26 +188,38 @@ FocusScope {
   }
 
   function toggleFilters() {
+    /* Commenting out until I can fix the launch game bug
     if (showFavs) {
+      // Last Played
       showFavs = false;
       showLastPlayed = true;
+      changeGameIndex(0);
     } else if (showLastPlayed) {
+      // No filter
       showFavs = false;
       showLastPlayed = false;
+      currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0;
     } else {
+      // Favourites
       showFavs = true;
       showLastPlayed = false;
+      changeGameIndex(0);
     }
+    console.log("Current game index: " + currentGameIndex);*/
   }
 
   function toggleVideoAudio()
   {
     if (backgroundimage.muteVideo) {
       backgroundimage.muteVideo = false;
-      backgroundimage.bggradient.opacity = 0;
+      backgroundimage.gradientOpacity = 0;
+      stateVideoPreview = true;
+      console.log("Audio on");
     } else {
       backgroundimage.muteVideo = true;
-      backgroundimage.bggradient.opacity = 1;
+      backgroundimage.gradientOpacity = 1;
+      stateVideoPreview = false;
+      console.log("Audio off");
     }
   }
 
@@ -322,9 +336,6 @@ FocusScope {
         GameGrid {
           id: gamegrid
 
-          collectionData: currentCollection
-          gameData: currentGame
-          currentGameIdx: currentGameIndex
           mainScreenDetails: mainShowDetails
 
           focus: true
@@ -353,7 +364,6 @@ FocusScope {
         id: gamedetails
 
         property bool active : false
-        gameData: currentGame
 
         anchors {
           left: parent.left; right: parent.right
@@ -412,6 +422,7 @@ FocusScope {
 
   ControllerHelp {
     id: controllerHelp
+    opacity: stateVideoPreview ? 0 : 1
     width: parent.width
     height: vpx(75)
     anchors {
@@ -425,7 +436,7 @@ FocusScope {
   ///////////////////
   SoundEffect {
       id: navSound
-      source: "assets/audio/tap-mellow.wav"
+      source: "assets/audio/tick-tap.wav"
       volume: 1.0
   }
 

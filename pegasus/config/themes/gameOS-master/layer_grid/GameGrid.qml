@@ -11,10 +11,10 @@ FocusScope {
   property alias gridWidth: grid.width
   property int gridItemSpacing: (numColumns == 4) ? vpx(10) : vpx(15) // it will double this
   property int gridItemHeight: (numColumns == 4) ? vpx(180) : vpx(230)
-  property var collectionData
-  property var gameData
+  property var collectionData: currentCollection
+  property var gameData: currentGame
   property bool mainScreenDetails
-  property int currentGameIdx
+  property int currentGameIdx: currentGameIndex
   property string jumpToPattern: ''
   property real cornerradius: vpx(4)
   property real borderWidth: vpx(5)
@@ -187,16 +187,37 @@ FocusScope {
     highlight: highlight
     snapMode: GridView.SnapOneRow
     highlightFollowsCurrentItem: false
+    cacheBuffer: 9000
 
     model: collectionData ? collectionData.games : []
     onCurrentIndexChanged: {
       //if (api.currentCollection) api.currentCollection.games.index = currentIndex;
       navSound.play()
-      gameChanged(currentIndex)
+      changeGameTimer.restart();
+      return;
+    }
+
+    Timer {
+      id: changeGameTimer
+      running: true
+      repeat: false
+      interval: 200
+      onTriggered: { gameChanged(grid.currentIndex); }
     }
 
     Component.onCompleted: {
-      positionViewAtIndex(currentIndex, GridView.Contain);
+      startupTimer.restart();
+    }
+
+    Timer {
+      id: startupTimer
+      running: true
+      repeat: false
+      interval: 200
+      onTriggered: {
+
+        grid.positionViewAtIndex(grid.currentIndex, GridView.Contain);
+      }
     }
 
     Keys.onPressed: {

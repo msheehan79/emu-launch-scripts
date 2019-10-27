@@ -26,7 +26,7 @@ FocusScope {
     width: parent.width
     height: parent.height
 
-    opacity: stateMenu ? 0 : 1
+    opacity: (stateMenu || stateVideoPreview) ? 0 : 1
     Behavior on opacity { NumberAnimation { duration: 200 } }
 
     Component.onCompleted: {
@@ -50,7 +50,7 @@ FocusScope {
       end: Qt.point(0, height)
       gradient: Gradient {
         GradientStop { position: 0.0; color: "#00000000" }
-        GradientStop { position: 0.3; color: "#e6000000" }
+        GradientStop { position: 0.3; color: "#99000000" }
       }
       opacity: 1
       Behavior on opacity { NumberAnimation { duration: 100 } }
@@ -124,7 +124,7 @@ FocusScope {
             rightMargin: vpx(20)
           }
         }//button2
-
+        /* Commenting out until filters are fixed
         Image {
           id: button3
           height: vpx(24)
@@ -158,7 +158,7 @@ FocusScope {
           opacity: stateDetails ? 0 : 1
           Behavior on opacity { NumberAnimation { duration: 100 } }
         }//button3
-
+        */
       }//buttonContainer
 
     }//bggradient
