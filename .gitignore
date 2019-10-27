@@ -134,15 +134,23 @@ saves/pcfx/*
 !saves/pcfx/readme.txt
 
 !saves/psp/
-saves/psp/*
-!saves/psp/readme.txt
-saves/psp/PSP/*
+saves/psp/*.*
+saves/psp/PSP/*.*
+saves/psp/PSP/COMMON/*
+saves/psp/PSP/GAME/*
 saves/psp/PSP/PPSSPP_STATE/*
 saves/psp/PSP/SAVEDATA/*
 saves/psp/PSP/SYSTEM/*
+!saves/psp/readme.txt
 
 !saves/pspminis/
-saves/pspminis/*
+saves/pspminis/*.*
+saves/pspminis/PSP/*.*
+saves/pspminis/PSP/COMMON/*
+saves/pspminis/PSP/GAME/*
+saves/pspminis/PSP/PPSSPP_STATE/*
+saves/pspminis/PSP/SAVEDATA/*
+saves/pspminis/PSP/SYSTEM/*
 !saves/pspminis/readme.txt
 
 !saves/psx/
