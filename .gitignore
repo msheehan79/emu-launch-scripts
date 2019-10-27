@@ -30,8 +30,6 @@ bios/neogeo/mame/*
 
 # Ignore most saves, but we do want the MAME save dir as it contains config and the PSP Cheats folder
 !saves/
-saves/doom/
-saves/scummvm/
 
 !saves/arcade-atomiswave/
 saves/arcade-atomiswave/*
@@ -72,6 +70,10 @@ saves/atari7800/*
 !saves/colecovision/
 saves/colecovision/*
 !saves/colecovision/readme.txt
+
+!saves/doom/
+saves/doom/*
+!saves/doom/readme.txt
 
 !saves/dreamcast/
 saves/dreamcast/*
@@ -161,6 +163,10 @@ saves/psx/*
 saves/saturn/*
 !saves/saturn/readme.txt
 
+!saves/scummvm/
+saves/scummvm/*
+!saves/scummvm/readme.txt
+
 !saves/sega32x/
 saves/sega32x/*
 !saves/sega32x/readme.txt
@@ -192,6 +198,10 @@ saves/tgcd/*
 !saves/virtualboy/
 saves/virtualboy/*
 !saves/virtualboy/readme.txt
+
+!saves/wolf3d/
+saves/wolf3d/*
+!saves/wolf3d/readme.txt
 
 !saves/x68000/
 saves/x68000/*
