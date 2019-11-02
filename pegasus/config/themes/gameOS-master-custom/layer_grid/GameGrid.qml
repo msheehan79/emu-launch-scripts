@@ -96,18 +96,37 @@ FocusScope {
     preferredHighlightBegin: vpx(0); preferredHighlightEnd: vpx(314)
     highlightRangeMode: GridView.StrictlyEnforceRange
     displayMarginBeginning: 300
+    cacheBuffer: 9000
     //snapMode: GridView.SnapOneItem
 
     model: collectionData ? collectionData.games : []
     onCurrentIndexChanged: {
       //if (api.currentCollection) api.currentCollection.games.index = currentIndex;
       navSound.play()
-      gameChanged(currentIndex)
+      changeGameTimer.restart();
+      return;
+    }
 
+    Timer {
+      id: changeGameTimer
+      running: true
+      repeat: false
+      interval: 200
+      onTriggered: { gameChanged(grid.currentIndex); }
     }
 
     Component.onCompleted: {
-      positionViewAtIndex(currentIndex, GridView.Contain);
+      startupTimer.restart();
+    }
+
+    Timer {
+      id: startupTimer
+      running: true
+      repeat: false
+      interval: 200
+      onTriggered: {
+        grid.positionViewAtIndex(grid.currentIndex, GridView.Contain);
+      }
     }
 
     Keys.onPressed: {
