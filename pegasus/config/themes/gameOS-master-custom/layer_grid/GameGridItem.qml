@@ -318,7 +318,7 @@ Item {
         PropertyChanges { target: itemcontainer; color: "#FF9E12"}
         PropertyChanges { target: rectAnim; opacity: 1 }
         PropertyChanges { target: screenshot; opacity: 1 }
-        PropertyChanges { target: dimoverlay; opacity: 0.4 }
+        PropertyChanges { target: dimoverlay; opacity: 0 }
       },
       State {
         name: "UNSELECTED"
@@ -326,7 +326,7 @@ Item {
         PropertyChanges { target: itemcontainer; color: "transparent"}
         PropertyChanges { target: rectAnim; opacity: 0 }
         PropertyChanges { target: screenshot; opacity: 0.8 }
-        PropertyChanges { target: dimoverlay; opacity: 0.5 }
+        PropertyChanges { target: dimoverlay; opacity: 0 }
       }
     ]
 
