@@ -1,4 +1,4 @@
-# gameOS v0.6.6
+# gameOS v0.6.7.1
 
 ![gameOS Pegasus theme](https://i.imgur.com/Zzq3q1n.png)
 
@@ -37,6 +37,12 @@ Skraper will place these in your roms folder under another folder called media.
 If no media files are showing up, make sure that Skraper Assets is checked in the Additional Data Sources section of Pegasus settings. It may also be preferable to convert the created gamelist.xml (assuming EmulationStation was chosen for the game list in Skraper) to a metadata.txt file using the [Pegasus conversion tool](http://pegasus-frontend.org/tools/convert/)
 
 ## Version history
+v0.6.7.1
+- Fixed crash on Android
+- Added WiiWare logo
+- Hiding text title when selected (only happens when no logo is found)
+- Fixed back button exiting game details when viewing video preview
+
 v0.6.7
 - Major performance improvements (thanks to @SinisterSpatula for finding the fix)
 - Added controller help
