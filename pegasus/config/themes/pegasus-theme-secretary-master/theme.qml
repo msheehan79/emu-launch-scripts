@@ -133,19 +133,19 @@ FocusScope {
             },
             ExpressionFilter {
                 enabled: allowedDevs.length
-                expression: developerList.some(v => allowedDevs.includes(v))
+                expression: allowedDevs && developerList.some(v => allowedDevs.includes(v))
             },
             ExpressionFilter {
                 enabled: allowedPubs.length
-                expression: publisherList.some(v => allowedPubs.includes(v))
+                expression: allowedPubs && publisherList.some(v => allowedPubs.includes(v))
             },
             ExpressionFilter {
                 enabled: allowedGenres.length
-                expression: genreList.some(v => allowedGenres.includes(v))
+                expression: allowedGenres && genreList.some(v => allowedGenres.includes(v))
             },
             ExpressionFilter {
                 enabled: allowedTags.length
-                expression: tagList.some(v => allowedTags.includes(v))
+                expression: allowedTags && tagList.some(v => allowedTags.includes(v))
             },
             ExpressionFilter {
                 enabled: allowedCollGames.length
