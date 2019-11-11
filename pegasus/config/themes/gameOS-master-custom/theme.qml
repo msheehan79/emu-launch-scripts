@@ -195,6 +195,15 @@ FocusScope {
 
     }
 
+    Image {
+      id: platformlogo
+      source: "assets/images/logos/" + currentCollection.shortName
+      fillMode: Image.PreserveAspectFit
+      height: vpx(60)
+	  width: parent.width
+      anchors { top: parent.top; topMargin: vpx(16); horizontalCenter: parent.horizontalCenter; }
+    }
+
     Item {
       id: contentcontainer
 
@@ -217,14 +226,6 @@ FocusScope {
         height: vpx(24)
         anchors { top: parent.top; topMargin: vpx(32); left: parent.left; leftMargin: vpx(32) }
         visible: gamegrid.focus
-      }
-
-      Image {
-        id: platformlogo
-        source: "assets/images/logos/" + currentCollection.shortName
-        fillMode: Image.PreserveAspectFit
-        height: vpx(65)
-        anchors { top: parent.top; topMargin: vpx(16); horizontalCenter: parent.horizontalCenter; }
       }
 
       Text {
