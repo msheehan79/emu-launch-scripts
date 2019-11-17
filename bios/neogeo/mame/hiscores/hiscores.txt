@@ -1,0 +1,1 @@
+MAME Hi Scores will be saved here.

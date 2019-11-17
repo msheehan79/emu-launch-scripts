@@ -1,0 +1,1 @@
+Place MAME history.dat and command.dat files here.

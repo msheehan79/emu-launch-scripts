@@ -28,12 +28,26 @@ bios/arcade-neogeo/*
 !bios/arcade-neogeo/mame/
 bios/arcade-neogeo/mame/*
 !bios/arcade-neogeo/mame/ini
+!bios/arcade-neogeo/mame/plugins
+!bios/arcade-neogeo/mame/hiscores/
+bios/arcade-neogeo/mame/hiscores/*
+!bios/arcade-neogeo/mame/hiscores/hiscores.txt
+!bios/arcade-neogeo/mame/history/
+bios/arcade-neogeo/mame/history/*
+!bios/arcade-neogeo/mame/history/history.txt
 
 !bios/neogeo/
 bios/neogeo/*
 !bios/neogeo/mame/
 bios/neogeo/mame/*
 !bios/neogeo/mame/ini
+!bios/neogeo/mame/plugins
+!bios/neogeo/mame/hiscores/
+bios/neogeo/mame/hiscores/*
+!bios/neogeo/mame/hiscores/hiscores.txt
+!bios/neogeo/mame/history/
+bios/neogeo/mame/history/*
+!bios/neogeo/mame/history/history.txt
 
 # Ignore most saves, but we do want the MAME save dir as it contains config and the PSP Cheats folder
 !saves/
