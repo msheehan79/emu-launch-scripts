@@ -15,6 +15,7 @@ bios/arcade-mame/*
 !bios/arcade-mame/mame/
 bios/arcade-mame/mame/*
 !bios/arcade-mame/mame/ini
+!bios/arcade-mame/mame/plugins
 
 !bios/arcade-neogeo/
 bios/arcade-neogeo/*
