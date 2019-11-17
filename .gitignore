@@ -16,6 +16,12 @@ bios/arcade-mame/*
 bios/arcade-mame/mame/*
 !bios/arcade-mame/mame/ini
 !bios/arcade-mame/mame/plugins
+!bios/arcade-mame/mame/hiscores/
+bios/arcade-mame/mame/hiscores/*
+!bios/arcade-mame/mame/hiscores/hiscores.txt
+!bios/arcade-mame/mame/history/
+bios/arcade-mame/mame/history/*
+!bios/arcade-mame/mame/history/history.txt
 
 !bios/arcade-neogeo/
 bios/arcade-neogeo/*
