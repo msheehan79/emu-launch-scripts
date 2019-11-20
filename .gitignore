@@ -104,6 +104,10 @@ saves/dreamcast/*
 saves/fds/*
 !saves/fds/readme.txt
 
+!saves/gamegear/
+saves/gamegear/*
+!saves/gamegear/readme.txt
+
 !saves/gb/
 saves/gb/*
 !saves/gb/readme.txt
