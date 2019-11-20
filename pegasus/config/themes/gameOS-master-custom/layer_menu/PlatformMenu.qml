@@ -167,6 +167,7 @@ Item {
 
         preferredHighlightBegin: vpx(160); preferredHighlightEnd: vpx(160)
         highlightRangeMode: ListView.ApplyRange
+        keyNavigationWraps: true
 
         anchors {
           top: logo.bottom; topMargin: vpx(70)
