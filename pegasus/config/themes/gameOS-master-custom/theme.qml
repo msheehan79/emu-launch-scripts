@@ -266,6 +266,7 @@ FocusScope {
         id: content
 
         gameData: currentGame
+        collectionData: currentCollection
 
         height: vpx(200)//vpx(280)
         width: parent.width - vpx(182)

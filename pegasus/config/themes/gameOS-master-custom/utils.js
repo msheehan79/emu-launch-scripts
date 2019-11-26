@@ -1,5 +1,10 @@
 // This file contains some helper scripts for formatting data
 
+// Returns the System tag name for a game, if present
+function getSystemTagName(gameData) {
+    const matches = gameData.tagList.filter(s => s.includes('System:'));
+    return matches.length == 0 ? "" : matches[0].replace("System:", "");
+}
 
 // For multiplayer games, show the player count as '1-N'
 function formatPlayers(playerCount) {

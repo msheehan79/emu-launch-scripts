@@ -7,73 +7,11 @@ Item {
   id: root
 
   property var gameData//: api.currentGame
+  property var collectionData;
   property bool issteam: false
+  property bool customCollection: collectionData.summary == "Custom" ? true : false
   anchors.horizontalCenter: parent.horizontalCenter
   clip: true
-
-
-  /*Text {
-    id: collectiontitle
-
-    anchors {
-      top: parent.top; topMargin: vpx(35);
-      left: parent.left
-    }
-    width: parent.width
-    text: (api.filters.current.enabled) ? api.currentCollection.name + " | Favorites" : api.currentCollection.name
-    color: "white"
-    font.pixelSize: vpx(16)
-    font.family: globalFonts.sans
-    //font.capitalization: Font.AllUppercase
-    elide: Text.ElideRight
-    //opacity: 0.5
-  }
-
-  DropShadow {
-      anchors.fill: collectiontitle
-      horizontalOffset: 0
-      verticalOffset: 0
-      radius: 8.0
-      samples: 17
-      color: "#80000000"
-      source: collectiontitle
-      //opacity: 0.5
-  }*/
-
-  /*// Logo
-  // NOTE: Tried it but doubling up with the grid logo doesn't make sense.
-  // Maybe if using boxart for grid it could work
-  Image {
-    id: detailslogo
-
-    anchors {
-      //top: parent.top;  topMargin: vpx(60);
-      verticalCenter: parent.verticalCenter
-      left: parent.left
-    }
-
-    asynchronous: true
-
-    opacity: 0
-    source: (!issteam) ? gameData.assets.logo : ""
-    sourceSize { width: vpx(350); }
-    fillMode: Image.PreserveAspectFit
-    smooth: true
-    visible: gameData.assets.logo || ""
-    z:5
-  }
-
-  DropShadow {
-      anchors.fill: detailslogo
-      horizontalOffset: 0
-      verticalOffset: 0
-      radius: 8.0
-      samples: 17
-      color: "#80000000"
-      source: detailslogo
-      visible: gameData.assets.logo
-  }*/
-
 
   Text {
     id: gameTitle
@@ -87,10 +25,7 @@ Item {
     font.pixelSize: vpx(70)
     font.family: titleFont.name
     font.bold: true
-    //font.capitalization: Font.AllUppercase
     elide: Text.ElideRight
-    //visible: (gameData.assets.logo == "") ? true : false
-    //style: Text.Outline; styleColor: "#cc000000"
   }
 
   DropShadow {
@@ -101,20 +36,17 @@ Item {
       samples: 17
       color: "#ff000000"
       source: gameTitle
-      //visible: (gameData.assets.logo == "") ? true : false
   }
 
   ColumnLayout {
     id: playinfo
     anchors {
-      //top: gameTitle.top; topMargin: vpx(30);
       right: parent.right; rightMargin: vpx(60)
       verticalCenter: parent.verticalCenter
     }
 
     width: vpx(150)
     spacing: vpx(4)
-
 
     Image {
       id: wreath
@@ -126,6 +58,7 @@ Item {
       Layout.preferredHeight: vpx(100)
 
       opacity: (gameData.rating != "") ? 1 : 0.3
+      visible: !customCollection
       //visible: (gameData.rating != "") ? 1 : 0
       Layout.alignment: Qt.AlignCenter
       sourceSize.width: vpx(128)
@@ -158,9 +91,9 @@ Item {
       }
     }
 
-
     Text {
       id: ratingtext
+      visible: !customCollection
       text: (gameData.rating == "") ? "No Rating" : "Rating"
       color: "white"
       font.pixelSize: vpx(16)
@@ -172,59 +105,26 @@ Item {
       font.capitalization: Font.AllUppercase
     }
 
+    // System logo for custom collections
+    Image {
+      id: systemlogo
+      source: "../assets/images/logos/" + Utils.getSystemTagName(gameData) + ".svg"
+      asynchronous: true
+      fillMode: Image.PreserveAspectFit
+      smooth: true
+      Layout.preferredWidth: vpx(200)
+      Layout.preferredHeight: vpx(100)
 
-    Item {
-      id: spacerhack
-      Layout.preferredHeight: vpx(5)
-    }
-
-    /*GameGridMetaBox {
-      metatext: gameData.developerList[0]
-    }*/
-
-    GameGridMetaBox {
-      metatext: if (gameData.players > 1)
-        gameData.players + " players"
-      else
-        gameData.players + " player"
-    }
-
-
-
-    /*
-    RowLayout {
-      id: lastplayedinfo
+      opacity: (gameData.rating != "") ? 1 : 0.3
+      visible: customCollection
       Layout.alignment: Qt.AlignCenter
-
-      Image {
-        id: lastplayedicon
-        source: "../assets/images/gamepad.svg"
-        fillMode: Image.PreserveAspectFit
-        smooth: true
-        Layout.preferredWidth: vpx(25)
-        opacity: 0.75
-        Layout.alignment: Qt.AlignLeft
-      }
-
-      Text {
-        id: lastplayedtext
-        text: (gameData.playCount > 0) ? gameData.playCount + " times" : "Never played"
-        color: "white"
-        font.pixelSize: vpx(14)
-        font.family: globalFonts.sans
-        //font.bold: true
-        Layout.alignment: Qt.AlignLeft
-        font.capitalization: Font.AllUppercase
-      }
-    }*/
+    }
 
   }
 
   RowLayout {
     id: metadata
     anchors {
-      //top: (gameData.assets.logo == "") ? gameTitle.bottom : detailslogo.bottom;
-      //topMargin: (gameData.assets.logo == "") ? vpx(-5) : vpx(10);
       top: gameTitle.bottom; topMargin: vpx(-5)
     }
     height: vpx(1)
@@ -240,13 +140,18 @@ Item {
       metatext: (gameData.release != "") ? gameData.release.getFullYear() : ""
     }
 
-    /*// Number of supported players
+    // Players
     GameGridMetaBox {
       metatext: if (gameData.players > 1)
         gameData.players + " players"
       else
         gameData.players + " player"
-    }*/
+    }
+
+    // Genre
+    GameGridMetaBox {
+      metatext: (gameData.genreList[0] != undefined) ? gameData.genreList[0] : "Unknown"
+    }
 
     // Spacer
     Item {
@@ -276,32 +181,4 @@ Item {
     }
   }
 
-  /*Text {
-      id: gameDescription
-
-      width: vpx(800)
-      height: vpx(100)
-      anchors {
-        top: metadata.bottom; topMargin: vpx(30)
-        left: parent.left
-      }
-
-      text: gameData.summary || gameData.description
-      font.pixelSize: vpx(22)
-      font.family: "Open Sans"
-      //font.weight: Font.Light
-      color: "#fff"
-      elide: Text.ElideRight
-      wrapMode: Text.WordWrap
-    }
-
-    DropShadow {
-        anchors.fill: gameDescription
-        horizontalOffset: 0
-        verticalOffset: 0
-        radius: 8.0
-        samples: 17
-        color: "#80000000"
-        source: gameDescription
-    }*/
 }
