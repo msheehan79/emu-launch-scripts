@@ -108,15 +108,13 @@ Item {
     // System logo for custom collections
     Image {
       id: systemlogo
-      source: "../assets/images/logos/" + Utils.getSystemTagName(gameData) + ".svg"
+      visible: customCollection
+      source: "../assets/images/logos/" + Utils.getSystemTagName(gameData)
       asynchronous: true
       fillMode: Image.PreserveAspectFit
       smooth: true
       Layout.preferredWidth: vpx(200)
-      Layout.preferredHeight: vpx(100)
-
-      opacity: (gameData.rating != "") ? 1 : 0.3
-      visible: customCollection
+      Layout.preferredHeight: vpx(50)
       Layout.alignment: Qt.AlignCenter
     }
 

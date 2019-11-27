@@ -6,6 +6,19 @@ function getSystemTagName(gameData) {
     return matches.length == 0 ? "" : matches[0].replace("System:", "");
 }
 
+// Hack to set custom sort order using the name field
+function formatCollectionName(currentCollection) {
+    var name = currentCollection.name;
+    if (name == "Super Nintendo Entertainment System") {
+        name = "Super NES"
+    } else if (name == "Nintendo Entertainment System") {
+        name = "NES"
+    } else if (name.startsWith("Z -")) {
+        name = currentCollection.name.substring(4);
+    }
+    return name;
+}
+
 // For multiplayer games, show the player count as '1-N'
 function formatPlayers(playerCount) {
     if (playerCount === 1)

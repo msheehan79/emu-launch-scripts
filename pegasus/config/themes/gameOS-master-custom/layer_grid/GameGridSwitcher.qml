@@ -1,7 +1,7 @@
 import QtQuick 2.8
 import QtGraphicalEffects 1.0
 import QtMultimedia 5.9
-
+import "../utils.js" as Utils
 
 Rectangle {
   id: root
@@ -36,7 +36,7 @@ Rectangle {
 
     anchors { top: parent.top; topMargin: vpx(60)}
     width: parent.width
-    text: collection.name
+    text: Utils.formatCollectionName(collection)
     color: "white"
     font.pixelSize: vpx(70)
     font.family: titleFont.name

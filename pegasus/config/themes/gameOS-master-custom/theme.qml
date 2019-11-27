@@ -41,6 +41,7 @@ FocusScope {
     return {
       name: "Favorites",
       shortName: "favorites",
+      summary: "Favorites",
       games: favoriteGames,
     }
   }
@@ -49,9 +50,11 @@ FocusScope {
     return {
       name: "Last Played",
       shortName: "lastplayed",
+      summary: "Last Played",
       games: lastPlayedGames,
     }
   }
+
   //form a collection which contains our favorites, last played, and all real collections.
   property var dynamicCollections: [favoritesCollection, lastPlayedCollection, ...api.collections.toVarArray()]
   
@@ -233,20 +236,16 @@ FocusScope {
 
         anchors {
           top: parent.top; topMargin: vpx(35);
-          //horizontalCenter: menuicon.horizontalCenter
           left: menuicon.right; leftMargin: vpx(35)
         }
 
         Behavior on opacity { NumberAnimation { duration: 100 } }
 
         width: parent.width
-        //  text: (api.filters.current.enabled) ? api.currentCollection.name + " | Favorites" : api.currentCollection.name
         color: "white"
         font.pixelSize: vpx(16)
         font.family: globalFonts.sans
-        //font.capitalization: Font.AllUppercase
         elide: Text.ElideRight
-        //opacity: 0.5
 
         // DropShadow
         layer.enabled: true
@@ -268,7 +267,7 @@ FocusScope {
         gameData: currentGame
         collectionData: currentCollection
 
-        height: vpx(200)//vpx(280)
+        height: vpx(200)
         width: parent.width - vpx(182)
         anchors { top: menuicon.bottom; topMargin: vpx(-20)}
 
@@ -284,7 +283,6 @@ FocusScope {
         clip: true
 
         width: parent.width
-        //height: parent.height * 0.1
 
         anchors {
           top: content.bottom; //topMargin: vpx(75)
@@ -341,7 +339,6 @@ FocusScope {
 
     }
 
-
   }
 
   PlatformMenu {
@@ -376,7 +373,6 @@ FocusScope {
         anchors.fill: parent
         visible: gamegrid.focus
         onSwipeRight: toggleMenu()
-        //onSwipeLeft: closeRequested()
         onClicked: toggleMenu()
     }
   }

@@ -2,6 +2,7 @@ import QtQuick 2.8
 import QtGraphicalEffects 1.0
 import QtMultimedia 5.9
 import "qrc:/qmlutils" as PegasusUtils
+import "../utils.js" as Utils
 
 Item {
   id: root
@@ -18,8 +19,6 @@ Item {
   Keys.onRightPressed: closeMenu()
   Keys.onUpPressed: gameList.decrementCurrentIndex()
   Keys.onDownPressed: gameList.incrementCurrentIndex()
-  //Keys.onUpPressed: api.collections.decrementIndex()
-  //Keys.onDownPressed: api.collections.incrementIndex()
 
   Keys.onPressed: {
       if (event.isAutoRepeat)
@@ -68,32 +67,6 @@ Item {
   width: parent.width
   height: parent.height
 
-  /*Item {
-    id: bgblur
-    anchors.fill: parent
-    opacity: 0
-    Behavior on opacity {
-      OpacityAnimator {
-        duration: 100;
-        easing.type: Easing.InOutQuad;
-      }
-    }
-
-    ShaderEffectSource {
-      id: effectSource
-      sourceItem: backgroundcontainer
-      anchors.fill: parent
-    }
-
-    FastBlur  {
-      id: blur
-      anchors.fill: effectSource
-      source: effectSource
-      radius: 64
-    }
-
-  }*/
-
   Item {
     id: menubg
     x: -width
@@ -108,8 +81,6 @@ Item {
 
     width: vpx(350)
     height: parent.height
-    //source: "../assets/images/defaultbg.jpg"
-    //fillMode: Image.PreserveAspectCrop
 
     PegasusUtils.HorizontalSwipeArea {
         anchors.fill: parent
@@ -197,15 +168,7 @@ Item {
           height: vpx(40)
 
           Text {
-            text: {
-              if (modelData.name == "Super Nintendo Entertainment System")
-                "Super NES"
-              else if (modelData.name == "Nintendo Entertainment System")
-                "NES"
-              else
-                modelData.name
-            }
-
+            text: Utils.formatCollectionName(modelData)
             anchors { left: parent.left; leftMargin: vpx(50)}
             color: selected ? "#fff" : "#666"
             Behavior on color {
@@ -218,23 +181,10 @@ Item {
             }
             font.pixelSize: vpx(25)
             font.family: globalFonts.sans
-            //font.capitalization: Font.AllUppercase
             font.bold: selected
-            //width: ListView.view.width
             height: vpx(40)
             verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
-
-            // DropShadow
-            /*layer.enabled: selected
-            layer.effect: DropShadow {
-                horizontalOffset: 0
-                verticalOffset: 2
-                radius: 0
-                samples: 17
-                color: "#32000000"
-                transparentBorder: true
-            }*/
           }
 
           MouseArea {
@@ -281,13 +231,11 @@ Item {
   }
 
   function intro() {
-      //bgblur.opacity = 1;
       menubg.x = 0;
       menuIntroSound.play()
   }
 
   function outro() {
-      //bgblur.opacity = 0;
       menubg.x = -menubar.width;
       menuIntroSound.play()
   }
