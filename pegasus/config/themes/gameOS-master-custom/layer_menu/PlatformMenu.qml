@@ -117,16 +117,7 @@ Item {
       Component {
         id: highlight
         Rectangle {
-          width: gameList.cellWidth; height: gameList.cellHeight
           color: "#FF9E12"
-          x: gameList.currentItem.x
-          y: gameList.currentItem.y
-          Behavior on y { NumberAnimation {
-            duration: 300;
-            easing.type: Easing.OutQuart;
-            easing.amplitude: 2.0;
-            easing.period: 1.5}
-          }
         }
       }
 
