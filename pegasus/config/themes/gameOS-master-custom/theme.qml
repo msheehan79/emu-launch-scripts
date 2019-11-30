@@ -203,8 +203,24 @@ FocusScope {
       source: "assets/images/logos/" + currentCollection.shortName
       fillMode: Image.PreserveAspectFit
       height: vpx(60)
-	  width: parent.width
+      width: parent.width
       anchors { top: parent.top; topMargin: vpx(16); horizontalCenter: parent.horizontalCenter; }
+    }
+
+    Text {
+      id: platformName
+      text: currentCollection.name
+      
+      width: parent.width
+      color: "white"
+      font.pixelSize: vpx(35)
+      font.family: titleFont.name
+      font.bold: false
+      elide: Text.ElideRight
+
+      anchors { top: parent.top; topMargin: vpx(16); horizontalCenter: parent.horizontalCenter; }
+      horizontalAlignment: Text.AlignHCenter
+      visible: (platformlogo.status == Image.Error)
     }
 
     Item {
