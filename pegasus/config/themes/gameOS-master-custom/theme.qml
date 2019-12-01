@@ -5,6 +5,7 @@ import QtGraphicalEffects 1.0
 import QtMultimedia 5.9
 import SortFilterProxyModel 0.2
 import "qrc:/qmlutils" as PegasusUtils
+import "utils.js" as Utils
 import "layer_grid"
 import "layer_menu"
 import "layer_details"
@@ -209,8 +210,8 @@ FocusScope {
 
     Text {
       id: platformName
-      text: currentCollection.name
-      
+      text: Utils.formatCollectionName(currentCollection)
+
       width: parent.width
       color: "white"
       font.pixelSize: vpx(35)
