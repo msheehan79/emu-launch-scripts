@@ -129,6 +129,7 @@ Item {
 
         preferredHighlightBegin: vpx(160); preferredHighlightEnd: vpx(160)
         highlightRangeMode: ListView.ApplyRange
+        highlightMoveDuration: 75
         keyNavigationWraps: true
 
         anchors {
