@@ -258,6 +258,7 @@ configs/wii/Config/btdinf.bak
 configs/wii/Logs/*
 configs/wii/StateSaves/*
 configs/wii/GC/SRAM.raw
+configs/wii/GC/*
 configs/wii/Wii/sd.raw
 configs/wii/Wii/shared1/*
 configs/wii/Wii/shared2/*
