@@ -8,8 +8,8 @@ Version=2018.05.01
 
 [Assignments]
 Set1Button7SetSelect=1
-Set2Button5Slots=F1
-Set2Button6Slots=F3
+Set2Button5Slots=F3
+Set2Button6Slots=F1
 Set2Button7SetSelect=0
 Set2Button8Slots=Escape
 Set2DPadRightSlots=F2
