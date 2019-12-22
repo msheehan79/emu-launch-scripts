@@ -79,12 +79,26 @@ Item {
         opacity: parent.isOnTop ? 1.0 : 0.3
 
         width: parent.width * 0.6
-        height: parent.height - 12
+        height: parent.height - vpx(12)
         anchors {
             bottom: parent.bottom
             bottomMargin: vpx(6)
             horizontalCenter: parent.horizontalCenter
             horizontalCenterOffset: vpx(-32)
+        }
+
+        Text {
+            text: platformShortName
+            color: "#eee"
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            elide: Text.ElideRight
+            visible: parent.status != Image.Ready
+            font.bold: true
+            font.capitalization: Font.AllUppercase
+            font.pixelSize: vpx(36)
+            font.family: globalFonts.condensed
         }
     }
 }

@@ -23,6 +23,7 @@ Item {
     property var game
 
     onGameChanged: {
+        videoPreview.state = "";
         videoPreview.stop();
         videoPreview.playlist.clear();
         videoDelay.restart();
@@ -31,13 +32,14 @@ Item {
     // a small delay to avoid loading videos during scrolling
     Timer {
         id: videoDelay
-        interval: 250
+        interval: 300
         onTriggered: {
             if (game && game.assets.videos.length > 0) {
                 for (var i = 0; i < game.assets.videos.length; i++)
                     videoPreview.playlist.addItem(game.assets.videos[i]);
 
                 videoPreview.play();
+                videoPreview.state = "playing";
             }
         }
     }
@@ -86,22 +88,33 @@ Item {
         bottomPadding: vpx(16)
 
         text: {
-            var text_tmp = "";
-
             if (!game)
-                return text_tmp;
+                return "";
 
-            if (game.releaseYear > 0)
-                text_tmp += game.releaseYear;
-            if (game.developer) {
-                if (text_tmp)
-                    text_tmp += " \u2014 ";
+            const parts = [];
 
-                text_tmp += game.developer;
-                if (game.publisher && game.developer !== game.publisher)
-                    text_tmp += " / " + game.publisher;
+            if (game.releaseYear) {
+                parts.push(game.releaseYear);
             }
-            return text_tmp;
+            if (game.developer || game.publisher) {
+                if (game.developer === game.publisher) {
+                    parts.push(game.developer);
+                }
+                else {
+                    const str = [game.developer, game.publisher]
+                        .filter(Boolean)
+                        .join(' / ');
+                    parts.push(str);
+                }
+            }
+            if (game.players > 1) {
+                let str = '\u263b\u2060'.repeat(Math.min(game.players, 4));
+                if (game.players > 4)
+                    str += '+';
+                parts.push(str);
+            }
+
+            return parts.join(' \u2014 ');
         }
         color: "#eee"
         font {
@@ -146,20 +159,8 @@ Item {
 
         visible: (game && (game.assets.videos.length || game.assets.screenshots.length)) || false
 
-        Video {
-            id: videoPreview
-            visible: playlist.itemCount > 0
-
-            anchors { fill: parent; margins: 1 }
-            fillMode: VideoOutput.PreserveAspectFit
-
-            playlist: Playlist {
-                playbackMode: Playlist.Loop
-            }
-        }
-
         Image {
-            visible: !videoPreview.visible
+            visible: !videoPreview.visible || videoPreview.opacity < 0.99
 
             anchors { fill: parent; margins: 1 }
             fillMode: Image.PreserveAspectFit
@@ -167,6 +168,28 @@ Item {
             source: (game && game.assets.screenshots.length && game.assets.screenshots[0]) || ""
             sourceSize { width: 512; height: 512 }
             asynchronous: true
+        }
+
+        Video {
+            id: videoPreview
+            visible: playlist.itemCount > 0 && opacity > 0
+            opacity: 0
+
+            anchors { fill: parent; margins: 1 }
+            fillMode: VideoOutput.PreserveAspectFit
+
+            playlist: Playlist {
+                playbackMode: Playlist.Loop
+            }
+
+            states: State {
+                name: "playing"
+                PropertyChanges { target: videoPreview; opacity: 1 }
+            }
+            transitions: Transition {
+                from: ""; to: "playing"
+                NumberAnimation { properties: 'opacity'; duration: 1000 }
+            }
         }
     }
 }

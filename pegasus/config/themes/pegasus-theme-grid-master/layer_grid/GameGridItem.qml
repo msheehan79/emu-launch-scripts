@@ -26,10 +26,6 @@ Item {
 
     property alias imageWidth: boxFront.paintedWidth
     property alias imageHeight: boxFront.paintedHeight
-    property real imageHeightRatio: 0.5
-
-
-    height: width * imageHeightRatio
 
     signal clicked()
     signal doubleClicked()
@@ -59,8 +55,7 @@ Item {
         fillMode: Image.PreserveAspectFit
 
         onStatusChanged: if (status === Image.Ready) {
-            imageHeightRatio = paintedHeight / paintedWidth;
-            root.imageLoaded(paintedWidth, paintedHeight);
+            root.imageLoaded(implicitWidth, implicitHeight);
         }
     }
 
@@ -92,6 +87,13 @@ Item {
             pixelSize: vpx(16)
             family: globalFonts.sans
         }
+    }
+
+    FavoriteHeart {
+        visible: game.favorite
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.margins: vpx(-5)
     }
 
     MouseArea {
