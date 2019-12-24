@@ -87,6 +87,7 @@ FocusScope {
 
         model: collectionData
         onCurrentIndexChanged: {
+            navSound.play();
             changeGameTimer.restart();
             return;
         }
