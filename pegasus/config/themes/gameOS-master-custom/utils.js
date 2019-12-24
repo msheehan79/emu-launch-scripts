@@ -6,6 +6,12 @@ function getSystemTagName(gameData) {
     return matches.length == 0 ? "" : matches[0].replace("System:", "");
 }
 
+// Returns the System tag name for a game, if present
+function getCustomSortTag(gameData, collName) {
+    const matches = gameData.tagList.filter(s => s.includes('CustomSort:' + collName + ':'));
+    return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
+}
+
 // Hack to set custom sort order using the name field
 function formatCollectionName(currentCollection) {
     var name = currentCollection.name;
