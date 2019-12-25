@@ -156,6 +156,8 @@ FocusScope {
             z: 2
         }
 
+        Component.onCompleted: positionViewAtIndex(gameIndex, GridView.Contain)
+
         highlightMoveDuration: 0
 
         delegate: GameGridItem {
