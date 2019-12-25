@@ -101,17 +101,7 @@ FocusScope {
         }
 
         Component.onCompleted: {
-            startupTimer.restart();
-        }
-
-        Timer {
-            id: startupTimer
-            running: true
-            repeat: false
-            interval: 200
-            onTriggered: {
-                grid.positionViewAtIndex(grid.currentIndex, GridView.Contain);
-            }
+            positionViewAtIndex(grid.currentIndex, GridView.Contain);
         }
 
         Keys.onPressed: {

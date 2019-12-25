@@ -162,7 +162,6 @@ FocusScope {
     Component.onCompleted: {
         collectionIndex = api.memory.get('collectionIndex') || 0;
         currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0;
-        GameGrid.currentIndex = currentGameIdx;
     }
 
     function launchGame() {
