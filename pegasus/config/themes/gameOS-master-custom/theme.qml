@@ -90,7 +90,7 @@ FocusScope {
             games: lastPlayedGames
         }
     }
-   
+
     // Loading the fonts here makes them usable in the rest of the theme
     // and can be referred to using their name and weight.
     FontLoader { id: titleFont; source: "fonts/AkzidenzGrotesk-BoldCond.otf" }
@@ -143,7 +143,7 @@ FocusScope {
             return api.allGames.get(lastPlayedFilter.mapToSource((lastPlayedGames.mapToSource(idx))));
         } else if(collection.name == "Favorites") {
             // not sure why but if this isnt here the game metadata is blank when favorites first selected
-            console.log(currentCollection.games.count);
+            //console.log(currentCollection.games.count);
             return api.allGames.get(favoriteGames.mapToSource(idx));
         } else {
             return currentCollection.games.get(filteredGames.mapToSource(idx));

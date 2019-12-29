@@ -28,10 +28,9 @@ Item {
         if(api.keys.isAccept(event)) {
             event.accepted = true;
             if(collectionCategoryList.focus == true) {
-                collectionList.focus = true;
-                collectionList.visible = true;
-                collectionCategoryList.focus = false;
-                collectionCategoryList.visible = false;
+                showCollectionMenu();
+            } else if((collectionList.focus == true && collectionList.currentIndex == 0)) {
+                showCategoryMenu();
             } else {
                 switchCollection(collectionList.currentIndex);
                 closeMenu();
@@ -42,10 +41,7 @@ Item {
         if(api.keys.isCancel(event)) {
             if(collectionList.focus == true) {
                 event.accepted = true;
-                collectionList.focus = false;
-                collectionList.visible = false;
-                collectionCategoryList.focus = true;
-                collectionCategoryList.visible = true;
+                showCategoryMenu();
             } else if(showSystemMenu) {
                 showSystemMenu = false;
             } else {
@@ -273,6 +269,18 @@ Item {
     function outro() {
         menubg.x = -menubar.width;
         menuIntroSound.play();
+    }
+
+    function showCollectionMenu() {
+        collectionList.focus = true;
+        collectionList.visible = true;
+        collectionCategoryList.visible = false;
+    }
+
+    function showCategoryMenu() {
+        collectionCategoryList.focus = true;
+        collectionCategoryList.visible = true;
+        collectionList.visible = false;
     }
 
     function getCollectionName(modelData) {
