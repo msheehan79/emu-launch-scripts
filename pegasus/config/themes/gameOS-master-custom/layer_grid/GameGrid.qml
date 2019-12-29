@@ -8,7 +8,7 @@ FocusScope {
     property int numColumns: 4
     property alias gridWidth: grid.width
     property int gridItemSpacing: (numColumns == 4) ? vpx(7) : vpx(5) // it will double this
-    property var collectionData
+    property var gameCollection
     property var gameData
     property int currentGameIdx
     property string jumpToPattern: ''
@@ -19,6 +19,7 @@ FocusScope {
     signal collectionNext
     signal collectionPrev
     signal gameChanged(int currentIdx)
+    signal filterToggle
 
     Keys.onPressed: {
         if(event.isAutoRepeat)
@@ -38,7 +39,7 @@ FocusScope {
 
         if(api.keys.isFilters(event)) {
             event.accepted = true;
-            toggleFilters()
+            filterToggle();
             return;
         }
     }
@@ -48,18 +49,6 @@ FocusScope {
             gameData.favorite = !gameData.favorite;
         }
         toggleSound.play()
-    }
-
-    function toggleFilters() {
-        if(api.filters.favorite) {
-            api.filters.playerCount = 1
-            api.filters.favorite = false
-            api.filters.current.enabled = false
-        } else {
-            api.filters.playerCount = 1
-            api.filters.favorite = true
-            api.filters.current.enabled = true
-        }
     }
 
     onCurrentGameIdxChanged: {
@@ -85,7 +74,7 @@ FocusScope {
         displayMarginBeginning: 300
         cacheBuffer: 9000
 
-        model: collectionData
+        model: gameCollection
         onCurrentIndexChanged: {
             navSound.play();
             changeGameTimer.restart();
@@ -167,7 +156,7 @@ FocusScope {
             selected: GridView.isCurrentItem
 
             game: modelData
-            collection: collectionData
+            collection: gameCollection
             z: (selected) ? 100 : 1
 
             onDetails: detailsRequested();

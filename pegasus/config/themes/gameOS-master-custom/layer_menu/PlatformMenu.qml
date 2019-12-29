@@ -11,14 +11,15 @@ Item {
     signal switchCollection(int collectionIdx)
 
     property alias menuwidth: menubar.width
+    property alias catList: collectionCategoryList
+    property alias collList: collectionList
     property var collection
+    property int categoryIdx
     property int collectionIdx
     property bool showSystemMenu: true
 
     Keys.onLeftPressed: closeMenu()
     Keys.onRightPressed: closeMenu()
-    Keys.onUpPressed: gameList.decrementCurrentIndex()
-    Keys.onDownPressed: gameList.incrementCurrentIndex()
 
     Keys.onPressed: {
         if(event.isAutoRepeat)
@@ -26,13 +27,26 @@ Item {
 
         if(api.keys.isAccept(event)) {
             event.accepted = true;
-            switchCollection(gameList.currentIndex);
-            closeMenu();
+            if(collectionCategoryList.focus == true) {
+                collectionList.focus = true;
+                collectionList.visible = true;
+                collectionCategoryList.focus = false;
+                collectionCategoryList.visible = false;
+            } else {
+                switchCollection(collectionList.currentIndex);
+                closeMenu();
+            }
             return;
         }
 
         if(api.keys.isCancel(event)) {
-            if(showSystemMenu) {
+            if(collectionList.focus == true) {
+                event.accepted = true;
+                collectionList.focus = false;
+                collectionList.visible = false;
+                collectionCategoryList.focus = true;
+                collectionCategoryList.visible = true;
+            } else if(showSystemMenu) {
                 showSystemMenu = false;
             } else {
                 event.accepted = true;
@@ -120,10 +134,9 @@ Item {
             }
         }
 
-        // Menu
+        // Menu - Category level
         ListView {
-            id: gameList
-            property var collectionList: dynamicCollections
+            id: collectionCategoryList
             width: parent.width
             anchors {
                 top: logo.bottom
@@ -134,17 +147,47 @@ Item {
                 right: parent.right
             }
 
-            model: collectionList
+            model: collectionData
             delegate: collectionListItemDelegate
-            currentIndex: collectionIdx
+            currentIndex: categoryIdx
 
-            preferredHighlightBegin: vpx(160); preferredHighlightEnd: vpx(160)
+            preferredHighlightBegin: vpx(160); 
+            preferredHighlightEnd: vpx(160)
             highlightRangeMode: ListView.ApplyRange
             highlightMoveDuration: 75
             keyNavigationWraps: true
             highlight: highlight
             highlightFollowsCurrentItem: true
             focus: true
+            visible: true
+        }
+
+        // Menu - Collection level
+        ListView {
+            id: collectionList
+            width: parent.width
+            anchors {
+                top: logo.bottom
+                topMargin: vpx(70)
+                bottom: parent.bottom
+                bottomMargin: vpx(80)
+                left: parent.left
+                right: parent.right
+            }
+
+            model: getCollectionData()
+            delegate: collectionListItemDelegate
+            currentIndex: collectionIdx
+
+            preferredHighlightBegin: vpx(160);
+            preferredHighlightEnd: vpx(160)
+            highlightRangeMode: ListView.ApplyRange
+            highlightMoveDuration: 75
+            keyNavigationWraps: true
+            highlight: highlight
+            highlightFollowsCurrentItem: true
+            focus: false
+            visible: false
         }
 
         // Menu item
@@ -158,7 +201,7 @@ Item {
                 height: vpx(40)
 
                 Text {
-                    text: Utils.formatCollectionName(modelData)
+                    text: getCollectionName(modelData)
                     height: vpx(40)
                     anchors { 
                         left: parent.left
@@ -224,12 +267,25 @@ Item {
 
     function intro() {
         menubg.x = 0;
-        menuIntroSound.play()
+        menuIntroSound.play();
     }
 
     function outro() {
         menubg.x = -menubar.width;
-        menuIntroSound.play()
+        menuIntroSound.play();
+    }
+
+    function getCollectionName(modelData) {
+        if(typeof modelData === 'object') {
+            return modelData.name;
+        } else {
+            return modelData;
+        }        
+    }
+
+    function getCollectionData() {
+        var category = collectionData[collectionCategoryList.currentIndex];
+        return collectionData[category];
     }
 
 }

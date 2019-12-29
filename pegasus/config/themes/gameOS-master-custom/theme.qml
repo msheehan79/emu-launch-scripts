@@ -13,15 +13,19 @@ import "layer_details"
 FocusScope {
 
     property bool menuactive: false
+    property bool sorterActive: true
+    property string sortField: 'sortTitle'
 
+    property int categoryIndex: 1
     property int collectionIndex: 0
-    property var currentCollection: findCurrentCollection(collectionIndex)
+    property var currentCategory: collectionData[categoryIndex]
+    property var currentCollection: collectionData[currentCategory][collectionIndex]
 
     property int currentGameIndex: 0
-    readonly property var currentGame: findCurrentGameFromProxy(currentGameIndex, collectionIndex)
+    readonly property var currentGame: findCurrentGameFromProxy(currentGameIndex, currentCollection)
 
-    //form a collection which contains our favorites, last played, and all real collections.
-    property var dynamicCollections: [favoritesCollection, lastPlayedCollection, ...api.collections.toVarArray()]
+    // Create a 2-level structure grouping collections by category (Summary field)
+    property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
 
     SortFilterProxyModel {
         id: lastPlayedFilter
@@ -53,6 +57,11 @@ FocusScope {
         id: filteredGames
         sourceModel: currentCollection.games
         sorters: [
+            //RoleSorter {
+            //    roleName: sortField
+            //    sortOrder: Qt.DescendingOrder
+            //    enabled: sorterActive
+            //},
             ExpressionSorter {
                 expression: {
                     var sortLeft = getCollectionSortTag(modelLeft, currentCollection.shortName);
@@ -90,32 +99,35 @@ FocusScope {
     //////////////////////////
     // Collection switching //
 
-    function findCurrentCollection(collidx) {
-        if(collidx == 0) {
-            return favoritesCollection;
-        } else if(collidx == 1) {
-            return lastPlayedCollection;
-        } else {
-            return api.collections.get((collidx - 2));
-        }
-    }
-
-    function modulo(a,n) {
+    function modulo(a, n) {
         return (a % n + n) % n;
     }
 
     function nextCollection() {
-        jumpToCollection(collectionIndex + 1);
+        if((collectionIndex + 1) == collectionData[currentCategory].length) {
+            jumpToCollection(0);
+        } else {
+            jumpToCollection(collectionIndex + 1);
+        }
     }
 
     function prevCollection() {
-        jumpToCollection(collectionIndex - 1);
+        if((collectionIndex - 1) == -1) {
+            jumpToCollection(collectionData[currentCategory].length - 1);
+        } else {
+            jumpToCollection(collectionIndex - 1);
+        }
     }
 
     function jumpToCollection(idx) {
-        api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex); // save game index of current collection
+        api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, currentGameIndex); // save game index of current collection
+
+        categoryIndex = platformmenu.catList.currentIndex; // set new collection category
+        api.memory.set('categoryIndex', categoryIndex); // save category index of current collection
+
         collectionIndex = modulo(idx, (api.collections.count + 2)); // new collection index
-        currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0; // restore game index for newly selected collection
+
+        currentGameIndex = api.memory.get('gameCollIndex-' + categoryIndex + '-' + collectionIndex) || 0; // restore game index for newly selected collection
         api.memory.set('collectionIndex', collectionIndex); //save the new collection index.
     }
 
@@ -125,11 +137,14 @@ FocusScope {
     ////////////////////
     // Game switching //
 
-    function findCurrentGameFromProxy(idx, collidx) {
-        if(collidx == 0) {
-            return api.allGames.get(favoriteGames.mapToSource(idx));
-        } else if(collidx == 1) {
+    function findCurrentGameFromProxy(idx, collection) {
+        // Last Played collection uses 2 filters chained together
+        if(collection.name == "Last Played") {
             return api.allGames.get(lastPlayedFilter.mapToSource((lastPlayedGames.mapToSource(idx))));
+        } else if(collection.name == "Favorites") {
+            // not sure why but if this isnt here the game metadata is blank when favorites first selected
+            console.log(currentCollection.games.count);
+            return api.allGames.get(favoriteGames.mapToSource(idx));
         } else {
             return currentCollection.games.get(filteredGames.mapToSource(idx));
         }
@@ -138,7 +153,7 @@ FocusScope {
     function changeGameIndex(idx) {
         currentGameIndex = idx
         if(collectionIndex && idx) {
-            api.memory.set('gameCollIndex' + collectionIndex, idx);
+            api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, idx);
         }
     }
 
@@ -153,6 +168,14 @@ FocusScope {
         return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
     }
 
+    function changeSortField() {
+        if(sortField == 'sortTitle') {
+            sortField = 'release';
+        } else {
+            sortField = 'sortTitle';
+        }
+    }
+
     // End game sorting //
     ////////////////////////
 
@@ -160,13 +183,15 @@ FocusScope {
     // Launching game //
 
     Component.onCompleted: {
+        categoryIndex = api.memory.get('categoryIndex') || 0;
         collectionIndex = api.memory.get('collectionIndex') || 0;
-        currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0;
+        currentGameIndex = api.memory.get('gameCollIndex-' + categoryIndex + '-' + collectionIndex) || 0;
     }
 
     function launchGame() {
+        api.memory.set('categoryIndex', categoryIndex);
         api.memory.set('collectionIndex', collectionIndex);
-        api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex);
+        api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, currentGameIndex);
         currentGame.launch();
     }
 
@@ -174,7 +199,7 @@ FocusScope {
     ////////////////////////
 
     function toggleMenu() {
-        if(platformmenu.focus) {
+        if(platformmenu.catList.focus || platformmenu.collList.focus) {
             // Close the menu
             gamegrid.focus = true
             platformmenu.outro()
@@ -184,7 +209,9 @@ FocusScope {
             collectiontitle.opacity = 1
         } else {
             // Open the menu
-            platformmenu.focus = true
+            platformmenu.collList.focus = true
+            platformmenu.collList.visible = true
+            platformmenu.catList.visible = false
             platformmenu.intro()
             content.opacity = 0.3
             contentcontainer.opacity = 0.3
@@ -360,7 +387,7 @@ FocusScope {
 
                 GameGrid {
                     id: gamegrid
-                    collectionData: filteredGames
+                    gameCollection: filteredGames
                     gameData: currentGame
                     currentGameIdx: currentGameIndex
 
@@ -385,6 +412,7 @@ FocusScope {
                     onMenuRequested: toggleMenu()
                     onDetailsRequested: toggleDetails()
                     onGameChanged: changeGameIndex(currentIdx)
+                    onFilterToggle: changeSortField()
                 }
             }
 
@@ -412,6 +440,7 @@ FocusScope {
     PlatformMenu {
         id: platformmenu
         collection: currentCollection
+        categoryIdx: categoryIndex
         collectionIdx: collectionIndex
         anchors {
             left: parent.left
