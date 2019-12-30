@@ -189,10 +189,12 @@ FocusScope {
         currentGameIndex = api.memory.get('gameCollIndex-' + categoryIndex + '-' + collectionIndex) || 0;
     }
 
+    // Store info on the current category, collection & game index to API memory before launching
+    // For Last Played, we always want to return to the first game in the collection so it is the one that just ended
     function launchGame() {
         api.memory.set('categoryIndex', categoryIndex);
-        api.memory.set('collectionIndex', collectionIndex);
-        api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, currentGameIndex);
+        api.memory.set('collectionIndex', collectionIndex);   
+        api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, currentCollection.name == "Last Played" ? 0 : currentGameIndex);
         currentGame.launch();
     }
 
