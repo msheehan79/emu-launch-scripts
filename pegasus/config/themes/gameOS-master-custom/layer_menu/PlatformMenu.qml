@@ -226,8 +226,15 @@ Item {
                     onExited: {}
                     onWheel: {}
                     onClicked: {
-                        switchCollection(index);
-                        closeMenu();
+                        if(collectionCategoryList.focus == true) {
+                            collectionCategoryList.currentIndex = index;
+                            showCollectionMenu();
+                        } else if((collectionList.focus == true && index == 0)) {
+                            showCategoryMenu();
+                        } else {
+                            switchCollection(index);
+                            closeMenu();
+                        }                        
                     }
                 }
             }
