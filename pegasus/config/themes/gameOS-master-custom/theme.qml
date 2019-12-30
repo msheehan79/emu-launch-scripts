@@ -140,10 +140,11 @@ FocusScope {
     function findCurrentGameFromProxy(idx, collection) {
         // Last Played collection uses 2 filters chained together
         if(collection.name == "Last Played") {
-            return api.allGames.get(lastPlayedFilter.mapToSource((lastPlayedGames.mapToSource(idx))));
+            currentCollection.games.count;
+            return api.allGames.get(lastPlayedFilter.mapToSource(idx));
         } else if(collection.name == "Favorites") {
-            // not sure why but if this isnt here the game metadata is blank when favorites first selected
-            //console.log(currentCollection.games.count);
+            // not sure why but if this isnt here the game metadata is blank when favorites first selected - may have to do with collections not being ready?
+            currentCollection.games.count;
             return api.allGames.get(favoriteGames.mapToSource(idx));
         } else {
             return currentCollection.games.get(filteredGames.mapToSource(idx));
