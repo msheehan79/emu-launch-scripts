@@ -16,8 +16,8 @@ FocusScope {
     property bool sorterActive: true
     property string sortField: 'sortTitle'
 
-    property int categoryIndex: 1
-    property int collectionIndex: 0
+    property int categoryIndex: 0
+    property int collectionIndex: 1
     property var currentCategory: collectionData[categoryIndex]
     property var currentCollection: collectionData[currentCategory][collectionIndex]
 
@@ -182,9 +182,10 @@ FocusScope {
     ////////////////////
     // Launching game //
 
+    // The default collection is Last Played (index 1) - index 0 is the 'Back' pseudo collection
     Component.onCompleted: {
         categoryIndex = api.memory.get('categoryIndex') || 0;
-        collectionIndex = api.memory.get('collectionIndex') || 0;
+        collectionIndex = api.memory.get('collectionIndex') || 1;
         currentGameIndex = api.memory.get('gameCollIndex-' + categoryIndex + '-' + collectionIndex) || 0;
     }
 
