@@ -234,7 +234,7 @@ Item {
                         } else {
                             switchCollection(index);
                             closeMenu();
-                        }                        
+                        }
                     }
                 }
             }
@@ -295,7 +295,7 @@ Item {
             return modelData.name;
         } else {
             return modelData;
-        }        
+        }
     }
 
     function getCollectionData() {

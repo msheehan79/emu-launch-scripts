@@ -22,7 +22,11 @@ FocusScope {
     property var currentCollection: collectionData[currentCategory][collectionIndex]
 
     property int currentGameIndex: 0
-    readonly property var currentGame: findCurrentGameFromProxy(currentGameIndex, currentCollection)
+    readonly property bool gameIndexValid: 0 <= currentGameIndex && currentGameIndex < currentCollection.games.count
+    readonly property int srcGameIndex: gameIndexValid ? filteredGames.mapToSource(currentGameIndex) : -1
+
+    readonly property var currentGame: srcGameIndex >= 0 ? findCurrentGameFromProxy(srcGameIndex, currentCollection) : null
+    //readonly property var currentGame: findCurrentGameFromProxy(currentGameIndex, currentCollection)
 
     // Create a 2-level structure grouping collections by category (Summary field)
     property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
@@ -122,6 +126,8 @@ FocusScope {
     function jumpToCollection(idx) {
         api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, currentGameIndex); // save game index of current collection
 
+        currentGameIndex = 0; // set game index to default before switching category so its always within range when it recalcs the game
+        collectionIndex = 1; // set collection index to default before switching category so its always within range when it recalcs the collection
         categoryIndex = platformmenu.catList.currentIndex; // set new collection category
         api.memory.set('categoryIndex', categoryIndex); // save category index of current collection
 
@@ -138,16 +144,15 @@ FocusScope {
     // Game switching //
 
     function findCurrentGameFromProxy(idx, collection) {
+        // It seems like the sortFilterProxyModel needs to be initialized else it returns wrong results
+        filteredGames.count;
         // Last Played collection uses 2 filters chained together
         if(collection.name == "Last Played") {
-            currentCollection.games.count;
             return api.allGames.get(lastPlayedFilter.mapToSource(idx));
         } else if(collection.name == "Favorites") {
-            // not sure why but if this isnt here the game metadata is blank when favorites first selected - may have to do with collections not being ready?
-            currentCollection.games.count;
             return api.allGames.get(favoriteGames.mapToSource(idx));
         } else {
-            return currentCollection.games.get(filteredGames.mapToSource(idx));
+            return currentCollection.games.get(idx);
         }
     }
 

@@ -5,8 +5,8 @@ function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
     //form a collection which contains our last played, favorites, and all real collections.
     var dynamicCollections = [lastPlayedCollection, favoritesCollection, ...api.collections.toVarArray()];
 
-    // Add a pseudo collection to display a Back entry in the navigation
-    var back = {            
+    // Create a pseudo collection to display a Back entry in the navigation for each collection category
+    var back = {
         name: "< Back",
         shortName: "goback",
         summary: "< Back",
@@ -16,7 +16,16 @@ function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
     var categories = [];
     for(let col of dynamicCollections) {
         if(categories[col.summary] === undefined) {
-            categories.push(col.summary);
+            // If present, the "System" category should always be the first after Last Played & Favorites so it will always get inserted there
+            switch(col.summary) {
+                case "System":
+                    categories.splice(2, 0, col.summary);
+                    break;
+                default:
+                    categories.push(col.summary);
+                    break;
+            }
+
             categories[col.summary] = [];
             categories[col.summary].push(back);
             categories[col.summary].push(col);
