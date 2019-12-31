@@ -292,7 +292,7 @@ Item {
 
     function getCollectionName(modelData) {
         if(typeof modelData === 'object') {
-            return modelData.name;
+            return Utils.formatCollectionName(modelData);
         } else {
             return modelData;
         }
