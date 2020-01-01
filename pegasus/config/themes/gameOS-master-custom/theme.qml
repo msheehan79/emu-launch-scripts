@@ -127,7 +127,7 @@ FocusScope {
         // set new category and collection
         categoryIndex = platformmenu.catList.currentIndex; 
         collectionIndex = modulo(idx, (api.collections.count + 2));
-        currentCollection = collectionData[currentCategory][collectionIndex];
+        setCurrentCollection();
 
         // Save the new category and collection indexes
         setCategoryState();
@@ -135,8 +135,11 @@ FocusScope {
 
         // restore game for newly selected collection
         currentGameIndex = getGameState(); 
-        srcGameIndex = filteredGames.mapToSource(currentGameIndex);
-        currentGame = findCurrentGameFromProxy(srcGameIndex, currentCollection);
+        setCurrentGame();
+    }
+
+    function setCurrentCollection() {
+        currentCollection = collectionData[currentCategory][collectionIndex];
     }
 
     // End collection switching //
@@ -161,6 +164,10 @@ FocusScope {
         if(collectionIndex && idx) {
             setGameState(currentGameIndex);
         }
+        setCurrentGame();
+    }
+
+    function setCurrentGame() {
         srcGameIndex = filteredGames.mapToSource(currentGameIndex);
         currentGame = findCurrentGameFromProxy(srcGameIndex, currentCollection);
     }
@@ -194,10 +201,8 @@ FocusScope {
         categoryIndex = getCategoryState();
         collectionIndex = getCollectionState();
         currentGameIndex = getGameState();
-
-        currentCollection = collectionData[currentCategory][collectionIndex];
-        srcGameIndex = filteredGames.mapToSource(currentGameIndex);
-        currentGame = findCurrentGameFromProxy(srcGameIndex, currentCollection);
+        setCurrentCollection();
+        setCurrentGame();
     }
 
     // Store info on the current category, collection & game index to API memory before launching
