@@ -16,20 +16,17 @@ FocusScope {
     property bool sorterActive: true
     property string sortField: 'sortTitle'
 
-    property int categoryIndex: 0
-    property int collectionIndex: 1
-    property var currentCategory: collectionData[categoryIndex]
-    property var currentCollection: collectionData[currentCategory][collectionIndex]
-
-    property int currentGameIndex: 0
-    readonly property bool gameIndexValid: 0 <= currentGameIndex && currentGameIndex < currentCollection.games.count
-    readonly property int srcGameIndex: gameIndexValid ? filteredGames.mapToSource(currentGameIndex) : -1
-
-    readonly property var currentGame: srcGameIndex >= 0 ? findCurrentGameFromProxy(srcGameIndex, currentCollection) : null
-    //readonly property var currentGame: findCurrentGameFromProxy(currentGameIndex, currentCollection)
-
     // Create a 2-level structure grouping collections by category (Summary field)
     property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
+
+    property int categoryIndex: 0
+    property int collectionIndex: 1
+    property int currentGameIndex: 0
+    property int srcGameIndex
+
+    readonly property var currentCategory: collectionData[categoryIndex]
+    property var currentCollection
+    property var currentGame
 
     SortFilterProxyModel {
         id: lastPlayedFilter
@@ -124,17 +121,22 @@ FocusScope {
     }
 
     function jumpToCollection(idx) {
-        api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, currentGameIndex); // save game index of current collection
+        // save game index of current collection
+        setGameState(currentGameIndex);
 
-        currentGameIndex = 0; // set game index to default before switching category so its always within range when it recalcs the game
-        collectionIndex = 1; // set collection index to default before switching category so its always within range when it recalcs the collection
-        categoryIndex = platformmenu.catList.currentIndex; // set new collection category
-        api.memory.set('categoryIndex', categoryIndex); // save category index of current collection
+        // set new category and collection
+        categoryIndex = platformmenu.catList.currentIndex; 
+        collectionIndex = modulo(idx, (api.collections.count + 2));
+        currentCollection = collectionData[currentCategory][collectionIndex];
 
-        collectionIndex = modulo(idx, (api.collections.count + 2)); // new collection index
+        // Save the new category and collection indexes
+        setCategoryState();
+        setCollectionState();
 
-        currentGameIndex = api.memory.get('gameCollIndex-' + categoryIndex + '-' + collectionIndex) || 0; // restore game index for newly selected collection
-        api.memory.set('collectionIndex', collectionIndex); //save the new collection index.
+        // restore game for newly selected collection
+        currentGameIndex = getGameState(); 
+        srcGameIndex = filteredGames.mapToSource(currentGameIndex);
+        currentGame = findCurrentGameFromProxy(srcGameIndex, currentCollection);
     }
 
     // End collection switching //
@@ -144,8 +146,6 @@ FocusScope {
     // Game switching //
 
     function findCurrentGameFromProxy(idx, collection) {
-        // It seems like the sortFilterProxyModel needs to be initialized else it returns wrong results
-        filteredGames.count;
         // Last Played collection uses 2 filters chained together
         if(collection.name == "Last Played") {
             return api.allGames.get(lastPlayedFilter.mapToSource(idx));
@@ -159,8 +159,10 @@ FocusScope {
     function changeGameIndex(idx) {
         currentGameIndex = idx
         if(collectionIndex && idx) {
-            api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, idx);
+            setGameState(currentGameIndex);
         }
+        srcGameIndex = filteredGames.mapToSource(currentGameIndex);
+        currentGame = findCurrentGameFromProxy(srcGameIndex, currentCollection);
     }
 
     // End game switching //
@@ -188,24 +190,63 @@ FocusScope {
     ////////////////////
     // Launching game //
 
-    // The default collection is Last Played (index 1) - index 0 is the 'Back' pseudo collection
     Component.onCompleted: {
-        categoryIndex = api.memory.get('categoryIndex') || 0;
-        collectionIndex = api.memory.get('collectionIndex') || 1;
-        currentGameIndex = api.memory.get('gameCollIndex-' + categoryIndex + '-' + collectionIndex) || 0;
+        categoryIndex = getCategoryState();
+        collectionIndex = getCollectionState();
+        currentGameIndex = getGameState();
+
+        currentCollection = collectionData[currentCategory][collectionIndex];
+        srcGameIndex = filteredGames.mapToSource(currentGameIndex);
+        currentGame = findCurrentGameFromProxy(srcGameIndex, currentCollection);
     }
 
     // Store info on the current category, collection & game index to API memory before launching
     // For Last Played, we always want to return to the first game in the collection so it is the one that just ended
     function launchGame() {
-        api.memory.set('categoryIndex', categoryIndex);
-        api.memory.set('collectionIndex', collectionIndex);   
-        api.memory.set('gameCollIndex-' + categoryIndex + '-' + collectionIndex, currentCollection.name == "Last Played" ? 0 : currentGameIndex);
+        setCategoryState();
+        setCollectionState();
+        setGameState(currentCollection.name == "Last Played" ? 0 : currentGameIndex);
         currentGame.launch();
     }
 
     // End launching game //
     ////////////////////////
+
+    ////////////////////////////////
+    // Memory API getters/setters //
+
+    // Retrieve current category from API memory
+    function getCategoryState() {
+        return api.memory.get('categoryIndex') || 0;
+    }
+
+    // Save current category to API memory
+    function setCategoryState() {
+        api.memory.set('categoryIndex', categoryIndex);
+    }
+
+    // Retrieve current collection from API memory
+    function getCollectionState() {
+        return api.memory.get('collectionIndex') || 0;
+    }
+
+    // Save current collection to API memory
+    function setCollectionState() {
+        api.memory.set('collectionIndex', collectionIndex);
+    }
+
+    // Retrieve current game from API memory
+    function getGameState() {
+        return api.memory.get('gameCollIndex:' + categoryIndex + ':' + collectionIndex) || 0;
+    }
+
+    // Save current game to API memory
+    function setGameState(idx) {
+        api.memory.set('gameCollIndex:' + categoryIndex + ':' + collectionIndex, idx);
+    }
+
+    // End Memory API //
+    ////////////////////
 
     function toggleMenu() {
         if(platformmenu.catList.focus || platformmenu.collList.focus) {
