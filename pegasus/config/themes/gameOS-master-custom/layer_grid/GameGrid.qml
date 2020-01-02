@@ -55,7 +55,7 @@ FocusScope {
         grid.currentIndex = currentGameIdx
     }
 
-    onGameCollectionChanged: { 
+    onGameCollectionChanged: {
         if(grid.currentIndex == -1) {
             grid.currentIndex = defaultGameIndex;
         }
@@ -171,7 +171,7 @@ FocusScope {
 
         // Removal animation
         remove: Transition {
-            NumberAnimation { 
+            NumberAnimation {
                 property: "opacity"
                 to: 0
                 duration: 100
