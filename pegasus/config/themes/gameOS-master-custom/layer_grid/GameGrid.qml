@@ -55,6 +55,12 @@ FocusScope {
         grid.currentIndex = currentGameIdx
     }
 
+    onGameCollectionChanged: { 
+        if(grid.currentIndex == -1) {
+            grid.currentIndex = defaultGameIndex;
+        }
+    }
+
     GridView {
         id: grid
         focus: true

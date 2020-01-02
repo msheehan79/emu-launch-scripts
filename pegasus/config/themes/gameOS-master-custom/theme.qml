@@ -19,9 +19,14 @@ FocusScope {
     // Create a 2-level structure grouping collections by category (Summary field)
     property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
 
-    property int categoryIndex: 0
-    property int collectionIndex: 1
-    property int currentGameIndex: 0
+    // Define default values here for first loading, or when no previous stored value found
+    readonly property int defaultCategoryIndex: 0
+    readonly property int defaultCollectionIndex: 1
+    readonly property int defaultGameIndex: 0
+
+    property int categoryIndex: defaultCategoryIndex
+    property int collectionIndex: defaultCollectionIndex
+    property int currentGameIndex: defaultGameIndex
     property int srcGameIndex
 
     readonly property var currentCategory: collectionData[categoryIndex]
@@ -222,7 +227,7 @@ FocusScope {
 
     // Retrieve current category from API memory
     function getCategoryState() {
-        return api.memory.get('categoryIndex') || 0;
+        return api.memory.get('categoryIndex') || defaultCategoryIndex;
     }
 
     // Save current category to API memory
@@ -232,7 +237,7 @@ FocusScope {
 
     // Retrieve current collection from API memory
     function getCollectionState() {
-        return api.memory.get('collectionIndex') || 0;
+        return api.memory.get('collectionIndex') || defaultCollectionIndex;
     }
 
     // Save current collection to API memory
@@ -242,7 +247,7 @@ FocusScope {
 
     // Retrieve current game from API memory
     function getGameState() {
-        return api.memory.get('gameCollIndex:' + categoryIndex + ':' + collectionIndex) || 0;
+        return api.memory.get('gameCollIndex:' + categoryIndex + ':' + collectionIndex) || defaultGameIndex;
     }
 
     // Save current game to API memory
