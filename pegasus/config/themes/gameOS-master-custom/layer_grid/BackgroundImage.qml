@@ -34,18 +34,18 @@ Item {
                 name:"fadeOutRect2"
                 PropertyChanges {
                     target: rect;
-                    opacity:1;
+                    opacity: 1;
                 }
                 PropertyChanges {
                     target: rect2;
-                    opacity:0;
+                    opacity: 0;
                 }
             }
         ]
 
         transitions: [
             Transition {
-                NumberAnimation { 
+                NumberAnimation {
                     property: "opacity";
                     easing.type: Easing.InOutQuad;
                     duration: 300;
@@ -114,7 +114,7 @@ Item {
         start: Qt.point(0, 0)
         end: Qt.point(0, height)
         gradient: Gradient {
-                      GradientStop { 
+                      GradientStop {
                           position: 0.0;
                           color: "#00000000";
                       }
@@ -130,8 +130,8 @@ Item {
         anchors.fill: parent
         color: "#15181e"
         opacity: dimopacity
-        Behavior on opacity { 
-            NumberAnimation { duration: 100 } 
+        Behavior on opacity {
+            NumberAnimation { duration: 100 }
         }
     }
 
