@@ -117,14 +117,14 @@ FocusScope {
 
     function nextCollection() {
         if((collectionIndex + 1) == collectionData[currentCategory].length) {
-            jumpToCollection(0);
+            jumpToCollection(1);
         } else {
             jumpToCollection(collectionIndex + 1);
         }
     }
 
     function prevCollection() {
-        if((collectionIndex - 1) == -1) {
+        if((collectionIndex - 1) == 0) {
             jumpToCollection(collectionData[currentCategory].length - 1);
         } else {
             jumpToCollection(collectionIndex - 1);
