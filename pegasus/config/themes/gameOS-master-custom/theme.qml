@@ -70,6 +70,10 @@ FocusScope {
             //},
             ExpressionSorter {
                 expression: {
+                    if(currentCollection.summary != "Custom") {
+                        return true;
+                    }
+
                     var sortLeft = getCollectionSortTag(modelLeft, currentCollection.shortName);
                     var sortRight = getCollectionSortTag(modelRight, currentCollection.shortName);
                     return (sortLeft < sortRight);

@@ -42,7 +42,7 @@ function getSystemTagName(gameData) {
     return matches.length == 0 ? "" : matches[0].replace("System:", "");
 }
 
-// Returns the System tag name for a game, if present
+// Returns the Custom Sort tag for a game/collection pair, if present
 function getCustomSortTag(gameData, collName) {
     const matches = gameData.tagList.filter(s => s.includes('CustomSort:' + collName + ':'));
     return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
