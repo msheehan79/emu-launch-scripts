@@ -9,7 +9,7 @@ Item {
     property var gameData
     property var collectionData;
     property bool issteam: false
-    property bool customCollection: collectionData.summary == "Custom" ? true : false
+    property bool customCollection: customSystemLogoCategories.includes(currentCollection.summary)
     anchors.horizontalCenter: parent.horizontalCenter
     clip: true
 

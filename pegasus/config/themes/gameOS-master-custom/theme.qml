@@ -16,6 +16,7 @@ FocusScope {
     property bool sorterActive: true
     property string sortField: 'sortTitle'
     readonly property var customSortCategories: ['Custom', 'Series']
+    readonly property var customSystemLogoCategories: ['Custom', 'Series']
 
     // Create a 2-level structure grouping collections by category (Summary field)
     property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
