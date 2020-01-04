@@ -15,6 +15,7 @@ FocusScope {
     property bool menuactive: false
     property bool sorterActive: true
     property string sortField: 'sortTitle'
+    readonly property var customSortCategories: ['Custom', 'Series']
 
     // Create a 2-level structure grouping collections by category (Summary field)
     property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
@@ -70,7 +71,7 @@ FocusScope {
             //},
             ExpressionSorter {
                 expression: {
-                    if(currentCollection.summary != "Custom") {
+                    if(!customSortCategories.includes(currentCollection.summary)) {
                         return true;
                     }
 
@@ -78,7 +79,7 @@ FocusScope {
                     var sortRight = getCollectionSortTag(modelRight, currentCollection.shortName);
                     return (sortLeft < sortRight);
                 }
-                enabled: currentCollection.summary == "Custom"
+                enabled: customSortCategories.includes(currentCollection.summary)
             }
         ]
     }
