@@ -22,7 +22,7 @@ set emulator_launch="System\Launcher\Windows\x86-64\fs-uae-launcher.exe" %config
 ::set emulator_launch="System\Launcher\Windows\x86-64\fs-uae-launcher.exe" --config:joystick_0_north_button=action_key_space "%rom%" 
 
 :: set display refresh to 50Hz for PAL Games only (search filename for NTSC)
-if x%rom:ntsc=%==x%rom% start "" ..\..\util\nircmd setdisplay 1920 1080 32 50
+if x%rom:ntsc=%==x%rom% start "" ..\..\util\qres\qres f=50
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 IF "%xpadder_p1%" NEQ "" (
@@ -32,4 +32,4 @@ IF "%xpadder_p1%" NEQ "" (
 )
 
 :: restore refresh rate to 60Hz
-..\..\util\nircmd setdisplay 1920 1080 32 60
+..\..\util\qres\qres f=60
