@@ -7,3 +7,17 @@ Version=2018.05.01
 [Set Settings]
 
 [Assignments]
+Set1Button1Slots=L
+Set1Button2Slots=W
+Set1Button3Slots=J
+Set1Button4Slots=A
+Set1Button7Slots=6
+Set1Button8Slots=2
+Set1DPadUpSlots=R
+Set1DPadRightSlots=G
+Set1DPadDownSlots=F
+Set1DPadLeftSlots=D
+Set1Stick1UpSlots=R
+Set1Stick1RightSlots=G
+Set1Stick1DownSlots=F
+Set1Stick1LeftSlots=D
