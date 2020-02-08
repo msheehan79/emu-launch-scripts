@@ -52,6 +52,10 @@ bios/neogeo/mame/history/*
 # Ignore most saves, but we do want the MAME save dir as it contains config and the PSP Cheats folder
 !saves/
 
+!saves/amiga/
+saves/amiga/*
+!saves/amiga/readme.txt
+
 !saves/arcade-atomiswave/
 saves/arcade-atomiswave/*
 !saves/arcade-atomiswave/readme.txt
@@ -310,6 +314,10 @@ pegasus/config/theme_settings/
 # Ignore most save state dirs, but track a placeholder readme so the folder structure is in place
 !states/
 states/*
+
+!states/amiga/
+states/amiga/*
+!states/amiga/readme.txt
 
 !states/arcade-atomiswave/
 states/arcade-atomiswave/*
