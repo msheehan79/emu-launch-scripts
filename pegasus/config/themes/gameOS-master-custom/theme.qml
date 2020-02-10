@@ -14,7 +14,10 @@ FocusScope {
 
     property bool menuactive: false
     property bool sorterActive: true
-    property string sortField: 'sortTitle'
+    property var sortIndex: 0
+    readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre']
+    readonly property var sortLabels: {'sortTitle':'Sort Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre'}
+    readonly property string sortField: sortFields[sortIndex]
     readonly property var customSortCategories: ['Custom', 'Series']
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
 
@@ -65,11 +68,11 @@ FocusScope {
         id: filteredGames
         sourceModel: currentCollection.games
         sorters: [
-            //RoleSorter {
-            //    roleName: sortField
-            //    sortOrder: Qt.DescendingOrder
-            //    enabled: sorterActive
-            //},
+            RoleSorter {
+                roleName: sortField
+                sortOrder: Qt.AscendingOrder
+                enabled: sorterActive
+            },
             ExpressionSorter {
                 expression: {
                     if(!customSortCategories.includes(currentCollection.summary)) {
@@ -195,11 +198,8 @@ FocusScope {
     }
 
     function changeSortField() {
-        if(sortField == 'sortTitle') {
-            sortField = 'release';
-        } else {
-            sortField = 'sortTitle';
-        }
+        sortIndex = (sortIndex + 1) % sortFields.length;
+        setCurrentGame();
     }
 
     // End game sorting //
@@ -334,7 +334,7 @@ FocusScope {
             fillMode: Image.PreserveAspectFit
             height: vpx(60)
             width: parent.width
-            anchors { 
+            anchors {
                 top: parent.top
                 topMargin: vpx(16)
                 horizontalCenter: parent.horizontalCenter
@@ -350,13 +350,44 @@ FocusScope {
             font.family: titleFont.name
             font.bold: false
             elide: Text.ElideRight
-            anchors { 
+            anchors {
                 top: parent.top
                 topMargin: vpx(16)
                 horizontalCenter: parent.horizontalCenter
             }
             horizontalAlignment: Text.AlignHCenter
             visible: (platformlogo.status == Image.Error)
+        }
+
+        Text {
+            id: sortLabel
+            text: "Sorted By: "
+            color: "Grey"
+            font.pixelSize: vpx(22)
+            font.family: globalFonts.sans
+            font.bold: false
+            elide: Text.ElideRight
+            anchors {
+                top: parent.top
+                topMargin: vpx(16)
+                right: parent.right
+                rightMargin: vpx(32)
+            }
+        }
+
+        Text {
+            id: activeSort
+            text: sortLabels[sortField]
+            color: "white"
+            font.pixelSize: vpx(22)
+            font.family: globalFonts.sans
+            font.bold: false
+            elide: Text.ElideRight
+            anchors {
+                top: sortLabel.bottom
+                right: parent.right
+                rightMargin: vpx(42)
+            }
         }
 
         Item {
