@@ -13,10 +13,9 @@ import "layer_details"
 FocusScope {
 
     property bool menuactive: false
-    property bool sorterActive: true
     property var sortIndex: 0
     readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre']
-    readonly property var sortLabels: {'sortTitle':'Sort Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre'}
+    readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre'}
     readonly property string sortField: sortFields[sortIndex]
     readonly property var customSortCategories: ['Custom', 'Series']
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
@@ -28,6 +27,7 @@ FocusScope {
     readonly property int defaultCategoryIndex: 0
     readonly property int defaultCollectionIndex: 1
     readonly property int defaultGameIndex: 0
+    readonly property int defaultSortIndex: 0
 
     property int categoryIndex: defaultCategoryIndex
     property int collectionIndex: defaultCollectionIndex
@@ -70,8 +70,8 @@ FocusScope {
         sorters: [
             RoleSorter {
                 roleName: sortField
-                sortOrder: Qt.AscendingOrder
-                enabled: sorterActive
+                sortOrder: sortField == 'rating' ? Qt.DescendingOrder : Qt.AscendingOrder
+                enabled: !customSortCategories.includes(currentCollection.summary)
             },
             ExpressionSorter {
                 expression: {
@@ -212,6 +212,7 @@ FocusScope {
         categoryIndex = getCategoryState();
         collectionIndex = getCollectionState();
         currentGameIndex = getGameState();
+        sortIndex = getSortIndex();
         setCurrentCollection();
         setCurrentGame();
     }
@@ -221,6 +222,7 @@ FocusScope {
     function launchGame() {
         setCategoryState();
         setCollectionState();
+        setSortIndex();
         setGameState(currentCollection.name == "Last Played" ? 0 : currentGameIndex);
         currentGame.launch();
     }
@@ -259,6 +261,16 @@ FocusScope {
     // Save current game to API memory
     function setGameState(idx) {
         api.memory.set('gameCollIndex:' + categoryIndex + ':' + collectionIndex, idx);
+    }
+
+    // Retrieve current sort index from API memory
+    function getSortIndex() {
+        return api.memory.get('sortIndex') || defaultSortIndex;
+    }
+
+    // Save current sort field to API memory
+    function setSortIndex() {
+        api.memory.set('sortIndex', sortIndex);
     }
 
     // End Memory API //
@@ -377,7 +389,7 @@ FocusScope {
 
         Text {
             id: activeSort
-            text: sortLabels[sortField]
+            text: customSortCategories.includes(currentCollection.summary) ? 'Custom' : sortLabels[sortField]
             color: "white"
             font.pixelSize: vpx(22)
             font.family: globalFonts.sans
