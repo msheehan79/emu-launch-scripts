@@ -14,10 +14,10 @@ function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
     }
 
     var categories = [];
-    for(let col of dynamicCollections) {
-        if(categories[col.summary] === undefined) {
+    for (let col of dynamicCollections) {
+        if (categories[col.summary] === undefined) {
             // If present, the "System" category should always be the first after Last Played & Favorites so it will always get inserted there
-            switch(col.summary) {
+            switch (col.summary) {
                 case "System":
                     categories.splice(2, 0, col.summary);
                     break;

@@ -21,7 +21,7 @@ Item {
     /////////////////
 
     onSelectedChanged: {
-        if(selected) {
+        if (selected) {
             videoDelay.restart();
         } else {
             videoPreviewLoader.sourceComponent = undefined;
@@ -30,7 +30,7 @@ Item {
     }
 
     onCollectionChanged: {
-        if(collection.shortName == "steam") {
+        if (collection.shortName == "steam") {
             steam = true
         } else {
            steam = false
@@ -41,7 +41,7 @@ Item {
         id: videoDelay
         interval: 100
         onTriggered: {
-            if(selected && game.assets.videos.length) {
+            if (selected && game.assets.videos.length) {
                 videoPreviewLoader.sourceComponent = videoPreviewWrapper;
                 fadescreenshot.restart();
             }
@@ -457,7 +457,7 @@ Item {
         onEntered: {}
         onExited: {}
         onClicked: {
-            if(selected) {
+            if (selected) {
                 root.details();
             } else {
                 root.clicked();

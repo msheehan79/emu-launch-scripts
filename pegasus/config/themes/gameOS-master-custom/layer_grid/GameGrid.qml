@@ -45,7 +45,7 @@ FocusScope {
     }
 
     function toggleFav() {
-        if(gameData) {
+        if (gameData) {
             gameData.favorite = !gameData.favorite;
         }
         toggleSound.play()
@@ -56,7 +56,7 @@ FocusScope {
     }
 
     onGameCollectionChanged: {
-        if(grid.currentIndex == -1) {
+        if (grid.currentIndex == -1) {
             grid.currentIndex = defaultGameIndex;
         }
     }
@@ -109,7 +109,7 @@ FocusScope {
                 event.accepted = true;
                 var rows_to_skip = Math.max(1, Math.round(grid.height / cellHeight));
                 var games_to_skip = rows_to_skip * numColumns;
-                if(api.keys.isPageUp(event)) {
+                if (api.keys.isPageUp(event)) {
                     currentIndex = Math.max(currentIndex - games_to_skip, 0);
                 } else {
                     currentIndex = Math.min(currentIndex + games_to_skip, model.count - 1);
@@ -136,18 +136,18 @@ FocusScope {
                 event.accepted = true;
                 jumpToPattern += event.text.toLowerCase();
                 var match = false;
-                for(var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
+                for (var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
                     var lowTitle = model.get(idx).title.toLowerCase();
-                    if(lowTitle.indexOf(jumpToPattern) == 0) {
+                    if (lowTitle.indexOf(jumpToPattern) == 0) {
                         currentIndex = idx;
                         match = true;
                         break;
                     }
                 }
                 if(!match) { // no match - try to search title containing pattern
-                    for(var idx = 0; idx < model.count; idx++) {
+                    for (var idx = 0; idx < model.count; idx++) {
                         var lowTitle = model.get(idx).title.toLowerCase();
-                        if(lowTitle.indexOf(jumpToPattern) != -1) {
+                        if (lowTitle.indexOf(jumpToPattern) != -1) {
                             currentIndex = idx;
                             break;
                         }

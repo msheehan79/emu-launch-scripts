@@ -24,7 +24,7 @@ Item {
     signal switchCollection(int collectionIdx)
 
     onFocusChanged: {
-        if(focus) {
+        if (focus) {
             launchBtn.focus = true
         }
     }
@@ -53,7 +53,7 @@ Item {
 
         if(api.keys.isDetails(event)) {
             event.accepted = true;
-            if(gameData) {
+            if (gameData) {
                 gameData.favorite = !gameData.favorite;
             }
             toggleSound.play();
@@ -82,7 +82,7 @@ Item {
         id: videoDelay
         interval: 100
         onTriggered: {
-            if(gameData.assets.videos.length) {
+            if (gameData.assets.videos.length) {
                 videoPreviewLoader.sourceComponent = videoPreviewWrapper;
                 fadescreenshot.restart();
             }
@@ -98,8 +98,8 @@ Item {
     }
 
     function toggleVideo() {
-        if(gameData.assets.videos.length && (boxart.opacity == 0 || boxart.opacity == 1)) {
-            if(showVideo) {
+        if (gameData.assets.videos.length && (boxart.opacity == 0 || boxart.opacity == 1)) {
+            if (showVideo) {
                 // BOXART
                 showVideo = false;
                 boxart.x = boxart.x + videooffset;
@@ -123,7 +123,7 @@ Item {
     }
 
     function closedetails() {
-        if(showVideo) {
+        if (showVideo) {
             toggleVideo();
         }
         detailsCloseRequested();
@@ -418,7 +418,7 @@ Item {
 
                     // Players
                     GameGridMetaBox {
-                        metatext: if(gameData.players > 1) {
+                        metatext: if (gameData.players > 1) {
                                       gameData.players + " players"
                                   } else {
                                       gameData.players + " player"
@@ -558,7 +558,7 @@ Item {
                         height: parent.height
 
                         onFocusChanged: {
-                            if(focus) {
+                            if (focus) {
                                 navSound.play();
                             }
                         }
@@ -593,7 +593,7 @@ Item {
                         visible: (numbuttons == 4)
 
                         onFocusChanged: {
-                            if(focus) {
+                            if (focus) {
                                 navSound.play();
                             }
                         }
@@ -629,7 +629,7 @@ Item {
                         height: parent.height
 
                         onFocusChanged: {
-                            if(focus) {
+                            if (focus) {
                                 navSound.play();
                             }
                         }
@@ -640,7 +640,7 @@ Item {
                         }
 
                         function toggleFav() {
-                            if(gameData) {
+                            if (gameData) {
                                 gameData.favorite = !gameData.favorite;
                             }
                             toggleSound.play();
@@ -670,7 +670,7 @@ Item {
                         text: "Close"
 
                         onFocusChanged: {
-                            if(focus) {
+                            if (focus) {
                                 navSound.play();
                             }
                         }

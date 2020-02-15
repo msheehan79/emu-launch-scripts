@@ -27,9 +27,9 @@ Item {
 
         if(api.keys.isAccept(event)) {
             event.accepted = true;
-            if(collectionCategoryList.focus == true) {
+            if (collectionCategoryList.focus == true) {
                 showCollectionMenu();
-            } else if((collectionList.focus == true && collectionList.currentIndex == 0)) {
+            } else if ((collectionList.focus == true && collectionList.currentIndex == 0)) {
                 showCategoryMenu();
             } else {
                 switchCollection(collectionList.currentIndex);
@@ -39,10 +39,10 @@ Item {
         }
 
         if(api.keys.isCancel(event)) {
-            if(collectionList.focus == true) {
+            if (collectionList.focus == true) {
                 event.accepted = true;
                 showCategoryMenu();
-            } else if(showSystemMenu) {
+            } else if (showSystemMenu) {
                 showSystemMenu = false;
             } else {
                 event.accepted = true;
@@ -226,10 +226,10 @@ Item {
                     onExited: {}
                     onWheel: {}
                     onClicked: {
-                        if(collectionCategoryList.focus == true) {
+                        if (collectionCategoryList.focus == true) {
                             collectionCategoryList.currentIndex = index;
                             showCollectionMenu();
-                        } else if((collectionList.focus == true && index == 0)) {
+                        } else if ((collectionList.focus == true && index == 0)) {
                             showCategoryMenu();
                         } else {
                             switchCollection(index);
@@ -291,7 +291,7 @@ Item {
     }
 
     function getCollectionName(modelData) {
-        if(typeof modelData === 'object') {
+        if (typeof modelData === 'object') {
             return Utils.formatCollectionName(modelData);
         } else {
             return modelData;

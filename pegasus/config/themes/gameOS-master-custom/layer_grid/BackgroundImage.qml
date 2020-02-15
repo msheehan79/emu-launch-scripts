@@ -85,7 +85,7 @@ Item {
     }
 
     function swapImage(newSource) {
-        if(firstBG) {
+        if (firstBG) {
             // Go to second image
             if(newSource) {
                 bgImage2 = newSource;
@@ -93,7 +93,7 @@ Item {
             firstBG = false;
         } else {
             // Go to first image
-            if(newSource) {
+            if (newSource) {
                 bgImage1 = newSource;
             }
             firstBG = true;

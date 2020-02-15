@@ -139,7 +139,7 @@ Item {
 
         // Players
         GameGridMetaBox {
-            metatext: if(gameData.players > 1) {
+            metatext: if (gameData.players > 1) {
                           gameData.players + " players"
                       } else {
                           gameData.players + " player"

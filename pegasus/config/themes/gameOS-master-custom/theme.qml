@@ -127,7 +127,7 @@ FocusScope {
     }
 
     function prevCollection() {
-        if((collectionIndex - 1) == 0) {
+        if ((collectionIndex - 1) == 0) {
             jumpToCollection(collectionData[currentCategory].length - 1);
         } else {
             jumpToCollection(collectionIndex - 1);
@@ -164,9 +164,9 @@ FocusScope {
 
     function findCurrentGameFromProxy(idx, collection) {
         // Last Played collection uses 2 filters chained together
-        if(collection.name == "Last Played") {
+        if (collection.name == "Last Played") {
             return api.allGames.get(lastPlayedFilter.mapToSource(idx));
-        } else if(collection.name == "Favorites") {
+        } else if (collection.name == "Favorites") {
             return api.allGames.get(favoriteGames.mapToSource(idx));
         } else {
             return currentCollection.games.get(idx);
@@ -287,7 +287,7 @@ FocusScope {
     ////////////////////
 
     function toggleMenu() {
-        if(platformmenu.catList.focus || platformmenu.collList.focus) {
+        if (platformmenu.catList.focus || platformmenu.collList.focus) {
             // Close the menu
             gamegrid.focus = true
             platformmenu.outro()
@@ -309,7 +309,7 @@ FocusScope {
     }
 
     function toggleDetails() {
-        if(gamedetails.active) {
+        if (gamedetails.active) {
             // Close the details
             gamegrid.focus = true
             gamegrid.visible = true
