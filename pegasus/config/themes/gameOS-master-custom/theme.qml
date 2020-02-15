@@ -14,8 +14,8 @@ FocusScope {
 
     property bool menuactive: false
     property var sortIndex: 0
-    readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre']
-    readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre'}
+    readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre', 'lastPlayed']
+    readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre', 'lastPlayed':'Last Played'}
     readonly property string sortField: sortFields[sortIndex]
     readonly property var customSortCategories: ['Custom', 'Series']
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
@@ -71,7 +71,7 @@ FocusScope {
             RoleSorter {
                 roleName: sortField
                 sortOrder: sortField == 'rating' ? Qt.DescendingOrder : Qt.AscendingOrder
-                enabled: !customSortCategories.includes(currentCollection.summary)
+                enabled: !customSortCategories.includes(currentCollection.summary) && currentCollection.shortName != 'lastplayed'
             },
             ExpressionSorter {
                 expression: {
@@ -119,7 +119,7 @@ FocusScope {
     }
 
     function nextCollection() {
-        if((collectionIndex + 1) == collectionData[currentCategory].length) {
+        if ((collectionIndex + 1) == collectionData[currentCategory].length) {
             jumpToCollection(1);
         } else {
             jumpToCollection(collectionIndex + 1);
@@ -200,6 +200,16 @@ FocusScope {
     function changeSortField() {
         sortIndex = (sortIndex + 1) % sortFields.length;
         setCurrentGame();
+    }
+
+    function getSortLabel() {
+        if (currentCollection.shortName == 'lastplayed') {
+            return 'Last Played';
+        } else if (customSortCategories.includes(currentCollection.summary)) {
+            return 'Custom';
+        } else {
+            return sortLabels[sortField];
+        }
     }
 
     // End game sorting //
@@ -389,7 +399,7 @@ FocusScope {
 
         Text {
             id: activeSort
-            text: customSortCategories.includes(currentCollection.summary) ? 'Custom' : sortLabels[sortField]
+            text: getSortLabel()
             color: "white"
             font.pixelSize: vpx(22)
             font.family: globalFonts.sans
