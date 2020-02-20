@@ -70,7 +70,7 @@ FocusScope {
         sorters: [
             RoleSorter {
                 roleName: sortField
-                sortOrder: sortField == 'rating' ? Qt.DescendingOrder : Qt.AscendingOrder
+                sortOrder: sortField == 'rating' || sortField == 'lastPlayed' ? Qt.DescendingOrder : Qt.AscendingOrder
                 enabled: !customSortCategories.includes(currentCollection.summary) && currentCollection.shortName != 'lastplayed'
             },
             ExpressionSorter {
