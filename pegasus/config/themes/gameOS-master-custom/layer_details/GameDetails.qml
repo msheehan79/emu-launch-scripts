@@ -503,23 +503,28 @@ Item {
                 }
 
                 // description
-                Text {
+                PegasusUtils.AutoScroll {
                     id: gameDescription
-                    anchors {
-                        top: metadata.bottom; topMargin: vpx(60);
-                    }
                     width: parent.width
-                    height: boxart.height - y//parent.height - navigationbox.height
-                    horizontalAlignment: Text.AlignJustify
-                    text: (gameData.summary || gameData.description) ? gameData.summary || gameData.description : "No description available"
-                    font.pixelSize: vpx(22)
-                    font.family: "Open Sans"
-                    color: "#fff"
-                    elide: Text.ElideRight
-                    wrapMode: Text.WordWrap
-                    opacity: showVideo ? 0.1 : 1.0
-                    Behavior on opacity {
-                        NumberAnimation { duration: 100 }
+                    height: boxart.height - y
+                    anchors {
+                        top: metadata.bottom;
+                        topMargin: vpx(35);
+                    }
+
+                    Text {
+                        width: parent.width
+                        horizontalAlignment: Text.AlignJustify
+                        text: (gameData.summary || gameData.description) ? gameData.summary || gameData.description : "No description available"
+                        font.pixelSize: vpx(22)
+                        font.family: "Open Sans"
+                        color: "#fff"
+                        elide: Text.ElideRight
+                        wrapMode: Text.WordWrap
+                        opacity: showVideo ? 0.1 : 1.0
+                        Behavior on opacity {
+                            NumberAnimation { duration: 100 }
+                        }
                     }
                 }
             }
