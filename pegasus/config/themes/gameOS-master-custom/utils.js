@@ -1,9 +1,24 @@
 // This file contains some helper scripts for formatting data
 
+// Compare the file path for any games on the "Currently Playing" virtual collection
+function getPlayingCollectionGames() {
+    var games = [];
+    var playing = api.memory.get('currentlyPlaying');
+    if (playing != null) {
+        playing = JSON.parse(playing);
+        for (let game of api.allGames.toVarArray()) {
+            if (playing.includes(game.files.getFirst().path)) {
+                games.push(game.files.getFirst().path);
+            }
+        }
+    }
+    return games;
+}
+
 // Create a 2-level structure grouping collections by category (Summary field)
-function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
+function createCollectionHierarchy(playingCollection, lastPlayedCollection, favoritesCollection) {
     //form a collection which contains our last played, favorites, and all real collections.
-    var dynamicCollections = [lastPlayedCollection, favoritesCollection, ...api.collections.toVarArray()];
+    var dynamicCollections = [playingCollection, lastPlayedCollection, favoritesCollection, ...api.collections.toVarArray()];
 
     // Create a pseudo collection to display a Back entry in the navigation for each collection category
     var back = {
@@ -19,7 +34,7 @@ function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
             // If present, the "System" category should always be the first after Last Played & Favorites so it will always get inserted there
             switch (col.summary) {
                 case "System":
-                    categories.splice(2, 0, col.summary);
+                    categories.splice(3, 0, col.summary);
                     break;
                 default:
                     categories.push(col.summary);
@@ -46,6 +61,20 @@ function getSystemTagName(gameData) {
 function getCustomSortTag(gameData, collName) {
     const matches = gameData.tagList.filter(s => s.includes('CustomSort:' + collName + ':'));
     return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
+}
+
+// Add or remove game from Playing collection
+function togglePlaying(playingCollFiles, gameData) {
+    addOrRemove(playingCollFiles, gameData.files.getFirst().path);
+    api.memory.set('currentlyPlaying', JSON.stringify(playingCollFiles));
+}
+
+// Toggle favorite
+function toggleFav(gameData) {
+    if (gameData) {
+        gameData.favorite = !gameData.favorite;
+    }
+    toggleSound.play();
 }
 
 // For making any needed name adjustments to collections
@@ -100,4 +129,15 @@ function formatPlayTime(playTime) {
         return Math.round(minutes) + " minutes";
 
     return parseFloat((minutes / 60).toFixed(1)) + " hours"
+}
+
+// Toggle the value in the provided array
+function addOrRemove(array, value) {
+    var index = array.indexOf(value);
+
+    if (index === -1) {
+        array.push(value);
+    } else {
+        array.splice(index, 1);
+    }
 }

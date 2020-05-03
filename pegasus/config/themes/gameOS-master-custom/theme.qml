@@ -21,7 +21,9 @@ FocusScope {
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
 
     // Create a 2-level structure grouping collections by category (Summary field)
-    property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
+    property var collectionData: Utils.createCollectionHierarchy(playingCollection, lastPlayedCollection, favoritesCollection)
+    // This array holds the list of files used for the "Playing" dynamic collection
+    property var playingCollectionFiles: Utils.getPlayingCollectionGames();
 
     // Define default values here for first loading, or when no previous stored value found
     readonly property int defaultCategoryIndex: 0
@@ -65,6 +67,14 @@ FocusScope {
     }
 
     SortFilterProxyModel {
+        id: playingGames
+        sourceModel: api.allGames
+        filters: ExpressionFilter {
+            expression: { playingCollectionFiles != null ? playingCollectionFiles.includes(model.files.getFirst().path) : false }
+        }
+    }
+
+    SortFilterProxyModel {
         id: filteredGames
         sourceModel: currentCollection.games
         sorters: [
@@ -103,6 +113,15 @@ FocusScope {
             shortName: "lastplayed",
             summary: "Last Played",
             games: lastPlayedGames
+        }
+    }
+
+    property var playingCollection: {
+        return {
+            name: "Playing",
+            shortName: "playing",
+            summary: "Playing",
+            games: playingGames
         }
     }
 
@@ -168,6 +187,8 @@ FocusScope {
             return api.allGames.get(lastPlayedFilter.mapToSource(idx));
         } else if (collection.name == "Favorites") {
             return api.allGames.get(favoriteGames.mapToSource(idx));
+        } else if (collection.name == "Playing") {
+            return api.allGames.get(playingGames.mapToSource(idx));
         } else {
             return currentCollection.games.get(idx);
         }
@@ -538,6 +559,7 @@ FocusScope {
             GameDetails {
                 id: gamedetails
                 gameData: currentGame
+                playingCollFiles: playingCollectionFiles
                 property bool active: false
 
                 width: parent.width

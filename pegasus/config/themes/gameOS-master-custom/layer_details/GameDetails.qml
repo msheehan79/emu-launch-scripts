@@ -10,13 +10,14 @@ Item {
     id: root
 
     property var gameData
+    property var playingCollFiles
     property bool isSteam: false
     property int padding: vpx(50)
     property int cornerradius: vpx(8)
     property bool showVideo: false
     property bool boxAvailable: gameData.assets.boxFront
     property int videooffset: vpx(330)
-    property int numbuttons: (gameData.assets.videos.length) ? 4 : 3
+    property int numbuttons: (gameData.assets.videos.length) ? 5 : 4
 
     signal launchRequested
     signal detailsCloseRequested
@@ -53,10 +54,7 @@ Item {
 
         if(api.keys.isDetails(event)) {
             event.accepted = true;
-            if (gameData) {
-                gameData.favorite = !gameData.favorite;
-            }
-            toggleSound.play();
+            Utils.toggleFav(gameData);
             return;
         }
 
@@ -574,7 +572,7 @@ Item {
                         }
 
                         KeyNavigation.left: backBtn
-                        KeyNavigation.right: (numbuttons == 4) ? videoBtn : faveBtn
+                        KeyNavigation.right: (numbuttons == 5) ? videoBtn : faveBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
@@ -595,7 +593,7 @@ Item {
                         text: (showVideo) ? "Details" : "Preview"
                         width: parent.width / numbuttons
                         height: parent.height
-                        visible: (numbuttons == 4)
+                        visible: (numbuttons == 5)
 
                         onFocusChanged: {
                             if (focus) {
@@ -622,7 +620,7 @@ Item {
                         width: vpx(1)
                         height: parent.height
                         color: "#1a1a1a"
-                        visible: (numbuttons == 4)
+                        visible: (numbuttons == 5)
                     }
 
                     // Favourite button
@@ -641,22 +639,59 @@ Item {
 
                         onClicked: {
                             focus = true;
-                            toggleFav();
+                            Utils.toggleFav(gameData);
                         }
 
-                        function toggleFav() {
+
+
+                        KeyNavigation.left: (numbuttons == 5) ? videoBtn : launchBtn
+                        KeyNavigation.right: playingBtn
+                        Keys.onPressed: {
+                            if(api.keys.isAccept(event) && !event.isAutoRepeat) {
+                                event.accepted = true;
+                                Utils.toggleFav(gameData);
+                            }
+                        }
+                    }
+
+                    Rectangle {
+                        width: vpx(1)
+                        height: parent.height
+                        color: "#1a1a1a"
+                    }
+
+                    // Playing Collection button
+                    GamePanelButton {
+                        id: playingBtn
+                        property bool isInPlayingCollection: (playingCollFiles != null ? playingCollFiles.includes(gameData.files.getFirst().path) : false)
+                        text: isInPlayingCollection ? "Remove from Playing" : "Add to Playing"
+                        width: parent.width/numbuttons
+                        height: parent.height
+
+                        onFocusChanged: {
+                            if (focus) {
+                                navSound.play();
+                            }
+                        }
+
+                        onClicked: {
+                            focus = true;
+                            Utils.togglePlaying(playingCollFiles, gameData);
+                        }
+
+                        function togglePlaying() {
                             if (gameData) {
-                                gameData.favorite = !gameData.favorite;
+                                addToTest(gameData);
                             }
                             toggleSound.play();
                         }
 
-                        KeyNavigation.left: (numbuttons == 4) ? videoBtn : launchBtn
+                        KeyNavigation.left: faveBtn
                         KeyNavigation.right: backBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
-                                toggleFav();
+                                Utils.togglePlaying(playingCollFiles, gameData);
                             }
                         }
                     }
@@ -685,7 +720,7 @@ Item {
                             closedetails();
                         }
 
-                        KeyNavigation.left: faveBtn
+                        KeyNavigation.left: playingBtn
                         KeyNavigation.right: launchBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {

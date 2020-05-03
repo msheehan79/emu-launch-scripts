@@ -197,7 +197,7 @@ Item {
                 height: vpx(40)
 
                 Text {
-                    text: getCollectionName(modelData)
+                    text: getCollectionName(modelData) + getCollectionCount(modelData)
                     height: vpx(40)
                     anchors { 
                         left: parent.left
@@ -301,6 +301,14 @@ Item {
     function getCollectionData() {
         var category = collectionData[collectionCategoryList.currentIndex];
         return collectionData[category];
+    }
+
+    function getCollectionCount(modelData) {
+        if (modelData.games == undefined) {
+            return '';
+        } else {
+            return ' (' + modelData.games.count + ')';
+        }
     }
 
 }
