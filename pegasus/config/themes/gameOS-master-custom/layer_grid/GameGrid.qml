@@ -27,7 +27,7 @@ FocusScope {
 
         if(api.keys.isDetails(event)) {
             event.accepted = true;
-            toggleFav();
+            toggleFav(gameData);
             return;
         }
 
@@ -42,13 +42,6 @@ FocusScope {
             filterToggle();
             return;
         }
-    }
-
-    function toggleFav() {
-        if (gameData) {
-            gameData.favorite = !gameData.favorite;
-        }
-        toggleSound.play()
     }
 
     onCurrentGameIdxChanged: {

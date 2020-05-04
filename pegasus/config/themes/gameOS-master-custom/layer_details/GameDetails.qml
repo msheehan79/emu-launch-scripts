@@ -54,7 +54,7 @@ Item {
 
         if(api.keys.isDetails(event)) {
             event.accepted = true;
-            Utils.toggleFav(gameData);
+            toggleFav(gameData);
             return;
         }
 
@@ -639,17 +639,15 @@ Item {
 
                         onClicked: {
                             focus = true;
-                            Utils.toggleFav(gameData);
+                            toggleFav(gameData);
                         }
-
-
 
                         KeyNavigation.left: (numbuttons == 5) ? videoBtn : launchBtn
                         KeyNavigation.right: playingBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
-                                Utils.toggleFav(gameData);
+                                toggleFav(gameData);
                             }
                         }
                     }
@@ -676,14 +674,7 @@ Item {
 
                         onClicked: {
                             focus = true;
-                            Utils.togglePlaying(playingCollFiles, gameData);
-                        }
-
-                        function togglePlaying() {
-                            if (gameData) {
-                                addToTest(gameData);
-                            }
-                            toggleSound.play();
+                            togglePlaying(gameData);
                         }
 
                         KeyNavigation.left: faveBtn
@@ -691,7 +682,7 @@ Item {
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
-                                Utils.togglePlaying(playingCollFiles, gameData);
+                                togglePlaying(gameData);
                             }
                         }
                     }

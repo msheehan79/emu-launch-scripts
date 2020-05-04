@@ -6,9 +6,12 @@ function getPlayingCollectionGames() {
     var playing = api.memory.get('currentlyPlaying');
     if (playing != null) {
         playing = JSON.parse(playing);
-        for (let game of api.allGames.toVarArray()) {
-            if (playing.includes(game.files.getFirst().path)) {
-                games.push(game.files.getFirst().path);
+        if (playing.length != games.length) {
+            games.length = 0;
+            for (let game of api.allGames.toVarArray()) {
+                if (playing.includes(game.files.getFirst().path)) {
+                    games.push(game.files.getFirst().path);
+                }
             }
         }
     }
@@ -61,20 +64,6 @@ function getSystemTagName(gameData) {
 function getCustomSortTag(gameData, collName) {
     const matches = gameData.tagList.filter(s => s.includes('CustomSort:' + collName + ':'));
     return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
-}
-
-// Add or remove game from Playing collection
-function togglePlaying(playingCollFiles, gameData) {
-    addOrRemove(playingCollFiles, gameData.files.getFirst().path);
-    api.memory.set('currentlyPlaying', JSON.stringify(playingCollFiles));
-}
-
-// Toggle favorite
-function toggleFav(gameData) {
-    if (gameData) {
-        gameData.favorite = !gameData.favorite;
-    }
-    toggleSound.play();
 }
 
 // For making any needed name adjustments to collections
@@ -140,4 +129,5 @@ function addOrRemove(array, value) {
     } else {
         array.splice(index, 1);
     }
+    return array;
 }

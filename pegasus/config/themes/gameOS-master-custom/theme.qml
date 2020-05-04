@@ -23,7 +23,7 @@ FocusScope {
     // Create a 2-level structure grouping collections by category (Summary field)
     property var collectionData: Utils.createCollectionHierarchy(playingCollection, lastPlayedCollection, favoritesCollection)
     // This array holds the list of files used for the "Playing" dynamic collection
-    property var playingCollectionFiles: Utils.getPlayingCollectionGames();
+    property var playingCollectionFiles
 
     // Define default values here for first loading, or when no previous stored value found
     readonly property int defaultCategoryIndex: 0
@@ -196,9 +196,9 @@ FocusScope {
 
     function changeGameIndex(idx) {
         currentGameIndex = idx
-        if(collectionIndex && idx) {
-            setGameState(currentGameIndex);
-        }
+        //if(collectionIndex && idx) {
+            //setGameState(currentGameIndex);
+        //}
         setCurrentGame();
     }
 
@@ -240,6 +240,7 @@ FocusScope {
     // Launching game //
 
     Component.onCompleted: {
+        playingCollectionFiles = Utils.getPlayingCollectionGames();
         categoryIndex = getCategoryState();
         collectionIndex = getCollectionState();
         currentGameIndex = getGameState();
@@ -306,6 +307,26 @@ FocusScope {
 
     // End Memory API //
     ////////////////////
+
+    ////////////////////////
+    // Other Game Toggles //
+
+    // Toggle favorite
+    function toggleFav(gameData) {
+        if (gameData) {
+            gameData.favorite = !gameData.favorite;
+        }
+        toggleSound.play();
+    }
+
+    // Add or remove game from Playing collection
+    function togglePlaying(gameData) {
+        playingCollectionFiles = Utils.addOrRemove(playingCollectionFiles, gameData.files.getFirst().path);
+        api.memory.set('currentlyPlaying', JSON.stringify(playingCollectionFiles));
+    }
+
+    // End Other Game Toggles //
+    ////////////////////////////
 
     function toggleMenu() {
         if (platformmenu.catList.focus || platformmenu.collList.focus) {
