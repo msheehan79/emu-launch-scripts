@@ -1,6 +1,16 @@
-# gameOS v1.0
+# gameOS v0.6.7.1
 
-![gameOS Pegasus theme](https://i.imgur.com/J4Jh4rq.jpg)
+![gameOS Pegasus theme](https://i.imgur.com/Zzq3q1n.png)
+
+![gameOS Pegasus theme image 2](https://i.imgur.com/1BfAUM2.png)
+
+![gameOS Pegasus theme image 3](https://i.imgur.com/WTdWS63.png)
+
+![gameOS pegasus theme image 4](https://i.imgur.com/fDRio9O.png)
+
+[Video preview](https://youtu.be/WVAV7dAqc08)
+
+
 
 ## gameOS theme for Pegasus Frontend
 
@@ -27,27 +37,6 @@ Skraper will place these in your roms folder under another folder called media.
 If no media files are showing up, make sure that Skraper Assets is checked in the Additional Data Sources section of Pegasus settings. It may also be preferable to convert the created gamelist.xml (assuming EmulationStation was chosen for the game list in Skraper) to a metadata.txt file using the [Pegasus conversion tool](http://pegasus-frontend.org/tools/convert/)
 
 ## Version history
-v1.06
-- Adding option for viewing box art in the grid view instead of dynamic content
-- Adding mouse/touch support to settings
-
-v1.05
-- Added option to toggle mouse hover (off by default)
-- Added option for blurring background in game view (off by default)
-- Added option for turning off game logo in game view, or text only (shown by default)
-
-v1.0
-- Complete overhaul of the theme, rewritten from the ground up
-- Focus on features and performance
-- Added new home screen
-- Added settings
-- Added search and filtering
-- Added dynamic collections for better game discoverability
-- Many more additional changes and additions
-
-v0.6.7.2
-- Added autoscroll text for description
-
 v0.6.7.1
 - Fixed crash on Android
 - Added WiiWare logo
