@@ -1,3 +1,19 @@
+// gameOS theme
+// Copyright (C) 2018-2020 Seth Powell 
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see <http://www.gnu.org/licenses/>.
+
 import QtQuick 2.3
 import QtQuick.Layouts 1.11
 import QtGraphicalEffects 1.12
@@ -69,11 +85,11 @@ id: root
             property real cellHeightRatio: fakebox.paintedHeight / fakebox.paintedWidth
             property real savedCellHeight: {
                 if (settings.GridThumbnail == "Tall") {
-                    return cellWidth * 1.5;
+                    return cellWidth / settings.TallRatio;
                 } else if (settings.GridThumbnail == "Square") {
                     return cellWidth;
                 } else {
-                    return cellWidth/1.5;
+                    return cellWidth * settings.WideRatio;
                 }
             }
             property var sourceThumbnail: showBoxes ? "BoxArtGridItem.qml" : "../Global/DynamicGridItem.qml"
@@ -175,6 +191,7 @@ id: root
                     height: gamegrid.cellHeight
                     game: list.currentGame(gamegrid.currentIndex)
                     selected: gamegrid.focus
+                    boxArt: showBoxes 
                 }
             }
 

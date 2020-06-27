@@ -8,7 +8,7 @@ The goal of this theme is to create a modern game launcher that can fit in along
 
 ## Installation
 
-Simply download the theme and place it in your [Pegasus theme directory](http://pegasus-frontend.org/docs/user-guide/installing-themes/) under a folder called gameOS.
+[Download the latest version](https://github.com/PlayingKarrde/gameOS/releases/latest) and extract it in your [Pegasus theme directory](http://pegasus-frontend.org/docs/user-guide/installing-themes/) under a folder called gameOS.
 
 Windows users may need to install the [K-lite Codec Pack](https://www.codecguide.com/download_kl.htm) to get video playback working.
 
@@ -27,9 +27,17 @@ Skraper will place these in your roms folder under another folder called media.
 If no media files are showing up, make sure that Skraper Assets is checked in the Additional Data Sources section of Pegasus settings. It may also be preferable to convert the created gamelist.xml (assuming EmulationStation was chosen for the game list in Skraper) to a metadata.txt file using the [Pegasus conversion tool](http://pegasus-frontend.org/tools/convert/)
 
 ## Version history
+v1.07
+- Added home settings (by @waldnercharles)
+- Added advanced settings to adjust item ratios (by @waldnercharles)
+- Fixed issue with font named incorrectly
+- Renamed settings sections
+
 v1.06
+- Adding GNU license
 - Adding option for viewing box art in the grid view instead of dynamic content
 - Adding mouse/touch support to settings
+- Fixed settings button hover functionality
 
 v1.05
 - Added option to toggle mouse hover (off by default)
