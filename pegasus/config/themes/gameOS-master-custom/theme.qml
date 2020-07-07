@@ -68,10 +68,13 @@ FocusScope {
 
     SortFilterProxyModel {
         id: playingGames
-        sourceModel: api.allGames
-        filters: ExpressionFilter {
-            expression: { playingCollectionFiles != null ? playingCollectionFiles.includes(model.files.getFirst().path) : false }
+        sourceModel: Utils.sortPlaying()
+        filters: IndexFilter {
+            maximumIndex: 5
         }
+        //filters: ExpressionFilter {
+        //    expression: { playingCollectionFiles != null ? playingCollectionFiles.includes(model.files.getFirst().path) : false }
+        //}
     }
 
     SortFilterProxyModel {
