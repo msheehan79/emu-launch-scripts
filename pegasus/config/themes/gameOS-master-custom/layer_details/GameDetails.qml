@@ -53,14 +53,7 @@ Item {
 
         if(api.keys.isDetails(event)) {
             event.accepted = true;
-<<<<<<< HEAD
             toggleFav(gameData);
-=======
-            if (gameData) {
-                gameData.favorite = !gameData.favorite;
-            }
-            toggleSound.play();
->>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
             return;
         }
 
@@ -645,7 +638,6 @@ Item {
 
                         onClicked: {
                             focus = true;
-<<<<<<< HEAD
                             toggleFav(gameData);
                         }
 
@@ -682,16 +674,6 @@ Item {
                         onClicked: {
                             focus = true;
                             togglePlaying(gameData);
-=======
-                            toggleFav();
-                        }
-
-                        function toggleFav() {
-                            if (gameData) {
-                                gameData.favorite = !gameData.favorite;
-                            }
-                            toggleSound.play();
->>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
                         }
 
                         KeyNavigation.left: (numbuttons == 4) ? videoBtn : launchBtn
@@ -699,11 +681,7 @@ Item {
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
-<<<<<<< HEAD
                                 togglePlaying(gameData);
-=======
-                                toggleFav();
->>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
                             }
                         }
                     }

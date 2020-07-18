@@ -1,6 +1,5 @@
 // This file contains some helper scripts for formatting data
 
-<<<<<<< HEAD
 // Compare the file path for any games on the "Currently Playing" virtual collection
 function getPlayingCollectionGames() {
     var games = [];
@@ -34,8 +33,6 @@ function sortPlaying() {
     return api.allGames;
 }
 
-=======
->>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
 // Create a 2-level structure grouping collections by category (Summary field)
 function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
     //form a collection which contains our last played, favorites, and all real collections.
@@ -137,7 +134,6 @@ function formatPlayTime(playTime) {
 
     return parseFloat((minutes / 60).toFixed(1)) + " hours"
 }
-<<<<<<< HEAD
 
 // Toggle the value in the provided array
 function addOrRemove(array, value) {
@@ -150,5 +146,3 @@ function addOrRemove(array, value) {
     }
     return array;
 }
-=======
->>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
