@@ -1,5 +1,6 @@
 // This file contains some helper scripts for formatting data
 
+<<<<<<< HEAD
 // Compare the file path for any games on the "Currently Playing" virtual collection
 function getPlayingCollectionGames() {
     var games = [];
@@ -33,10 +34,12 @@ function sortPlaying() {
     return api.allGames;
 }
 
+=======
+>>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
 // Create a 2-level structure grouping collections by category (Summary field)
-function createCollectionHierarchy(playingCollection, lastPlayedCollection, favoritesCollection) {
+function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
     //form a collection which contains our last played, favorites, and all real collections.
-    var dynamicCollections = [playingCollection, lastPlayedCollection, favoritesCollection, ...api.collections.toVarArray()];
+    var dynamicCollections = [lastPlayedCollection, favoritesCollection, ...api.collections.toVarArray()];
 
     // Create a pseudo collection to display a Back entry in the navigation for each collection category
     var back = {
@@ -52,7 +55,7 @@ function createCollectionHierarchy(playingCollection, lastPlayedCollection, favo
             // If present, the "System" category should always be the first after Last Played & Favorites so it will always get inserted there
             switch (col.summary) {
                 case "System":
-                    categories.splice(3, 0, col.summary);
+                    categories.splice(2, 0, col.summary);
                     break;
                 default:
                     categories.push(col.summary);
@@ -134,6 +137,7 @@ function formatPlayTime(playTime) {
 
     return parseFloat((minutes / 60).toFixed(1)) + " hours"
 }
+<<<<<<< HEAD
 
 // Toggle the value in the provided array
 function addOrRemove(array, value) {
@@ -146,3 +150,5 @@ function addOrRemove(array, value) {
     }
     return array;
 }
+=======
+>>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.

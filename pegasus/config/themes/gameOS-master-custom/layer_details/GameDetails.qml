@@ -10,14 +10,13 @@ Item {
     id: root
 
     property var gameData
-    property var playingCollFiles
     property bool isSteam: false
     property int padding: vpx(50)
     property int cornerradius: vpx(8)
     property bool showVideo: false
     property bool boxAvailable: gameData.assets.boxFront
     property int videooffset: vpx(330)
-    property int numbuttons: (gameData.assets.videos.length) ? 5 : 4
+    property int numbuttons: (gameData.assets.videos.length) ? 4 : 3
 
     signal launchRequested
     signal detailsCloseRequested
@@ -54,7 +53,14 @@ Item {
 
         if(api.keys.isDetails(event)) {
             event.accepted = true;
+<<<<<<< HEAD
             toggleFav(gameData);
+=======
+            if (gameData) {
+                gameData.favorite = !gameData.favorite;
+            }
+            toggleSound.play();
+>>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
             return;
         }
 
@@ -572,7 +578,7 @@ Item {
                         }
 
                         KeyNavigation.left: backBtn
-                        KeyNavigation.right: (numbuttons == 5) ? videoBtn : faveBtn
+                        KeyNavigation.right: (numbuttons == 4) ? videoBtn : faveBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
@@ -593,7 +599,7 @@ Item {
                         text: (showVideo) ? "Details" : "Preview"
                         width: parent.width / numbuttons
                         height: parent.height
-                        visible: (numbuttons == 5)
+                        visible: (numbuttons == 4)
 
                         onFocusChanged: {
                             if (focus) {
@@ -620,7 +626,7 @@ Item {
                         width: vpx(1)
                         height: parent.height
                         color: "#1a1a1a"
-                        visible: (numbuttons == 5)
+                        visible: (numbuttons == 4)
                     }
 
                     // Favourite button
@@ -639,6 +645,7 @@ Item {
 
                         onClicked: {
                             focus = true;
+<<<<<<< HEAD
                             toggleFav(gameData);
                         }
 
@@ -675,14 +682,28 @@ Item {
                         onClicked: {
                             focus = true;
                             togglePlaying(gameData);
+=======
+                            toggleFav();
                         }
 
-                        KeyNavigation.left: faveBtn
+                        function toggleFav() {
+                            if (gameData) {
+                                gameData.favorite = !gameData.favorite;
+                            }
+                            toggleSound.play();
+>>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
+                        }
+
+                        KeyNavigation.left: (numbuttons == 4) ? videoBtn : launchBtn
                         KeyNavigation.right: backBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
+<<<<<<< HEAD
                                 togglePlaying(gameData);
+=======
+                                toggleFav();
+>>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
                             }
                         }
                     }
@@ -711,7 +732,7 @@ Item {
                             closedetails();
                         }
 
-                        KeyNavigation.left: playingBtn
+                        KeyNavigation.left: faveBtn
                         KeyNavigation.right: launchBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {

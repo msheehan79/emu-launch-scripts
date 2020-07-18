@@ -21,9 +21,13 @@ FocusScope {
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
 
     // Create a 2-level structure grouping collections by category (Summary field)
+<<<<<<< HEAD
     property var collectionData: Utils.createCollectionHierarchy(playingCollection, lastPlayedCollection, favoritesCollection)
     // This array holds the list of files used for the "Playing" dynamic collection
     property var playingCollectionFiles
+=======
+    property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
+>>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
 
     // Define default values here for first loading, or when no previous stored value found
     readonly property int defaultCategoryIndex: 0
@@ -67,6 +71,7 @@ FocusScope {
     }
 
     SortFilterProxyModel {
+<<<<<<< HEAD
         id: playingGames
         sourceModel: Utils.sortPlaying()
         filters: IndexFilter {
@@ -78,6 +83,8 @@ FocusScope {
     }
 
     SortFilterProxyModel {
+=======
+>>>>>>> parent of 3b226fa... Add support for "Playing" dynamic collection that can be updated from within the frontend. Also add count of games to the platform menu.
         id: filteredGames
         sourceModel: currentCollection.games
         sorters: [
@@ -116,15 +123,6 @@ FocusScope {
             shortName: "lastplayed",
             summary: "Last Played",
             games: lastPlayedGames
-        }
-    }
-
-    property var playingCollection: {
-        return {
-            name: "Playing",
-            shortName: "playing",
-            summary: "Playing",
-            games: playingGames
         }
     }
 
@@ -190,8 +188,6 @@ FocusScope {
             return api.allGames.get(lastPlayedFilter.mapToSource(idx));
         } else if (collection.name == "Favorites") {
             return api.allGames.get(favoriteGames.mapToSource(idx));
-        } else if (collection.name == "Playing") {
-            return api.allGames.get(playingGames.mapToSource(idx));
         } else {
             return currentCollection.games.get(idx);
         }
@@ -583,7 +579,6 @@ FocusScope {
             GameDetails {
                 id: gamedetails
                 gameData: currentGame
-                playingCollFiles: playingCollectionFiles
                 property bool active: false
 
                 width: parent.width
