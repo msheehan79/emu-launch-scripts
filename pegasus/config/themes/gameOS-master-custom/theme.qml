@@ -21,9 +21,7 @@ FocusScope {
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
 
     // Create a 2-level structure grouping collections by category (Summary field)
-    property var collectionData: Utils.createCollectionHierarchy(playingCollection, lastPlayedCollection, favoritesCollection)
-    // This array holds the list of files used for the "Playing" dynamic collection
-    property var playingCollectionFiles
+    property var collectionData: Utils.createCollectionHierarchy(lastPlayedCollection, favoritesCollection)
 
     // Define default values here for first loading, or when no previous stored value found
     readonly property int defaultCategoryIndex: 0
@@ -64,17 +62,6 @@ FocusScope {
             roleName: "favorite"
             value: true
         }
-    }
-
-    SortFilterProxyModel {
-        id: playingGames
-        sourceModel: Utils.sortPlaying()
-        filters: IndexFilter {
-            maximumIndex: 5
-        }
-        //filters: ExpressionFilter {
-        //    expression: { playingCollectionFiles != null ? playingCollectionFiles.includes(model.files.getFirst().path) : false }
-        //}
     }
 
     SortFilterProxyModel {
@@ -232,7 +219,6 @@ FocusScope {
     // Launching game //
 
     Component.onCompleted: {
-        playingCollectionFiles = Utils.getPlayingCollectionGames();
         categoryIndex = getCategoryState();
         collectionIndex = getCollectionState();
         currentGameIndex = getGameState();
@@ -309,12 +295,6 @@ FocusScope {
             gameData.favorite = !gameData.favorite;
         }
         toggleSound.play();
-    }
-
-    // Add or remove game from Playing collection
-    function togglePlaying(gameData) {
-        playingCollectionFiles = Utils.addOrRemove(playingCollectionFiles, gameData.files.getFirst().path);
-        api.memory.set('currentlyPlaying', JSON.stringify(playingCollectionFiles));
     }
 
     // End Other Game Toggles //

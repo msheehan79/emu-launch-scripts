@@ -1,38 +1,5 @@
 // This file contains some helper scripts for formatting data
 
-// Compare the file path for any games on the "Currently Playing" virtual collection
-function getPlayingCollectionGames() {
-    var games = [];
-    var playing = api.memory.get('currentlyPlaying');
-    if (playing != null) {
-        playing = JSON.parse(playing);
-        if (playing.length != games.length) {
-            games.length = 0;
-            for (let game of api.allGames.toVarArray()) {
-                if (playing.includes(game.files.getFirst().path)) {
-                    games.push(game.files.getFirst().path);
-                }
-            }
-        }
-    }
-    return games;
-}
-
-function sortPlaying() {
-    //api.allGames.move(1, 225);
-    var count = api.allGames.count;
-    var playing = api.memory.get('currentlyPlaying');
-    if (playing != null) {
-        playing = JSON.parse(playing);
-        for (var i = 0; i < count; i++) {
-            if (playing.includes(api.allGames.get(i).files.getFirst().path)) {
-                api.allGames.move(i, 0);
-            }
-        }
-    }
-    return api.allGames;
-}
-
 // Create a 2-level structure grouping collections by category (Summary field)
 function createCollectionHierarchy(lastPlayedCollection, favoritesCollection) {
     //form a collection which contains our last played, favorites, and all real collections.
