@@ -458,3 +458,4 @@ states/virtualboy/*
 !states/x68000/
 states/x68000/*
 !states/x68000/readme.txt
+configs/arcade-model3/error.log
