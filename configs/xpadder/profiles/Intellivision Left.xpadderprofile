@@ -1,6 +1,6 @@
 ;--- Xpadder Profile File ---
 DataType=Profile
-Version=2018.05.01
+Version=2020.05.01
 
 [Profile Settings]
 
@@ -14,7 +14,10 @@ Set1Button1Slots=Forward-Slash
 Set1Button2Slots=Right Control
 Set1Button3Slots=Alt Gr
 Set1Button4Slots=NumPad Enter
+Set1Button5Slots=Forward-Slash
+Set1Button6Slots=Right Control
 Set1Button7SetSelect=1
+Set1Button8Slots=Home
 Set1Button10Slots=NumPad 5
 Set1DPadUpSlots=I
 Set1DPadRightSlots=K

@@ -1,6 +1,6 @@
 ;--- Xpadder Profile File ---
 DataType=Profile
-Version=2018.05.01
+Version=2020.05.01
 
 [Profile Settings]
 
@@ -10,10 +10,12 @@ Set1DPadMode=EightWay
 Set1Stick2Mode=EightWay
 
 [Assignments]
-Set1Button1Slots=Forward-Slash
-Set1Button2Slots=Right Control
-Set1Button3Slots=Alt Gr
+Set1Button1Slots=Left Shift
+Set1Button2Slots=Left Control
+Set1Button3Slots=Alt
 Set1Button4Slots=NumPad Enter
+Set1Button5Slots=Left Shift
+Set1Button6Slots=Alt
 Set1Button7SetSelect=1
 Set1Button10Slots=5
 Set1DPadUpSlots=I
