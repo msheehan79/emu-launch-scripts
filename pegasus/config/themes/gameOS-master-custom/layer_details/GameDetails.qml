@@ -641,8 +641,8 @@ Item {
                             toggleFav(gameData);
                         }
 
-                        KeyNavigation.left: (numbuttons == 5) ? videoBtn : launchBtn
-                        KeyNavigation.right: playingBtn
+                        KeyNavigation.left: (numbuttons == 4) ? videoBtn : launchBtn
+                        KeyNavigation.right: backBtn
                         Keys.onPressed: {
                             if(api.keys.isAccept(event) && !event.isAutoRepeat) {
                                 event.accepted = true;
@@ -655,35 +655,6 @@ Item {
                         width: vpx(1)
                         height: parent.height
                         color: "#1a1a1a"
-                    }
-
-                    // Playing Collection button
-                    GamePanelButton {
-                        id: playingBtn
-                        property bool isInPlayingCollection: (playingCollFiles != null ? playingCollFiles.includes(gameData.files.getFirst().path) : false)
-                        text: isInPlayingCollection ? "Remove from Playing" : "Add to Playing"
-                        width: parent.width/numbuttons
-                        height: parent.height
-
-                        onFocusChanged: {
-                            if (focus) {
-                                navSound.play();
-                            }
-                        }
-
-                        onClicked: {
-                            focus = true;
-                            togglePlaying(gameData);
-                        }
-
-                        KeyNavigation.left: (numbuttons == 4) ? videoBtn : launchBtn
-                        KeyNavigation.right: backBtn
-                        Keys.onPressed: {
-                            if(api.keys.isAccept(event) && !event.isAutoRepeat) {
-                                event.accepted = true;
-                                togglePlaying(gameData);
-                            }
-                        }
                     }
 
                     Rectangle {
