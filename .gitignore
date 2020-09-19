@@ -228,6 +228,10 @@ saves/tgcd/*
 saves/virtualboy/*
 !saves/virtualboy/readme.txt
 
+!saves/wiiu/
+saves/wiiu/*
+!saves/wiiu/readme.txt
+
 !saves/wolf3d/
 saves/wolf3d/*
 !saves/wolf3d/readme.txt
