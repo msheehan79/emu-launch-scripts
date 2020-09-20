@@ -4,7 +4,15 @@ artwork/
 metadata/
 /xpadder/
 launch/WIP/
-emulators/
+
+# Ignore most emulator folders, but the CEMU directory also holds config data
+!emulators
+emulators/*
+
+!emulators/cemu/
+emulators/cemu/*
+!emulators/cemu/settings.xml
+!emulators/cemu/gameProfiles/
 
 # Ignore most BIOS folders, but the MAME BIOS directory also holds config data
 !bios

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+    <logflag>0</logflag>
+    <advanced_ppc_logging>false</advanced_ppc_logging>
+    <mlc_path>..\..\saves\wiiu\</mlc_path>
+    <permanent_storage>true</permanent_storage>
+    <language>0</language>
+    <use_discord_presence>false</use_discord_presence>
+    <fullscreen_menubar>false</fullscreen_menubar>
+    <check_update>true</check_update>
+    <save_screenshot>true</save_screenshot>
+    <vk_warning>false</vk_warning>
+    <gp_download>true</gp_download>
+    <fullscreen>false</fullscreen>
+    <cpu_mode>1</cpu_mode>
+    <console_region>255</console_region>
+    <console_language>1</console_language>
+    <window_position>
+        <x>-1</x>
+        <y>-1</y>
+    </window_position>
+    <window_size>
+        <x>-1</x>
+        <y>-1</y>
+    </window_size>
+    <open_pad>false</open_pad>
+    <pad_position>
+        <x>-1</x>
+        <y>-1</y>
+    </pad_position>
+    <pad_size>
+        <x>-1</x>
+        <y>-1</y>
+    </pad_size>
+    <GameList>
+        <style>0</style>
+        <order>{0, 1, 2, 3, 4, 5, 6, 7}</order>
+        <name_width>179</name_width>
+        <version_width>-3</version_width>
+        <dlc_width>-3</dlc_width>
+        <game_time_width>-3</game_time_width>
+        <game_started_width>-3</game_started_width>
+        <region_width>-3</region_width>
+    </GameList>
+    <RecentLaunchFiles>
+        <Entry>C:\Emulation\roms\wiiu\SpongeBob SquarePants Plankton's Robotic Revenge\SpongeBob SquarePants Plankton's Robotic Revenge [AS5E52]\code\engine.rpx</Entry>
+        <Entry>C:\Emulation\roms\wiiu\Tetraminos (EUR)\code\Unity-master.rpx</Entry>
+        <Entry>C:\Emulation\roms\wiiu\TANK! TANK! TANK! [WAKPAF]\code\cafe_tank.rpx</Entry>
+        <Entry>C:\Emulation\roms\wiiu\DuckTales Remastered\code\DuckTales.rpx</Entry>
+    </RecentLaunchFiles>
+    <RecentNFCFiles/>
+    <GamePaths>
+        <Entry>C:\Emulation\roms\wiiu</Entry>
+    </GamePaths>
+    <GameCache>
+        <Entry>
+            <title_id>1407375153204224</title_id>
+            <name>TANK! TANK! TANK! (DL)</name>
+            <custom_name></custom_name>
+            <region>4</region>
+            <version>0</version>
+            <dlc_version>-1</dlc_version>
+            <path>C:\Emulation\roms\wiiu\TANK! TANK! TANK! [WAKPAF]\code\cafe_tank.rpx</path>
+            <time_played>53</time_played>
+            <last_played>1600631437</last_played>
+            <favorite>false</favorite>
+        </Entry>
+        <Entry>
+            <title_id>1407375153326336</title_id>
+            <name>SpongeBob SquarePants: - Plankton’s Robotic Revenge</name>
+            <custom_name></custom_name>
+            <region>2</region>
+            <version>0</version>
+            <dlc_version>-1</dlc_version>
+            <path>C:\Emulation\roms\wiiu\SpongeBob SquarePants Plankton's Robotic Revenge\SpongeBob SquarePants Plankton's Robotic Revenge [AS5E52]\code\engine.rpx</path>
+            <time_played>6</time_played>
+            <last_played>1600632909</last_played>
+            <favorite>false</favorite>
+        </Entry>
+    </GameCache>
+    <GraphicPack>
+        <Entry filename="graphicPacks\downloadedGraphicPacks\DucktalesRemastered_Resolution\rules.txt">
+            <Preset>
+                <preset>1920x1080 (Default)</preset>
+            </Preset>
+        </Entry>
+    </GraphicPack>
+    <Graphic>
+        <api>0</api>
+        <device>00000000000000000000000000000000</device>
+        <VSync>1</VSync>
+        <GX2DrawdoneSync>true</GX2DrawdoneSync>
+        <PrecompiledShaders>0</PrecompiledShaders>
+        <vertex_cache_accuary>0</vertex_cache_accuary>
+        <UpscaleFilter>1</UpscaleFilter>
+        <DownscaleFilter>0</DownscaleFilter>
+        <FullscreenScaling>0</FullscreenScaling>
+        <Overlay>
+            <Position>0</Position>
+            <TextColor>4294967295</TextColor>
+            <TextScale>100</TextScale>
+            <FPS>true</FPS>
+            <DrawCalls>false</DrawCalls>
+            <CPUUsage>false</CPUUsage>
+            <CPUPerCoreUsage>false</CPUPerCoreUsage>
+            <RAMUsage>false</RAMUsage>
+            <VRAMUsage>false</VRAMUsage>
+            <Debug>false</Debug>
+        </Overlay>
+        <Notification>
+            <Position>1</Position>
+            <TextColor>4294967295</TextColor>
+            <TextScale>100</TextScale>
+            <ControllerProfiles>true</ControllerProfiles>
+            <ControllerBattery>false</ControllerBattery>
+            <ShaderCompiling>true</ShaderCompiling>
+            <FriendService>true</FriendService>
+        </Notification>
+    </Graphic>
+    <Audio>
+        <api>2</api>
+        <delay>2</delay>
+        <TVChannels>1</TVChannels>
+        <PadChannels>1</PadChannels>
+        <TVVolume>50</TVVolume>
+        <PadVolume>0</PadVolume>
+        <TVDevice>default</TVDevice>
+        <PadDevice></PadDevice>
+    </Audio>
+    <Account>
+        <PersistentId>2147483649</PersistentId>
+        <OnlineEnabled>false</OnlineEnabled>
+    </Account>
+    <Debug>
+        <CrashDump>0</CrashDump>
+        <AsyncCompile>false</AsyncCompile>
+    </Debug>
+    <Input>
+        <DSUC host="127.0.0.1" port="26760"/>
+    </Input>
+</content>
