@@ -8,7 +8,18 @@ Version=2020.05.01
 
 [Assignments]
 Set1Button7SetSelect=1
+Set2Button1Slots=B
 Set2Button3Slots=Tab
 Set2Button4Slots=Left Control,Tab
 Set2Button7SetSelect=0
 Set2Button8Slots=Alt,F4
+Set2Button10Slots=Left Mouse Button (1)
+Set2Stick2UpSlots=Mouse Move Up
+Set2Stick2UpMouseSpeed=32
+Set2Stick2RightSlots=Mouse Move Right
+Set2Stick2RightMouseSpeed=32
+Set2Stick2DownSlots=Mouse Move Down
+Set2Stick2DownMouseSpeed=32
+Set2Stick2LeftSlots=Mouse Move Left
+Set2Stick2LeftMouseSpeed=32
+Set2TriggerRightSlots=Left Mouse Button (1)
