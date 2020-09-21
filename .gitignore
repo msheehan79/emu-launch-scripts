@@ -294,10 +294,16 @@ configs/wii/sys/*
 configs/wii/rootca.pem
 configs/wii/clientca.pem
 configs/wii/clientcakey.pem
+configs/wii/Wii/fst.bin
+configs/wii/fst.bin
 
 # Ignore Model 2 Screenshot and Save dirs
 configs/arcade-model2/SHOTS/*
 configs/arcade-model2/STATES/*
+
+# Ignore Model 3 log files
+configs/arcade-model3/error.log
+configs/arcade-model3/Supermodel.log
 
 # Ignore Blake Stone log and hi score files
 configs/ports/blakestone/bstone_aog_full_high_scores
@@ -471,5 +477,3 @@ states/virtualboy/*
 !states/x68000/
 states/x68000/*
 !states/x68000/readme.txt
-configs/arcade-model3/error.log
-configs/arcade-model3/Supermodel.log
