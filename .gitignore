@@ -12,6 +12,7 @@ emulators/*
 !emulators/cemu/
 emulators/cemu/*
 !emulators/cemu/settings.xml
+!emulators/cemu/controllerProfiles/
 !emulators/cemu/gameProfiles/
 
 # Ignore most BIOS folders, but the MAME BIOS directory also holds config data
