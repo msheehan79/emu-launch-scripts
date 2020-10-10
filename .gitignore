@@ -256,6 +256,19 @@ pegasus/README.md
 pegasus/LICENSE.md
 pegasus/config/lastrun.log
 pegasus/config/stats.db
+pegasus/config/metafiles/
+pegasus/config/theme_settings/
+
+pegasus-filtered/config/metafiles/
+pegasus-filtered/config/theme_settings/
+pegasus-filtered/pegasus.lnk
+pegasus-filtered/pegasus-fe.exe
+pegasus-filtered/README.md
+pegasus-filtered/LICENSE.md
+pegasus-filtered/config/lastrun.log
+pegasus-filtered/config/stats.db
+pegasus-filtered/config/metafiles/
+pegasus-filtered/config/theme_settings/
 
 # Ignore retroarch content history files
 *.lpl
@@ -327,8 +340,6 @@ configs/ports/openttd/hs.dat
 configs/ports/openttd/content_download/
 configs/ports/duke3d/texturecache.index
 configs/ports/duke3d/texturecache
-pegasus/config/metafiles/hold/
-pegasus/config/theme_settings/
 
 # Ignore most save state dirs, but track a placeholder readme so the folder structure is in place
 !states/
