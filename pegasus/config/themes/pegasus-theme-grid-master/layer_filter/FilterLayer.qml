@@ -1,5 +1,5 @@
 // Pegasus Frontend
-// Copyright (C) 2017-2019  Mátyás Mustoha
+// Copyright (C) 2017-2020  Mátyás Mustoha
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -22,8 +22,11 @@ import "qrc:/qmlutils" as PegasusUtils
 FocusScope {
     id: root
 
+    property alias withTitle: panel.withTitle
+    property alias withMultiplayer: panel.withMultiplayer
+    property alias withFavorite: panel.withFavorite
+
     signal closeRequested
-    signal titleFilterChanged(string tfil)
 
     Keys.onPressed: {
         if (event.isAutoRepeat)
@@ -34,7 +37,6 @@ FocusScope {
             closeRequested();
         }
     }
-
 
     Rectangle {
         id: shade
@@ -59,8 +61,6 @@ FocusScope {
         anchors.verticalCenter: parent.verticalCenter
         anchors.right: parent.left
         visible: false
-
-        onTitleFilterChanged: root.titleFilterChanged(tfil)
 
         MouseArea {
             anchors.fill: parent

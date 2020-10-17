@@ -1,5 +1,5 @@
 // Pegasus Frontend
-// Copyright (C) 2017-2019  Mátyás Mustoha
+// Copyright (C) 2017-2020  Mátyás Mustoha
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -16,84 +16,48 @@
 
 
 import QtQuick 2.3
-import SortFilterProxyModel 0.2
 
 
 FocusScope {
     id: root
+
+    property alias filteredModel: grid.model
+    property var originalModel
 
     property alias gridWidth: grid.width
     property int gridMarginTop: 0
     property int gridMarginRight: 0
     property bool memoryLoaded: false
 
-    property string filterTitle: ""
-
-    property var platform
-    property alias gameIndex: grid.currentIndex
-    readonly property bool gameIndexValid: 0 <= gameIndex && gameIndex < grid.count
-    readonly property int srcGameIndex: gameIndexValid ? filteredGames.mapToSource(gameIndex) : -1
-    readonly property var currentGame: srcGameIndex >= 0 ? platform.games.get(srcGameIndex) : null
+    property alias currentIndex: grid.currentIndex
+    readonly property var currentGame: {
+        // BUG/FIXME: SortFilterProxyModel returns an 'Object {}' instead of null/undefined
+        const src_idx = grid.count
+            ? filteredModel.mapToSource(grid.currentIndex)
+            : -1;
+        return originalModel.get(src_idx);
+    }
 
     signal detailsRequested
-    signal filtersRequested
-    signal nextPlatformRequested
-    signal prevPlatformRequested
     signal launchRequested
 
-    onPlatformChanged: if (memoryLoaded && grid.count) gameIndex = 0;
-
-    Keys.onPressed: {
-        if (event.isAutoRepeat)
-            return;
-
-        if (api.keys.isPrevPage(event)) {
-            event.accepted = true;
-            prevPlatformRequested();
-            return;
-        }
-        if (api.keys.isNextPage(event)) {
-            event.accepted = true;
-            nextPlatformRequested();
-            return;
-        }
-        if (api.keys.isDetails(event)) {
-            event.accepted = true;
-            detailsRequested();
-            return;
-        }
-        if (api.keys.isFilters(event)) {
-            event.accepted = true;
-            filtersRequested();
-            return;
-        }
+    function cells_need_recalc() {
+        grid.currentRecalcs = 0;
+        grid.cellHeightRatio = 0.5;
     }
 
-    SortFilterProxyModel {
-        id: filteredGames
-        sourceModel: platform.games
-        filters: RegExpFilter {
-            roleName: "title"
-            pattern: filterTitle
-            caseSensitivity: Qt.CaseInsensitive
-        }
-    }
+    onOriginalModelChanged: if (memoryLoaded && grid.count) currentIndex = 0;
 
     GridView {
         id: grid
 
         focus: true
 
-        anchors {
-            top: parent.top; topMargin: root.gridMarginTop
-            right: parent.right; rightMargin: root.gridMarginRight
-            bottom: parent.bottom
-        }
-
-        model: filteredGames
-        onModelChanged: cells_need_recalc()
-        onCountChanged: cells_need_recalc()
-
+        anchors.top: parent.top
+        anchors.topMargin: root.gridMarginTop
+        anchors.right: parent.right
+        anchors.rightMargin: root.gridMarginRight
+        anchors.bottom: parent.bottom
 
         Keys.onPressed: {
             if (event.isAutoRepeat)
@@ -133,11 +97,6 @@ FocusScope {
         property int currentRecalcs: 0
         property real cellHeightRatio: 0.5
 
-        function cells_need_recalc() {
-            currentRecalcs = 0;
-            cellHeightRatio = 0.5;
-        }
-
         function update_cell_height_ratio(img_w, img_h) {
             cellHeightRatio = Math.min(Math.max(cellHeightRatio, img_h / img_w), 1.5);
         }
@@ -155,8 +114,6 @@ FocusScope {
             scale: 1.20
             z: 2
         }
-
-        Component.onCompleted: positionViewAtIndex(gameIndex, GridView.Contain)
 
         highlightMoveDuration: 0
 
