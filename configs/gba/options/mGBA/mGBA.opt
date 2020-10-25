@@ -1,5 +1,6 @@
 mgba_allow_opposing_directions = "no"
 mgba_color_correction = "OFF"
+mgba_force_gbp = "OFF"
 mgba_frameskip = "0"
 mgba_gb_model = "Autodetect"
 mgba_idle_optimization = "Remove Known"
