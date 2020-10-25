@@ -80,13 +80,21 @@ FocusScope {
     ]
 
     property variant dataManufacturers: {
-        "sega":     { color: "#17569b" },
-        "sony":     { color: "#1D1D1D" },
-        "snk":      { color: "#359CD2" },
-        "nec":      { color: "#2E1D81" },
-        "nintendo": { color: "#E11919" },
-        "various":  { color: "#18A46E" },
-        "valve":    { color: "#010314" }
+        "sega":      { color: "#17569b" },
+        "sony":      { color: "#1D1D1D" },
+        "snk":       { color: "#359CD2" },
+        "nec":       { color: "#2E1D81" },
+        "nintendo":  { color: "#E11919" },
+        "atari":     { color: "#ffffff" },
+        "panasonic": { color: "#ffffff" },
+        "mattel":    { color: "#ffffff" },
+        "microsoft": { color: "#ffffff" },
+        "coleco":    { color: "#ffffff" },
+        "various":   { color: "#18A46E" },
+        "valve":     { color: "#010314" },
+        "sammy":     { color: "#ffffff" },
+        "sharp":     { color: "#ffffff" },
+        "commodore": { color: "#ffffff" }
     }
 
     function clearShortname(shortname) {

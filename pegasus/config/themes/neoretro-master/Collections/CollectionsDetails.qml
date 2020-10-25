@@ -114,7 +114,7 @@ Item {
                         pixelSize: vpx(18)
                     }
                     bottomPadding: vpx(2)
-                    color: manufacturerColor
+                    color: (manufacturerColor !== '#ffffff') ? manufacturerColor : "black"
                 }
             }
 
