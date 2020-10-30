@@ -69,6 +69,10 @@ Item {
             Behavior on opacity {
                 NumberAnimation { duration: 200; }
             }
+            border {
+                width: vpx(5)
+                color: "#00991E"
+            }
         }
 
         // Rectangle {

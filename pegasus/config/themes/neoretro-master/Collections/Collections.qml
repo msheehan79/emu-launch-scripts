@@ -6,7 +6,8 @@ FocusScope {
     focus: collections.focus
 
     readonly property int baseItemWidth: root.width /8
-    readonly property var touch_color: dataConsoles[clearShortname(currentCollection.shortName)].color
+    property var shortname: clearShortname(currentCollection.shortName)
+    readonly property var touch_color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].color : dataConsoles["default"].color
 
     Behavior on focus {
         ParallelAnimation {
@@ -53,6 +54,35 @@ FocusScope {
 
     }
 
+    Text {
+        id: txt_collectionType
+        anchors {
+            top: parent.top; topMargin: vpx(85)
+            right: parent.right; rightMargin: vpx(25)
+        }
+
+        text: collectionType + " Collections"
+        font {
+            family: global.fonts.sans
+            weight: Font.Black
+            italic: true
+            pixelSize: vpx(40)
+            capitalization: Font.AllUppercase
+        }
+        color: "#F0F0F0"
+
+        Behavior on text {
+            PropertyAnimation {
+                target: txt_collectionType
+                property: "opacity"
+                from: 0
+                to: 1
+                duration: 600
+                easing.type: Easing.OutExpo
+            }
+        }
+    }
+
     Item {
         width: parent.width
         height: parent.height * 0.58
@@ -69,7 +99,6 @@ FocusScope {
 
             focus: collections.focus
 
-            // model: api.collections
             model: allCollections
             currentIndex: currentCollectionIndex
 
@@ -138,7 +167,7 @@ FocusScope {
                             currentCollectionIndex = allCollections.length - 1
                     else
                         currentCollectionIndex--;
-                        api.memory.set("currentCollectionIndex", currentCollectionIndex)
+                        saveCurrentState()
                 }
 
                 if (event.key == Qt.Key_Right) {
@@ -151,7 +180,7 @@ FocusScope {
                             currentCollectionIndex = 0;
                     else
                         currentCollectionIndex++;
-                        api.memory.set("currentCollectionIndex", currentCollectionIndex)
+                        saveCurrentState()
                 }
             }
 
@@ -214,7 +243,7 @@ FocusScope {
     Controls {
         id: button_B
         anchors {
-            bottom: parent.bottom; bottomMargin: vpx(40)
+            bottom: parent.bottom; bottomMargin: vpx(15)
             left: parent.left; leftMargin: vpx(40)
         }
 
@@ -227,10 +256,25 @@ FocusScope {
     }
 
     Controls {
+        id: button_Y
+        anchors {
+            bottom: parent.bottom; bottomMargin: vpx(15)
+            right: parent.right; rightMargin: vpx(150)
+        }
+
+        message: "SWITCH <b>COLLECTION CATEGORY</b>"
+
+        text_color: "black"
+        front_color: "#FDB200"
+        back_color: "white"
+        input_button: "Y"
+    }
+
+    Controls {
         id: button_A
         anchors {
-            bottom: parent.bottom; bottomMargin: vpx(40)
-            right: parent.right; rightMargin: vpx(150)
+            bottom: parent.bottom; bottomMargin: vpx(15)
+            left: skew_color.right; leftMargin: -vpx(110);
         }
 
         message: "<b>"+currentCollection.name+"</b> GAMES"

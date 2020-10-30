@@ -23,8 +23,11 @@ FocusScope {
     // [2] = GAMES
     property int currentMenuIndex: api.memory.get("currentMenuIndex") || 0
 
+    property var collectionType: api.memory.get("currentCollectionType") || "System"
+    property var collectionTypes: getAllCollectionTypes()
+
     property var allCollections: {
-        const collections = api.collections.toVarArray()
+        var collections = api.collections.toVarArray().filter(systemCollection)
 
         // collections.unshift({"name": "favorites", "shortName": "favorites", "games": allFavorites})
 
@@ -70,7 +73,7 @@ FocusScope {
         return collections
     }
 
-    property int currentCollectionIndex: api.memory.get("currentCollectionIndex") || 0
+    property int currentCollectionIndex: api.memory.get("currentCollectionIndex-" + collectionType) || 0
     property var currentCollection: allCollections[currentCollectionIndex]
 
     property variant dataMenu: [
@@ -159,6 +162,7 @@ FocusScope {
 
     // Additional data to display manufacturers and release dates
     property variant dataConsoles: {
+        "default":          { manufacturer: null,                   release: "1999",    color: "#000000", altColor: "#252525" },
         "amstradcpc":       { manufacturer: "amstrad",              release: "1984",    color: "#000000", altColor: "#252525" },
         "apple2":           { manufacturer: "apple",                release: "1977",    color: "#000000", altColor: "#252525" },
         "atari2600":        { manufacturer: "atari",                release: "1977",    color: "#000000", altColor: "#252525" },
@@ -228,7 +232,7 @@ FocusScope {
         "fbneo":            { manufacturer: null,                   release: null,      color: "#000000", altColor: "#252525" },
         "mame":             { manufacturer: null,                   release: null,      color: "#000000", altColor: "#252525" },
         "ports":            { manufacturer: null,                   release: null,      color: "#000000", altColor: "#252525" },
-        "scummvm":          { manufacturer: null,                   release: null,      color: "#000000", altColor: "#252525" }
+        "scummvm":          { manufacturer: null,                   release: null,      color: "#000000", altColor: "#252525" },
     }
 
     SortFilterProxyModel {
@@ -237,7 +241,6 @@ FocusScope {
         filters: ValueFilter { roleName: "favorite"; value: true; }
     }
 
-    // state: api.memory.get("currentPageState") || "home_lastPlayed"
     state: dataMenu[currentMenuIndex].name
 
     transitions: [
@@ -315,7 +318,6 @@ FocusScope {
         }
     ]
 
-
     Rectangle {
         id: rect_main
         width: parent.width
@@ -375,6 +377,34 @@ FocusScope {
             if (currentMenuIndex < (dataMenu.length - 1))
                 currentMenuIndex++
         }
+
+        if (api.keys.isFilters(event)) {
+            var index = collectionTypes.indexOf(collectionType) + 1;
+            collectionType = (index < collectionTypes.length) ? collectionTypes[index] : collectionTypes[0];
+            currentCollectionIndex = api.memory.get("currentCollectionIndex-" + collectionType) || 0;
+        }
+    }
+
+    function saveCurrentState(currentGameIndex) {
+        api.memory.set("currentMenuIndex", currentMenuIndex)
+        api.memory.set("currentCollectionType", collectionType)
+        api.memory.set("currentCollectionIndex-" + collectionType, currentCollectionIndex)
+        if (currentGameIndex !== undefined) {
+            api.memory.set(collectionType + "-" + currentCollectionIndex + "-currentGameIndex", currentGameIndex);
+        }
+    }
+
+    function systemCollection(coll) {
+        return coll.summary == collectionType
+    }
+
+    function getAllCollectionTypes() {
+        var types = [];
+        var collections = api.collections.toVarArray().forEach(function(value, index, array) {
+                types.push(value.summary);
+            }
+        );
+        return Array.from(new Set(types));
     }
 
     // SoundEffect {

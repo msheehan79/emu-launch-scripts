@@ -4,8 +4,8 @@ import QtGraphicalEffects 1.12
 Item {
     property var isCurrentItem: PathView.isCurrentItem
     property var shortname: clearShortname(modelData.shortName)
-    property var manufacturer: dataConsoles[shortname].manufacturer
-    property var release: dataConsoles[shortname].release
+    property var manufacturer: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].manufacturer : null
+    property var release: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].release : dataConsoles["default"].release
     property var manufacturerColor: (manufacturer !== null) ? dataManufacturers[manufacturer].color : "black"
 
     width: PathView.view.width
@@ -128,7 +128,5 @@ Item {
         asynchronous: true
         active: ( root.state === "collections" )
     }
-
-
 
 }

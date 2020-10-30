@@ -8,9 +8,11 @@ import "../Global"
 FocusScope {
     focus: games.focus
 
+    property var shortname: clearShortname(currentCollection.shortName)
+
     state: "all"
 
-    property int currentGameIndex: 0
+    property int currentGameIndex: api.memory.get(collectionType + "-" + currentCollectionIndex + "-currentGameIndex") || 0
     property var currentGame: {
         if (gv_games.count === 0)
             return null;
@@ -40,7 +42,7 @@ FocusScope {
 
     Rectangle {
         id: skew_color
-        readonly property var touch_color: dataConsoles[clearShortname(currentCollection.shortName)].color
+        readonly property var touch_color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].color : dataConsoles["default"].color
         width: parent.width * 0.42
         height: parent.height
         antialiasing: true
@@ -514,8 +516,7 @@ FocusScope {
                 if (api.keys.isAccept(event)) {
                     event.accepted = true;
                     if (currentGame !== null) {
-                        api.memory.set("currentCollectionIndex", currentCollectionIndex)
-                        api.memory.set("currentMenuIndex", currentMenuIndex)
+                        saveCurrentState(currentGameIndex)
                         currentGame.launch()
                     }
 
@@ -552,7 +553,7 @@ FocusScope {
                     else
                         currentCollectionIndex--;
 
-                    api.memory.set("currentCollectionIndex", currentCollectionIndex)
+                    saveCurrentState(currentGameIndex)
                     currentGameIndex = 0
                 }
 
@@ -566,7 +567,7 @@ FocusScope {
                         currentCollectionIndex++;
                     }
 
-                    api.memory.set("currentCollectionIndex", currentCollectionIndex)
+                    saveCurrentState(currentGameIndex)
                     currentGameIndex = 0
                 }
 
