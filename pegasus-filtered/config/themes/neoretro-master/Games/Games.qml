@@ -8,6 +8,12 @@ import "../Global"
 FocusScope {
     focus: games.focus
 
+    property var sortIndex: 2
+    readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre', 'lastPlayed', 'favorite']
+    readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre', 'lastPlayed':'Last Played', 'favorite':'Favorite'}
+    readonly property string sortField: sortFields[sortIndex]
+    readonly property var customSortCategories: ['Custom', 'Series']
+
     property var shortname: clearShortname(currentCollection.shortName)
 
     state: "all"
@@ -16,16 +22,31 @@ FocusScope {
     property var currentGame: {
         if (gv_games.count === 0)
             return null;
-        if (games.state === "favorites")
-            return currentCollection.games.get(filteredGames.mapToSource(currentGameIndex))
-
-        return currentCollection.games.get(currentGameIndex)
+        return currentCollection.games.get(filteredGames.mapToSource(currentGameIndex))
     }
 
     SortFilterProxyModel {
         id: filteredGames
         sourceModel: currentCollection.games
-        filters: ValueFilter { roleName: "favorite"; value: true; }
+        sorters: [
+            RoleSorter {
+                roleName: sortField
+                sortOrder: sortField == 'rating' || sortField == 'lastPlayed' || sortField == 'favorite' ? Qt.DescendingOrder : Qt.AscendingOrder
+                enabled: !customSortCategories.includes(currentCollection.summary)
+            },
+            ExpressionSorter {
+                expression: {
+                    if(!customSortCategories.includes(currentCollection.summary)) {
+                        return true;
+                    }
+
+                    var sortLeft = getCollectionSortTag(modelLeft, currentCollection.shortName);
+                    var sortRight = getCollectionSortTag(modelRight, currentCollection.shortName);
+                    return (sortLeft < sortRight);
+                }
+                enabled: customSortCategories.includes(currentCollection.summary)
+            }
+        ]
     }
 
     Behavior on focus {
@@ -344,73 +365,6 @@ FocusScope {
                                 }
                             }
                         }
-
-
-
-                        // Flipable {
-                        //     id: flipable_cover
-                        //     anchors.fill: parent
-
-                        //     property bool flipped: false
-
-                        //     front: Image {
-                        //         id: img_game_boxart
-                        //         source: currentGame.assets.boxFront || currentGame.assets.logo
-                        //         anchors.fill: parent
-                        //         // sourceSize.width: width
-                        //         // sourceSize.height: height
-                        //         fillMode: Image.PreserveAspectFit
-                        //         horizontalAlignment: Image.AlignHCenter
-                        //         verticalAlignment: Image.AlignVCenter
-                        //         asynchronous: true
-
-                        //         Behavior on source {
-                        //             PropertyAnimation {
-                        //                 target: img_game_boxart
-                        //                 property: "opacity"
-                        //                 from: 0
-                        //                 to: 1
-                        //                 duration: 600
-                        //                 easing.type: Easing.OutExpo
-                        //             }
-                        //         }
-                        //     }
-
-                        //     back: Video {
-                        //         id: video_game
-                        //         anchors.fill: parent
-                        //         source: currentGame.assets.video
-                        //         fillMode: VideoOutput.PreserveAspectFit
-                        //         muted: true
-                        //         loops: 3
-                        //         autoPlay: true
-                        //     }
-
-                        //     transform: Rotation {
-                        //         id: rotation
-                        //         origin.x: flipable_cover.width/2
-                        //         origin.y: flipable_cover.height/2
-                        //         axis.x: 1; axis.y: 0; axis.z: 0     // set axis.y to 1 to rotate around y-axis
-                        //         angle: 0    // the default angle
-                        //     }
-
-                        //     states: State {
-                        //         name: "back"
-                        //         PropertyChanges { target: rotation; angle: 180 }
-                        //         when: flipable_cover.flipped
-                        //     }
-
-                        //     transitions: Transition {
-                        //         NumberAnimation { target: rotation; property: "angle"; duration: 250 }
-                        //     }
-
-                        //     Timer {
-                        //         interval: 5000; running: true; repeat: true
-                        //         onTriggered: flipable_cover.flipped = !flipable_cover.flipped
-                        //     }
-
-                        // }
-
                     }
 
                     Loader {
@@ -457,7 +411,6 @@ FocusScope {
             anchors.horizontalCenter: parent.horizontalCenter
 
             clip: true
-            // interactive: false
 
             preferredHighlightBegin: height * 0.5
             preferredHighlightEnd: height * 0.5
@@ -465,11 +418,7 @@ FocusScope {
             currentIndex: currentGameIndex
             onCurrentIndexChanged: currentGameIndex = currentIndex
 
-            model: {
-                if (games.state === "favorites")
-                    return filteredGames
-                return currentCollection.games
-            }
+            model: filteredGames
             delegate: Item {
                 property bool isCurrentItem: GridView.isCurrentItem
                 property bool isFocused: games.focus
@@ -524,12 +473,7 @@ FocusScope {
 
                 if (api.keys.isFilters(event)) {
                     event.accepted = true;
-                    if (games.state === "all") {
-                        games.state = "favorites"
-                    }
-                    else {
-                        games.state = "all"
-                    }
+                    sortIndex = (sortIndex + 1) % sortFields.length;
                 }
 
                 if (api.keys.isCancel(event)) {
@@ -658,12 +602,27 @@ FocusScope {
         Controls {
             id: button_Y
 
-            message: ( games.state === "all" ) ? "SHOW <b>ALL ·</b> FAVORITES" : "SHOW ALL <b>· FAVORITES</b>"
+            message: "SORTED BY <b>" + getSortLabel() + "</b>";
 
             text_color: "black"
             front_color: "#FDB200"
             back_color: "white"
             input_button: "Y"
+        }
+    }
+
+    function getCollectionSortTag(gameData, collName) {
+        const matches = gameData.tagList.filter(s => s.includes('CustomSort:' + collName + ':'));
+        return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
+    }
+
+    function getSortLabel() {
+        if (currentCollection.shortName == 'lastplayed') {
+            return 'Last Played';
+        } else if (customSortCategories.includes(currentCollection.summary)) {
+            return 'Custom';
+        } else {
+            return sortLabels[sortField];
         }
     }
 
