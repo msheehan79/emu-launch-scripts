@@ -33,6 +33,78 @@ Item {
         //     }
         // }
 
+        // Favourite tag
+        Item {
+            id: favetag
+            anchors {
+                fill: parent
+            }
+            opacity: model.favorite && root.state === "games" ? 1 : 0
+            Behavior on opacity {
+                NumberAnimation { duration: 100 }
+            }
+
+            Image {
+                id: favebg
+                anchors {
+                    top: parent.top
+                    topMargin: vpx(0)
+                    right: parent.right
+                    rightMargin: vpx(0)
+                }
+                source: "../assets/favebg.svg"
+                width: vpx(32)
+                height: vpx(32)
+                sourceSize {
+                    width: vpx(32)
+                    height: vpx(32)
+                }
+                visible: false
+            }
+
+            ColorOverlay {
+                anchors.fill: favebg
+                source: favebg
+                color: "#ED3496"
+                z: 10
+            }
+
+            Image {
+                id: star
+                anchors {
+                    top: parent.top
+                    topMargin: vpx(3)
+                    right: parent.right
+                    rightMargin: vpx(3)
+                }
+                source: "../assets/star.svg"
+                width: vpx(13)
+                height: vpx(13)
+                sourceSize {
+                    width: vpx(32)
+                    height: vpx(32)
+                }
+                smooth: true
+                z: 11
+            }
+
+            z: 12
+            layer.enabled: true
+            layer.effect: OpacityMask {
+                maskSource: Item {
+                    width: favetag.width
+                    height: favetag.height
+
+                    Rectangle {
+                        anchors.centerIn: parent
+                        width: favetag.width
+                        height: favetag.height
+                        radius: cornerradius - vpx(1)
+                    }
+                }
+            }
+        }
+
         Image {
             id: img_game_logo
             source: model.assets.logo
@@ -69,10 +141,16 @@ Item {
             Behavior on opacity {
                 NumberAnimation { duration: 200; }
             }
+        }
+
+        Rectangle {
+            anchors.fill: parent
+            color: "transparent"
             border {
                 width: vpx(5)
                 color: "#00991E"
             }
+            visible: doubleFocus && root.state === "games"
         }
 
         // Rectangle {
@@ -121,15 +199,16 @@ Item {
             visible: doubleFocus
         }
 
-        Rectangle {
-            anchors.fill: parent
-            color: "transparent"
-            border {
-                width: vpx(5)
-                color: "#ED3496"
-            }
-            visible: model.favorite && root.state === "games"
-        }
+        // original favorites marker (border)
+        //Rectangle {
+        //    anchors.fill: parent
+        //    color: "transparent"
+        //    border {
+        //        width: vpx(5)
+        //        color: "#ED3496"
+        //    }
+        //    visible: model.favorite && root.state === "games"
+        //}
 
         // Image {
         //     width: parent.width * 0.6
