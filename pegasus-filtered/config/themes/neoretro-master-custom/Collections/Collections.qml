@@ -160,27 +160,35 @@ FocusScope {
 
                 if (event.key == Qt.Key_Left) {
                     event.accepted = true;
-                    if (currentCollectionIndex <= 0)
-                        if (event.isAutoRepeat)
-                            currentCollectionIndex = 0
-                        else
-                            currentCollectionIndex = allCollections.length - 1
-                    else
+                    if (currentCollectionIndex <= 0) {
+                        if (event.isAutoRepeat) {
+                            currentCollectionIndex = 0;
+                        } else {
+                            currentCollectionIndex = allCollections.length - 1;
+                        }
+                    } else {
                         currentCollectionIndex--;
-                        saveCurrentState()
+                    }
+
+                    games.currentGameIndex = 0;
+                    saveCurrentState();
                 }
 
                 if (event.key == Qt.Key_Right) {
                     event.accepted = true;
 
-                    if (currentCollectionIndex >= allCollections.length - 1)
-                        if (event.isAutoRepeat)
+                    if (currentCollectionIndex >= allCollections.length - 1) {
+                        if (event.isAutoRepeat) {
                             currentCollectionIndex = allCollections.length - 1;
-                        else
+                        } else {
                             currentCollectionIndex = 0;
-                    else
+                        }
+                    } else {
                         currentCollectionIndex++;
-                        saveCurrentState()
+                    }
+
+                    games.currentGameIndex = 0;
+                    saveCurrentState();
                 }
             }
 

@@ -18,7 +18,7 @@ FocusScope {
 
     state: "all"
 
-    property int currentGameIndex: api.memory.get(collectionType + "-" + currentCollectionIndex + "-currentGameIndex") || 0
+    property int currentGameIndex: 0
     property var currentGame: {
         if (gv_games.count === 0)
             return null;
@@ -457,6 +457,7 @@ FocusScope {
             focus: games.focus
 
             Component.onCompleted: {
+                currentGameIndex = api.memory.get(collectionType + "-" + currentCollectionIndex + "-currentGameIndex") || 0
                 positionViewAtIndex(currentGameIndex, GridView.SnapPosition)
             }
 
