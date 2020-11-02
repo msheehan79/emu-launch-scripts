@@ -99,7 +99,6 @@ Item {
                         anchors.centerIn: parent
                         width: favetag.width
                         height: favetag.height
-                        radius: cornerradius - vpx(1)
                     }
                 }
             }
@@ -152,32 +151,6 @@ Item {
             }
             visible: doubleFocus && root.state === "games"
         }
-
-        // Rectangle {
-        //     width: vpx(25)
-        //     height: vpx(25)
-        //     color: doubleFocus ? "#00991E" : "#191919"
-        //     anchors {
-        //         top: parent.top
-        //         left: parent.left
-        //     }
-
-        //     Image {
-        //         id: img_heart
-        //         width: vpx(12)
-        //         height: vpx(12)
-        //         sourceSize.width: width
-        //         sourceSize.height: height
-        //         anchors {
-        //             bottom: parent.bottom; bottomMargin: vpx(5)
-        //             right: parent.right; rightMargin: vpx(5)
-        //         }
-        //         source: "../assets/heart.png"
-        //         fillMode: Image.PreserveAspectFit
-        //     }
-
-        //     visible: (root.state !== "home" && model.favorite)
-        // }
 
         Rectangle {
             width: parent.height * 0.2

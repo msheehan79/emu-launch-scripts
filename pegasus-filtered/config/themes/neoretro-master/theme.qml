@@ -385,10 +385,13 @@ FocusScope {
         }
     }
 
-    function saveCurrentState(currentGameIndex) {
-        api.memory.set("currentMenuIndex", currentMenuIndex)
-        api.memory.set("currentCollectionType", collectionType)
-        api.memory.set("currentCollectionIndex-" + collectionType, currentCollectionIndex)
+    function saveCurrentState(currentGameIndex, sortIndex) {
+        api.memory.set("currentMenuIndex", currentMenuIndex);
+        api.memory.set("currentCollectionType", collectionType);
+        api.memory.set("currentCollectionIndex-" + collectionType, currentCollectionIndex);
+        if (sortIndex !== undefined) {
+            api.memory.set('sortIndex', sortIndex);
+        }
         if (currentGameIndex !== undefined) {
             api.memory.set(collectionType + "-" + currentCollectionIndex + "-currentGameIndex", currentGameIndex);
         }
