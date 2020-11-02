@@ -8,7 +8,7 @@ import "../Global"
 FocusScope {
     focus: games.focus
 
-    property var sortIndex: 2
+    property int sortIndex: api.memory.get('sortIndex') || 0
     readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre', 'lastPlayed', 'favorite']
     readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre', 'lastPlayed':'Last Played', 'favorite':'Favorite'}
     readonly property string sortField: sortFields[sortIndex]
@@ -18,7 +18,7 @@ FocusScope {
 
     state: "all"
 
-    property int currentGameIndex: api.memory.get(collectionType + "-" + currentCollectionIndex + "-currentGameIndex") || 0
+    property int currentGameIndex: 0
     property var currentGame: {
         if (gv_games.count === 0)
             return null;
@@ -457,6 +457,7 @@ FocusScope {
             focus: games.focus
 
             Component.onCompleted: {
+                currentGameIndex = api.memory.get(collectionType + "-" + currentCollectionIndex + "-currentGameIndex") || 0
                 positionViewAtIndex(currentGameIndex, GridView.SnapPosition)
             }
 
@@ -465,7 +466,7 @@ FocusScope {
                 if (api.keys.isAccept(event)) {
                     event.accepted = true;
                     if (currentGame !== null) {
-                        saveCurrentState(currentGameIndex)
+                        saveCurrentState(currentGameIndex, sortIndex)
                         currentGame.launch()
                     }
 
@@ -497,7 +498,7 @@ FocusScope {
                     else
                         currentCollectionIndex--;
 
-                    saveCurrentState(currentGameIndex)
+                    saveCurrentState(currentGameIndex, sortIndex)
                     currentGameIndex = 0
                 }
 
@@ -511,7 +512,7 @@ FocusScope {
                         currentCollectionIndex++;
                     }
 
-                    saveCurrentState(currentGameIndex)
+                    saveCurrentState(currentGameIndex, sortIndex)
                     currentGameIndex = 0
                 }
 
