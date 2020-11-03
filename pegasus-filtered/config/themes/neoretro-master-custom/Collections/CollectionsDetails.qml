@@ -32,7 +32,7 @@ Item {
                     id: img_logo
                     anchors.fill: parent
                     sourceSize.width: width
-                    source: "../assets/collections/logo/"+shortname+".png"
+                    source: "../assets/collections/logo/" + shortname
                     verticalAlignment: Image.AlignBottom
                     fillMode: Image.PreserveAspectFit
                 }
@@ -61,7 +61,7 @@ Item {
                     topMargin: vpx(25)
                     horizontalCenter: img_collection_logo.horizontalCenter
                 }
-                text: modelData.games.count+" games available"
+                text: modelData.games.count + " games available"
                 font {
                     family: robotoSlabLight.name
                     pixelSize: vpx(20)
@@ -93,7 +93,7 @@ Item {
                             anchors.fill: parent
                             sourceSize.width: width
                             sourceSize.height: height
-                            source: (manufacturer !== null) ? "../assets/manufacturers/logo/"+manufacturer+".svg" : ""
+                            source: (manufacturer !== null) ? "../assets/manufacturers/logo/" + manufacturer : ""
                             fillMode: Image.PreserveAspectFit
                         }
                     }

@@ -323,7 +323,6 @@ FocusScope {
         width: parent.width
         height: parent.height
         color: "white"
-
     }
 
     Home {
