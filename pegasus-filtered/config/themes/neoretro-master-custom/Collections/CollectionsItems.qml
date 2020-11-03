@@ -27,7 +27,7 @@ Item {
                 width: parent.width
                 height: parent.height
                 asynchronous: true
-                source: "../assets/collections/bg/"+shortname+".jpg"
+                source: "../assets/collections/bg/" + shortname
                 fillMode: Image.PreserveAspectCrop
             }
 
