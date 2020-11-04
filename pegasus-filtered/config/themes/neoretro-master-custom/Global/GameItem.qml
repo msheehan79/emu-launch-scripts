@@ -130,7 +130,6 @@ Item {
             wrapMode: Text.Wrap
 
             visible: model.assets.logo === ""
-            
         }
 
         Rectangle {

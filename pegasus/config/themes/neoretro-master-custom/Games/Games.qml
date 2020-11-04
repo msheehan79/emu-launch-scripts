@@ -140,12 +140,33 @@ FocusScope {
 
                     // RATING
                     RatingStars {
+                        id: ratingSection
                         readonly property var rating: (currentGame.rating *5).toFixed(1)
                         anchors {
                             top: parent.top; topMargin: parent.height * 0.1
                             right: parent.right
                         }
                     }
+
+                    // System logo for custom collections
+                    Image {
+                        id: systemlogo
+                        anchors {
+                           top: ratingSection.top; 
+                           topMargin: vpx(25);
+                           right: parent.right; 
+                           rightMargin: -vpx(20);
+                        }
+                        width: vpx(150)
+                        visible: true
+                        source: "../assets/collections/logo/" + getSystemTagName(currentGame) + ".svg"
+                        asynchronous: true
+                        fillMode: Image.PreserveAspectFit
+                        horizontalAlignment: Image.AlignHCenter
+                        verticalAlignment: Image.AlignVCenter
+                        smooth: true
+                    }
+
 
                     // TITLE + DEVELOPER + PLAYERS + GENRES + DESCRIPTION
                     Column {
@@ -627,6 +648,12 @@ FocusScope {
         } else {
             return sortLabels[sortField];
         }
+    }
+
+    // Returns the System tag name for a game, if present
+    function getSystemTagName(gameData) {
+        const matches = gameData.tagList.filter(s => s.includes('System:'));
+        return matches.length == 0 ? "" : matches[0].replace("System:", "");
     }
 
 }

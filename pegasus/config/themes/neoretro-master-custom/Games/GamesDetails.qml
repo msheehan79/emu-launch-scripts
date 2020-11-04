@@ -112,7 +112,7 @@ Item {
                             width: vpx(1)
                             color: "black"
                         }
-                        
+
                         Text {
                             id: txt_players
                             property var convertPlayer: model.players > 1 ? "1-"+model.players+" PLAYERS" : "1 PLAYER"
@@ -178,12 +178,11 @@ Item {
                     }
                 }
 
-
-            }         
+            }
         }
 
     }
-        
+
     Loader {
         id: loader_gameList_details
         width: parent.width * 0.67
