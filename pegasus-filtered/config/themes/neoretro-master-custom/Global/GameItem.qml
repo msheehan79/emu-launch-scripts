@@ -149,7 +149,7 @@ Item {
                 width: vpx(5)
                 color: "#00991E"
             }
-            visible: doubleFocus && root.state === "games"
+            visible: doubleFocus
         }
 
         Rectangle {
