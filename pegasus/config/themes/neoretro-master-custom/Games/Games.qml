@@ -34,8 +34,7 @@ FocusScope {
             RoleSorter {
                 roleName: sortField
                 sortOrder: sortField == 'rating' || sortField == 'lastPlayed' || sortField == 'favorite' ? Qt.DescendingOrder : Qt.AscendingOrder
-                //enabled: !customSortCategories.includes(currentCollection.summary)
-                enabled: true
+                enabled: !customSortCategories.includes(currentCollection.summary) && root.state === "games"
             },
             ExpressionSorter {
                 expression: {
@@ -47,8 +46,7 @@ FocusScope {
                     var sortRight = getCollectionSortTag(modelRight, currentCollection.shortName);
                     return (sortLeft < sortRight);
                 }
-                //enabled: customSortCategories.includes(currentCollection.summary)
-                enabled: false
+                enabled: customSortCategories.includes(currentCollection.summary) && root.state === "games"
             }
         ]
     }
@@ -649,8 +647,8 @@ FocusScope {
     function getSortLabel() {
         if (currentCollection.shortName == 'lastplayed') {
             return 'Last Played';
-        //} else if (customSortCategories.includes(currentCollection.summary)) {
-        //    return 'Custom';
+        } else if (customSortCategories.includes(currentCollection.summary)) {
+            return 'Custom';
         } else {
             return sortLabels[sortField];
         }

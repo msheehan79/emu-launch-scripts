@@ -162,7 +162,7 @@ FocusScope {
 
     // Additional data to display manufacturers and release dates
     property variant dataConsoles: {
-        "default":            { manufacturer: null,                release: "1999", color: "#000000", altColor: "#252525", fullName: "Default"                       },
+        "default":            { manufacturer: null,                release: null,   color: "#000000", altColor: "#252525", fullName: "Default"                       },
         "amstradcpc":         { manufacturer: "amstrad",           release: "1984", color: "#000000", altColor: "#252525", fullName: "Amstrad CPC"                   },
         "apple2":             { manufacturer: "apple",             release: "1977", color: "#000000", altColor: "#252525", fullName: "Apple II"                      },
         "atari2600":          { manufacturer: "atari",             release: "1977", color: "#000000", altColor: "#252525", fullName: "Atari 2600"                    },
