@@ -13,6 +13,8 @@ FocusScope {
     readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre', 'lastPlayed':'Last Played', 'favorite':'Favorite'}
     readonly property string sortField: sortFields[sortIndex]
     readonly property var customSortCategories: ['Custom', 'Series']
+    readonly property var customSystemLogoCategories: ['Custom', 'Series']
+    readonly property bool customCollection: customSystemLogoCategories.includes(currentCollection.summary)
 
     property var shortname: clearShortname(currentCollection.shortName)
 
@@ -148,26 +150,6 @@ FocusScope {
                         }
                     }
 
-                    // System logo for custom collections
-                    Image {
-                        id: systemlogo
-                        anchors {
-                           top: ratingSection.top; 
-                           topMargin: vpx(25);
-                           right: parent.right; 
-                           rightMargin: -vpx(20);
-                        }
-                        width: vpx(150)
-                        visible: true
-                        source: "../assets/collections/logo/" + getSystemTagName(currentGame) + ".svg"
-                        asynchronous: true
-                        fillMode: Image.PreserveAspectFit
-                        horizontalAlignment: Image.AlignHCenter
-                        verticalAlignment: Image.AlignVCenter
-                        smooth: true
-                    }
-
-
                     // TITLE + DEVELOPER + PLAYERS + GENRES + DESCRIPTION
                     Column {
                         spacing: vpx(10)
@@ -212,6 +194,30 @@ FocusScope {
                                 }
                                 color: "black"
                             }
+
+                            Text {
+                                text: "for"
+                                font {
+                                    family: global.fonts.sans
+                                    weight: Font.Light
+                                    italic: true
+                                    pixelSize: vpx(14)
+                                }
+                                color: "black"
+                                visible: customCollection
+                            }
+
+                            Text {
+                                text: dataConsoles[getSystemTagName(currentGame)].fullName
+                                font {
+                                    family: global.fonts.sans
+                                    weight: Font.Medium
+                                    pixelSize: vpx(14)
+                                }
+                                color: "black"
+                                visible: customCollection
+                            }
+
                         }
 
                         Row {
