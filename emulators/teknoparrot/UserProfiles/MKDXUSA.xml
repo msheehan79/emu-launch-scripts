@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GameName>Mario Kart DX USA</GameName>
+  <GamePath>C:\Emulation\roms\arcade\namco\Mario Kart DX USA\MK_AGP3_FINAL.exe</GamePath>
+  <TestMenuParameter />
+  <TestMenuIsExecutable>false</TestMenuIsExecutable>
+  <ExtraParameters />
+  <TestMenuExtraParameters />
+  <IconName>Icons/MKDXUSA.png</IconName>
+  <ResetHint>false</ResetHint>
+  <ConfigValues>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>XInput</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Windowed</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Enable Outputs</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>AutoAcclOff</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Use Keyboard/Button For Axis</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>ResolutionWidth</FieldName>
+      <FieldValue>1360</FieldValue>
+      <FieldType>Text</FieldType>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>ResolutionHeight</FieldName>
+      <FieldValue>768</FieldValue>
+      <FieldType>Text</FieldType>
+    </FieldInformation>
+  </ConfigValues>
+  <JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Test</ButtonName>
+      <InputMapping>Test</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi />
+      <BindName />
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Service</ButtonName>
+      <InputMapping>Service1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi />
+      <BindName />
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Start</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>16</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1ButtonStart</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 Start</BindNameXi>
+      <BindName>Input Device 0 Start</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Wheel Axis</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>true</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>true</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>0</ButtonCode>
+        <IsButton>false</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>Analog0</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <BindNameXi>Input Device 0 LeftThumbInput Device 0 X-</BindNameXi>
+      <BindName>Input Device 0 LeftThumbInput Device 0 X-</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gas</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>true</IsRightTrigger>
+        <ButtonCode>0</ButtonCode>
+        <IsButton>false</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>Analog2</InputMapping>
+      <AnalogType>Gas</AnalogType>
+      <BindNameXi>Input Device 0 RightTrigger</BindNameXi>
+      <BindName>Input Device 0 RightTrigger</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Brake</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>true</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>0</ButtonCode>
+        <IsButton>false</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1Button3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 LeftTrigger</BindNameXi>
+      <BindName>Input Device 0 LeftTrigger</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Item</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>16384</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1Button5</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 X</BindNameXi>
+      <BindName>Input Device 0 X</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Up</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>1</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 DPadUp</BindNameXi>
+      <BindName>Input Device 0 DPadUp</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Menu Down</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>2</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1ButtonDown</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 DPadDown</BindNameXi>
+      <BindName>Input Device 0 DPadDown</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Enter Switch</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>4096</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1Button1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 A</BindNameXi>
+      <BindName>Input Device 0 A</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Mario Button</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>8192</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>ExtensionOne2</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 B</BindNameXi>
+      <BindName>Input Device 0 B</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName> </ButtonName>
+      <InputMapping>Analog0</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <BindName>Hide</BindName>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>       </ButtonName>
+      <InputMapping>Analog19</InputMapping>
+      <AnalogType>KeyboardWheelHalfValue</AnalogType>
+      <BindName>Hide</BindName>
+    </JoystickButtons>
+  </JoystickButtons>
+  <EmulationProfile>NamcoMkdx</EmulationProfile>
+  <GameProfileRevision>6</GameProfileRevision>
+  <HasSeparateTestMode>false</HasSeparateTestMode>
+  <Is64Bit>false</Is64Bit>
+  <EmulatorType>TeknoParrot</EmulatorType>
+  <GunGame>false</GunGame>
+  <Patreon>false</Patreon>
+  <RequiresAdmin>false</RequiresAdmin>
+  <msysType>0</msysType>
+  <InvertedMouseAxis>false</InvertedMouseAxis>
+  <DevOnly>false</DevOnly>
+  <ExecutableName>MK_AGP3_FINAL.exe</ExecutableName>
+</GameProfile>

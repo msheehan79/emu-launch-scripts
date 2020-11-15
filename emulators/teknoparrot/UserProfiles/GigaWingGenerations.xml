@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GameName>GigaWing Generations</GameName>
+  <GameGenre>Shoot 'Em Up</GameGenre>
+  <GamePath>C:\Emulation\roms\arcade\taito-typex\Giga Wing Generations\game.exe</GamePath>
+  <TestMenuParameter />
+  <TestMenuIsExecutable>false</TestMenuIsExecutable>
+  <ExtraParameters />
+  <TestMenuExtraParameters />
+  <IconName>Icons/GigaWingGenerations.png</IconName>
+  <ResetHint>false</ResetHint>
+  <ConfigValues>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Input API</FieldName>
+      <FieldValue>DirectInput</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldOptions>
+        <string>DirectInput</string>
+        <string>XInput</string>
+      </FieldOptions>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Windowed</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldOptions />
+    </FieldInformation>
+  </ConfigValues>
+  <JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Test</ButtonName>
+      <DirectInputButton>
+        <Button>98</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Test</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button Comma</BindNameDi>
+      <BindName>Keyboard Button Comma</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Service 1</ButtonName>
+      <InputMapping>Service1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Service 2</ButtonName>
+      <InputMapping>Service2</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Coin 1</ButtonName>
+      <DirectInputButton>
+        <Button>53</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Coin1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button D5</BindNameDi>
+      <BindName>Keyboard Button D5</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Coin 2</ButtonName>
+      <DirectInputButton>
+        <Button>54</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>Coin2</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button D6</BindNameDi>
+      <BindName>Keyboard Button D6</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Start</ButtonName>
+      <DirectInputButton>
+        <Button>49</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonStart</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button D1</BindNameDi>
+      <BindName>Keyboard Button D1</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Up</ButtonName>
+      <DirectInputButton>
+        <Button>152</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button 105</BindNameDi>
+      <BindName>Keyboard Button 105</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Down</ButtonName>
+      <DirectInputButton>
+        <Button>157</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonDown</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button 110</BindNameDi>
+      <BindName>Keyboard Button 110</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Left</ButtonName>
+      <DirectInputButton>
+        <Button>154</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonLeft</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button 107</BindNameDi>
+      <BindName>Keyboard Button 107</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Right</ButtonName>
+      <DirectInputButton>
+        <Button>155</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1ButtonRight</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button 108</BindNameDi>
+      <BindName>Keyboard Button 108</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Button 1</ButtonName>
+      <DirectInputButton>
+        <Button>93</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1Button1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button C</BindNameDi>
+      <BindName>Keyboard Button C</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Button 2</ButtonName>
+      <DirectInputButton>
+        <Button>94</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1Button2</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button V</BindNameDi>
+      <BindName>Keyboard Button V</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 1 Button 3</ButtonName>
+      <DirectInputButton>
+        <Button>122</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P1Button3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button NumberPad4</BindNameDi>
+      <BindName>Keyboard Button NumberPad4</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Start</ButtonName>
+      <DirectInputButton>
+        <Button>50</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonStart</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button D2</BindNameDi>
+      <BindName>Keyboard Button D2</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Up</ButtonName>
+      <DirectInputButton>
+        <Button>66</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button R</BindNameDi>
+      <BindName>Keyboard Button R</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Down</ButtonName>
+      <DirectInputButton>
+        <Button>80</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonDown</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button F</BindNameDi>
+      <BindName>Keyboard Button F</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Left</ButtonName>
+      <DirectInputButton>
+        <Button>79</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonLeft</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button D</BindNameDi>
+      <BindName>Keyboard Button D</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Right</ButtonName>
+      <DirectInputButton>
+        <Button>81</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2ButtonRight</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button G</BindNameDi>
+      <BindName>Keyboard Button G</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Button 1</ButtonName>
+      <DirectInputButton>
+        <Button>83</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button J</BindNameDi>
+      <BindName>Keyboard Button J</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Button 2</ButtonName>
+      <DirectInputButton>
+        <Button>85</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button2</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button L</BindNameDi>
+      <BindName>Keyboard Button L</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Player 2 Button 3</ButtonName>
+      <DirectInputButton>
+        <Button>64</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <InputMapping>P2Button3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button W</BindNameDi>
+      <BindName>Keyboard Button W</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+    </JoystickButtons>
+  </JoystickButtons>
+  <EmulationProfile>TaitoTypeXGeneric</EmulationProfile>
+  <GameProfileRevision>6</GameProfileRevision>
+  <HasSeparateTestMode>false</HasSeparateTestMode>
+  <Is64Bit>false</Is64Bit>
+  <EmulatorType>OpenParrot</EmulatorType>
+  <GunGame>false</GunGame>
+  <Patreon>false</Patreon>
+  <RequiresAdmin>false</RequiresAdmin>
+  <msysType>0</msysType>
+  <InvertedMouseAxis>false</InvertedMouseAxis>
+  <DevOnly>false</DevOnly>
+  <xAxisMin>0</xAxisMin>
+  <xAxisMax>255</xAxisMax>
+  <yAxisMin>0</yAxisMin>
+  <yAxisMax>255</yAxisMax>
+</GameProfile>

@@ -18,7 +18,6 @@ emulators/cemu/*
 !emulators/teknoparrot/
 emulators/teknoparrot/*
 !emulators/teknoparrot/ParrotData.xml
-!emulators/teknoparrot/GameProfiles/
 !emulators/teknoparrot/UserProfiles/
 
 # Ignore most BIOS folders, but the MAME BIOS directory also holds config data

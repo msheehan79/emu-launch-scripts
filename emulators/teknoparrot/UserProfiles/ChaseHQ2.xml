@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GameName>Chase H.Q. 2</GameName>
+  <GameGenre>Racing</GameGenre>
+  <GamePath>C:\Emulation\roms\arcade\taito-typex\Chase HQ 2\game.exe</GamePath>
+  <TestMenuParameter />
+  <TestMenuIsExecutable>false</TestMenuIsExecutable>
+  <ExtraParameters />
+  <TestMenuExtraParameters />
+  <IconName>Icons/ChaseHQ2.png</IconName>
+  <ResetHint>false</ResetHint>
+  <ConfigValues>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Input API</FieldName>
+      <FieldValue>XInput</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldOptions>
+        <string>DirectInput</string>
+        <string>XInput</string>
+      </FieldOptions>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Windowed</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Enable Outputs</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Disable Cel Shaded</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Use Keyboard/Button For Axis</FieldName>
+      <FieldValue>0</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Keyboard/Button Axis Wheel Sensitivity</FieldName>
+      <FieldValue>Medium</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldOptions>
+        <string>Low</string>
+        <string>Medium Low</string>
+        <string>Medium</string>
+        <string>Medium High</string>
+        <string>High</string>
+        <string>Instant</string>
+      </FieldOptions>
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Keyboard/Button Axis Pedal Sensitivity</FieldName>
+      <FieldValue>Medium</FieldValue>
+      <FieldType>Dropdown</FieldType>
+      <FieldOptions>
+        <string>Low</string>
+        <string>Medium Low</string>
+        <string>Medium</string>
+        <string>Medium High</string>
+        <string>High</string>
+        <string>Instant</string>
+      </FieldOptions>
+    </FieldInformation>
+  </ConfigValues>
+  <JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Test</ButtonName>
+      <InputMapping>Test</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi />
+      <BindName />
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Service</ButtonName>
+      <InputMapping>Service1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi />
+      <BindName />
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Coin</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>32</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>Coin1</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 Back</BindNameXi>
+      <BindName>Input Device 0 Back</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Start</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>16</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>ExtensionOne4</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 Start</BindNameXi>
+      <BindName>Input Device 0 Start</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Wheel Axis</ButtonName>
+      <DirectInputButton>
+        <Button>154</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
+      <XInputButton>
+        <IsLeftThumbX>true</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>true</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>0</ButtonCode>
+        <IsButton>false</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>Analog4</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <BindNameDi>Keyboard Button 107</BindNameDi>
+      <BindNameXi>Input Device 0 LeftThumbInput Device 0 X-</BindNameXi>
+      <BindName>Input Device 0 LeftThumbInput Device 0 X-</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>true</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Wheel Axis Left</ButtonName>
+      <InputMapping>Analog4</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>true</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>true</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Wheel Axis Right</ButtonName>
+      <InputMapping>Analog4</InputMapping>
+      <AnalogType>Wheel</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>true</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>true</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Gas</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>true</IsRightTrigger>
+        <ButtonCode>0</ButtonCode>
+        <IsButton>false</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>Analog6</InputMapping>
+      <AnalogType>Gas</AnalogType>
+      <BindNameXi>Input Device 0 RightTrigger</BindNameXi>
+      <BindName>Input Device 0 RightTrigger</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Brake</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>true</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>0</ButtonCode>
+        <IsButton>false</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>Analog8</InputMapping>
+      <AnalogType>Brake</AnalogType>
+      <BindNameXi>Input Device 0 LeftTrigger</BindNameXi>
+      <BindName>Input Device 0 LeftTrigger</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Shift Low</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>16384</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1ButtonUp</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 X</BindNameXi>
+      <BindName>Input Device 0 X</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Shift-Nitro</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>512</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>P1ButtonDown</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 RightShoulder</BindNameXi>
+      <BindName>Input Device 0 RightShoulder</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Pato-Nitro</ButtonName>
+      <XInputButton>
+        <IsLeftThumbX>false</IsLeftThumbX>
+        <IsRightThumbX>false</IsRightThumbX>
+        <IsLeftThumbY>false</IsLeftThumbY>
+        <IsRightThumbY>false</IsRightThumbY>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsLeftTrigger>false</IsLeftTrigger>
+        <IsRightTrigger>false</IsRightTrigger>
+        <ButtonCode>256</ButtonCode>
+        <IsButton>true</IsButton>
+        <ButtonIndex>0</ButtonIndex>
+        <XInputIndex>0</XInputIndex>
+      </XInputButton>
+      <InputMapping>ExtensionOne3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <BindNameXi>Input Device 0 LeftShoulder</BindNameXi>
+      <BindName>Input Device 0 LeftShoulder</BindName>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+    </JoystickButtons>
+  </JoystickButtons>
+  <EmulationProfile>ChaseHq2</EmulationProfile>
+  <GameProfileRevision>16</GameProfileRevision>
+  <HasSeparateTestMode>false</HasSeparateTestMode>
+  <Is64Bit>false</Is64Bit>
+  <EmulatorType>OpenParrot</EmulatorType>
+  <Patreon>false</Patreon>
+  <RequiresAdmin>false</RequiresAdmin>
+  <msysType>0</msysType>
+  <InvertedMouseAxis>false</InvertedMouseAxis>
+  <GunGame>false</GunGame>
+  <DevOnly>false</DevOnly>
+  <xAxisMin>0</xAxisMin>
+  <xAxisMax>255</xAxisMax>
+  <yAxisMin>0</yAxisMin>
+  <yAxisMax>255</yAxisMax>
+</GameProfile>
