@@ -446,6 +446,10 @@ states/nes/*
 states/pcfx/*
 !states/pcfx/readme.txt
 
+!states/ps2/
+states/ps2/*
+!states/ps2/readme.txt
+
 !states/psp/
 states/psp/*
 !states/psp/readme.txt
