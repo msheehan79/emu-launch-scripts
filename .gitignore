@@ -178,6 +178,10 @@ saves/nes/*
 saves/pcfx/*
 !saves/pcfx/readme.txt
 
+!saves/ps2/
+saves/ps2/*
+!saves/ps2/readme.txt
+
 !saves/psp/
 saves/psp/*.*
 saves/psp/PSP/*.*
