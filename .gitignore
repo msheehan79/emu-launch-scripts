@@ -12,6 +12,7 @@ emulators/*
 !emulators/cemu/
 emulators/cemu/*
 !emulators/cemu/settings.xml
+!emulators/cemu/cemuhook.ini
 !emulators/cemu/controllerProfiles/
 !emulators/cemu/gameProfiles/
 
