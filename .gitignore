@@ -4,6 +4,8 @@ artwork/
 metadata/
 /xpadder/
 launch/WIP/
+/util/ds4windows/*
+!/util/ds4windows/Profiles.xml
 
 # Ignore most emulator folders, but the CEMU and TeknoParrot directories hold relevant config data
 !emulators
