@@ -11,14 +11,8 @@
   <formLocationX>910</formLocationX>
   <formLocationY>334</formLocationY>
   <Controller1>Default</Controller1>
-  <Controller2>
-  </Controller2>
-  <Controller3>
-  </Controller3>
-  <Controller4>
-  </Controller4>
-  <LastChecked>12/06/2020 20:19:27</LastChecked>
-  <CheckWhen>24</CheckWhen>
+  <LastChecked>01/01/2021 11:28:22</LastChecked>
+  <CheckWhen>0</CheckWhen>
   <Notifications>2</Notifications>
   <DisconnectBTAtStop>False</DisconnectBTAtStop>
   <SwipeProfiles>True</SwipeProfiles>
