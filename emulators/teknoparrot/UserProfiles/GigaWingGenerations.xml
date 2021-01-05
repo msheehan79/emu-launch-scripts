@@ -15,6 +15,8 @@
       <FieldName>Input API</FieldName>
       <FieldValue>DirectInput</FieldValue>
       <FieldType>Dropdown</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
       <FieldOptions>
         <string>DirectInput</string>
         <string>XInput</string>
@@ -25,6 +27,17 @@
       <FieldName>Windowed</FieldName>
       <FieldValue>0</FieldValue>
       <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
+      <FieldOptions />
+    </FieldInformation>
+    <FieldInformation>
+      <CategoryName>General</CategoryName>
+      <FieldName>Framelimiter</FieldName>
+      <FieldValue>1</FieldValue>
+      <FieldType>Bool</FieldType>
+      <FieldMin>0</FieldMin>
+      <FieldMax>0</FieldMax>
       <FieldOptions />
     </FieldInformation>
   </ConfigValues>
@@ -49,6 +62,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Service 1</ButtonName>
@@ -59,6 +74,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Service 2</ButtonName>
@@ -69,6 +86,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Coin 1</ButtonName>
@@ -90,6 +109,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Coin 2</ButtonName>
@@ -111,6 +132,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Start</ButtonName>
@@ -132,6 +155,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Up</ButtonName>
@@ -153,6 +178,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Down</ButtonName>
@@ -174,6 +201,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Left</ButtonName>
@@ -195,6 +224,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Right</ButtonName>
@@ -216,6 +247,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Button 1</ButtonName>
@@ -237,6 +270,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Button 2</ButtonName>
@@ -258,6 +293,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 1 Button 3</ButtonName>
@@ -279,6 +316,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Start</ButtonName>
@@ -300,6 +339,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Up</ButtonName>
@@ -321,6 +362,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Down</ButtonName>
@@ -342,6 +385,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Left</ButtonName>
@@ -363,6 +408,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Right</ButtonName>
@@ -384,6 +431,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Button 1</ButtonName>
@@ -405,6 +454,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Button 2</ButtonName>
@@ -426,6 +477,8 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Player 2 Button 3</ButtonName>
@@ -447,18 +500,20 @@
       <HideWithRawInput>false</HideWithRawInput>
       <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
       <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>TaitoTypeXGeneric</EmulationProfile>
-  <GameProfileRevision>6</GameProfileRevision>
+  <GameProfileRevision>7</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <EmulatorType>OpenParrot</EmulatorType>
-  <GunGame>false</GunGame>
   <Patreon>false</Patreon>
   <RequiresAdmin>false</RequiresAdmin>
   <msysType>0</msysType>
   <InvertedMouseAxis>false</InvertedMouseAxis>
+  <GunGame>false</GunGame>
   <DevOnly>false</DevOnly>
   <xAxisMin>0</xAxisMin>
   <xAxisMax>255</xAxisMax>
