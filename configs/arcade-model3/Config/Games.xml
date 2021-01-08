@@ -9,10 +9,10 @@
   load them. Do not modify this unless you really know what you're doing!
 -->
 <games>
-  <game name="bass">
+  <game name="bassdx">
     <identity>
       <title>Sega Bass Fishing</title>
-      <version>Japan</version>
+      <version>USA, Deluxe</version>
       <manufacturer>Sega</manufacturer>
       <year>1997</year>
     </identity>
@@ -27,10 +27,10 @@
     </hardware>
     <roms>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
-        <file offset="0" name="epr-20646.20" crc32="0xD740AE06" />
-        <file offset="2" name="epr-20645.19" crc32="0x8EEFA2B0" />
-        <file offset="4" name="epr-20644.18" crc32="0xC28DB2B6" />
-        <file offset="6" name="epr-20643.17" crc32="0xDAF02716" />
+        <file offset="0" name="epr-20786.20" crc32="0xB7C7CFFB" />
+        <file offset="2" name="epr-20785.19" crc32="0xF390076D" />
+        <file offset="4" name="epr-20784.18" crc32="0xBE8047D9" />
+        <file offset="6" name="epr-20783.17" crc32="0x3AD976F9" />
       </region>
       <region name="banked_crom" stride="8" chunk_size="2" byte_swap="true">
         <!-- CROM0 -->
@@ -77,9 +77,9 @@
     </roms>
   </game>
 
-  <game name="bassdx" parent="bass">
+  <game name="getbassdx" parent="bassdx">
     <identity>
-      <title>Sega Bass Fishing</title>
+      <title>Get Bass: Sega Bass Fishing</title>
       <version>Japan, Deluxe</version>
       <manufacturer>Sega</manufacturer>
       <year>1997</year>
@@ -103,10 +103,36 @@
     </roms>
   </game>
 
-  <game name="getbass" parent="bass">
+  <game name="getbassur" parent="bassdx">
     <identity>
-      <title>Get Bass</title>
-      <version></version>
+      <title>Get Bass: Sega Bass Fishing</title>
+      <version>Japan, Upright</version>
+      <manufacturer>Sega</manufacturer>
+      <year>1997</year>
+    </identity>
+    <hardware>
+      <platform>Sega Model 3</platform>
+      <stepping>1.0</stepping>
+      <pci_bridge>MPC106</pci_bridge>
+      <inputs>
+        <input type="common" />
+        <input type="fishing" />
+      </inputs>
+    </hardware>
+    <roms>
+      <region name="crom" stride="8" chunk_size="2" byte_swap="true">
+        <file offset="0" name="epr-20646.20" crc32="0xD740AE06" />
+        <file offset="2" name="epr-20645.19" crc32="0x8EEFA2B0" />
+        <file offset="4" name="epr-20644.18" crc32="0xC28DB2B6" />
+        <file offset="6" name="epr-20643.17" crc32="0xDAF02716" />
+      </region>
+    </roms>
+  </game>
+
+  <game name="getbass" parent="bassdx">
+    <identity>
+      <title>Get Bass: Sega Bass Fishing</title>
+	  <version>Japan, Standard</version>
       <manufacturer>Sega</manufacturer>
       <year>1997</year>
     </identity>
@@ -137,7 +163,7 @@
   <game name="daytona2">
     <identity>
       <title>Daytona USA 2 - Battle on the Edge</title>
-      <version>Revision A</version>
+      <version>Japan, Revision A</version>
       <manufacturer>Sega</manufacturer>
       <year>1998</year>
     </identity>
@@ -146,6 +172,7 @@
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
       <real3d_status_bit_set_percent_of_frame>24</real3d_status_bit_set_percent_of_frame>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -225,10 +252,10 @@
     </roms>
   </game>
 
-  <game name="dayto2pe">
+  <game name="dayto2pe" parent="daytona2">
     <identity>
       <title>Daytona USA 2 - Power Edition</title>
-      <version></version>
+	  <version>Japan</version>
       <manufacturer>Sega</manufacturer>
       <year>1998</year>
     </identity>
@@ -236,6 +263,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -300,18 +328,6 @@
         <file offset="0x800000" name="mpr-21286.23" crc32="0x749DFEF0" />
         <file offset="0xC00000" name="mpr-21288.25" crc32="0x14BEE38E" />
       </region>
-      <region name="mpeg_program" stride="1" chunk_size="1" byte_swap="true">
-        <file offset="0" name="epr-20886.ic2" crc32="0x65B05F98" />
-      </region>
-      <region name="mpeg_music" stride="1" chunk_size="1">
-        <file offset="0x000000" name="mpr-20887.ic18" crc32="0xA0757684" />
-        <file offset="0x400000" name="mpr-20888.ic20" crc32="0xB495FE65" />
-        <file offset="0x800000" name="mpr-20889.ic22" crc32="0x18EEC79E" />
-        <file offset="0xC00000" name="mpr-20890.ic24" crc32="0xAAC96FA2" />
-      </region>
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-20985.bin" crc32="0xB139481D" />
-      </region>
     </roms>
   </game>
 
@@ -327,6 +343,7 @@
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -388,7 +405,39 @@
     </roms>
   </game>
 
-  <game name="dirtdvlsa" parent="dirtdvls">
+  <game name="dirtdvlsu" parent="dirtdvls">
+    <identity>
+      <title>Dirt Devils</title>
+      <version>USA, Revision A</version>
+      <manufacturer>Sega</manufacturer>
+      <year>1998</year>
+    </identity>
+  <hardware>
+      <platform>Sega Model 3</platform>
+      <stepping>2.1</stepping>
+      <mpeg_board>DSB2</mpeg_board>
+      <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
+      <inputs>
+        <input type="common" />
+        <input type="vehicle" />
+        <input type="shiftupdown" />
+        <input type="handbrake" />
+        <input type="viewchange" />
+      </inputs>
+      <encryption_key>0x29290f17</encryption_key>
+    </hardware>
+    <roms>
+      <region name="crom" stride="8" chunk_size="2" byte_swap="true">
+        <file offset="0" name="epr-21057a.20" crc32="0x36065989" />
+        <file offset="2" name="epr-21056a.19" crc32="0xB7C18B60" />
+        <file offset="4" name="epr-21055a.18" crc32="0x539B3D7F" />
+        <file offset="6" name="epr-21054a.17" crc32="0xE9717FC6" />
+      </region>
+    </roms>
+  </game>
+
+  <game name="dirtdvlsau" parent="dirtdvls">
     <identity>
       <title>Dirt Devils</title>
       <version>Australia, Revision A</version>
@@ -400,6 +449,7 @@
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -416,10 +466,6 @@
         <file offset="4" name="epr-21059a.18" crc32="0xF31A2AA4" />
         <file offset="6" name="epr-21058a.17" crc32="0x4D7FDC8D" />
       </region>
-      <!-- Spindizzi notes : apparently it uses the same rom from scud race-->
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-19338a.bin" crc32="0xC9FAC464" />
-      </region>
     </roms>
   </game>
   
@@ -435,6 +481,7 @@
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -451,17 +498,13 @@
         <file offset="4" name="epr-21051a.18" crc32="0x84F72AA2" />
         <file offset="6" name="epr-21050a.17" crc32="0x37204FE6" />
       </region>
-      <!-- Spindizzi notes : apparently it uses the same rom from scud race-->
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-19338a.bin" crc32="0xC9FAC464" />
-      </region>
     </roms>
   </game>
 
   <game name="dirtdvlsg" parent="dirtdvls">
     <identity>
       <title>Dirt Devils</title>
-      <version>German</version>
+      <version>Export, Ver. G?</version>
       <manufacturer>Sega</manufacturer>
       <year>1998</year>
     </identity>
@@ -470,6 +513,7 @@
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -485,10 +529,6 @@
         <file offset="2" name="ic19.19" crc32="0x01B2A2DC" />
         <file offset="4" name="ic18.18" crc32="0xEE859E65" />
         <file offset="6" name="ic17.17" crc32="0xEC16BCDF" />
-      </region>
-      <!-- Spindizzi notes : apparently it uses the same rom from scud race-->
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-19338a.bin" crc32="0xC9FAC464" />
       </region>
     </roms>
   </game>
@@ -592,28 +632,28 @@
       <encryption_key>0x2923aa91</encryption_key>
     </hardware>
     <roms>
+    	<patches>
+        <!-- Skips over cabinet network error -->
+        <patch region="crom" bits="32" offset="0x4a2b7c" value="0x60000000" />
+      </patches>
       <!-- Hand written SEGA labels in this form:  TITLE: QQ  ROM NO: IC17  CHECK SUM: 551B  9/12-'99 -->
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
         <file offset="0" name="qq.ic20" crc32="0xB12FE61C" />
-        <file offset="2" name="qq.ic19" crc32="0xCA02F571" /> <!-- BAD_DUMP -->
-        <file offset="4" name="qq.ic18" crc32="0xE33DA02F" /> <!-- BAD_DUMP -->
-        <file offset="6" name="qq.ic17" crc32="0x1DB889E0" /> <!-- BAD_DUMP -->
+        <file offset="2" name="qq.ic19" crc32="0xA646C7E5" />
+        <file offset="4" name="qq.ic18" crc32="0x17B0BB2C" />
+        <file offset="6" name="qq.ic17" crc32="0x420B5EB8" />
       </region>
       <!-- Hand written SEGA labels in this form:  TITLE: QQ  ROM NO: IC13  CHECK SUM: 6B84  9/12-'99 -->
       <region name="banked_crom" stride="8" chunk_size="2" byte_swap="true">
         <!-- CROM3 -->
-        <file offset="0x3000000" name="qq.ic16" crc32="0x3525B46D" />
-        <file offset="0x3000002" name="qq.ic15" crc32="0x6EE8AF07" /> <!-- BAD_DUMP -->
-        <file offset="0x3000004" name="qq.ic14" crc32="0x678B9C2C" /> <!-- BAD_DUMP -->
-        <file offset="0x3000006" name="qq.ic13" crc32="0x75413A76" /> <!-- BAD_DUMP -->
+        <file offset="0x3000000" name="qq.ic16" crc32="0x3634F178" />
+        <file offset="0x3000002" name="qq.ic15" crc32="0x91C5A2A1" />
+        <file offset="0x3000004" name="qq.ic14" crc32="0xB41DB79B" />
+        <file offset="0x3000006" name="qq.ic13" crc32="0xBF3ACA1B" />
       </region>
       <!-- Hand written SEGA labels in this form:  TITLE: QQ  ROM NO: IC21  CHECK SUM: 0994  9/12-'99 -->
       <region name="sound_program" stride="1" chunk_size="1" byte_swap="true">
-        <file offset="0" name="qq.ic21" crc32="0xD8496BCA" /> <!-- BAD_DUMP -->
-      </region>
-      <!-- Spindizzi notes : apparently it uses the same rom from scud race-->
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-19338a.bin" crc32="0xC9FAC464" />
+        <file offset="0" name="qq.ic21" crc32="0x0C55CA5F" />
       </region>
     </roms>
   </game>
@@ -643,11 +683,9 @@
       </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
         <file offset="0" name="epr-22898.20" crc32="0xEFB96701" />
+        <!-- file offset="2" name="epr-22897.19" crc32="0x9755DD8C" - same data as EPR-22905 in EAC -->
+        <!-- file offset="4" name="epr-22896.18" crc32="0x0FF828A8" - same data as EPR-22904 in EAC -->
         <file offset="6" name="epr-22895.17" crc32="0x07DF16A0" />
-      </region>
-      <!-- Spindizzi notes : apparently it uses the same rom from scud race-->
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-19338a.bin" crc32="0xC9FAC464" />
       </region>
     </roms>
   </game>
@@ -677,11 +715,9 @@
       </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
         <file offset="0" name="epr-22894.20" crc32="0xCDE48C5D" />
+        <!-- file offset="2" name="epr-22893.19" crc32="0x9755DD8C" - same data as EPR-22905 in EAC -->
+        <!-- file offset="4" name="epr-22892.18" crc32="0x0FF828A8" - same data as EPR-22904 in EAC -->
         <file offset="6" name="epr-22891.17" crc32="0x823A251C" />
-      </region>
-      <!-- Spindizzi notes : apparently it uses the same rom from scud race-->
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-19338a.bin" crc32="0xC9FAC464" />
       </region>
     </roms>
   </game>
@@ -803,6 +839,7 @@
     <hardware>
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -875,6 +912,7 @@
     <hardware>
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -968,13 +1006,14 @@
   <game name="lemans24">
     <identity>
       <title>Le Mans 24</title>
-      <version>Revision B</version>
+      <version>Japan, Revision B</version>
       <manufacturer>Sega</manufacturer>
       <year>1997</year>
     </identity>
     <hardware>
       <platform>Sega Model 3</platform>
       <stepping>1.5</stepping>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -1124,10 +1163,11 @@
     </roms>
   </game>
 
-  <game name="lostwsgo" parent="lostwsga">
+  <game name="lostwsgp" parent="lostwsga">
     <identity>
       <title>The Lost World</title>
-      <version>Original Revision</version>
+      <!-- build 1997/06/24, location test or preview version, about half of game is available, Stage 3-2 ends with "Coming Soon?" -->
+      <version>Location Test</version>
       <manufacturer>Sega</manufacturer>
       <year>1997</year>
     </identity>
@@ -1171,6 +1211,10 @@
       <encryption_key>0x29266e45</encryption_key>
     </hardware>
     <roms>
+      <patches>
+        <!-- Enable Region change (remove the patch to return to Japan region) -->
+        <patch region="crom" bits="32" offset="0x14B25C" value="0x38600001" />
+      </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
         <file offset="0" name="epr-21434.20" crc32="0xE028D7CA" />
         <file offset="2" name="epr-21436.19" crc32="0x22BCBCA3" />
@@ -1217,7 +1261,7 @@
   <game name="oceanhun">
     <identity>
       <title>The Ocean Hunter</title>
-      <version></version>
+	  <version>Japan</version>
       <manufacturer>Sega</manufacturer>
       <year>1998</year>
     </identity>
@@ -1288,7 +1332,7 @@
   <game name="scud">
     <identity>
       <title>Scud Race</title>
-      <version>Australia, Twin</version>
+      <version>Export, Twin/DX</version>
       <manufacturer>Sega</manufacturer>
       <year>1996</year>
     </identity>
@@ -1296,6 +1340,7 @@
       <platform>Sega Model 3</platform>
       <stepping>1.5</stepping>
       <mpeg_board>DSB1</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -1304,15 +1349,11 @@
       </inputs>
     </hardware>
     <roms>
-      <patches>
-        <!-- Secret debug menu -->
-        <patch region="crom" bits="32" offset="0x199DE8" value="0x00050208" />
-      </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
-        <file offset="0" name="epr-19734.20" crc32="0xBE897336" />
-        <file offset="2" name="epr-19733.19" crc32="0x6565E29A" />
-        <file offset="4" name="epr-19732.18" crc32="0x23E864BB" />
-        <file offset="6" name="epr-19731.17" crc32="0x3EE6447E" />
+        <file offset="0" name="epr-19691.20" crc32="0x83523B89" />
+        <file offset="2" name="epr-19690.19" crc32="0x25F007FE" />
+        <file offset="4" name="epr-19689.18" crc32="0xCBCE6D62" />
+        <file offset="6" name="epr-19688.17" crc32="0xA4C85103" />
       </region>
       <region name="banked_crom" stride="8" chunk_size="2" byte_swap="true">
         <!-- CROM0 -->
@@ -1371,10 +1412,10 @@
     </roms>
   </game>
 
-  <game name="scuda" parent="scud">
+  <game name="scudau" parent="scud">
     <identity>
       <title>Scud Race</title>
-      <version>Export, Twin</version>
+      <version>Australia, Twin/DX</version>
       <manufacturer>Sega</manufacturer>
       <year>1996</year>
     </identity>
@@ -1382,6 +1423,7 @@
       <platform>Sega Model 3</platform>
       <stepping>1.5</stepping>
       <mpeg_board>DSB1</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -1390,19 +1432,23 @@
       </inputs>
     </hardware>
     <roms>
+      <patches>
+        <!-- Secret debug menu -->
+        <patch region="crom" bits="32" offset="0x199DE8" value="0x00050208" />
+      </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
-        <file offset="0" name="epr-19691.20" crc32="0x83523B89" />
-        <file offset="2" name="epr-19690.19" crc32="0x25F007FE" />
-        <file offset="4" name="epr-19689.18" crc32="0xCBCE6D62" />
-        <file offset="6" name="epr-19688.17" crc32="0xA4C85103" />
+        <file offset="0" name="epr-19734.20" crc32="0xBE897336" />
+        <file offset="2" name="epr-19733.19" crc32="0x6565E29A" />
+        <file offset="4" name="epr-19732.18" crc32="0x23E864BB" />
+        <file offset="6" name="epr-19731.17" crc32="0x3EE6447E" />
       </region>
     </roms>
   </game>
 
-  <game name="scudj" parent="scud">
+  <game name="scuddx" parent="scud">
     <identity>
       <title>Scud Race</title>
-      <version>Japan, Deluxe</version>
+      <version>Export, Deluxe</version>
       <manufacturer>Sega</manufacturer>
       <year>1996</year>
     </identity>
@@ -1410,6 +1456,7 @@
       <platform>Sega Model 3</platform>
       <stepping>1.5</stepping>
       <mpeg_board>DSB1</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -1472,7 +1519,7 @@
   <game name="scudplus" parent="scud">
     <identity>
       <title>Scud Race Plus</title>
-      <version>Revision A</version>
+      <version>Export, Twin/DX, Revision A</version>
       <manufacturer>Sega</manufacturer>
       <year>1997</year>
     </identity>
@@ -1480,6 +1527,7 @@
       <platform>Sega Model 3</platform>
       <stepping>1.5</stepping>
       <mpeg_board>DSB1</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -1516,7 +1564,7 @@
   <game name="scudplusa" parent="scud">
     <identity>
       <title>Scud Race Plus</title>
-      <version></version>
+	  <version>Export, Twin/DX</version>
       <manufacturer>Sega</manufacturer>
       <year>1997</year>
     </identity>
@@ -1525,6 +1573,7 @@
       <stepping>1.5</stepping>
       <mpeg_board>DSB1</mpeg_board>
       <pci_bridge>MPC106</pci_bridge>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -1568,12 +1617,17 @@
     <hardware>
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="ski" />
       </inputs>
     </hardware>
     <roms>
+      <patches>
+        <!-- remove driveboard error -->
+        <patch region="crom" bits="32" offset="0x4d06f4" value="0x41860030" />
+      </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
         <file offset="0" name="epr-20355.20" crc32="0x7A784E67" />
         <file offset="2" name="epr-20354.18" crc32="0xACA62BF8" />
@@ -1633,7 +1687,7 @@
   <game name="spikeofe">
     <identity>
       <title>Spikeout Final Edition</title>
-      <version></version>
+	  <version>Export</version>
       <manufacturer>Sega</manufacturer>
       <year>1999</year>
     </identity>
@@ -1641,6 +1695,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="joystick1" />
@@ -1719,7 +1774,7 @@
   <game name="spikeout">
     <identity>
       <title>Spikeout</title>
-      <version>Revision C</version>
+      <version>Export, Revision C</version>
       <manufacturer>Sega</manufacturer>
       <year>1998</year>
     </identity>
@@ -1727,6 +1782,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.1</stepping>
       <mpeg_board>DSB2</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="joystick1" />
@@ -1805,7 +1861,7 @@
   <game name="srally2">
     <identity>
       <title>Sega Rally 2</title>
-      <version></version>
+	  <version>Export</version>
       <manufacturer>Sega</manufacturer>
       <year>1998</year>
     </identity>
@@ -1813,6 +1869,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
       <mpeg_board>DSB2</mpeg_board>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="vehicle" />
@@ -1891,7 +1948,7 @@
     </roms>
   </game>
 
-  <game name="srally2p">
+  <game name="srally2p" parent="srally2">
     <identity>
       <title>Sega Rally 2</title>
       <version>Prototype</version>
@@ -1912,7 +1969,7 @@
     </hardware>
     <roms>
     	<patches>
-        <!-- Spindizzi notes : Not working ATM - Need correct patches or jtag stuffs -->
+        <!-- Spindizzi notes : Not working ATM - Need correct patches for jtag stuffs -->
         <!-- Test 1 -->
         <!--
         <patch region="crom" bits="32" offset="0x5bebc" value="0x60000000" />
@@ -1936,64 +1993,16 @@
         <file offset="4" name="ic18.18" crc32="0xDE4F06E9" />
         <file offset="6" name="ic17.17" crc32="0x328796E5" />
       </region>
-      <region name="banked_crom" stride="8" chunk_size="2" byte_swap="true">
-        <!-- CROM0 -->
-        <file offset="0x0000000" name="mpr-20605.4" crc32="0x00513401" />
-        <file offset="0x0000002" name="mpr-20605.3" crc32="0x99C5F396" />
-        <file offset="0x0000004" name="mpr-20603.2" crc32="0xAD0D8EB8" />
-        <file offset="0x0000006" name="mpr-20602.1" crc32="0x60CFA72A" />
-        <!-- CROM1 -->
-        <file offset="0x1000000" name="mpr-20609.8" crc32="0xC03CC0E5" />
-        <file offset="0x1000002" name="mpr-20608.7" crc32="0x0C9B0571" />
-        <file offset="0x1000004" name="mpr-20607.6" crc32="0x6DA85AA3" />
-        <file offset="0x1000006" name="mpr-20606.5" crc32="0x072498FD" />
-        <!-- CROM2 -->
-        <file offset="0x2000000" name="mpr-20613.12" crc32="0x2938C0D9" />
-        <file offset="0x2000002" name="mpr-20612.11" crc32="0x721A44B6" />
-        <file offset="0x2000004" name="mpr-20611.10" crc32="0x5D9F8BA2" />
-        <file offset="0x2000006" name="mpr-20610.9"  crc32="0xB6E0FF4E" />
-      </region>
-      <region name="vrom" stride="32" chunk_size="2">
-        <file offset="0"  name="mpr-20616.26" crc32="0xE11DCF8B" />
-        <file offset="2"  name="mpr-20617.27" crc32="0x96ACEF3F" />
-        <file offset="4"  name="mpr-20618.28" crc32="0x6C281281" />
-        <file offset="6"  name="mpr-20619.29" crc32="0x0FA65819" />
-        <file offset="8"  name="mpr-20620.30" crc32="0xEE79585F" />
-        <file offset="10" name="mpr-20621.31" crc32="0x3A99148F" />
-        <file offset="12" name="mpr-20622.32" crc32="0x0618F056" />
-        <file offset="14" name="mpr-20623.33" crc32="0xCCF31B85" />
-        <file offset="16" name="mpr-20624.34" crc32="0x90F30936" />
-        <file offset="18" name="mpr-20625.35" crc32="0x04F804FA" />
-        <file offset="20" name="mpr-20626.36" crc32="0x2D6C97D6" />
-        <file offset="22" name="mpr-20627.37" crc32="0xA14EE871" />
-        <file offset="24" name="mpr-20628.38" crc32="0xBBA829A3" />
-        <file offset="26" name="mpr-20629.39" crc32="0xEAD2EB31" />
-        <file offset="28" name="mpr-20630.40" crc32="0xCC5881B8" />
-        <file offset="30" name="mpr-20631.41" crc32="0x5CB69FFD" />
-      </region>
       <region name="sound_program" stride="1" chunk_size="1" byte_swap="true">
         <file offset="0" name="ic21.21" crc32="0x82A4EB2E" />
-      </region>
-      <region name="sound_samples" stride="1" chunk_size="1" byte_swap="true">
-        <file offset="0x000000" name="mpr-20614.22" crc32="0xA3930E4A" />
-        <file offset="0x400000" name="mpr-20615.24" crc32="0x62E8A94A" />
       </region>
       <region name="mpeg_program" stride="1" chunk_size="1" byte_swap="true">
         <file offset="0" name="ic2.2" crc32="0x61C3F8BC" />
       </region>
-      <region name="mpeg_music" stride="1" chunk_size="1">
-        <file offset="0x000000" name="mpr-20637.57" crc32="0xD66E8A02" />
-        <file offset="0x400000" name="mpr-20638.58" crc32="0xD1513382" />
-        <file offset="0x800000" name="mpr-20639.59" crc32="0xF6603B7B" />
-        <file offset="0xC00000" name="mpr-20640.60" crc32="0x9EEA07B7" />
-      </region>
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-20512.bin" crc32="0xCF64350D" />
-      </region>
     </roms>
   </game>
   
-  <game name="srally2pa">
+  <game name="srally2pa" parent="srally2">
     <identity>
       <title>Sega Rally 2</title>
       <version>Prototype Version A</version>
@@ -2014,7 +2023,7 @@
     </hardware>
     <roms>
     	<patches>
-        <!-- Spindizzi notes : Not working ATM - Need correct patches or jtag stuffs -->
+        <!-- Spindizzi notes : Not working ATM - Need correct patches for jtag stuffs -->
         <!-- Test 1 -->
         <!--
         <patch region="crom" bits="32" offset="0x3ba44" value="0x60000000" />
@@ -2027,72 +2036,24 @@
         -->
       </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
-        <file offset="0" name="ic20.20" crc32="0xA904227D" />
-        <file offset="2" name="ic19.19" crc32="0xB486BB74" />
-        <file offset="4" name="ic18.18" crc32="0xAC1053F8" />
-        <file offset="6" name="ic17.17" crc32="0xE71D3F2D" />
-      </region>
-      <region name="banked_crom" stride="8" chunk_size="2" byte_swap="true">
-        <!-- CROM0 -->
-        <file offset="0x0000000" name="mpr-20605.4" crc32="0x00513401" />
-        <file offset="0x0000002" name="mpr-20605.3" crc32="0x99C5F396" />
-        <file offset="0x0000004" name="mpr-20603.2" crc32="0xAD0D8EB8" />
-        <file offset="0x0000006" name="mpr-20602.1" crc32="0x60CFA72A" />
-        <!-- CROM1 -->
-        <file offset="0x1000000" name="mpr-20609.8" crc32="0xC03CC0E5" />
-        <file offset="0x1000002" name="mpr-20608.7" crc32="0x0C9B0571" />
-        <file offset="0x1000004" name="mpr-20607.6" crc32="0x6DA85AA3" />
-        <file offset="0x1000006" name="mpr-20606.5" crc32="0x072498FD" />
-        <!-- CROM2 -->
-        <file offset="0x2000000" name="mpr-20613.12" crc32="0x2938C0D9" />
-        <file offset="0x2000002" name="mpr-20612.11" crc32="0x721A44B6" />
-        <file offset="0x2000004" name="mpr-20611.10" crc32="0x5D9F8BA2" />
-        <file offset="0x2000006" name="mpr-20610.9"  crc32="0xB6E0FF4E" />
-      </region>
-      <region name="vrom" stride="32" chunk_size="2">
-        <file offset="0"  name="mpr-20616.26" crc32="0xE11DCF8B" />
-        <file offset="2"  name="mpr-20617.27" crc32="0x96ACEF3F" />
-        <file offset="4"  name="mpr-20618.28" crc32="0x6C281281" />
-        <file offset="6"  name="mpr-20619.29" crc32="0x0FA65819" />
-        <file offset="8"  name="mpr-20620.30" crc32="0xEE79585F" />
-        <file offset="10" name="mpr-20621.31" crc32="0x3A99148F" />
-        <file offset="12" name="mpr-20622.32" crc32="0x0618F056" />
-        <file offset="14" name="mpr-20623.33" crc32="0xCCF31B85" />
-        <file offset="16" name="mpr-20624.34" crc32="0x90F30936" />
-        <file offset="18" name="mpr-20625.35" crc32="0x04F804FA" />
-        <file offset="20" name="mpr-20626.36" crc32="0x2D6C97D6" />
-        <file offset="22" name="mpr-20627.37" crc32="0xA14EE871" />
-        <file offset="24" name="mpr-20628.38" crc32="0xBBA829A3" />
-        <file offset="26" name="mpr-20629.39" crc32="0xEAD2EB31" />
-        <file offset="28" name="mpr-20630.40" crc32="0xCC5881B8" />
-        <file offset="30" name="mpr-20631.41" crc32="0x5CB69FFD" />
+        <file offset="0" name="prog0.20" crc32="0xA904227D" />
+        <file offset="2" name="prog1.19" crc32="0xB486BB74" />
+        <file offset="4" name="prog2.18" crc32="0xAC1053F8" />
+        <file offset="6" name="prog3.17" crc32="0xE71D3F2D" />
       </region>
       <region name="sound_program" stride="1" chunk_size="1" byte_swap="true">
-        <file offset="0" name="epr-20636.21" crc32="0x7139EBF8" />
-      </region>
-      <region name="sound_samples" stride="1" chunk_size="1" byte_swap="true">
-        <file offset="0x000000" name="mpr-20614.22" crc32="0xA3930E4A" />
-        <file offset="0x400000" name="mpr-20615.24" crc32="0x62E8A94A" />
+        <file offset="0" name="ic21.21" crc32="0x82A4EB2E" />
       </region>
       <region name="mpeg_program" stride="1" chunk_size="1" byte_swap="true">
-        <file offset="0" name="epr-20641.2" crc32="0xC9B82035" />
-      </region>
-      <region name="mpeg_music" stride="1" chunk_size="1">
-        <file offset="0x000000" name="mpr-20637.57" crc32="0xD66E8A02" />
-        <file offset="0x400000" name="mpr-20638.58" crc32="0xD1513382" />
-        <file offset="0x800000" name="mpr-20639.59" crc32="0xF6603B7B" />
-        <file offset="0xC00000" name="mpr-20640.60" crc32="0x9EEA07B7" />
-      </region>
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-20512.bin" crc32="0xCF64350D" />
+        <file offset="0" name="ic2.2" crc32="0x61C3F8BC" />
       </region>
     </roms>
   </game>
   
-  <game name="srally2x">
+  <game name="srally2dx" parent="srally2">
     <identity>
       <title>Sega Rally 2</title>
-      <version>Deluxe</version>
+      <version>Export, Deluxe</version>
       <manufacturer>Sega</manufacturer>
       <year>1998</year>
     </identity>
@@ -2174,27 +2135,13 @@
         <file offset="0x000000" name="mpr-20484.22" crc32="0x8AC3FBC4" />
         <file offset="0x400000" name="mpr-20485.24" crc32="0xCFD8C19B" />
       </region>
-      <!-- Spindizzi notes : Add mpeg soundboard stuff from srally2-->
-      <region name="mpeg_program" stride="1" chunk_size="1" byte_swap="true">
-        <file offset="0" name="epr-20641.2" crc32="0xC9B82035" />
-      </region>
-      <region name="mpeg_music" stride="1" chunk_size="1">
-        <file offset="0x000000" name="mpr-20637.57" crc32="0xD66E8A02" />
-        <file offset="0x400000" name="mpr-20638.58" crc32="0xD1513382" />
-        <file offset="0x800000" name="mpr-20639.59" crc32="0xF6603B7B" />
-        <file offset="0xC00000" name="mpr-20640.60" crc32="0x9EEA07B7" />
-      </region>
-      <!-- end of add -->
-      <region name="driveboard_program" stride="1" chunk_size="1">
-        <file offset="0" name="epr-20512.bin" crc32="0xCF64350D" />
-      </region>
     </roms>
   </game>
 
   <game name="swtrilgy">
     <identity>
       <title>Star Wars Trilogy Arcade</title>
-      <version>Revision A</version>
+      <version>Export, Revision A</version>
       <manufacturer>Sega, LucasArts</manufacturer>
       <year>1998</year>
     </identity>
@@ -2212,8 +2159,8 @@
       <patches>
         <!-- skip force feedback lever check -->
         <!-- <patch region="crom" bits="32" offset="0xf6e44" value="0x60000000" /> --> <!-- from MAME -->
-        <patch region="crom" bits="32" offset="0xf0e48" value="0x60000000" />
-        <patch region="crom" bits="32" offset="0x043dc" value="0x48000090" /> <!-- related to joystick feedback -->
+        <!--<patch region="crom" bits="32" offset="0xf0e48" value="0x60000000" /> --> <!-- no more needed if ffb lever rom loaded -->
+        <!--<patch region="crom" bits="32" offset="0x043dc" value="0x48000090" /> --> <!-- related to joystick feedback --> <!-- no more needed if ffb lever rom loaded -->
         <patch region="crom" bits="32" offset="0x029a0" value="0x60000000" /> <!-- skip force feedback setup? -->
         <patch region="crom" bits="32" offset="0x02a0c" value="0x60000000" />
         <!-- Additional patches from MAME for test menu -->
@@ -2279,18 +2226,18 @@
         <file offset="0xC00000" name="mpr-21378.24" crc32="0x1FCF715E" />
       </region>
       <!-- Force feedback controller prg -->
-      <!--
+      
       <region name="ffb_program" stride="1" chunk_size="1">
         <file offset="0" name="epr-21119.ic8" crc32="0x65082B14" />
       </region>
-      -->
+      
     </roms>
   </game>
 
   <game name="swtrilgya" parent="swtrilgy">
     <identity>
       <title>Star Wars Trilogy Arcade</title>
-      <version></version>
+	  <version>Export</version>
       <manufacturer>Sega, LucasArts</manufacturer>
       <year>1998</year>
     </identity>
@@ -2310,10 +2257,14 @@
         <!--<patch region="crom" bits="32" offset="0xf6dd0" value="0x60000000" /> --> <!-- from MAME -->
         <!-- Spindizzi notes : mimic patch from Bart's patch in swtrilgy to prevent game to be slow-->
         <!-- instead of patch we can make hack timing in code -->
-        <patch region="crom" bits="32" offset="0x043dc" value="0x48000090" />
+        <!--<patch region="crom" bits="32" offset="0x043dc" value="0x48000090" />--> <!-- no more needed if ffb lever rom loaded -->
         <patch region="crom" bits="32" offset="0x029a0" value="0x60000000" />
         <patch region="crom" bits="32" offset="0x02a0c" value="0x60000000" />
-        <patch region="crom" bits="32" offset="0xf0dd4" value="0x60000000" />
+        <!--<patch region="crom" bits="32" offset="0xf0dd4" value="0x60000000" />--> <!-- no more needed if ffb lever rom loaded -->
+        <!-- Additional patches from MAME for test menu -->
+        <patch region="crom" bits="32" offset="0xf76f8" value="0x60000000" /> <!-- unemulated JTAG stuff -->
+        <patch region="crom" bits="32" offset="0xf76fc" value="0x60000000" /> <!-- "" -->
+        <patch region="crom" bits="32" offset="0xf7700" value="0x60000000" /> <!-- "" -->
       </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
         <file offset="0" name="epr-21382.20" crc32="0x0B9C44A0" />
@@ -2327,7 +2278,7 @@
   <game name="swtrilgyp" parent="swtrilgy">
     <identity>
       <title>Star Wars Trilogy Arcade</title>
-      <version></version>
+	  <version>Location Test, 16.09.98</version>
       <manufacturer>Sega, LucasArts</manufacturer>
       <year>1998</year>
     </identity>
@@ -2343,14 +2294,17 @@
     </hardware>
     <roms>
       <patches>
-        <!-- skip force feedback lever check -->
-        <!--<patch region="crom" bits="32" offset="0x87db8" value="0x60000000" /> --> <!-- from MAME -->
-        <!-- Spindizzi notes : mimic patch from Bart's patch in swtrilgy to prevent game to be slow-->
-        <!-- instead of patch we can make hack timing in code -->
-        <patch region="crom" bits="32" offset="0x04184" value="0x480000AC" />
+        <!-- obsolete patches -->
+        <!-- 0x87db8 = 0x60000000 patch from Mame -->
+        <!-- 0x04184 = 0x480000AC no more needed if ffb lever rom loaded -->
+        <!-- 0x8391c = 0x60000000 no more needed if ffb lever rom loaded -->
+        <!-- related to force feedback setup -->
         <patch region="crom" bits="32" offset="0x0292c" value="0x60000000" />
         <patch region="crom" bits="32" offset="0x02998" value="0x60000000" />
-        <patch region="crom" bits="32" offset="0x8391c" value="0x60000000" />
+        <!-- unemulated JTAG stuff : enable service menu -->
+        <patch region="crom" bits="32" offset="0x886e0" value="0x60000000" />
+        <patch region="crom" bits="32" offset="0x886e4" value="0x60000000" />
+        <patch region="crom" bits="32" offset="0x886e8" value="0x60000000" />
       </patches>
       <region name="crom" stride="8" chunk_size="2" byte_swap="true">
         <file offset="0" name="epr-crom0.20" crc32="0xDA7D49FA" />
@@ -2529,7 +2483,7 @@
   <game name="vf3tb" parent="vf3">
     <identity>
       <title>Virtua Fighter 3 Team Battle</title>
-      <version></version>
+	  <version>?</version>
       <manufacturer>Sega</manufacturer>
       <year>1996</year>
     </identity>
@@ -2571,6 +2525,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="twin_joysticks" />
@@ -2647,6 +2602,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="twin_joysticks" />
@@ -2674,6 +2630,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="twin_joysticks" />
@@ -2701,6 +2658,7 @@
       <platform>Sega Model 3</platform>
       <stepping>2.0</stepping>
       <real3d_pci_id>0x16C311DB</real3d_pci_id>
+      <netboard>true</netboard>
       <inputs>
         <input type="common" />
         <input type="twin_joysticks" />
@@ -3040,7 +2998,7 @@
   <game name="vs299" parent="vs2v991">
     <identity>
       <title>Virtua Striker 2 '99</title>
-      <version></version>
+	  <version>?</version>
       <manufacturer>Sega</manufacturer>
       <year>1999</year>
     </identity>
