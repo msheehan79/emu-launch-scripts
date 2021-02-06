@@ -1,0 +1,5 @@
+sameboy_border = "never"
+sameboy_color_correction_mode = "emulate hardware"
+sameboy_high_pass_filter_mode = "accurate"
+sameboy_model = "Super Game Boy 2"
+sameboy_rumble = "rumble-enabled games"
