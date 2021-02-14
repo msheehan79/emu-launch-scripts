@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Profile Configuration Data. 01/01/2021 11:28:43 -->
-<!-- Made with DS4Windows version 2.2.1 -->
+<!-- Profile Configuration Data. 02/14/2021 15:40:40 -->
+<!-- Made with DS4Windows version 2.2.6 -->
 
-<Profile app_version="2.2.1" config_version="2">
+<Profile app_version="2.2.6" config_version="2">
   <useExclusiveMode>True</useExclusiveMode>
   <startMinimized>True</startMinimized>
   <minimizeToTaskbar>False</minimizeToTaskbar>
   <formWidth>782</formWidth>
   <formHeight>550</formHeight>
-  <formLocationX>910</formLocationX>
-  <formLocationY>334</formLocationY>
+  <formLocationX>457</formLocationX>
+  <formLocationY>168</formLocationY>
   <Controller1>Default</Controller1>
-  <LastChecked>01/01/2021 11:28:22</LastChecked>
+  <LastChecked>02/14/2021 14:57:48</LastChecked>
   <CheckWhen>0</CheckWhen>
   <Notifications>2</Notifications>
   <DisconnectBTAtStop>False</DisconnectBTAtStop>
@@ -37,6 +37,20 @@
   <CustomSteamFolder>
   </CustomSteamFolder>
   <AutoProfileRevertDefaultProfile>True</AutoProfileRevertDefaultProfile>
+  <DeviceOptions>
+    <DS4SupportSettings>
+      <Enabled>True</Enabled>
+    </DS4SupportSettings>
+    <DualSenseSupportSettings>
+      <Enabled>True</Enabled>
+    </DualSenseSupportSettings>
+    <SwitchProSupportSettings>
+      <Enabled>True</Enabled>
+    </SwitchProSupportSettings>
+    <JoyConSupportSettings>
+      <Enabled>True</Enabled>
+    </JoyConSupportSettings>
+  </DeviceOptions>
   <CustomLed1>False:0,0,255</CustomLed1>
   <CustomLed2>False:0,0,255</CustomLed2>
   <CustomLed3>False:0,0,255</CustomLed3>
