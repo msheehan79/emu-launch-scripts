@@ -180,7 +180,7 @@ FocusScope {
                         home.state = "last_played"
                     }
 
-                    if (event.key == Qt.Key_Down) {
+                    if (event.key == Qt.Key_Down && sort_favorites.count > 0) {
                         event.accepted = true;
                         lastIsDefault = true
                         home.state = "favorites"
@@ -238,6 +238,10 @@ FocusScope {
 
                 Keys.onPressed: {
 
+                    if (event.isAutoRepeat) {
+                        return
+                    }
+
                     if (api.keys.isAccept(event)) {
                         event.accepted = true;
                         api.memory.set("currentMenuIndex", currentMenuIndex)
@@ -264,7 +268,7 @@ FocusScope {
                             currentLastPlayedIndex +=3
                         }
 
-                        else {
+                        else if (sort_favorites.count > 0) {
                             lastIsDefault = false
                             home.state = "favorites"
                         }
@@ -280,7 +284,6 @@ FocusScope {
 
             }
         }
-
 
         Text {
             text: ( home.state === "favorites" ) ? "– Favorites" : "Favorites"
@@ -342,10 +345,13 @@ FocusScope {
 
             Keys.onPressed: {
 
+                if (event.isAutoRepeat) {
+                    return
+                }
+
                 if (api.keys.isAccept(event)) {
                     event.accepted = true;
                     api.memory.set("currentMenuIndex", currentMenuIndex)
-                    console.log(currentGame.title+" launched")
                     currentGame.launch()
                 }
 

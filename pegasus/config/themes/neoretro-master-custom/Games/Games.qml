@@ -515,6 +515,10 @@ FocusScope {
 
             Keys.onPressed: {
 
+                if (event.isAutoRepeat) {
+                    return
+                }
+
                 if (api.keys.isAccept(event)) {
                     event.accepted = true;
                     if (currentGame !== null) {
@@ -642,7 +646,7 @@ FocusScope {
         Controls {
             id: button_X
 
-            message: currentGame.favorite ? "REMOVE <b>FAVORITE</b>" : "ADD <b>FAVORITE</b>"
+            message: currentGame !== null && currentGame.favorite ? "REMOVE <b>FAVORITE</b>" : "ADD <b>FAVORITE</b>"
 
             text_color: "white"
             front_color: "#1C2C98"

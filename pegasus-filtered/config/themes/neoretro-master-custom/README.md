@@ -1,4 +1,4 @@
-# neoretrō v0.12
+# neoretrō v0.131
 
 <img src="assets/logo_neoretro.png" width="55%" title="neoretrō logo" />
 neoretrō is a theme for Pegasus-frontend.
@@ -34,6 +34,13 @@ neoretrō is a theme for Pegasus-frontend.
 <img src="https://raw.githubusercontent.com/valsou/neoretro/readme_assets/assets/neoretro_v01_games.jpg" title="neoretrō games" />
 
 ## Changelog
+v0.131
+- fix looping bug #5
+
+v0.13
+- add assets for new systems (ps3, switch, wiiware)
+- few hotfixes (may break things later...)
+
 v0.12
 - remove unused code blocks
 - downgrade QT modules

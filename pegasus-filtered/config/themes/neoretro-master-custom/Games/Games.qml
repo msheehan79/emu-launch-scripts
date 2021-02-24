@@ -143,7 +143,8 @@ FocusScope {
                         id: ratingSection
                         readonly property var rating: (currentGame.rating *5).toFixed(1)
                         anchors {
-                            top: parent.top; topMargin: parent.height * 0.1
+                            top: parent.top; 
+                            topMargin: parent.height * 0.1
                             right: parent.right
                         }
                     }
@@ -153,7 +154,8 @@ FocusScope {
                         spacing: vpx(10)
                         width: parent.width
                         anchors {
-                            bottom: parent.bottom; bottomMargin: vpx(20)
+                            bottom: parent.bottom; 
+                            bottomMargin: vpx(20)
                         }
 
                         Text {
@@ -287,6 +289,29 @@ FocusScope {
                                     }
                                     visible: (modelData !== "")
                                 }
+                            }
+
+                            Rectangle {
+                                width: txt_controller.contentWidth + vpx(20)
+                                height: txt_controller.contentHeight + vpx(10)
+                                color: "black"
+                                border {
+                                    width: vpx(1)
+                                    color: "black"
+                                }
+
+                                Text {
+                                    id: txt_controller
+                                    anchors.centerIn: parent
+                                    text: "Controller: " + getEmuControllerName(currentGame)
+                                    font {
+                                        family: global.fonts.sans
+                                        weight: Font.Medium
+                                        pixelSize: vpx(12)
+                                    }
+                                    color: "white"
+                                }
+                                visible: (getEmuControllerName(currentGame) !== "")
                             }
                         }
 
@@ -490,6 +515,10 @@ FocusScope {
 
             Keys.onPressed: {
 
+                if (event.isAutoRepeat) {
+                    return
+                }
+
                 if (api.keys.isAccept(event)) {
                     event.accepted = true;
                     if (currentGame !== null) {
@@ -617,7 +646,7 @@ FocusScope {
         Controls {
             id: button_X
 
-            message: currentGame.favorite ? "REMOVE <b>FAVORITE</b>" : "ADD <b>FAVORITE</b>"
+            message: currentGame !== null && currentGame.favorite ? "REMOVE <b>FAVORITE</b>" : "ADD <b>FAVORITE</b>"
 
             text_color: "white"
             front_color: "#1C2C98"
@@ -658,6 +687,13 @@ FocusScope {
     function getSystemTagName(gameData) {
         const matches = gameData.tagList.filter(s => s.includes('System:'));
         return matches.length == 0 ? "" : matches[0].replace("System:", "");
+    }
+
+
+    // Returns the Emucontroller tag name for a game, if present
+    function getEmuControllerName(gameData) {
+        const matches = gameData.tagList.filter(s => s.includes('emucontroller:'));
+        return matches.length == 0 ? "" : matches[0].replace("emucontroller:", "");
     }
 
 }
