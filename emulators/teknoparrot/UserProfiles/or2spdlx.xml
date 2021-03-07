@@ -25,7 +25,7 @@
     <FieldInformation>
       <CategoryName>General</CategoryName>
       <FieldName>EnableAmdFix</FieldName>
-      <FieldValue>0</FieldValue>
+      <FieldValue>1</FieldValue>
       <FieldType>Bool</FieldType>
       <FieldMin>0</FieldMin>
       <FieldMax>0</FieldMax>
