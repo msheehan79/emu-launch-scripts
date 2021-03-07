@@ -21,6 +21,8 @@ vid_2d_texture_filter "nearest"
 vid_3d_texture_image_filter "nearest"
 vid_3d_texture_mipmap_filter "nearest"
 vid_3d_texture_anisotropy "1"
+vid_filler_color_index "0"
+vid_external_textures "0"
 
 // Audio
 snd_is_sfx_enabled "1"
@@ -29,6 +31,9 @@ snd_sfx_volume "10"
 snd_music_volume "5"
 snd_resampling_interpolation "linear"
 snd_resampling_lpf "1"
+snd_driver "auto-detect"
+snd_oal_library ""
+snd_oal_device_name ""
 
 // Input
 in_mouse_sensitivity "5"
