@@ -24,7 +24,7 @@ set xpadder_launch="..\..\..\xpadder\Xpadder.exe" "..\..\xpadder\profiles\%xpadd
 set emulator_launch="..\..\..\emulators\eduke32\eduke32.exe" -cfg %config% -j %rompath% -gamegrp %rom%
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus EDuke32
+start "" ..\..\..\util\emulator-focus EDuke32
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (
