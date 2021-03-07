@@ -1,6 +1,8 @@
 picodrive_aspect = "PAR"
 picodrive_audio_filter = "disabled"
 picodrive_drc = "enabled"
+picodrive_frameskip = "disabled"
+picodrive_frameskip_threshold = "33"
 picodrive_input1 = "3 button pad"
 picodrive_input2 = "3 button pad"
 picodrive_lowpass_range = "60"
