@@ -38,12 +38,12 @@ FocusScope {
             },
             ExpressionSorter {
                 expression: {
-                    if(!customSortCategories.includes(currentCollection.summary)) {
+                    if (!customSortCategories.includes(currentCollection.summary)) {
                         return true;
                     }
 
-                    var sortLeft = getCollectionSortTag(modelLeft, currentCollection.shortName);
-                    var sortRight = getCollectionSortTag(modelRight, currentCollection.shortName);
+                    var sortLeft = getCollectionSortValue(modelLeft, currentCollection.shortName);
+                    var sortRight = getCollectionSortValue(modelRight, currentCollection.shortName);
                     return (sortLeft < sortRight);
                 }
                 enabled: customSortCategories.includes(currentCollection.summary) && root.state === "games"
@@ -208,7 +208,7 @@ FocusScope {
                             }
 
                             Text {
-                                text: dataConsoles[getSystemTagName(currentGame)].fullName
+                                text: dataConsoles[currentGame.extra.system].fullName
                                 font {
                                     family: global.fonts.sans
                                     weight: Font.Medium
@@ -303,7 +303,7 @@ FocusScope {
                                 Text {
                                     id: txt_controller
                                     anchors.centerIn: parent
-                                    text: "Controller: " + getEmuControllerName(currentGame)
+                                    text: "Controller: " + currentGame.extra.emucontroller
                                     font {
                                         family: global.fonts.sans
                                         weight: Font.Medium
@@ -311,7 +311,7 @@ FocusScope {
                                     }
                                     color: "white"
                                 }
-                                visible: (getEmuControllerName(currentGame) !== "")
+                                visible: (currentGame.extra.emucontroller !== "")
                             }
                         }
 
@@ -543,7 +543,6 @@ FocusScope {
                     if (currentGame !== null) {
                         currentGame.favorite = !currentGame.favorite
                     }
-
                 }
 
                 if (api.keys.isPageDown(event)) {
@@ -668,9 +667,8 @@ FocusScope {
         }
     }
 
-    function getCollectionSortTag(gameData, collName) {
-        const matches = gameData.tagList.filter(s => s.includes('CustomSort:' + collName + ':'));
-        return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
+    function getCollectionSortValue(gameData, collName) {
+        return gameData.extra['customsort-' + collName] !== undefined ? gameData.extra['customsort-' + collName] : "";
     }
 
     function getSortLabel() {
@@ -681,19 +679,6 @@ FocusScope {
         } else {
             return sortLabels[sortField];
         }
-    }
-
-    // Returns the System tag name for a game, if present
-    function getSystemTagName(gameData) {
-        const matches = gameData.tagList.filter(s => s.includes('System:'));
-        return matches.length == 0 ? "" : matches[0].replace("System:", "");
-    }
-
-
-    // Returns the Emucontroller tag name for a game, if present
-    function getEmuControllerName(gameData) {
-        const matches = gameData.tagList.filter(s => s.includes('emucontroller:'));
-        return matches.length == 0 ? "" : matches[0].replace("emucontroller:", "");
     }
 
 }
