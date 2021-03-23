@@ -12,9 +12,10 @@ FocusScope {
     readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre', 'lastPlayed', 'favorite']
     readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre', 'lastPlayed':'Last Played', 'favorite':'Favorite'}
     readonly property string sortField: sortFields[sortIndex]
+    readonly property string collectionType: currentCollection.extra.collectiontype != undefined ? currentCollection.extra.collectiontype.toString() : 'System'
     readonly property var customSortCategories: ['Custom', 'Series']
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
-    readonly property bool customCollection: customSystemLogoCategories.includes(currentCollection.summary)
+    readonly property bool customCollection: customSystemLogoCategories.includes(collectionType)
 
     property var shortname: clearShortname(currentCollection.shortName)
 
@@ -34,11 +35,11 @@ FocusScope {
             RoleSorter {
                 roleName: sortField
                 sortOrder: sortField == 'rating' || sortField == 'lastPlayed' || sortField == 'favorite' ? Qt.DescendingOrder : Qt.AscendingOrder
-                enabled: !customSortCategories.includes(currentCollection.summary) && root.state === "games"
+                enabled: !customSortCategories.includes(collectionType) && root.state === "games"
             },
             ExpressionSorter {
                 expression: {
-                    if (!customSortCategories.includes(currentCollection.summary)) {
+                    if (!customSortCategories.includes(collectionType)) {
                         return true;
                     }
 
@@ -46,7 +47,7 @@ FocusScope {
                     var sortRight = getCollectionSortValue(modelRight, currentCollection.shortName);
                     return (sortLeft < sortRight);
                 }
-                enabled: customSortCategories.includes(currentCollection.summary) && root.state === "games"
+                enabled: customSortCategories.includes(collectionType) && root.state === "games"
             }
         ]
     }
@@ -525,7 +526,6 @@ FocusScope {
                         saveCurrentState(currentGameIndex, sortIndex)
                         currentGame.launch()
                     }
-
                 }
 
                 if (api.keys.isFilters(event)) {
@@ -674,7 +674,7 @@ FocusScope {
     function getSortLabel() {
         if (currentCollection.shortName == 'lastplayed') {
             return 'Last Played';
-        } else if (customSortCategories.includes(currentCollection.summary)) {
+        } else if (customSortCategories.includes(collectionType)) {
             return 'Custom';
         } else {
             return sortLabels[sortField];
