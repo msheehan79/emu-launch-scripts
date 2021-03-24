@@ -293,6 +293,29 @@ FocusScope {
                             }
 
                             Rectangle {
+                                width: txt_arcadeport.contentWidth + vpx(20)
+                                height: txt_arcadeport.contentHeight + vpx(10)
+                                color: "white"
+                                border {
+                                    width: vpx(1)
+                                    color: "black"
+                                }
+
+                                Text {
+                                    id: txt_arcadeport
+                                    anchors.centerIn: parent
+                                    text: "Arcade Port"
+                                    font {
+                                        family: global.fonts.sans
+                                        weight: Font.Medium
+                                        pixelSize: vpx(12)
+                                    }
+                                    color: "black"
+                                }
+                                visible: (currentGame.extra.arcadeport !== undefined) && (currentGame.extra.arcadeport.toString() === 'True')
+                            }
+
+                            Rectangle {
                                 width: txt_controller.contentWidth + vpx(20)
                                 height: txt_controller.contentHeight + vpx(10)
                                 color: "black"
