@@ -17,7 +17,7 @@ set xpadder_p2=%~5
 
 :: Set the launch strings for Xpadder and gzdoom
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set emulator_launch="..\emulators\gzdoom\gzdoom.exe" -config ..\configs\ports\gzdoom\%config% -savedir C:\Emulation\saves\doom\doom -iwad C:\Emulation\roms\ports\doom\DOOM.WAD -file %rom%
+set emulator_launch="..\emulators\gzdoom\gzdoom.exe" -config ..\configs\ports\gzdoom\%config% -savedir C:\Emulation\saves\doom\doom -iwad C:\Emulation\roms\ports\doom\DOOM2.WAD -file %rom%
 
 :: Make sure the emulator remains in focus during startup
 start "" ..\util\emulator-focus GZDoom

@@ -12,9 +12,10 @@ FocusScope {
     readonly property var sortFields: ['sortTitle', 'release', 'rating', 'genre', 'lastPlayed', 'favorite']
     readonly property var sortLabels: {'sortTitle':'Title', 'release':'Release Date', 'rating':'Rating', 'genre':'Genre', 'lastPlayed':'Last Played', 'favorite':'Favorite'}
     readonly property string sortField: sortFields[sortIndex]
+    readonly property string collectionType: currentCollection.extra.collectiontype != undefined ? currentCollection.extra.collectiontype.toString() : 'System'
     readonly property var customSortCategories: ['Custom', 'Series']
     readonly property var customSystemLogoCategories: ['Custom', 'Series']
-    readonly property bool customCollection: customSystemLogoCategories.includes(currentCollection.summary)
+    readonly property bool customCollection: customSystemLogoCategories.includes(collectionType)
 
     property var shortname: clearShortname(currentCollection.shortName)
 
@@ -34,19 +35,19 @@ FocusScope {
             RoleSorter {
                 roleName: sortField
                 sortOrder: sortField == 'rating' || sortField == 'lastPlayed' || sortField == 'favorite' ? Qt.DescendingOrder : Qt.AscendingOrder
-                enabled: !customSortCategories.includes(currentCollection.summary) && root.state === "games"
+                enabled: !customSortCategories.includes(collectionType) && root.state === "games"
             },
             ExpressionSorter {
                 expression: {
-                    if(!customSortCategories.includes(currentCollection.summary)) {
+                    if (!customSortCategories.includes(collectionType)) {
                         return true;
                     }
 
-                    var sortLeft = getCollectionSortTag(modelLeft, currentCollection.shortName);
-                    var sortRight = getCollectionSortTag(modelRight, currentCollection.shortName);
+                    var sortLeft = getCollectionSortValue(modelLeft, currentCollection.shortName);
+                    var sortRight = getCollectionSortValue(modelRight, currentCollection.shortName);
                     return (sortLeft < sortRight);
                 }
-                enabled: customSortCategories.includes(currentCollection.summary) && root.state === "games"
+                enabled: customSortCategories.includes(collectionType) && root.state === "games"
             }
         ]
     }
@@ -208,7 +209,7 @@ FocusScope {
                             }
 
                             Text {
-                                text: dataConsoles[getSystemTagName(currentGame)].fullName
+                                text: dataConsoles[currentGame.extra.system].fullName
                                 font {
                                     family: global.fonts.sans
                                     weight: Font.Medium
@@ -292,6 +293,29 @@ FocusScope {
                             }
 
                             Rectangle {
+                                width: txt_arcadeport.contentWidth + vpx(20)
+                                height: txt_arcadeport.contentHeight + vpx(10)
+                                color: "white"
+                                border {
+                                    width: vpx(1)
+                                    color: "black"
+                                }
+
+                                Text {
+                                    id: txt_arcadeport
+                                    anchors.centerIn: parent
+                                    text: "Arcade Port"
+                                    font {
+                                        family: global.fonts.sans
+                                        weight: Font.Medium
+                                        pixelSize: vpx(12)
+                                    }
+                                    color: "black"
+                                }
+                                visible: (currentGame.extra.arcadeport !== undefined) && (currentGame.extra.arcadeport.toString() === 'True')
+                            }
+
+                            Rectangle {
                                 width: txt_controller.contentWidth + vpx(20)
                                 height: txt_controller.contentHeight + vpx(10)
                                 color: "black"
@@ -303,7 +327,7 @@ FocusScope {
                                 Text {
                                     id: txt_controller
                                     anchors.centerIn: parent
-                                    text: "Controller: " + getEmuControllerName(currentGame)
+                                    text: "Controller: " + currentGame.extra.emucontroller
                                     font {
                                         family: global.fonts.sans
                                         weight: Font.Medium
@@ -311,7 +335,7 @@ FocusScope {
                                     }
                                     color: "white"
                                 }
-                                visible: (getEmuControllerName(currentGame) !== "")
+                                visible: (currentGame.extra.emucontroller !== "")
                             }
                         }
 
@@ -525,7 +549,6 @@ FocusScope {
                         saveCurrentState(currentGameIndex, sortIndex)
                         currentGame.launch()
                     }
-
                 }
 
                 if (api.keys.isFilters(event)) {
@@ -543,7 +566,6 @@ FocusScope {
                     if (currentGame !== null) {
                         currentGame.favorite = !currentGame.favorite
                     }
-
                 }
 
                 if (api.keys.isPageDown(event)) {
@@ -668,32 +690,18 @@ FocusScope {
         }
     }
 
-    function getCollectionSortTag(gameData, collName) {
-        const matches = gameData.tagList.filter(s => s.includes('CustomSort:' + collName + ':'));
-        return matches.length == 0 ? "" : matches[0].replace("CustomSort:" + collName + ':', "");
+    function getCollectionSortValue(gameData, collName) {
+        return gameData.extra['customsort-' + collName] !== undefined ? gameData.extra['customsort-' + collName] : "";
     }
 
     function getSortLabel() {
         if (currentCollection.shortName == 'lastplayed') {
             return 'Last Played';
-        } else if (customSortCategories.includes(currentCollection.summary)) {
+        } else if (customSortCategories.includes(collectionType)) {
             return 'Custom';
         } else {
             return sortLabels[sortField];
         }
-    }
-
-    // Returns the System tag name for a game, if present
-    function getSystemTagName(gameData) {
-        const matches = gameData.tagList.filter(s => s.includes('System:'));
-        return matches.length == 0 ? "" : matches[0].replace("System:", "");
-    }
-
-
-    // Returns the Emucontroller tag name for a game, if present
-    function getEmuControllerName(gameData) {
-        const matches = gameData.tagList.filter(s => s.includes('emucontroller:'));
-        return matches.length == 0 ? "" : matches[0].replace("emucontroller:", "");
     }
 
 }

@@ -176,7 +176,6 @@ FocusScope {
 
                 if (event.key == Qt.Key_Right) {
                     event.accepted = true;
-
                     if (currentCollectionIndex >= allCollections.length - 1) {
                         if (event.isAutoRepeat) {
                             currentCollectionIndex = allCollections.length - 1;

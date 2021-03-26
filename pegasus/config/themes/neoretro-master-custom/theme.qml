@@ -394,6 +394,7 @@ FocusScope {
             var index = collectionTypes.indexOf(collectionType) + 1;
             collectionType = (index < collectionTypes.length) ? collectionTypes[index] : collectionTypes[0];
             currentCollectionIndex = api.memory.get("currentCollectionIndex-" + collectionType) || 0;
+            games.currentGameIndex = 0;
         }
     }
 
@@ -410,13 +411,19 @@ FocusScope {
     }
 
     function systemCollection(coll) {
-        return coll.summary == collectionType
+        if (coll.extra.collectiontype != undefined) {
+            return coll.extra.collectiontype.toString() == collectionType;
+        } else {
+            return true;
+        }
     }
 
     function getAllCollectionTypes() {
-        var types = [];
+        var types = ['System'];
         var collections = api.collections.toVarArray().forEach(function(value, index, array) {
-                types.push(value.summary);
+                if (value.extra.collectiontype != undefined) {
+                    types.push(value.extra.collectiontype.toString());
+                }
             }
         );
         return Array.from(new Set(types));
