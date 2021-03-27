@@ -295,10 +295,10 @@ FocusScope {
                             Rectangle {
                                 width: txt_arcadeport.contentWidth + vpx(20)
                                 height: txt_arcadeport.contentHeight + vpx(10)
-                                color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].color : dataConsoles["default"].color
+                                color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].altColor : dataConsoles["default"].altColor
                                 border {
                                     width: vpx(1)
-                                    color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].color : dataConsoles["default"].color
+                                    color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].altColor : dataConsoles["default"].altColor
                                 }
 
                                 Text {
