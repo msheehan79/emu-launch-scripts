@@ -295,10 +295,10 @@ FocusScope {
                             Rectangle {
                                 width: txt_arcadeport.contentWidth + vpx(20)
                                 height: txt_arcadeport.contentHeight + vpx(10)
-                                color: "white"
+                                color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].altColor : dataConsoles["default"].altColor
                                 border {
                                     width: vpx(1)
-                                    color: "black"
+                                    color: (dataConsoles[shortname] !== undefined) ? dataConsoles[shortname].altColor : dataConsoles["default"].altColor
                                 }
 
                                 Text {
@@ -310,7 +310,7 @@ FocusScope {
                                         weight: Font.Medium
                                         pixelSize: vpx(12)
                                     }
-                                    color: "black"
+                                    color: "white"
                                 }
                                 visible: (currentGame.extra.arcadeport !== undefined) && (currentGame.extra.arcadeport.toString() === 'True')
                             }
