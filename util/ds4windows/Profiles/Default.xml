@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- DS4Windows Configuration Data. 12/08/2020 00:27:08 -->
-<!-- Made with DS4Windows version 2.1.19 -->
+<!-- DS4Windows Configuration Data. 04/18/2021 11:19:51 -->
+<!-- Made with DS4Windows version 3.0.3 -->
 
-<DS4Windows app_version="2.1.19" config_version="5">
+<DS4Windows app_version="3.0.3" config_version="5">
   <touchToggle>True</touchToggle>
   <idleDisconnectTimeout>0</idleDisconnectTimeout>
   <outputDataToDS4>True</outputDataToDS4>
@@ -25,6 +25,7 @@
   <LeftTriggerMiddle>0</LeftTriggerMiddle>
   <RightTriggerMiddle>0</RightTriggerMiddle>
   <TouchpadInvert>0</TouchpadInvert>
+  <TouchpadClickPassthru>False</TouchpadClickPassthru>
   <L2AntiDeadZone>0</L2AntiDeadZone>
   <R2AntiDeadZone>0</R2AntiDeadZone>
   <L2MaxZone>100</L2MaxZone>
@@ -41,8 +42,32 @@
   <RSAntiDeadZone>20</RSAntiDeadZone>
   <LSMaxZone>100</LSMaxZone>
   <RSMaxZone>100</RSMaxZone>
+  <LSVerticalScale>100</LSVerticalScale>
+  <RSVerticalScale>100</RSVerticalScale>
   <LSMaxOutput>100</LSMaxOutput>
   <RSMaxOutput>100</RSMaxOutput>
+  <LSDeadZoneType>Radial</LSDeadZoneType>
+  <RSDeadZoneType>Radial</RSDeadZoneType>
+  <LSAxialDeadOptions>
+    <DeadZoneX>10</DeadZoneX>
+    <DeadZoneY>10</DeadZoneY>
+    <MaxZoneX>100</MaxZoneX>
+    <MaxZoneY>100</MaxZoneY>
+    <AntiDeadZoneX>20</AntiDeadZoneX>
+    <AntiDeadZoneY>20</AntiDeadZoneY>
+    <MaxOutputX>100</MaxOutputX>
+    <MaxOutputY>100</MaxOutputY>
+  </LSAxialDeadOptions>
+  <RSAxialDeadOptions>
+    <DeadZoneX>10</DeadZoneX>
+    <DeadZoneY>10</DeadZoneY>
+    <MaxZoneX>100</MaxZoneX>
+    <MaxZoneY>100</MaxZoneY>
+    <AntiDeadZoneX>20</AntiDeadZoneX>
+    <AntiDeadZoneY>20</AntiDeadZoneY>
+    <MaxOutputX>100</MaxOutputX>
+    <MaxOutputY>100</MaxOutputY>
+  </RSAxialDeadOptions>
   <LSRotation>0</LSRotation>
   <RSRotation>0</RSRotation>
   <LSFuzz>0</LSFuzz>
@@ -56,6 +81,7 @@
   <Sensitivity>1|1|1|1|1|1</Sensitivity>
   <ChargingType>0</ChargingType>
   <MouseAcceleration>False</MouseAcceleration>
+  <ButtonMouseVerticalScale>100</ButtonMouseVerticalScale>
   <LaunchProgram>
   </LaunchProgram>
   <DinputOnly>False</DinputOnly>
@@ -76,6 +102,12 @@
   <GyroSensVerticalScale>100</GyroSensVerticalScale>
   <GyroInvert>0</GyroInvert>
   <GyroTriggerTurns>True</GyroTriggerTurns>
+  <GyroControlsSettings>
+    <Triggers>-1</Triggers>
+    <TriggerCond>and</TriggerCond>
+    <TriggerTurns>True</TriggerTurns>
+    <Toggle>False</Toggle>
+  </GyroControlsSettings>
   <GyroMouseSmoothingSettings>
     <UseSmoothing>False</UseSmoothing>
     <SmoothingMethod>none</SmoothingMethod>
@@ -108,6 +140,15 @@
     <SmoothingMinCutoff>0.4</SmoothingMinCutoff>
     <SmoothingBeta>0.7</SmoothingBeta>
   </GyroMouseStickSmoothingSettings>
+  <GyroSwipeSettings>
+    <DeadZoneX>80</DeadZoneX>
+    <DeadZoneY>80</DeadZoneY>
+    <Triggers>-1</Triggers>
+    <TriggerCond>and</TriggerCond>
+    <TriggerTurns>True</TriggerTurns>
+    <XAxis>Yaw</XAxis>
+    <DelayTime>0</DelayTime>
+  </GyroSwipeSettings>
   <LSCurve>0</LSCurve>
   <RSCurve>0</RSCurve>
   <ProfileActions>Disconnect Controller</ProfileActions>
@@ -122,6 +163,12 @@
   <RSSquareStick>False</RSSquareStick>
   <SquareStickRoundness>5</SquareStickRoundness>
   <SquareRStickRoundness>5</SquareRStickRoundness>
+  <LSAntiSnapback>False</LSAntiSnapback>
+  <RSAntiSnapback>False</RSAntiSnapback>
+  <LSAntiSnapbackDelta>135</LSAntiSnapbackDelta>
+  <RSAntiSnapbackDelta>135</RSAntiSnapbackDelta>
+  <LSAntiSnapbackTimeout>50</LSAntiSnapbackTimeout>
+  <RSAntiSnapbackTimeout>50</RSAntiSnapbackTimeout>
   <LSOutputMode>Controls</LSOutputMode>
   <RSOutputMode>Controls</RSOutputMode>
   <LSOutputSettings>
@@ -141,6 +188,10 @@
   <L2OutputCurveMode>linear</L2OutputCurveMode>
   <L2OutputCurveCustom>
   </L2OutputCurveCustom>
+  <L2TwoStageMode>Disabled</L2TwoStageMode>
+  <R2TwoStageMode>Disabled</R2TwoStageMode>
+  <L2TriggerEffect>None</L2TriggerEffect>
+  <R2TriggerEffect>None</R2TriggerEffect>
   <R2OutputCurveMode>linear</R2OutputCurveMode>
   <R2OutputCurveCustom>
   </R2OutputCurveCustom>
