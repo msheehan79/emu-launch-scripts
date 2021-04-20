@@ -1,5 +1,5 @@
 duckstation_BIOS.PatchFastBoot = "false"
-duckstation_CDROM.LoadImageToRAM = "false"
+duckstation_CDROM.LoadImageToRAM = "true"
 duckstation_CDROM.MuteCDAudio = "false"
 duckstation_CDROM.ReadSpeedup = "1"
 duckstation_CDROM.ReadThread = "true"
