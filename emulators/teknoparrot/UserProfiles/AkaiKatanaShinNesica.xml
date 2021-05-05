@@ -36,8 +36,19 @@
   <JoystickButtons>
     <JoystickButtons>
       <ButtonName>Test</ButtonName>
+      <DirectInputButton>
+        <Button>98</Button>
+        <IsAxis>false</IsAxis>
+        <IsAxisMinus>false</IsAxisMinus>
+        <IsFullAxis>false</IsFullAxis>
+        <PovDirection>0</PovDirection>
+        <IsReverseAxis>false</IsReverseAxis>
+        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
+      </DirectInputButton>
       <InputMapping>Test</InputMapping>
       <AnalogType>None</AnalogType>
+      <BindNameDi>Keyboard Button Comma</BindNameDi>
+      <BindName>Keyboard Button Comma</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -56,19 +67,10 @@
     </JoystickButtons>
     <JoystickButtons>
       <ButtonName>Service 1</ButtonName>
-      <DirectInputButton>
-        <Button>98</Button>
-        <IsAxis>false</IsAxis>
-        <IsAxisMinus>false</IsAxisMinus>
-        <IsFullAxis>false</IsFullAxis>
-        <PovDirection>0</PovDirection>
-        <IsReverseAxis>false</IsReverseAxis>
-        <JoystickGuid>6f1d2b61-d5a0-11cf-bfc7-444553540000</JoystickGuid>
-      </DirectInputButton>
       <InputMapping>Service1</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Keyboard Button Comma</BindNameDi>
-      <BindName>Keyboard Button Comma</BindName>
+      <BindNameDi />
+      <BindName />
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -387,7 +389,7 @@
     <JoystickButtons>
       <ButtonName>Player 1 Button 3</ButtonName>
       <DirectInputButton>
-        <Button>49</Button>
+        <Button>126</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -397,8 +399,8 @@
       </DirectInputButton>
       <InputMapping>P1Button3</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Keyboard Button D1</BindNameDi>
-      <BindName>Keyboard Button D1</BindName>
+      <BindNameDi>Keyboard Button NumberPad1</BindNameDi>
+      <BindName>Keyboard Button NumberPad1</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
@@ -418,7 +420,7 @@
     <JoystickButtons>
       <ButtonName>Player 1 Button 4</ButtonName>
       <DirectInputButton>
-        <Button>52</Button>
+        <Button>122</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -428,8 +430,8 @@
       </DirectInputButton>
       <InputMapping>P1Button4</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Keyboard Button D4</BindNameDi>
-      <BindName>Keyboard Button D4</BindName>
+      <BindNameDi>Keyboard Button NumberPad4</BindNameDi>
+      <BindName>Keyboard Button NumberPad4</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
