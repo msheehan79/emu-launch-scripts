@@ -21,10 +21,12 @@ set target_res="1920x1080, 32 bits @ 60 Hz."
 :: TeknoParrot doesn't seem to launch if it is not called from its own directory
 pushd "..\emulators\teknoparrot\"
 
-:: Check current resolution and set to 1080p if it is not already
-FOR /F "skip=3 tokens=* USEBACKQ" %%g IN (`..\..\util\qres /S`) do (
-    IF "%%g" NEQ %target_res% (
-        call :display1080p
+:: Check current resolution and set to 1080p if it is not already for Homura, it doesnt scale properly at 4K
+IF "%rom%" EQU "Homura.xml" (
+    FOR /F "skip=3 tokens=* USEBACKQ" %%g IN (`..\..\util\qres /S`) do (
+        IF "%%g" NEQ %target_res% (
+            call :display1080p
+        )
     )
 )
 
@@ -40,10 +42,12 @@ IF "%xpadder_p1%" NEQ "" (
 )
 
 :: After game ends, loop through supported resolutions to make sure 4K is supported before attempting to switch back
-FOR /F "tokens=* USEBACKQ" %%g IN (`..\..\util\qres /L`) do (
-    IF "%%g" EQU %base_res% (
-        call :display4k
-        goto :exit
+IF "%rom%" EQU "Homura.xml" (
+    FOR /F "tokens=* USEBACKQ" %%g IN (`..\..\util\qres /L`) do (
+        IF "%%g" EQU %base_res% (
+            call :display4k
+            goto :exit
+        )
     )
 )
 
@@ -51,9 +55,9 @@ FOR /F "tokens=* USEBACKQ" %%g IN (`..\..\util\qres /L`) do (
 EXIT /B %ERRORLEVEL%
 
 :display1080p
-..\util\qres /X:1920 /Y:1080 /R:60
+..\..\util\qres /X:1920 /Y:1080 /R:60
 EXIT /B 0
 
 :display4k
-..\util\qres /X:3840 /Y:2160 /R:60
+..\..\util\qres /X:3840 /Y:2160 /R:60
 EXIT /B 0
