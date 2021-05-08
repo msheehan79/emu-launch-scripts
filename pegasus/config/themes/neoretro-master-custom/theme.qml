@@ -226,6 +226,8 @@ FocusScope {
         "ps2":                { manufacturer: "sony",              release: "2000", color: "#3144B1", altColor: "#00224C", fullName: "PS2"                           },
         "psp":                { manufacturer: "sony",              release: "2004", color: "#050C10", altColor: "#6A818C", fullName: "PSP"                           },
         "pspminis":           { manufacturer: "sony",              release: "2004", color: "#050C10", altColor: "#6A818C", fullName: "PSP Minis"                     },
+        "xbox360":            { manufacturer: "microsoft",         release: "2005", color: "#0E7A0D", altColor: "#0B620A", fullName: "Xbox 360"                      },
+        "xbla":               { manufacturer: "microsoft",         release: "2004", color: "#F28C2A", altColor: "#C04D3B", fullName: "Xbox Live Arcade"              },
         "gog":                { manufacturer: "pc",                release: "2008", color: "#000000", altColor: "#252525", fullName: "GOG"                           },
         "steam":              { manufacturer: null,                release: "2003", color: "#010314", altColor: "#252525", fullName: "Steam"                         },
         "arcade":             { manufacturer: null,                release: null,   color: "#D00E2D", altColor: "#9B071E", fullName: "Arcade"                        },
