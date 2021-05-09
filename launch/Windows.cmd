@@ -15,11 +15,13 @@ set "rom=%~1"
 set xpadder_p1=%~4
 set xpadder_p2=%~5
 set "path=%~3"
+set "basepath=%~dp0"
 
 :: The launch path needs to be the game directory
 pushd %path%
 
-set xpadder_launch="..\..\..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
+::set xpadder_launch="..\..\..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
+set xpadder_launch="%basepath%\..\xpadder\Xpadder.exe" "%basepath%\..\configs\xpadder\profiles\%xpadder_p1%" "%basepath%\..\configs\xpadder\profiles\%xpadder_p2%"
 set emulator_launch="%rom%"
 
 start "" %xpadder_launch% && start "" /WAIT %emulator_launch%
