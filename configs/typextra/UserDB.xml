@@ -161,11 +161,11 @@
   <UserGamesSetup>
     <ShortName>BF</ShortName>
     <GameFolderPresent>true</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-typex\Battle Fantasia</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:40.7813606-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:24.456263-04:00</LastSetupDone>
     <UserControlsFile>pad_config.exe</UserControlsFile>
     <UserLaunchFile>launch.bat</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -306,7 +306,7 @@
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-typex\Chaos Breaker</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:40.7973098-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:24.5116055-04:00</LastSetupDone>
     <UserControlsFile>pad_config.exe</UserControlsFile>
     <UserLaunchFile>launch.bat</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -417,9 +417,9 @@
   </UserGamesSetup>
   <UserGamesSetup>
     <ShortName>HMR</ShortName>
-    <GameFolderPresent>true</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
-    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
     <GameFolder>C:\Users\Mike\Downloads\New folder\Homura\Homura</GameFolder>
     <TimesPlayed>0</TimesPlayed>
     <LastSetupDone>2019-04-06T12:32:40.8242499-04:00</LastSetupDone>
@@ -671,7 +671,7 @@
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-typex\Raiden III</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:40.8372122-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:24.5399706-04:00</LastSetupDone>
     <UserControlsFile>pad_config.exe</UserControlsFile>
     <UserLaunchFile>Raiden III.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -704,9 +704,9 @@
   </UserGamesSetup>
   <UserGamesSetup>
     <ShortName>RIV</ShortName>
-    <GameFolderPresent>true</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
-    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolderPresent>false</GameFolderPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
     <GameFolder>C:\Users\Mike\Downloads\New folder\Raiden IV</GameFolder>
     <TimesPlayed>0</TimesPlayed>
     <LastSetupDone>2019-04-06T12:32:40.8501531-04:00</LastSetupDone>
@@ -810,15 +810,15 @@
   </UserGamesSetup>
   <UserGamesSetup>
     <ShortName>SNSIII</ShortName>
-    <GameFolderPresent>false</GameFolderPresent>
-    <LaunchFilePresent>false</LaunchFilePresent>
-    <ExeMonitorPresent>false</ExeMonitorPresent>
-    <GameFolder>C:\Users\Mike\Downloads\New folder\Shikigami\Shikigami no Shiro III\bin</GameFolder>
+    <GameFolderPresent>true</GameFolderPresent>
+    <LaunchFilePresent>true</LaunchFilePresent>
+    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <GameFolder>C:\Emulation\roms\arcade\taito-typex\Shikigami No Shiro III</GameFolder>
     <TimesPlayed>0</TimesPlayed>
     <LastSetupDone>2018-11-03T01:57:31.6099324-04:00</LastSetupDone>
-    <UserControlsFile>pad_config.exe</UserControlsFile>
-    <UserLaunchFile>Shikigami no Shiro III.exe</UserLaunchFile>
-    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <UserControlsFile>Settings.exe</UserControlsFile>
+    <UserLaunchFile>Play.exe</UserLaunchFile>
+    <UserExeMonitorFile>bin\game.exe</UserExeMonitorFile>
     <GameInfPresent>true</GameInfPresent>
     <LongName>Shikigami no Shiro III</LongName>
     <GameInfID>76ACF977447F75A1E79E9B7B11374B9E</GameInfID>
@@ -828,7 +828,7 @@
     <MonitorExe>game.exe</MonitorExe>
     <HideConsole>true</HideConsole>
     <Notes>Some sets use DXWnd and sometimes this can float over the game. Use the DXWnd hack in settings to solve.</Notes>
-    <ConfirmedGood>false</ConfirmedGood>
+    <ConfirmedGood>true</ConfirmedGood>
     <SetupDeleteFilesCSV />
     <OldiDmac>false</OldiDmac>
     <HDPatch>false</HDPatch>
@@ -987,14 +987,14 @@
   </UserGamesSetup>
   <UserGamesSetup>
     <ShortName>TW</ShortName>
-    <GameFolderPresent>true</GameFolderPresent>
+    <GameFolderPresent>false</GameFolderPresent>
     <LaunchFilePresent>true</LaunchFilePresent>
     <ExeMonitorPresent>true</ExeMonitorPresent>
-    <GameFolder>C:\Users\Mike\Downloads\New folder\Trouble Witches\Trouble Witches\Bin</GameFolder>
+    <GameFolder>C:\Emulation\roms\arcade\taito-typex\Trouble Witches\Trouble Witches\Bin</GameFolder>
     <TimesPlayed>0</TimesPlayed>
     <LastSetupDone>2019-04-06T12:32:40.8651294-04:00</LastSetupDone>
     <UserControlsFile>pad_config.exe</UserControlsFile>
-    <UserLaunchFile>launch.bat</UserLaunchFile>
+    <UserLaunchFile>Play.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
     <GameInfPresent>true</GameInfPresent>
     <LongName>Trouble Witches AC</LongName>
@@ -1026,8 +1026,8 @@
   <UserGamesSetup>
     <ShortName>DSII</ShortName>
     <GameFolderPresent>false</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
-    <ExeMonitorPresent>true</ExeMonitorPresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
+    <ExeMonitorPresent>false</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-typex\Deathsmiles II</GameFolder>
     <TimesPlayed>0</TimesPlayed>
     <LastSetupDone>2019-04-06T12:32:40.8661108-04:00</LastSetupDone>
@@ -1064,11 +1064,11 @@
   <UserGamesSetup>
     <ShortName>CER</ShortName>
     <GameFolderPresent>true</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\konami\CEHD\Contra</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:40.8661108-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:24.5409707-04:00</LastSetupDone>
     <UserControlsFile>ControlsReadme</UserControlsFile>
     <UserLaunchFile>Game Loader All RH.exe</UserLaunchFile>
     <UserExeMonitorFile>AMContra.exe</UserExeMonitorFile>
@@ -1156,15 +1156,15 @@
   </UserGamesSetup>
   <UserGamesSetup>
     <ShortName>AKS</ShortName>
-    <GameFolderPresent>true</GameFolderPresent>
+    <GameFolderPresent>false</GameFolderPresent>
     <LaunchFilePresent>true</LaunchFilePresent>
     <ExeMonitorPresent>true</ExeMonitorPresent>
-    <GameFolder>C:\Users\Mike\Downloads\New folder\Akai Katana Shin\Akai Katana Shin</GameFolder>
+    <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Akai Katana Shin\Akai Katana Shin</GameFolder>
     <TimesPlayed>0</TimesPlayed>
     <LastSetupDone>2019-04-06T12:32:49.2905897-04:00</LastSetupDone>
     <UserControlsFile>JConfig.exe</UserControlsFile>
     <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
-    <UserExeMonitorFile>game.exe</UserExeMonitorFile>
+    <UserExeMonitorFile>Game.exe</UserExeMonitorFile>
     <GameInfPresent>false</GameInfPresent>
     <LongName>Akai Katana Shin</LongName>
     <GameInfID>2C01C38CA47200BA50A5010F652F80D8</GameInfID>
@@ -1439,11 +1439,11 @@
   <UserGamesSetup>
     <ShortName>CC</ShortName>
     <GameFolderPresent>true</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Crimzon Clover</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:49.3175577-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:24.5814327-04:00</LastSetupDone>
     <UserControlsFile>JConfig.exe</UserControlsFile>
     <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -1462,7 +1462,7 @@
     <HDPatch>false</HDPatch>
     <HDExeZipExists>false</HDExeZipExists>
     <HDExeInstalled />
-    <GameExeDate>11/2/2018 1:41:57 AM</GameExeDate>
+    <GameExeDate>10/16/2013 7:51:40 AM</GameExeDate>
     <DisplayRotation>0</DisplayRotation>
     <PrimaryDisplay>0</PrimaryDisplay>
     <Display1Shown>true</Display1Shown>
@@ -1715,11 +1715,11 @@
   <UserGamesSetup>
     <ShortName>HMRNX</ShortName>
     <GameFolderPresent>true</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Homura</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:49.3404619-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:24.6122838-04:00</LastSetupDone>
     <UserControlsFile>JConfig.exe</UserControlsFile>
     <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -1787,11 +1787,11 @@
   <UserGamesSetup>
     <ShortName>IK</ShortName>
     <GameFolderPresent>true</GameFolderPresent>
-    <LaunchFilePresent>true</LaunchFilePresent>
+    <LaunchFilePresent>false</LaunchFilePresent>
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Ikaruga</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:49.3613999-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:24.6376863-04:00</LastSetupDone>
     <UserControlsFile>JConfig.exe</UserControlsFile>
     <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -2145,7 +2145,7 @@
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Raiden III</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:49.3623974-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:34.8818161-04:00</LastSetupDone>
     <UserControlsFile>JConfig.exe</UserControlsFile>
     <UserLaunchFile>Game Loader All RH.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -2183,7 +2183,7 @@
     <ExeMonitorPresent>true</ExeMonitorPresent>
     <GameFolder>C:\Emulation\roms\arcade\taito-nesicaxlive\Raiden IV</GameFolder>
     <TimesPlayed>0</TimesPlayed>
-    <LastSetupDone>2019-04-06T12:32:49.3633959-04:00</LastSetupDone>
+    <LastSetupDone>2021-05-05T02:21:36.3694373-04:00</LastSetupDone>
     <UserControlsFile>JConfig.exe</UserControlsFile>
     <UserLaunchFile>Game Loader All RH.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
@@ -2597,7 +2597,7 @@
     <TimesPlayed>0</TimesPlayed>
     <LastSetupDone>2019-04-06T12:32:49.3833411-04:00</LastSetupDone>
     <UserControlsFile>JConfig.exe</UserControlsFile>
-    <UserLaunchFile>RFIDGod_inject.exe</UserLaunchFile>
+    <UserLaunchFile>Game Loader All Rh.exe</UserLaunchFile>
     <UserExeMonitorFile>game.exe</UserExeMonitorFile>
     <GameInfPresent>false</GameInfPresent>
     <LongName>Vampire Savior</LongName>
