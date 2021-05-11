@@ -159,6 +159,46 @@
   </ConfigValues>
   <JoystickButtons>
     <JoystickButtons>
+      <ButtonName>Test</ButtonName>
+      <InputMapping>P1Button3</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+    </JoystickButtons>
+    <JoystickButtons>
+      <ButtonName>Service / Coin</ButtonName>
+      <InputMapping>P1Button4</InputMapping>
+      <AnalogType>None</AnalogType>
+      <HideWithDirectInput>false</HideWithDirectInput>
+      <HideWithXInput>false</HideWithXInput>
+      <HideWithRawInput>false</HideWithRawInput>
+      <HideWithKeyboardForAxis>false</HideWithKeyboardForAxis>
+      <HideWithoutKeyboardForAxis>false</HideWithoutKeyboardForAxis>
+      <HideWithRelativeAxis>false</HideWithRelativeAxis>
+      <HideWithoutRelativeAxis>false</HideWithoutRelativeAxis>
+      <HideWithUseDPadForGUN1Stick>false</HideWithUseDPadForGUN1Stick>
+      <HideWithoutUseDPadForGUN1Stick>false</HideWithoutUseDPadForGUN1Stick>
+      <HideWithUseDPadForGUN2Stick>false</HideWithUseDPadForGUN2Stick>
+      <HideWithoutUseDPadForGUN2Stick>false</HideWithoutUseDPadForGUN2Stick>
+      <HideWithUseAnalogAxisToAimGUN1>false</HideWithUseAnalogAxisToAimGUN1>
+      <HideWithoutUseAnalogAxisToAimGUN1>false</HideWithoutUseAnalogAxisToAimGUN1>
+      <HideWithUseAnalogAxisToAimGUN2>false</HideWithUseAnalogAxisToAimGUN2>
+      <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
+    </JoystickButtons>
+    <JoystickButtons>
       <ButtonName>Start</ButtonName>
       <XInputButton>
         <IsLeftThumbX>false</IsLeftThumbX>
@@ -264,8 +304,8 @@
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>TEST</ButtonName>
-      <InputMapping>P1Button3</InputMapping>
+      <ButtonName>Vol / Menu Up</ButtonName>
+      <InputMapping>P1Button5</InputMapping>
       <AnalogType>None</AnalogType>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
@@ -284,8 +324,8 @@
       <HideWithoutUseAnalogAxisToAimGUN2>false</HideWithoutUseAnalogAxisToAimGUN2>
     </JoystickButtons>
     <JoystickButtons>
-      <ButtonName>SERVICE / Menu Countdown Quickening</ButtonName>
-      <InputMapping>P1Button4</InputMapping>
+      <ButtonName>Vol / Menu Down</ButtonName>
+      <InputMapping>P1Button6</InputMapping>
       <AnalogType>None</AnalogType>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
@@ -450,7 +490,7 @@
     </JoystickButtons>
   </JoystickButtons>
   <EmulationProfile>RawThrillsFNFH2O</EmulationProfile>
-  <GameProfileRevision>16</GameProfileRevision>
+  <GameProfileRevision>17</GameProfileRevision>
   <HasSeparateTestMode>false</HasSeparateTestMode>
   <Is64Bit>false</Is64Bit>
   <EmulatorType>OpenParrot</EmulatorType>
