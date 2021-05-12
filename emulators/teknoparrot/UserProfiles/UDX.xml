@@ -312,7 +312,7 @@
     <JoystickButtons>
       <ButtonName>Player 1 Right</ButtonName>
       <DirectInputButton>
-        <Button>92</Button>
+        <Button>155</Button>
         <IsAxis>false</IsAxis>
         <IsAxisMinus>false</IsAxisMinus>
         <IsFullAxis>false</IsFullAxis>
@@ -322,8 +322,8 @@
       </DirectInputButton>
       <InputMapping>P1ButtonRight</InputMapping>
       <AnalogType>None</AnalogType>
-      <BindNameDi>Keyboard Button X</BindNameDi>
-      <BindName>Keyboard Button X</BindName>
+      <BindNameDi>Keyboard Button 108</BindNameDi>
+      <BindName>Keyboard Button 108</BindName>
       <HideWithDirectInput>false</HideWithDirectInput>
       <HideWithXInput>false</HideWithXInput>
       <HideWithRawInput>false</HideWithRawInput>
