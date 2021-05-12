@@ -1,6 +1,6 @@
 ;--- Xpadder Profile File ---
 DataType=Profile
-Version=2018.05.01
+Version=2020.05.01
 
 [Profile Settings]
 
@@ -11,6 +11,8 @@ Set1Button1Slots=L
 Set1Button2Slots=W
 Set1Button3Slots=J
 Set1Button4Slots=A
+Set1Button5Slots=K
+Set1Button6Slots=K
 Set1Button7Slots=6
 Set1Button8Slots=2
 Set1DPadUpSlots=R
@@ -21,3 +23,5 @@ Set1Stick1UpSlots=R
 Set1Stick1RightSlots=G
 Set1Stick1DownSlots=F
 Set1Stick1LeftSlots=D
+Set1TriggerLeftSlots=K
+Set1TriggerRightSlots=K
