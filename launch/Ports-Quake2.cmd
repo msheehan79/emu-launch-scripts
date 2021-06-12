@@ -20,7 +20,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\yquake2\yquake2.exe" -datadir ..\roms\ports\quake2 %config% -portable
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus "Yamagi Quake II"
+start "" ..\util\scripts\emulator-focus "Yamagi Quake II"
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (

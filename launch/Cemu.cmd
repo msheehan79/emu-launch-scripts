@@ -17,7 +17,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\cemu\cemu.exe" -mlc "..\..\saves\wiiu" -f -g "%rom%"
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus Cemu
+start "" ..\util\scripts\emulator-focus Cemu
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (

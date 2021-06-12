@@ -20,7 +20,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\ecwolf\ecwolf.exe" --savedir ..\saves\wolf3d --config ..\configs\%config%
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus ECWolf
+start "" ..\util\scripts\emulator-focus ECWolf
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (

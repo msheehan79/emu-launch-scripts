@@ -17,7 +17,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\jzintv\bin\jzintv.exe" -p "..\bios\intellivision" -q -z960x720,32 -f1 %config% --js0a="xaxis=0,yaxis=1" --js0b="xaxis=3,yaxis=4,8dir" --js0c="xaxis=2,button" --kbdhackfile="..\configs\intellivision\kbdhackfile.kbd" "%rom%"
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus jzintv
+start "" ..\util\scripts\emulator-focus jzintv
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (

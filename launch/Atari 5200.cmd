@@ -18,7 +18,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\altirra\Altirra64.exe" /portablealt:..\configs\%config% "%rom%"
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus Altirra
+start "" ..\util\scripts\emulator-focus Altirra
 
 :: Launch xpadder profiles, then Launch the emuator with the config file
 start "" %xpadder_launch% && timeout 1 && start "" /WAIT %emulator_launch%

@@ -18,7 +18,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\citra\nightly-mingw\citra-qt.exe" "%rom%"
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus Citra
+start "" ..\util\scripts\emulator-focus Citra
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (

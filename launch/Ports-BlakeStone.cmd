@@ -20,7 +20,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\bstone\bstone.exe" --profile_dir "..\configs\%config%" --data_dir %rom%
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus "Blake Stone"
+start "" ..\util\scripts\emulator-focus "Blake Stone"
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (

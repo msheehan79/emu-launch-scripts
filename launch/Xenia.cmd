@@ -17,7 +17,7 @@ set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadde
 set emulator_launch="..\emulators\xenia\xenia.exe" "%rom%" --config="..\configs\%config%"
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\util\emulator-focus Xenia
+start "" ..\util\scripts\emulator-focus Xenia
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (

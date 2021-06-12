@@ -23,7 +23,7 @@ set xpadder_launch="..\..\xpadder\Xpadder.exe" "..\..\configs\xpadder\profiles\%
 set emulator_launch="quakespasm.exe" -basedir ..\..\roms\ports\quake %config%
 
 :: Make sure the emulator remains in focus during startup
-start "" ..\..\util\emulator-focus QuakeSpasm
+start "" ..\..\util\scripts\emulator-focus QuakeSpasm
 
 :: Launch xpadder profiles, then Launch the emulator with the config file
 IF "%xpadder_p1%" NEQ "" (
