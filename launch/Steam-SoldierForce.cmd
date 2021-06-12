@@ -20,7 +20,7 @@ set "path=%~3"
 pushd %path%
 
 set xpadder_launch="..\..\..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
-set launch_helper="..\..\..\util\scripts\launch-helper-satazius.exe"
+set launch_helper="..\..\..\util\scripts\launch-helper-soldierforce.exe"
 set emulator_launch="%rom%"
 
 start "" %xpadder_launch% && start "" %launch_helper% && start "" /WAIT %emulator_launch%
