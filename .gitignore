@@ -26,6 +26,16 @@ emulators/teknoparrot/*
 !emulators/teknoparrot/ParrotData.xml
 !emulators/teknoparrot/UserProfiles/
 
+!emulators/demul/
+emulators/demul/*
+!emulators/demul/Demul.ini
+!emulators/demul/gpuDX11.ini
+!emulators/demul/padDemul.ini
+!emulators/demul/gdrCHD.ini
+!emulators/demul/gdrImage.ini
+!emulators/demul/netDemul.ini
+!emulators/demul/spuDemul.ini
+
 # Ignore most BIOS folders, but the MAME BIOS directory also holds config data
 !bios
 bios/*
@@ -91,6 +101,10 @@ saves/arcade-mame/mame/nvram/*
 !saves/arcade-naomi/
 saves/arcade-naomi/*
 !saves/arcade-naomi/readme.txt
+
+!saves/arcade-naomi2/
+saves/arcade-naomi2/*
+!saves/arcade-naomi2/readme.txt
 
 saves/arcade-neogeo/*
 saves/arcade-neogeo/mame/cfg/*
