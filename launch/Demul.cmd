@@ -13,6 +13,11 @@ set config=%~3
 set xpadder_p1=%~4
 set xpadder_p2=%~5
 
+IF "%config%"=="" (set config=default)
+
+:: copy the appropriate control INI file over
+cp "C:\emulation\configs\arcade-naomi2\%config%\padDemul.ini" "C:\emulation\emulators\demul\"
+
 set xpadder_launch="..\xpadder\Xpadder.exe" "..\configs\xpadder\profiles\%xpadder_p1%" "..\configs\xpadder\profiles\%xpadder_p2%"
 set emulator_launch="..\emulators\demul\demul.exe" -run=naomi -rom="%rom%"
 
